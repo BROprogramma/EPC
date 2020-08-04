@@ -93,6 +93,13 @@
                      <td>Attribuut van Boortraject</td>
                   </tr>
                   <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>De datum waarop het boren is begonnen.</p>
+                        </td>
+                  </tr>
+                  <tr>
                      <th>Juridische status</th>
                      <td>Authentiek</td>
                   </tr>
@@ -107,6 +114,13 @@
                   <tr>
                      <th>&nbsp;&nbsp;Naam</th>
                      <td>Datum</td>
+                  </tr>
+                  <tr>
+                     <th>Regels</th>
+                     <td>
+                        
+                        <p>De Startdatum mag niet liggen na de Einddatum van het boortraject.</p>
+                        </td>
                   </tr>
                </tbody>
             </table>
@@ -122,6 +136,13 @@
                      <td>Attribuut van Boortraject</td>
                   </tr>
                   <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>De datum waarop het boren is geeindigd.</p>
+                        </td>
+                  </tr>
+                  <tr>
                      <th>Juridische status</th>
                      <td>Authentiek</td>
                   </tr>
@@ -137,6 +158,13 @@
                      <th>&nbsp;&nbsp;Naam</th>
                      <td>Datum</td>
                   </tr>
+                  <tr>
+                     <th>Regels</th>
+                     <td>
+                        
+                        <p>De Einddatum mag niet liggen voor de startdatum van het boortraject.</p>
+                        </td>
+                  </tr>
                </tbody>
             </table>
             </section><a class="anchor" id="detail_attribute_Model_Boortraject_einddiepte"></a><section id="detail_attribute_Model_Boortraject_einddiepte">
@@ -149,6 +177,13 @@
                   <tr>
                      <th>Type gegeven</th>
                      <td>Attribuut van Boortraject</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>De langs het boorgtraject gemeten diepte waarop de booractiviteit is beëindigd.</p>
+                        </td>
                   </tr>
                   <tr>
                      <th>Juridische status</th>
@@ -181,6 +216,14 @@
                      <td>Attribuut van Boortraject</td>
                   </tr>
                   <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>De verticale diepte ten opzichte van het voor het de mijnbouwconstructie gespecificeerde
+                           lokaal verticaal referentiepunt. </p>
+                        </td>
+                  </tr>
+                  <tr>
                      <th>Juridische status</th>
                      <td>Authentiek</td>
                   </tr>
@@ -196,6 +239,10 @@
                      <th>&nbsp;&nbsp;Naam</th>
                      <td>Meetwaarde 
                         </td>
+                  </tr>
+                  <tr>
+                     <th>&nbsp;&nbsp;Eenheid</th>
+                     <td>m (meter)</td>
                   </tr>
                </tbody>
             </table>
@@ -224,7 +271,11 @@
                   </tr>
                   <tr>
                      <th>&nbsp;&nbsp;Naam</th>
-                     <td>Tekst </td>
+                     <td><a class="link" href="#detail_class_Model_Categorie">Categorie</a></td>
+                  </tr>
+                  <tr>
+                     <th>&nbsp;&nbsp;Type</th>
+                     <td>Waardelijst uitbreidbaar</td>
                   </tr>
                </tbody>
             </table>
@@ -238,6 +289,14 @@
                   <tr>
                      <th>Type gegeven</th>
                      <td>Attribuut van Boortraject</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>De langs het boorgtraject gemeten diepte waarop de afslag devieert van het primaire
+                           boortraject.</p>
+                        </td>
                   </tr>
                   <tr>
                      <th>Juridische status</th>
@@ -256,6 +315,13 @@
                      <td>Meetwaarde 
                         </td>
                   </tr>
+                  <tr>
+                     <th>Regels</th>
+                     <td>
+                        
+                        <p>De Kick-off diepte heeft alleen een waarde wanneer Categorie = Afslag</p>
+                        </td>
+                  </tr>
                </tbody>
             </table>
             </section><a class="anchor" id="detail_attribute_Model_Boortraject_noordreferentie"></a><section id="detail_attribute_Model_Boortraject_noordreferentie">
@@ -268,6 +334,14 @@
                   <tr>
                      <th>Type gegeven</th>
                      <td>Attribuut van Boortraject</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>De referentie naar dat wat als het noorden beschouwd wordt tijdens het inmeten van
+                           het boortraject.</p>
+                        </td>
                   </tr>
                   <tr>
                      <th>Juridische status</th>
@@ -303,6 +377,13 @@
                      <td>Attribuut van Boortraject</td>
                   </tr>
                   <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>De vorm van het boortraject.</p>
+                        </td>
+                  </tr>
+                  <tr>
                      <th>Juridische status</th>
                      <td>Authentiek</td>
                   </tr>
@@ -317,6 +398,20 @@
                   <tr>
                      <th>&nbsp;&nbsp;Naam</th>
                      <td>Tekst </td>
+                  </tr>
+                  <tr>
+                     <th>Regels</th>
+                     <td>
+                        
+                        <p>Als de gemeten hellingshoek over een minimale afstand van 100 meter groter is dan
+                           80 graden ten opzichte van de verticaal is de vorm van het traject horizontaal.
+                           Als de vorm van het traject niet horizontaal is en het verschil tussen de einddiepte
+                           en de werkelijke verticale diepte groter is dan 0,1 procent of het verschil tussen
+                           de x-offset en y-offset behorende bij de einddiepte groter is dan 100 meter dan is
+                           de vorm van het traject gedevieerd.
+                           Als de vorm van het traject niet horizontaal is en niet gedevieerd dan is de vorm
+                           verticaal.</p>
+                        </td>
                   </tr>
                </tbody>
             </table>
@@ -351,6 +446,14 @@
                      <td>Attribuut van Gemeten punten</td>
                   </tr>
                   <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>De langs het boortraject gemeten diepte in meters ten opzichte van het voor de mijnbouwconstructie
+                           gespecificeerde lokaal verticaal referentiepunt.</p>
+                        </td>
+                  </tr>
+                  <tr>
                      <th>Juridische status</th>
                      <td>Authentiek</td>
                   </tr>
@@ -366,6 +469,10 @@
                      <th>&nbsp;&nbsp;Naam</th>
                      <td>Meetwaarde 
                         </td>
+                  </tr>
+                  <tr>
+                     <th>&nbsp;&nbsp;Eenheid</th>
+                     <td>m (meter)</td>
                   </tr>
                </tbody>
             </table>
@@ -381,6 +488,14 @@
                      <td>Attribuut van Gemeten punten</td>
                   </tr>
                   <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>De verticale hoek in graden ten opzichte van het voor het mijnbouwconstructie gespecificeerde
+                           lokaal verticaal referentiepunt.</p>
+                        </td>
+                  </tr>
+                  <tr>
                      <th>Juridische status</th>
                      <td>Authentiek</td>
                   </tr>
@@ -396,6 +511,10 @@
                      <th>&nbsp;&nbsp;Naam</th>
                      <td>Meetwaarde 
                         </td>
+                  </tr>
+                  <tr>
+                     <th>&nbsp;&nbsp;Eenheid</th>
+                     <td>° (graden)</td>
                   </tr>
                </tbody>
             </table>
@@ -411,6 +530,14 @@
                      <td>Attribuut van Gemeten punten</td>
                   </tr>
                   <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>De horizontale hoek in graden ten opzichte van de voor het boortraject gespecificeerde
+                           noordreferentie.</p>
+                        </td>
+                  </tr>
+                  <tr>
                      <th>Juridische status</th>
                      <td>Authentiek</td>
                   </tr>
@@ -426,6 +553,10 @@
                      <th>&nbsp;&nbsp;Naam</th>
                      <td>Meetwaarde 
                         </td>
+                  </tr>
+                  <tr>
+                     <th>&nbsp;&nbsp;Eenheid</th>
+                     <td>° (graden)</td>
                   </tr>
                </tbody>
             </table>
@@ -444,7 +575,7 @@
                   <th>Definitie</th>
                   <td>
                      
-                     <p>Een geboord gat in de grond explicite voor de exploratie, winning of opslag van delfstoffen
+                     <p>Een geboord gat in de grond expliciet voor de exploratie, winning of opslag van delfstoffen
                         en/of aardwarmte.</p>
                      </td>
                </tr>
@@ -471,6 +602,13 @@
                   <tr>
                      <th>Type gegeven</th>
                      <td>Attribuut van Boorgat</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>De datum waarop het boren is begonnen.</p>
+                        </td>
                   </tr>
                   <tr>
                      <th>Juridische status</th>
@@ -502,6 +640,13 @@
                      <td>Attribuut van Boorgat</td>
                   </tr>
                   <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>De datum waarop het boren is geeindigd.</p>
+                        </td>
+                  </tr>
+                  <tr>
                      <th>Juridische status</th>
                      <td>Authentiek</td>
                   </tr>
@@ -531,6 +676,13 @@
                      <td>Attribuut van Boorgat</td>
                   </tr>
                   <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>Het doel waarvoor de boring is geplaatst.</p>
+                        </td>
+                  </tr>
+                  <tr>
                      <th>Juridische status</th>
                      <td>Authentiek</td>
                   </tr>
@@ -558,6 +710,13 @@
                   <tr>
                      <th>Type gegeven</th>
                      <td>Attribuut van Boorgat</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>De status van het boorgat.</p>
+                        </td>
                   </tr>
                   <tr>
                      <th>Juridische status</th>
@@ -593,8 +752,7 @@
                   <td>
                      
                      <p>Een mijnbouwwerk in de ondergrond voor het winnen of benutten van in de ondergrond
-                        aanwezige natuurlijke hulpbronnen, voor het opslaan van stoffen in de ondergrond of
-                        het meten van een aan de ondergond gerelateerde parameters.</p>
+                        aanwezige natuurlijke hulpbronnen, voor het opslaan van stoffen in de ondergrond.</p>
                      </td>
                </tr>
             </tbody>
@@ -1211,6 +1369,13 @@
                      <td>Attribuut van Aangeleverde verticale positie</td>
                   </tr>
                   <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>Het punt dat tijdens het boren van het boorgat is gebruikt als nulpunt voor de diepte.</p>
+                        </td>
+                  </tr>
+                  <tr>
                      <th>Juridische status</th>
                      <td>Authentiek</td>
                   </tr>
@@ -1226,10 +1391,28 @@
                      <th>&nbsp;&nbsp;Naam</th>
                      <td>Tekst </td>
                   </tr>
+                  <tr>
+                     <th>Regels</th>
+                     <td>
+                        
+                        <p>De waarde van het attribuut moet gelijk zijn aan waterbodem wanneer de locatie aan
+                           de zeezijde van de UNCLOS-basislijn ligt.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>
+                        
+                        <p>Het domein bevat begrippen die naar een oppervlak verwijzen. Het lokaal verticaal
+                           referentiepunt geldt als het punt waar het onderzoek aan de ondergrond begonnen is.
+                           De laag slib die plaatselijk op de waterbodem ligt, wordt niet tot de ondergrond gerekend
+                           en ligt boven het lokaal verticaal referentiepunt.</p>
+                        </td>
+                  </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_attribute_Model_Aangeleverdeverticalepositie_offset"></a><section id="detail_attribute_Model_Aangeleverdeverticalepositie_offset">
-            <h4>  offset</h4>
+            </section><a class="anchor" id="detail_attribute_Model_Aangeleverdeverticalepositie_verschuiving"></a><section id="detail_attribute_Model_Aangeleverdeverticalepositie_verschuiving">
+            <h4>  verschuiving</h4>
             
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -1238,6 +1421,14 @@
                   <tr>
                      <th>Type gegeven</th>
                      <td>Attribuut van Aangeleverde verticale positie</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>De verticale positie van het lokaal verticaal referentiepunt t.o.v. het verticaal
+                           referentievlak.</p>
+                        </td>
                   </tr>
                   <tr>
                      <th>Juridische status</th>
@@ -1256,6 +1447,17 @@
                      <td>Meetwaarde 
                         </td>
                   </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>
+                        
+                        <p>De waarde kan positief of negatief zijn. Als de waarde positief is, ligt het lokaal
+                           verticaal referentiepunt boven het verticaal referentievlak. Met behulp van de verschuiving
+                           kan een diepte omgerekend worden naar een positie ten opzichte van het verticaal referentievlak.
+                           Voor gegevens die zijn aangeleverd in het kader van archiefoverdracht kan de verschuiving
+                           niet bepaald zijn.</p>
+                        </td>
+                  </tr>
                </tbody>
             </table>
             </section><a class="anchor" id="detail_attribute_Model_Aangeleverdeverticalepositie_verticaalreferentievlak"></a><section id="detail_attribute_Model_Aangeleverdeverticalepositie_verticaalreferentievlak">
@@ -1268,6 +1470,14 @@
                   <tr>
                      <th>Type gegeven</th>
                      <td>Attribuut van Aangeleverde verticale positie</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>Het referentieniveau voor de verticale positie van het lokaal verticaal referentiepunt.
+                           </p>
+                        </td>
                   </tr>
                   <tr>
                      <th>Juridische status</th>
@@ -1285,6 +1495,16 @@
                      <th>&nbsp;&nbsp;Naam</th>
                      <td>Tekst </td>
                   </tr>
+                  <tr>
+                     <th>Regels</th>
+                     <td>
+                        
+                        <p>De waarde van het attribuut moet gelijk zijn aan NAP wanneer de locatie aan de landzijde
+                           van de UNCLOS-basislijn ligt.
+                           De waarde van het attribuut moet gelijk zijn aan LAT of MSL wanneer de locatie aan
+                           de zeezijde van de UNCLOS-basislijn ligt.</p>
+                        </td>
+                  </tr>
                </tbody>
             </table>
             </section><a class="anchor" id="detail_attribute_Model_Aangeleverdeverticalepositie_datumverticalepositiebepaling"></a><section id="detail_attribute_Model_Aangeleverdeverticalepositie_datumverticalepositiebepaling">
@@ -1297,6 +1517,13 @@
                   <tr>
                      <th>Type gegeven</th>
                      <td>Attribuut van Aangeleverde verticale positie</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>De datum waarop de verticale positie van het lokaal verticaal referentiepunt is bepaald.</p>
+                        </td>
                   </tr>
                   <tr>
                      <th>Juridische status</th>
@@ -1313,6 +1540,24 @@
                   <tr>
                      <th>&nbsp;&nbsp;Naam</th>
                      <td>Datum</td>
+                  </tr>
+                  <tr>
+                     <th>Regels</th>
+                     <td>
+                        
+                        <p>De datum verticale positiebepaling mag niet liggen na de startdatum rapportage van
+                           de entiteit Rapportagegeschiedenis.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>
+                        
+                        <p>Het gegeven is van belang in verband met mogelijke veranderingen in de positie van
+                           het maaiveld of de waterbodem. In het geval de positie is bepaald op basis van het
+                           AHN geldt als datum 1 januari van het jaar waarin de gebruikte versie van het AHN
+                           voor het gebied waarin de locatie ligt, is vastgesteld. </p>
+                        </td>
                   </tr>
                </tbody>
             </table>
@@ -1328,6 +1573,14 @@
                      <td>Attribuut van Aangeleverde verticale positie</td>
                   </tr>
                   <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>De werkwijze die is gevolgd voor de bepaling van de verticale positie van het lokaal
+                           verticaal referentiepunt.</p>
+                        </td>
+                  </tr>
+                  <tr>
                      <th>Juridische status</th>
                      <td>Authentiek</td>
                   </tr>
@@ -1343,6 +1596,13 @@
                      <th>&nbsp;&nbsp;Naam</th>
                      <td>Datum</td>
                   </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>
+                        
+                        <p>Het gegeven geeft inzicht in de nauwkeurigheid waarmee de verticale positie is bepaald.</p>
+                        </td>
+                  </tr>
                </tbody>
             </table>
             </section><a class="anchor" id="detail_attribute_Model_Aangeleverdeverticalepositie_uitvoerderverticalepositiebepaling"></a><section id="detail_attribute_Model_Aangeleverdeverticalepositie_uitvoerderverticalepositiebepaling">
@@ -1355,6 +1615,16 @@
                   <tr>
                      <th>Type gegeven</th>
                      <td>Attribuut van Aangeleverde verticale positie</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>Het KvK-nummer van de onderneming of de maatschappelijke activiteit van de rechtspersoon
+                           die voor de bronhouder geldt als verantwoordelijk voor de uitvoering van de bepaling
+                           van de verticale positie, of het equivalent daarvan in een handelsregister van een
+                           andere lidstaat van de Europese Unie dan Nederland.</p>
+                        </td>
                   </tr>
                   <tr>
                      <th>Juridische status</th>
@@ -1371,6 +1641,87 @@
                   <tr>
                      <th>&nbsp;&nbsp;Naam</th>
                      <td>Organisatie</td>
+                  </tr>
+                  <tr>
+                     <th>Regels</th>
+                     <td>
+                        
+                        <p>De organisatie moet bekend zijn binnen de basisregistratie ondergrond als uitvoerder
+                           van booronderzoek bekend zijn.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>
+                        
+                        <p>Het gegeven wordt alleen uitgeleverd aan de dataleverancier en de bronhouder.</p>
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+            </section><a class="anchor" id="detail_attribute_Model_Aangeleverdeverticalepositie_waterdiepte"></a><section id="detail_attribute_Model_Aangeleverdeverticalepositie_waterdiepte">
+            <h4>  waterdiepte</h4>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Type gegeven</th>
+                     <td>Attribuut van Aangeleverde verticale positie</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>De positie van de waterbodem ten opzichte van het wateroppervlak op het moment van
+                           verticale positiebepaling.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Juridische status</th>
+                     <td>Authentiek</td>
+                  </tr>
+                  <tr>
+                     <th>Kardinaliteit</th>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <th>Domein</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>&nbsp;&nbsp;Naam</th>
+                     <td>Meetwaarde 
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Regels</th>
+                     <td>
+                        
+                        <p>Het attribuut moet aanwezig zijn wanneer de waarde van het attribuut lokaal verticaal
+                           referentiepunt gelijk is aan waterbodem.
+                           Het attribuut mag niet aanwezig zijn in alle andere gevallen.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Regels IMBRO/A</th>
+                     <td>
+                        
+                        <p>Voor IMBRO/A-gegevens mag het attribuut ontbreken wanneer de waarde van het attribuut
+                           lokaal verticaal referentiepunt gelijk is aan waterbodem.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>
+                        
+                        <p>Het gegeven geldt op het moment van verticale positiebepaling. Er wordt geen rekening
+                           gehouden met de veranderlijkheid die het gevolg is van getijden. Het gegeven heeft
+                           vooral betekenis op land. Het geeft extra informatie over de omstandigheden op plaatsen
+                           op land waar de waterdiepte veranderlijk is, bijvoorbeeld in uiterwaarden. De waterdiepte
+                           moet beschouwd worden als indicatief.</p>
+                        </td>
                   </tr>
                </tbody>
             </table>
@@ -1413,6 +1764,13 @@
                      <td>Attribuut van Aangeleverde locatie</td>
                   </tr>
                   <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>De coördinaten die zijn aangeleverd</p>
+                        </td>
+                  </tr>
+                  <tr>
                      <th>Juridische status</th>
                      <td>Authentiek</td>
                   </tr>
@@ -1428,6 +1786,13 @@
                      <th>&nbsp;&nbsp;Naam</th>
                      <td>Coördinatenpaar</td>
                   </tr>
+                  <tr>
+                     <th>Regels</th>
+                     <td>
+                        
+                        <p>De locatie moet liggen in Nederland of zijn Exclusieve Economische Zone</p>
+                        </td>
+                  </tr>
                </tbody>
             </table>
             </section><a class="anchor" id="detail_attribute_Model_Aangeleverdelocatie_referentiestelsel"></a><section id="detail_attribute_Model_Aangeleverdelocatie_referentiestelsel">
@@ -1440,6 +1805,13 @@
                   <tr>
                      <th>Type gegeven</th>
                      <td>Attribuut van Aangeleverde locatie</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>Het referentiestelsel van de aangeleverde coördinaten.</p>
+                        </td>
                   </tr>
                   <tr>
                      <th>Juridische status</th>
@@ -1456,6 +1828,16 @@
                   <tr>
                      <th>&nbsp;&nbsp;Naam</th>
                      <td>Tekst </td>
+                  </tr>
+                  <tr>
+                     <th>Regels</th>
+                     <td>
+                        
+                        <p>De waarde van het attribuut moet gelijk zijn aan ETRS89 of RD wanneer de locatie aan
+                           de landzijde van de UNCLOS-basislijn ligt.
+                           De waarde van het attribuut moet gelijk zijn aan ETRS89 of WGS84 wanneer de locatie
+                           aan de zeezijde van de UNCLOS-basislijn ligt. </p>
+                        </td>
                   </tr>
                </tbody>
             </table>
@@ -1471,6 +1853,13 @@
                      <td>Attribuut van Aangeleverde locatie</td>
                   </tr>
                   <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>De datum waarop de plaats van het booronderzoek op het aardoppervlak is bepaald.</p>
+                        </td>
+                  </tr>
+                  <tr>
                      <th>Juridische status</th>
                      <td>Authentiek</td>
                   </tr>
@@ -1485,6 +1874,14 @@
                   <tr>
                      <th>&nbsp;&nbsp;Naam</th>
                      <td>Datum</td>
+                  </tr>
+                  <tr>
+                     <th>Regels</th>
+                     <td>
+                        
+                        <p>de datum locatiebepaling mag niet liggen na de startdatum rapportage van de entiteit
+                           Rapportagegeschiedenis.</p>
+                        </td>
                   </tr>
                </tbody>
             </table>
@@ -1500,6 +1897,14 @@
                      <td>Attribuut van Aangeleverde locatie</td>
                   </tr>
                   <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>De werkwijze die is gevold voor de bepaling van de plaats van de mijnbouwconstructie
+                           op het aardoppervlak.</p>
+                        </td>
+                  </tr>
+                  <tr>
                      <th>Juridische status</th>
                      <td>Authentiek</td>
                   </tr>
@@ -1515,6 +1920,14 @@
                      <th>&nbsp;&nbsp;Naam</th>
                      <td>Datum</td>
                   </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>
+                        
+                        <p>Het gegeven geeft inzicht in de nauwkeurigheid waarmee de plaats van de mijnbouwconstructie
+                           op het aardoppervlak is bepaald.</p>
+                        </td>
+                  </tr>
                </tbody>
             </table>
             </section><a class="anchor" id="detail_attribute_Model_Aangeleverdelocatie_uitvoerderlocatiebepaling"></a><section id="detail_attribute_Model_Aangeleverdelocatie_uitvoerderlocatiebepaling">
@@ -1527,6 +1940,16 @@
                   <tr>
                      <th>Type gegeven</th>
                      <td>Attribuut van Aangeleverde locatie</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>Het KvK-nummer van de onderneming of de maatschappelijke activiteit van de rechtspersoon
+                           die voor de bronhouder geldt als verantwoordelijk voor de uitvoering van de plaatsbepaling,
+                           of het equivalent daarvan in een handelsregister van een andere lidstaat van de Europese
+                           Unie dan Nederland.</p>
+                        </td>
                   </tr>
                   <tr>
                      <th>Juridische status</th>
@@ -1543,6 +1966,13 @@
                   <tr>
                      <th>&nbsp;&nbsp;Naam</th>
                      <td>Tekst </td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>
+                        
+                        <p>het gegeven wordt alleen uitgeleverd aan de dataleverancier en de bronhouder.</p>
+                        </td>
                   </tr>
                </tbody>
             </table>
@@ -1802,6 +2232,37 @@
                   
                   <p>De richting van het noorden op de kaart. (oriëntatie op de kaart)</p>
                   </td>
+            </tr>
+         </tbody>
+      </table>
+      </section>
+   <section id="detail_class_Model_Categorie">
+      <h2>  Categorie</h2>
+      
+      <table style="width: 100%;" class="list">
+         <colgroup></colgroup>
+         <tbody>
+            <tr>
+               <td></td>
+            </tr>
+         </tbody>
+      </table>
+      
+      <table style="width: 100%;" class="list">
+         <colgroup style="width: 50%;"></colgroup>
+         <colgroup></colgroup>
+         <tbody>
+            <tr>
+               <th>Waarde</th>
+               <th>Omschrijving</th>
+            </tr>
+            <tr>
+               <td>afslag</td>
+               <td></td>
+            </tr>
+            <tr>
+               <td>primair</td>
+               <td></td>
             </tr>
          </tbody>
       </table>
