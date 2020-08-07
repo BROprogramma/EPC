@@ -30,10 +30,9 @@
                <td>
                   
                   <p>De populatie wandonderzoeken in de registratie ondergrond omvat alleen de onderzoeken
-                     die vanuit het vakgebied van de bodemkunde worden uitgevoerd.
-                     Ieder object heeft ter identificatie een eigen BRO-ID. </p>
-                  
-                  <p>De huidige gegevensdefinitie beperkt zich tot de wandbeschrijving en de wandmonsteranalyse.</p>
+                     die vanuit het vakgebied van de bodemkunde worden uitgevoerd. Ieder object heeft ter
+                     identificatie een eigen BRO-ID. 
+                     De huidige gegevensdefinitie beperkt zich tot de wandbeschrijving en de wandmonsteranalyse.</p>
                   </td>
             </tr>
          </tbody>
@@ -43,19 +42,7 @@
       <h2>Het domeinmodel   </h2>
    </section>
    <section id="">
-      <h2>Entiteiten en attributen   </h2><a class="anchor" id="graph_EAID_429F6C3B_30BA_4e29_92C7_C6B9EC05215A"></a><a class="anchor" id="global_class_Model_TestJanneke"></a><section id="global_class_Model_TestJanneke">
-         <h3>   Test Janneke</h3>
-         <table style="width: 100%;">
-            <colgroup style="width: 30%;"></colgroup>
-            <colgroup style="width: 70%;"></colgroup>
-            <tbody>
-               <tr>
-                  <th>Type gegeven</th>
-                  <td>Entiteit</td>
-               </tr>
-            </tbody>
-         </table>
-      </section><a class="anchor" id="graph_EAID_4E52826A_2252_4994_8AD0_986AD45E18C9"></a><a class="anchor" id="global_class_Model_Boortraject"></a><section id="global_class_Model_Boortraject">
+      <h2>Entiteiten en attributen   </h2><a class="anchor" id="graph_EAID_4E52826A_2252_4994_8AD0_986AD45E18C9"></a><a class="anchor" id="global_class_Model_Boortraject"></a><section id="global_class_Model_Boortraject">
          <h3>   Boortraject</h3>
          <table style="width: 100%;">
             <colgroup style="width: 30%;"></colgroup>
@@ -415,6 +402,35 @@
                   </tr>
                </tbody>
             </table>
+            </section><a class="anchor" id="detail_attribute_Model_Boortraject_identificatie"></a><section id="detail_attribute_Model_Boortraject_identificatie">
+            <h4>  identificatie</h4>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Type gegeven</th>
+                     <td>Attribuut van Boortraject</td>
+                  </tr>
+                  <tr>
+                     <th>Juridische status</th>
+                     <td>Authentiek</td>
+                  </tr>
+                  <tr>
+                     <th>Kardinaliteit</th>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <th>Domein</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>&nbsp;&nbsp;Naam</th>
+                     <td>Tekst </td>
+                  </tr>
+               </tbody>
+            </table>
             </section>
       </section><a class="anchor" id="graph_EAID_5A1B04C2_2C34_4376_8F2B_27867C2DD65B"></a><a class="anchor" id="global_class_Model_Gemetenpunten"></a><section id="global_class_Model_Gemetenpunten">
          <h3>   Gemeten punten</h3>
@@ -717,6 +733,35 @@
                         
                         <p>De status van het boorgat.</p>
                         </td>
+                  </tr>
+                  <tr>
+                     <th>Juridische status</th>
+                     <td>Authentiek</td>
+                  </tr>
+                  <tr>
+                     <th>Kardinaliteit</th>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <th>Domein</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>&nbsp;&nbsp;Naam</th>
+                     <td>Tekst </td>
+                  </tr>
+               </tbody>
+            </table>
+            </section><a class="anchor" id="detail_attribute_Model_Boorgat_identificatie"></a><section id="detail_attribute_Model_Boorgat_identificatie">
+            <h4>  identificatie</h4>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Type gegeven</th>
+                     <td>Attribuut van Boorgat</td>
                   </tr>
                   <tr>
                      <th>Juridische status</th>
@@ -2098,15 +2143,28 @@
             </tr>
             <tr>
                <td>Horizontaal</td>
-               <td></td>
+               <td>
+                  
+                  <p>Als de gemeten hellingshoek over een minimale afstand van 100 meter groter is dan
+                     80 graden ten opzichte van de verticaal.</p>
+                  </td>
             </tr>
             <tr>
                <td>Gedevieerd</td>
-               <td></td>
+               <td>
+                  
+                  <p>Als de vorm van het traject niet horizontaal is en het verschil tussen de einddiepte
+                     en de werkelijke verticale diepte groter is dan 0,1 procent of het verschil tussen
+                     de x-offset en y-offset behorende bij de einddiepte groter is dan 100 meter.</p>
+                  </td>
             </tr>
             <tr>
                <td>Verticaal</td>
-               <td></td>
+               <td>
+                  
+                  <p>Als de vorm van het traject niet horizontaal is en niet gedevieerd dan is de vorm
+                     verticaal.</p>
+                  </td>
             </tr>
          </tbody>
       </table>
