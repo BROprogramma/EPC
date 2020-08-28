@@ -15,7 +15,7 @@
    <body>
       <p>Conceptual model/Mijnbouwconstructies (EPC) - conceptueel/20200727</p>
       <p>Imvertor: 1.61.2</p>
-      <p>Model release: Conceptualmodel-MijnbouwconstructiesEPC-conceptueel-0.1versie27juli2020-1-20200727-20200828-161313</p>
+      <p>Model release: Conceptualmodel-MijnbouwconstructiesEPC-conceptueel-0.1versie27juli2020-1-20200727-20200828-172437</p>
       <hr>
       <section>
          <h1>Artikel 1 Definitie van registratieobject, entiteiten en attributen</h1>
@@ -336,7 +336,7 @@
                               <th>Toelichting</th>
                               <td>
                                  
-                                 <p>Het gegeven is door de dataleverancier bij de overdracht meegegeven</p>
+                                 <p>Het gegeven is door de dataleverancier bij de overdracht meegegeven.</p>
                                  </td>
                            </tr>
                         </tbody>
@@ -1251,6 +1251,14 @@
                               <td>Attribuut van Aangeleverde locatie</td>
                            </tr>
                            <tr>
+                              <th>Definitie</th>
+                              <td>
+                                 
+                                 <p>De aanduiding die aangeeft of het vergunninggebied aan de landzijde van de mijnbouwgrens
+                                    ligt.</p>
+                                 </td>
+                           </tr>
+                           <tr>
                               <th>Juridische status</th>
                               <td>Authentiek</td>
                            </tr>
@@ -1282,6 +1290,14 @@
                            <tr>
                               <th>Type gegeven</th>
                               <td>Attribuut van Aangeleverde locatie</td>
+                           </tr>
+                           <tr>
+                              <th>Definitie</th>
+                              <td>
+                                 
+                                 <p>De aanduiding die aangeeft of een aangeleverd coördinaat voor de locatiebepaling al
+                                    in een eerder stadium is omgerekend naar een voor de BRO gangbaar referentiestelsel.</p>
+                                 </td>
                            </tr>
                            <tr>
                               <th>Juridische status</th>
@@ -1317,6 +1333,14 @@
                               <td>Attribuut van Aangeleverde locatie</td>
                            </tr>
                            <tr>
+                              <th>Definitie</th>
+                              <td>
+                                 
+                                 <p>Van en naar welk referentiestelsel de aangeleverde locatie al in een eerder stadium
+                                    is omgerekend om de locatie aan te kunnen leveren in een voor de BRO gangbaar referentiestelsel.</p>
+                                 </td>
+                           </tr>
+                           <tr>
                               <th>Juridische status</th>
                               <td>Authentiek</td>
                            </tr>
@@ -1331,6 +1355,13 @@
                            <tr>
                               <th>&nbsp;&nbsp;Naam</th>
                               <td>Tekst </td>
+                           </tr>
+                           <tr>
+                              <th>Regels</th>
+                              <td>
+                                 
+                                 <p>De coördinaattransformatie is alleen ingevuld wanneer attribuut <em>omgerekend</em> is <em>Ja</em>.</p>
+                                 </td>
                            </tr>
                         </tbody>
                      </table>
@@ -2436,7 +2467,7 @@
                            </tr>
                            <tr>
                               <th>&nbsp;&nbsp;Naam</th>
-                              <td>Tekst </td>
+                              <td>Coördinatenpaar</td>
                            </tr>
                         </tbody>
                      </table>
@@ -2472,7 +2503,11 @@
                            </tr>
                            <tr>
                               <th>&nbsp;&nbsp;Naam</th>
-                              <td>Tekst </td>
+                              <td><a class="link" href="#detail_class_Model_Referentiestelsel">Referentiestelsel</a></td>
+                           </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Type</th>
+                              <td>Waardelijst uitbreidbaar</td>
                            </tr>
                         </tbody>
                      </table>
