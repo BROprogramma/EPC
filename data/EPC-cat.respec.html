@@ -39,7 +39,7 @@
       </section>
    <section id="">
       <h2>Het domeinmodel   </h2>
-      <div class="imageinfo overview"><img src="data/Images/EAID_017CB205_53B6_4659_8664_F773CFA9FA2C.png" usemap="#imagemap-EAID_017CB205_53B6_4659_8664_F773CFA9FA2C" alt="Diagram "><map name="imagemap-EAID_017CB205_53B6_4659_8664_F773CFA9FA2C"><area shape="rect" alt="Tussentijdse gebeurtenis" coords="52,385,263,450" href="#graph_EAID_9C6EA470_E1F4_479d_B21A_A6E8EA9D3F88"><area shape="rect" alt="Mijnbouwwerkgeschiedenis" coords="35,276,290,338" href="#graph_EAID_C36A9725_3F81_4f6c_BDE2_5CED730905A2"><area shape="rect" alt="Boortraject locatie" coords="681,512,876,588" href="#graph_EAID_410F626E_1E87_47b5_AB5A_014C2D41B9B7"><area shape="rect" alt="Gestandaardiseerde locatie" coords="660,392,898,473" href="#graph_EAID_95E39295_3080_4135_862A_30756039B864"><area shape="rect" alt="Boortraject" coords="352,490,553,606" href="#graph_EAID_4E52826A_2252_4994_8AD0_986AD45E18C9"><area shape="rect" alt="Mijnbouwwerk" coords="352,215,546,370" href="#graph_EAID_69DE8D60_7E06_4b57_94CD_8338348EDAE5"><area shape="rect" alt="Registratiegeschiedenis" coords="40,50,276,239" href="#graph_EAID_8550146B_496A_40ca_BE86_AFD377E5A6D8"><area shape="rect" alt="Aangeleverde verticale positie" coords="625,228,947,357" href="#graph_EAID_A249D799_B098_49cd_98AA_DCAE0EB07DE7"><area shape="rect" alt="Aangeleverde locatie" coords="643,54,919,195" href="#graph_EAID_EDA11EEA_8FED_44be_AC04_18B58CB46F11"></map><p><b>Mijnbouwwerken (EPC) -  overzicht</b></p>
+      <div class="imageinfo overview"><img src="data/Images/EAID_017CB205_53B6_4659_8664_F773CFA9FA2C.png" usemap="#imagemap-EAID_017CB205_53B6_4659_8664_F773CFA9FA2C" alt="Diagram "><map name="imagemap-EAID_017CB205_53B6_4659_8664_F773CFA9FA2C"><area shape="rect" alt="Tussentijdse gebeurtenis" coords="52,385,263,450" href="#graph_EAID_9C6EA470_E1F4_479d_B21A_A6E8EA9D3F88"><area shape="rect" alt="Mijnbouwwerkgeschiedenis" coords="35,276,290,338" href="#graph_EAID_C36A9725_3F81_4f6c_BDE2_5CED730905A2"><area shape="rect" alt="Boortraject locatie" coords="681,510,876,586" href="#graph_EAID_410F626E_1E87_47b5_AB5A_014C2D41B9B7"><area shape="rect" alt="Gestandaardiseerde locatie" coords="660,392,898,473" href="#graph_EAID_95E39295_3080_4135_862A_30756039B864"><area shape="rect" alt="Boortraject" coords="348,470,549,586" href="#graph_EAID_4E52826A_2252_4994_8AD0_986AD45E18C9"><area shape="rect" alt="Mijnbouwwerk" coords="352,215,546,370" href="#graph_EAID_69DE8D60_7E06_4b57_94CD_8338348EDAE5"><area shape="rect" alt="Registratiegeschiedenis" coords="40,50,276,239" href="#graph_EAID_8550146B_496A_40ca_BE86_AFD377E5A6D8"><area shape="rect" alt="Aangeleverde verticale positie" coords="625,228,947,357" href="#graph_EAID_A249D799_B098_49cd_98AA_DCAE0EB07DE7"><area shape="rect" alt="Aangeleverde locatie" coords="643,54,919,195" href="#graph_EAID_EDA11EEA_8FED_44be_AC04_18B58CB46F11"></map><p><b>Mijnbouwwerken (EPC) -  overzicht</b></p>
       </div>
    </section>
    <section id="">
@@ -2267,9 +2267,6 @@
                         
                         <p>De identificatie van een boortraject binnen de scope van een boorgat in de registratie
                            ondergrond.</p>
-                        
-                        <p>
-                           <strong>JV:</strong> open punt wat technische vereisten zijn.</p>
                         </td>
                   </tr>
                   <tr>
@@ -2287,6 +2284,13 @@
                   <tr>
                      <th>&nbsp;&nbsp;Naam</th>
                      <td>Tekst </td>
+                  </tr>
+                  <tr>
+                     <th>Regels</th>
+                     <td>
+                        
+                        <p>De boortrajectcode is uniek binnen de set met boortrajecten waaruit een boorgat bestaat.</p>
+                        </td>
                   </tr>
                </tbody>
             </table>
@@ -2699,8 +2703,11 @@
                      <th>Toelichting</th>
                      <td>
                         
-                        <p>Binnen het vakgebied mijnbouw is dit gegeven ook bekend onder de naam True Vertical
-                           Depth (TVD).</p>
+                        <p>Binnen het vakgebied mijnbouw is dit gegeven ook bekend onder de naam 'True Vertical
+                           Depth' (TVD). Elders in de basisregistratie ondergrond is dit gegeven bekend onder
+                           de naam 'einddiepte'.
+                           De werkelijke verticale diepte wordt door de bronhouder berekend op basis van door
+                           de operator aangeleverde gegevens.</p>
                         </td>
                   </tr>
                </tbody>
@@ -2747,7 +2754,9 @@
                         <p>Het beginpunt van de geometrie van een boortraject dient te liggen op de geometrie
                            van een ander boortraject van hetzelfde mijnbouwwerk.
                            De geometrie van een boortraject mag niet kruisen met zichzelf of met de geometrie
-                           van een ander boortraject van hetzelfde mijnbouwwerk.</p>
+                           van een ander boortraject van hetzelfde mijnbouwwerk.
+                           De geometrie wordt door de bronhouder samengesteld op basis van door de operator aangeleverde
+                           gegevens.</p>
                         </td>
                   </tr>
                </tbody>
