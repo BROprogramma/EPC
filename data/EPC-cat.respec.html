@@ -20,7 +20,7 @@
                <td>
                   
                   <p>Het geheel van gegevens dat betrekking heeft op een mijnbouwwerk in de ondergrond
-                     die op een bepaalde locatie in Nederland of zijn Exclusieve Economische Zone is ingericht
+                     dat op een bepaalde locatie in Nederland of zijn Exclusieve Economische Zone is ingericht
                      voor het winnen of benutten van in de ondergrond aanwezige natuurlijke hulpbronnen
                      en/of voor het opslaan van stoffen in de ondergrond. </p>
                   </td>
@@ -61,6 +61,10 @@
                      
                      <p>De gegevens die een mijnbouwwerk identificeren en inzicht geven in de geschiedenis
                         van het object voorafgaand aan opname in de registratie ondergrond.</p>
+                     
+                     <p>[OPEN PUNT: De gebruikte term 'mijnbouwwerk' is nog niet definitief; mogelijk wordt
+                        dit 'mijnbouwconstructie'. In dat geval dient de term in het hele domeinmodel aangepast
+                        te worden.]</p>
                      </td>
                </tr>
             </tbody>
@@ -381,7 +385,8 @@
                      <th>Definitie</th>
                      <td>
                         
-                        <p>(Open punt)</p>
+                        <p>[OPEN PUNT: naam van attribuut, definitie (KvK-nummer?), eventuele regels, eventuele
+                           toelichting]</p>
                         </td>
                   </tr>
                   <tr>
@@ -1376,6 +1381,9 @@
                         
                         <p>De waarde van het attribuut moet gelijk zijn aan <em>ETRS89</em> of <em>RD</em> wanneer de locatie aan de landzijde van de mijnbouwgrens ligt.
                            De waarde van het attribuut moet gelijk zijn aan <em>ETRS89</em> of <em>WGS84</em> wanneer de locatie aan de zeezijde van de mijnbouwgrens ligt.</p>
+                        
+                        <p>[OPEN PUNT: De term 'mijnbouwgrens' is nog niet zeker. Nagegaan wordt of deze overeenkomt
+                           met de zgn. driemijlsgrens.]</p>
                         </td>
                   </tr>
                </tbody>
@@ -1534,8 +1542,8 @@
                      <th>Definitie</th>
                      <td>
                         
-                        <p>De aanduiding die aangeeft of een boorgat aan de landzijde van de in de mijnbouwwet
-                           vastgestelde grens ligt.</p>
+                        <p>De aanduiding die aangeeft of een boorgat aan de landzijde van de grens ligt die in
+                           een bijlage van de Mijnbouwwet is vastgelegd.</p>
                         </td>
                   </tr>
                   <tr>
@@ -1718,10 +1726,10 @@
                      <th>Regels</th>
                      <td>
                         
-                        <p>De waarde van het attribuut moet gelijk zijn aan <em>waterbodem</em> wanneer het attribuut <em>onshore</em> van de entiteit <em>Mijnbouwwerk</em> gelijk is aan <em>Ja</em>.
-                           <strong>=&gt; JV: deze regel is nog een punt van discussie; wellicht Rotary Table, enz. toevoegen
-                              aan waardenlijst LokaalVerticaalReferentiepunt.</strong>
-                           </p>
+                        <p>De waarde van het attribuut moet gelijk zijn aan <em>waterbodem</em> wanneer het attribuut <em>onshore</em> van de entiteit <em>Mijnbouwwerk</em> gelijk is aan <em>Ja</em>.</p>
+                        
+                        <p>[OPEN PUNT: aan de waardenlijst worden naast maaiveld en waterbodem wellicht andere
+                           waarden toegevoegd, zoals Rotary Table.]</p>
                         </td>
                   </tr>
                   <tr>
@@ -2242,7 +2250,7 @@
                   <th>Toelichting</th>
                   <td>
                      
-                     <p>Een boortraject betreft de eerstgeboorde holte in een boorgat (het primaire traject,
+                     <p>Een boortraject betreft of de eerst geboorde holte in een boorgat (het primaire traject,
                         ook wel het moederboorgat genoemd) of een later geboorde zijtak (van het primaire
                         traject of van een andere zijtak).
                         Boortrajecten overlappen elkaar niet: ieder boortraject is een uniek segment binnen
@@ -2290,6 +2298,17 @@
                      <td>
                         
                         <p>De boortrajectcode is uniek binnen de set met boortrajecten waaruit een boorgat bestaat.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>
+                        
+                        <p>De boortrajectcode komt overeen met de code waaronder de bronhouder gegevens over
+                           het boortraject publiek beschikbaar stelt.</p>
+                        
+                        <p>[OPEN PUNT: welke code hier gebruikt wordt, is nog onderwerp van bespreking met de
+                           bronhouder.]</p>
                         </td>
                   </tr>
                </tbody>
@@ -2572,6 +2591,11 @@
                   <td>
                      
                      <p>De gegevensgroep <em>Boortraject locatie</em> moet aanwezig zijn bij de entiteit <em>Boortraject</em> wanneer de waarde van het attribuut <em>datum openbaarmaking</em> van dat <em>Boortraject</em> op of na de huidige datum ligt.</p>
+                     
+                     <p>[OPEN PUNT: Deze regel is gebaseerd op het uitgangspunt dat data met een tijdelijke
+                        confidentieel karakter niet in de BRO wordt opgenomen. BRO-breed wordt echter nog
+                        nagedacht over het al dan niet opnemen van confidentiële gegevens in de BRO en het
+                        in relatie daarmee rekening houden met confidentialiteit bij de uitgifte van data.]</p>
                      </td>
                </tr>
                <tr>
@@ -2707,7 +2731,7 @@
                            Depth' (TVD). Elders in de basisregistratie ondergrond is dit gegeven bekend onder
                            de naam 'einddiepte'.
                            De werkelijke verticale diepte wordt door de bronhouder berekend op basis van door
-                           de operator aangeleverde gegevens.</p>
+                           de uitvoerder van de locatiebepaling aangeleverde gegevens.</p>
                         </td>
                   </tr>
                </tbody>
@@ -2754,9 +2778,15 @@
                         <p>Het beginpunt van de geometrie van een boortraject dient te liggen op de geometrie
                            van een ander boortraject van hetzelfde mijnbouwwerk.
                            De geometrie van een boortraject mag niet kruisen met zichzelf of met de geometrie
-                           van een ander boortraject van hetzelfde mijnbouwwerk.
-                           De geometrie wordt door de bronhouder samengesteld op basis van door de operator aangeleverde
-                           gegevens.</p>
+                           van een ander boortraject van hetzelfde mijnbouwwerk.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>
+                        
+                        <p>De geometrie wordt door de bronhouder bepaald op basis van door de uitvoerder van
+                           de locatiebepaling aangeleverde gegevens.</p>
                         </td>
                   </tr>
                </tbody>
@@ -3045,6 +3075,9 @@
                <td>
                   
                   <p>De lijst met de referentiepunten voor de verticale positie.</p>
+                  
+                  <p>[OPEN PUNT: De waardenlijst wordt wellicht uitgebreid met bijv. waarden als 'Rotary
+                     Table'.]</p>
                   </td>
             </tr>
          </tbody>
@@ -3095,6 +3128,8 @@
                <td>
                   
                   <p>De lijst met de methoden voor het bepalen van de locatie van het mijnbouwwerk.</p>
+                  
+                  <p>[OPEN PUNT: Deze waardenlijst dient nog definitief vastgesteld te worden.]</p>
                   </td>
             </tr>
          </tbody>
@@ -3565,7 +3600,7 @@
                <td>✔</td>
                <td>
                   
-                  <p>Het opsporen van delfstoffen op een diepte van meer dan 100 mter beneden het aardoppervlak.</p>
+                  <p>Het opsporen van delfstoffen op een diepte van meer dan 100 meter beneden het aardoppervlak.</p>
                   </td>
             </tr>
             <tr>
@@ -3623,7 +3658,7 @@
                <td>✔</td>
                <td>
                   
-                  <p>Rijks Driehoekmeting - amersfoort RD New (EPSG 28992).</p>
+                  <p>Rijks Driehoekmeting - Amersfoort RD New (EPSG 28992).</p>
                   </td>
             </tr>
             <tr>
@@ -3762,7 +3797,7 @@
                <td>✔</td>
                <td>
                   
-                  <p>(Open punt - bespreken met IdV)</p>
+                  <p>[OPEN PUNT: Definitie nog te bepalen.]</p>
                   </td>
             </tr>
          </tbody>
