@@ -15,7 +15,7 @@
    <body>
       <p>Conceptual model/Mijnbouwconstructies (EPC) - conceptueel/20200727</p>
       <p>Imvertor: 1.61.3</p>
-      <p>Model release: Conceptualmodel-MijnbouwconstructiesEPC-conceptueel-0.1versie27juli2020-1-20200727-20201105-084850</p>
+      <p>Model release: Conceptualmodel-MijnbouwconstructiesEPC-conceptueel-0.1versie27juli2020-1-20200727-20201105-090919</p>
       <hr>
       <section>
          <h1>Artikel 1 Definitie van registratieobject, entiteiten en attributen</h1>
@@ -437,9 +437,9 @@
                               <th>Reden geen waarde</th>
                               <td>
                                  
-                                 <p>Het KVKnummer van de eigenaar is op dit moment niet aanwezig in DINO. Na de migratie
-                                    van DINO naar GDNR is het de bedoeling de KVKnummers op te nemen. tot die tijd mag
-                                    het attribuut geen waarde hebben.</p>
+                                 <p>Het KVK-nummer van de eigenaar is niet opgeslagen bij de dataleverancier.<br clear="none">
+                                    [OPEN PUNT: de vraag is of we de eigenaar op deze manier gaan opnemen, of dat het
+                                    juridisch anders kan worden opgelost.] </p>
                                  </td>
                            </tr>
                            <tr>
@@ -1529,7 +1529,7 @@
                               <td>
                                  
                                  <p>Het gegeven geeft inzicht in de nauwkeurigheid waarmee de plaats van het boorgat op
-                                    het aardoppervlak is bepaald.
+                                    het aardoppervlak is bepaald.<br clear="none">
                                     In het geval de coördinaten van de locatie vòòr aanlevering aan de BRO zijn getransformeerd
                                     geldt dat de methode van de locatiebepaling betrekking heeft op de originele nog niet
                                     omgekende coördinaten.</p>
@@ -1736,20 +1736,17 @@
                               <th>Regels</th>
                               <td>
                                  
-                                 <p>De waarde van het attribuut moet gelijk zijn aan <em>waterbodem</em> wanneer het attribuut <em>onshore</em> van de entiteit <em>Mijnbouwwerk</em> gelijk is aan <em>Ja</em>.</p>
-                                 
-                                 <p>[OPEN PUNT: aan de waardenlijst worden naast maaiveld en waterbodem wellicht andere
-                                    waarden toegevoegd, zoals Rotary Table.]</p>
+                                 <p>De waarde van het attribuut moet gelijk zijn aan <em>NAP</em>.</p>
                                  </td>
                            </tr>
                            <tr>
                               <th>Toelichting</th>
                               <td>
                                  
-                                 <p>Het domein bevat begrippen die naar een oppervlak verwijzen. Het lokaal verticaal
-                                    referentiepunt geldt als het punt waar het onderzoek aan de ondergrond begonnen is.
-                                    De laag slib die plaatselijk op de waterbodem ligt, wordt niet tot de ondergrond gerekend
-                                    en ligt boven het lokaal verticaal referentiepunt.</p>
+                                 <p>Het lokaal verticaal referentiepunt geldt als het punt waar het traject in de ondergrond
+                                    begonnen is. 
+                                    [OPEN PUNT: de vraag is of NAP ook voor boringen op zee toepasbaar is of dat dit MSL/LAT
+                                    wordt.]</p>
                                  </td>
                            </tr>
                         </tbody>
@@ -1798,7 +1795,7 @@
                               <th>Toelichting</th>
                               <td>
                                  
-                                 <p>De waarde kan positief of negatief zijn. Als de waarde positief is, ligt het lokaal
+                                 <p>De waarde kan positief, negatief of 0 zijn. Als de waarde positief is, ligt het lokaal
                                     verticaal referentiepunt boven het verticaal referentievlak. Met behulp van de verschuiving
                                     kan een diepte omgerekend worden naar een positie ten opzichte van het verticaal referentievlak.</p>
                                  </td>
@@ -2109,6 +2106,10 @@
                               <td>Meetwaarde 
                                  </td>
                            </tr>
+                           <tr>
+                              <th>&nbsp;&nbsp;Eenheid</th>
+                              <td>m (meter)</td>
+                           </tr>
                         </tbody>
                      </table>
                      </section><a class="anchor" id="detail_attribute_Model_Aangeleverdeverticalepositie_ijkpuntsoort"></a><section id="detail_attribute_Model_Aangeleverdeverticalepositie_ijkpuntsoort">
@@ -2394,9 +2395,6 @@
                                  
                                  <p>De boortrajectcode komt overeen met de code waaronder de bronhouder gegevens over
                                     het boortraject publiek beschikbaar stelt.</p>
-                                 
-                                 <p>[OPEN PUNT: welke code hier gebruikt wordt, is nog onderwerp van bespreking met de
-                                    bronhouder.]</p>
                                  </td>
                            </tr>
                         </tbody>
@@ -2535,7 +2533,7 @@
                               <th>Regels</th>
                               <td>
                                  
-                                 <p>De <em>startdatum boring</em> mag niet liggen na de <em>einddatum boring</em>.
+                                 <p>De <em>startdatum boring</em> mag niet liggen na de <em>einddatum boring</em>.<br clear="none">
                                     De <em>startdatum boring</em> van een <em>Boortraject</em> waarbij de waarde van het attribuut <em>categorie</em> gelijk is aan <em>zijtak</em> mag niet liggen voor de <em>einddatum boring</em> van het <em>Boortraject</em> bij hetzelfde <em>Boorgat</em> waarbij de waarde van het attribuut <em>categorie</em> gelijk is aan <em>primair</em>.</p>
                                  </td>
                            </tr>
@@ -2639,7 +2637,7 @@
                               <th>Regels</th>
                               <td>
                                  
-                                 <p>De <em>datum openbaarmaking</em> van een <em>Boortraject</em> mag niet aanwezig zijn wanneer de <em>einddatum boring</em> niet aanwezig is.
+                                 <p>De <em>datum openbaarmaking</em> van een <em>Boortraject</em> mag niet aanwezig zijn wanneer de <em>einddatum boring</em> niet aanwezig is.<br clear="none">
                                     De <em>datum openbaarmaking</em> van een <em>Boortraject</em> is gelijk aan de <em>einddatum boring</em> + 5 jaar wanneer de <em>einddatum boring</em> aanwezig is.</p>
                                  </td>
                            </tr>
@@ -2864,7 +2862,7 @@
                               <td>
                                  
                                  <p>Het beginpunt van de geometrie van een boortraject dient te liggen op de geometrie
-                                    van een ander boortraject van hetzelfde mijnbouwwerk.
+                                    van een ander boortraject van hetzelfde mijnbouwwerk.<br clear="none">
                                     De geometrie van een boortraject mag niet kruisen met zichzelf of met de geometrie
                                     van een ander boortraject van hetzelfde mijnbouwwerk.</p>
                                  </td>
@@ -3165,9 +3163,6 @@
                      <td>
                         
                         <p>De lijst met de referentiepunten voor de verticale positie.</p>
-                        
-                        <p>[OPEN PUNT: De waardenlijst wordt wellicht uitgebreid met bijv. waarden als 'Rotary
-                           Table'.]</p>
                         </td>
                   </tr>
                </tbody>
@@ -4176,7 +4171,7 @@
                         </td>
                   </tr>
                   <tr>
-                     <td>cellarFloor</td>
+                     <td>keldervloer</td>
                      <td>✔</td>
                      <td>✔</td>
                      <td>
