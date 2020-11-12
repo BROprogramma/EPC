@@ -15,7 +15,7 @@
    <body>
       <p>Conceptual model/Mijnbouwconstructies (EPC) - conceptueel/20200727</p>
       <p>Imvertor: 1.62.0</p>
-      <p>Model release: Conceptualmodel-MijnbouwconstructiesEPC-conceptueel-0.1versie27juli2020-1-20200727-20201105-144322</p>
+      <p>Model release: Conceptualmodel-MijnbouwconstructiesEPC-conceptueel-0.1versie27juli2020-1-20200727-20201112-184331</p>
       <hr>
       <section>
          <h1>Artikel 1 Definitie van registratieobject, entiteiten en attributen</h1>
@@ -433,9 +433,7 @@
                               <th>Reden geen waarde</th>
                               <td>
                                  
-                                 <p>Het KVK-nummer van de eigenaar is niet opgeslagen bij de dataleverancier.<br clear="none">
-                                    [OPEN PUNT: de vraag is of we de eigenaar op deze manier gaan opnemen, of dat het
-                                    juridisch anders kan worden opgelost.] </p>
+                                 <p>Het KVK-nummer van de eigenaar is niet opgeslagen bij de dataleverancier.</p>
                                  </td>
                            </tr>
                            <tr>
@@ -443,13 +441,13 @@
                               <td>
                                  
                                  <p>In het geval de vergunninghouder een consortium is, dan is de penvoerder van het consortium
-                                    de eigenaar van het boorgat.<br clear="none">
-                                    In het geval het boorgat een alleenstaand geabandoneerd boorgat is, dan is de organisatie
-                                    die eigenaar was ten tijde van de abandonneering de (laatste) eigenaar van het boorgat.<br clear="none">
-                                    In het geval het boorgat behoort tot een productieinstallatie dan is de eigenaar aan
-                                    verandering onderhevig totdat de gehele productieinstallatie is geabandonneerd, dan
-                                    is de organisatie die eigenaar was ten tijde van de abandonneering van de productieinstallatie
-                                    de (laatste) eigenaar van het boorgat.<br clear="none">
+                                    de eigenaar van het boorgat.
+                                    In het geval het boorgat een alleenstaand geabandonneerd boorgat is, dan is de organisatie
+                                    die eigenaar was ten tijde van de abandonnering de (laatste) eigenaar van het boorgat.
+                                    In het geval het boorgat behoort tot een productie-installatie dan is de eigenaar
+                                    aan verandering onderhevig totdat de gehele productie-installatie is geabandonneerd,
+                                    dan is de organisatie die eigenaar was ten tijde van de abandonnering van de productie-installatie
+                                    de (laatste) eigenaar van het boorgat.
                                     Een boorgat zonder eigenaar kan alleen bestaan wanneer de laatste eigenaar failliet
                                     is gegaan en niet overgenomen is door een ander bedrijf.</p>
                                  </td>
@@ -1629,8 +1627,8 @@
                            </tr>
                         </tbody>
                      </table>
-                     </section><a class="anchor" id="detail_attribute_Model_Aangeleverdelocatie_omgerekend"></a><section id="detail_attribute_Model_Aangeleverdelocatie_omgerekend">
-                     <h4>  omgerekend</h4>
+                     </section><a class="anchor" id="detail_attribute_Model_Aangeleverdelocatie_omrekenmethode"></a><section id="detail_attribute_Model_Aangeleverdelocatie_omrekenmethode">
+                     <h4>  omrekenmethode</h4>
                      
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -1644,8 +1642,9 @@
                               <th>Definitie</th>
                               <td>
                                  
-                                 <p>De aanduiding die aangeeft of een aangeleverde locatie van een boorgat al in een eerder
-                                    stadium is omgerekend naar een voor de basisregistratie ondergrond gangbaar referentiestelsel.</p>
+                                 <p>De aanduiding die aangeeft of en zo ja op welke wijze een aangeleverde locatie van
+                                    een boorgat al in een eerder stadium is omgerekend naar een voor de basisregistratie
+                                    ondergrond gangbaar referentiestelsel.</p>
                                  </td>
                            </tr>
                            <tr>
@@ -1662,7 +1661,7 @@
                            </tr>
                            <tr>
                               <th>&nbsp;&nbsp;Naam</th>
-                              <td><a class="link" href="#detail_class_Model_Omrekening">Omrekening</a></td>
+                              <td><a class="link" href="#detail_class_Model_OmrekenMethode">OmrekenMethode</a></td>
                            </tr>
                            <tr>
                               <th>&nbsp;&nbsp;Type</th>
@@ -2862,7 +2861,7 @@
                            </tr>
                            <tr>
                               <th>&nbsp;&nbsp;Naam</th>
-                              <td>Tekst </td>
+                              <td>GM_Curve</td>
                            </tr>
                            <tr>
                               <th>Regels</th>
@@ -3107,7 +3106,7 @@
                         </td>
                   </tr>
                   <tr>
-                     <td>kellyBushing</td>
+                     <td>KellyBushing</td>
                      <td>✔</td>
                      <td>✔</td>
                      <td>
@@ -3308,8 +3307,6 @@
                      <td>
                         
                         <p>De lijst met de methoden voor het bepalen van de locatie van de mijnbouwconstructie.</p>
-                        
-                        <p>[OPEN PUNT: Deze waardenlijst dient nog definitief vastgesteld te worden.]</p>
                         </td>
                   </tr>
                </tbody>
@@ -3805,8 +3802,8 @@
                </tbody>
             </table>
             </section>
-         <section id="detail_class_Model_Omrekening">
-            <h3>  Omrekening</h3>
+         <section id="detail_class_Model_OmrekenMethode">
+            <h3>  OmrekenMethode</h3>
             
             <table style="width: 100%;" class="list">
                <colgroup></colgroup>
@@ -3814,7 +3811,9 @@
                   <tr>
                      <td>
                         
-                        <p>[OPEN PUNT: definitie]</p>
+                        <p>De lijst met methodes volgens welke een aangeleverde locatie van een boorgat al in
+                           een eerder stadium is omgerekend naar een voor de basisregistratie ondergrond gangbaar
+                           referentiestelsel.</p>
                         </td>
                   </tr>
                </tbody>
@@ -3833,7 +3832,7 @@
                      <th>Omschrijving</th>
                   </tr>
                   <tr>
-                     <td>JaED50-WGS84</td>
+                     <td>ED50-WGS84</td>
                      <td>✔</td>
                      <td>✔</td>
                      <td>
@@ -3843,7 +3842,7 @@
                         </td>
                   </tr>
                   <tr>
-                     <td>JaED50-RD</td>
+                     <td>ED50-RD</td>
                      <td>✔</td>
                      <td>✔</td>
                      <td>
@@ -3853,7 +3852,7 @@
                         </td>
                   </tr>
                   <tr>
-                     <td>JaRD-WGS84</td>
+                     <td>RD-WGS84</td>
                      <td>✔</td>
                      <td>✔</td>
                      <td>
@@ -3863,7 +3862,7 @@
                         </td>
                   </tr>
                   <tr>
-                     <td>JaWGS84-RD</td>
+                     <td>WGS84-RD</td>
                      <td>✔</td>
                      <td>✔</td>
                      <td>
@@ -3873,16 +3872,16 @@
                         </td>
                   </tr>
                   <tr>
-                     <td>Nee</td>
+                     <td>nietOmgerekend</td>
                      <td>✔</td>
                      <td>✔</td>
                      <td>
                         
-                        <p>De coördinaten van de locatie zijn vòòr aanlevering aan de BRO niet omgerekend. </p>
+                        <p>De coördinaten van de locatie zijn vóór aanlevering aan de BRO niet omgerekend.</p>
                         </td>
                   </tr>
                   <tr>
-                     <td>JaED50-ETRS89</td>
+                     <td>ED50-ETRS89</td>
                      <td>✔</td>
                      <td>✔</td>
                      <td>
@@ -3892,7 +3891,7 @@
                         </td>
                   </tr>
                   <tr>
-                     <td>JaWGS84-ETRS89</td>
+                     <td>WGS84-ETRS89</td>
                      <td>✔</td>
                      <td>✔</td>
                      <td>
@@ -3902,7 +3901,7 @@
                         </td>
                   </tr>
                   <tr>
-                     <td>JaRD-ETRS89</td>
+                     <td>RD-ETRS89</td>
                      <td>✔</td>
                      <td>✔</td>
                      <td>
