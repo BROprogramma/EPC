@@ -462,8 +462,10 @@
                      <th>Definitie</th>
                      <td>
                         
-                        <p>Een ondergrondse holte die bestaat uit een stelsel van een of meerdere boortrajecten.
-                           </p>
+                        <p>Het KvK-nummer van de onderneming of de maatschappelijke activiteit van de rechtspersoon
+                           die eigenaar is van het object dat aan de basisregistratie ondergrond is aangeleverd
+                           door de dataleverancier, of het equivalent daarvan in een handelsregister van een
+                           andere lidstaat van de Europese Unie dan Nederland.</p>
                         </td>
                   </tr>
                   <tr>
@@ -486,12 +488,20 @@
                      <th>Toelichting</th>
                      <td>
                         
-                        <p>Een boorgat valt onder de Mijnbouwwet wanneer bij een boring naar delfstoffen deze
-                           op een diepte van meer dan 100 meter beneden de oppervlakte van de aardbodem aanwezig
-                           is, wanneer bij een boring naar aardwarmte deze op een diepte van meer dan 500 meter
-                           beneden de oppervlakte van de aardbodem aanwezig is of wanneer bij het opslaan van
-                           stoffen in de ondergrond dit plaatsvindt op een diepte van meer dan 100 meter beneden
-                           de oppervlakte van de aardbodem.</p>
+                        <p>De eigenaar van het boorgat is gelijk aan de vergunninghouder van de vergunning waarin
+                           het boorgat gelegen is.<br clear="none">
+                           In het geval de vergunninghouder een consortium is, dan is de penvoerder van  het
+                           consortium de eigenaar van het boorgat.<br clear="none">
+                           In het geval het boorgat een alleenstaand geabandonneerd boorgat is, dan is de organisatie
+                           die eigenaar was ten tijde van de abandonneering de (laatste) eigenaar van het boorgat.
+                           In het geval het boorgat behoort tot een productieinstallatie dan in de eigenaar aan
+                           verandering onderhevig totdat de gehele productieinstallatie is geabandonneerd, dan
+                           is de organisatie die eigenaar was ten tijde van de abandonneering van de productieinstallatie
+                           de (laatste) eigenaar van het boorgat.<br clear="none">
+                           Een boorgat zonder eigenaar kan alleen bestaan wanneer de laatste eigebnaar failliet
+                           is gegaan en niet overgenomen is door een ander bedrijf. 
+                           Het gegeven is door de dataleverancier bij de overdracht meegegeven in het geval de
+                           dataleverancier niet de bronhouder is. </p>
                         </td>
                   </tr>
                </tbody>
@@ -1573,6 +1583,15 @@
                         <p>Het gegeven wordt alleen uitgeleverd aan de dataleverancier en de bronhouder.</p>
                         </td>
                   </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>
+                        
+                        <p>In het geval de coördinaten van de locatie vóór aanlevering aan de BRO zijn getransformeerd
+                           geldt dat de uitvoerder van de locatiebepaling betrekking heeft op de originele nog
+                           niet omgekende coördinaten.</p>
+                        </td>
+                  </tr>
                </tbody>
             </table>
             </section><a class="anchor" id="detail_attribute_Model_Aangeleverdelocatie_referentiestelseltransformatie"></a><section id="detail_attribute_Model_Aangeleverdelocatie_referentiestelseltransformatie">
@@ -1614,6 +1633,15 @@
                   <tr>
                      <th>&nbsp;&nbsp;Type</th>
                      <td>Waardelijst uitbreidbaar</td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>
+                        
+                        <p>De referentiestelsels waarin de locatie gegevens aangeleverd mogen worden zijn RD
+                           en ETRS89 voor een locatie aan de landzijde van de mijnbouwgrens en ETRS89 en WGS84
+                           voor een locatie aan de zeezijde van de mijnbouwgrens.</p>
+                        </td>
                   </tr>
                </tbody>
             </table>
@@ -1691,7 +1719,8 @@
                         <p>De waarde van het attribuut moet gelijk zijn aan NAP wanneer de aangeleverde locatie
                            aan de landzijde van de mijnbouwgrens ligt.<br clear="none">
                            De waarde van het attribuut moet gelijk zijn aan LAT of aan MSL wanneer de aangeleverde
-                           locatie aan de zeezijde van de mijnbouwgrens ligt.</p>
+                           locatie aan de zeezijde van de mijnbouwgrens ligt.<br clear="none">
+                           De waarde van het attribuut moet gelijk zijn aan de waarde van het attribuut <em>verticaal referentievlak</em>.</p>
                         </td>
                   </tr>
                </tbody>
@@ -1791,8 +1820,8 @@
                      <th>Regels</th>
                      <td>
                         
-                        <p>De waarde van het attribuut moet gelijk zijn aan <em>NAP</em> wanneer de aangeleverde locatie aan de landzijde van de mijnbouwgrens ligt.
-                           De waarde van het attribuut moet gelijk zijn aan <em>LAT</em> of aan <em>MSL</em> wanneer de aangeleverde locatie aan de zeezijde van de mijnbouwgrens ligt.
+                        <p>De waarde van het attribuut moet gelijk zijn aan <em>NAP</em> wanneer de aangeleverde locatie aan de landzijde van de mijnbouwgrens ligt.<br clear="none">
+                           De waarde van het attribuut moet gelijk zijn aan <em>LAT</em> of aan <em>MSL</em> wanneer de aangeleverde locatie aan de zeezijde van de mijnbouwgrens ligt.<br clear="none">
                            De waarde van het attribuut moet gelijk zijn aan de waarde van het attribuut <em>lokaal verticaal referentiepunt</em>.</p>
                         </td>
                   </tr>
@@ -1886,7 +1915,9 @@
                      <th>Toelichting</th>
                      <td>
                         
-                        <p>Het gegeven geeft inzicht in de nauwkeurigheid waarmee de verticale positie is bepaald.</p>
+                        <p>Het gegeven geeft inzicht in de nauwkeurigheid waarmee de verticale positie is bepaald.<br clear="none">
+                           De methode van de verticale positiebepaling heeft betrekking op de bepaling van het
+                           oorspronkelijk verticaal referentiepunt en de oorspronkelijke verschuiving. </p>
                         </td>
                   </tr>
                </tbody>
@@ -1932,7 +1963,16 @@
                      <th>Regels</th>
                      <td>
                         
-                        <p>Het gegeven wordt alleen uitgeleverd aan de dataleverancier en de bronhouder.</p>
+                        <p>Het gegeven wordt alleen uitgeleverd aan de dataleverancier en de bronhouder.<br clear="none">
+                           </p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>
+                        
+                        <p>De uitvoerder van de verticale positiebepaling heeft betrekking op de bepaling van
+                           het oorspronkelijk verticaal referentiepunt en de oorspronkelijke verschuiving.</p>
                         </td>
                   </tr>
                </tbody>
@@ -1977,6 +2017,14 @@
                   <tr>
                      <th>&nbsp;&nbsp;Eenheid</th>
                      <td>m (meter)</td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>
+                        
+                        <p>Met behulp van de oorspronkelijke verschuiving wordt de hoogte van het oorspronkelijke
+                           verticaal referentiepunt aangegeven. </p>
+                        </td>
                   </tr>
                </tbody>
             </table>
@@ -2309,7 +2357,7 @@
                      <th>Regels</th>
                      <td>
                         
-                        <p>Bij ieder <em>Mijnbouwconstructie</em> waarbij de waarde van het attribuut <em>soort mijnbouwconstructie</em> gelijk is aan <em>boorgat</em> moet precies één <em>Boortraject</em> aanwezig zijn waarbij de waarde van het attribuut <em>categorie</em> gelijk is aan <em>primair</em>.</p>
+                        <p>Bij ieder <em>boorgat</em> moet precies één <em>Boortraject</em> aanwezig zijn waarbij de waarde van het attribuut <em>categorie</em> gelijk is aan <em>primair</em>.</p>
                         </td>
                   </tr>
                </tbody>
@@ -2543,9 +2591,7 @@
                   <th>Regels</th>
                   <td>
                      
-                     <p>De gegevensgroep Boortraject locatie moet aanwezig zijn bij de entiteit Boortraject
-                        wanneer de waarde van het attribuut datum openbaarmaking van dat Boortraject op of
-                        na de huidige datum ligt.<br clear="none">
+                     <p>De gegevensgroep <em>Boortraject locatie</em> moet aanwezig zijn bij de entiteit <em>Boortraject</em> wanneer de waarde van het attribuut <em>datum openbaarmaking</em> van dat Boortraject op of na de huidige datum ligt.<br clear="none">
                         </p>
                      </td>
                </tr>
@@ -2553,9 +2599,9 @@
                   <th>Toelichting</th>
                   <td>
                      
-                     <p>Locatiegegevens van een boortraject zijn publiek beschikbaar vanaf dat de huidige
-                        datum groter dan of gelijk aan de datum openbaarmaking van het betreffende boortraject
-                        is.</p>
+                     <p>Locatiegegevens van een boortraject zijn publiek beschikbaar vanaf het moment dat
+                        de huidige datum groter dan of gelijk is aan de datum openbaarmaking van het betreffende
+                        boortraject.</p>
                      </td>
                </tr>
             </tbody>
@@ -2713,66 +2759,16 @@
                      <td>GM_Curve</td>
                   </tr>
                   <tr>
-                     <th>Regels</th>
-                     <td>
-                        
-                        <p>Het beginpunt van de geometrie van een boortraject, waar het attribuut <em>categorie</em> de waarde<br clear="none">
-                           <em>zijtak</em> heeft, dient te liggen op de geometrie van een ander boortraject van dezelfde mijnbouwconstructie.<br clear="none">
-                           </p>
-                        </td>
-                  </tr>
-                  <tr>
                      <th>Toelichting</th>
                      <td>
                         
                         <p>De geometrie wordt door de bronhouder bepaald op basis van door de uitvoerder van
                            de locatiebepaling aangeleverde gegevens.<br clear="none">
+                           De geometrie van een boortraject mag niet kruisen met zichzelf of met de geometrie
+                           van een ander boortraject van dezelfde of een andere mijnbouwconstructie.<br clear="none">
+                           Het beginpunt van de geometrie van een boortraject, waar het attribuut <em>categorie</em> de waarde <em>zijtak</em> heeft, dient te liggen op de geometrie van een ander boortraject van dezelfde mijnbouwconstructie.<br clear="none">
                            </p>
-                        
-                        <p>De geometrie van een boortraject mag niet kruisen met zichzelf of met de geometrie
-                           van een ander boortraject van dezelfde of een andere mijnbouwconstructie.</p>
                         </td>
-                  </tr>
-               </tbody>
-            </table>
-            </section>
-      </section><a class="anchor" id="graph_EAID_6DB20E16_A8DF_4fc3_9F21_0E6711B54719"></a><a class="anchor" id="global_class_Model_Zoutcaverne"></a><section id="global_class_Model_Zoutcaverne">
-         <h3>   Zoutcaverne</h3>
-         <table style="width: 100%;">
-            <colgroup style="width: 30%;"></colgroup>
-            <colgroup style="width: 70%;"></colgroup>
-            <tbody>
-               <tr>
-                  <th>Type gegeven</th>
-                  <td>Entiteit</td>
-               </tr>
-            </tbody>
-         </table><a class="anchor" id="detail_attribute_Model_Zoutcaverne_linkNLOG"></a><section id="detail_attribute_Model_Zoutcaverne_linkNLOG">
-            <h4>  link NLOG</h4>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Type gegeven</th>
-                     <td>Attribuut van Zoutcaverne</td>
-                  </tr>
-                  <tr>
-                     <th>Juridische status</th>
-                     <td>Authentiek</td>
-                  </tr>
-                  <tr>
-                     <th>Kardinaliteit</th>
-                     <td>1</td>
-                  </tr>
-                  <tr>
-                     <th>Domein</th>
-                     <td></td>
-                  </tr>
-                  <tr>
-                     <th>&nbsp;&nbsp;Naam</th>
-                     <td>Tekst40</td>
                   </tr>
                </tbody>
             </table>
@@ -2814,11 +2810,13 @@
                <td>✔</td>
                <td>
                   
-                  <p>Een boortraject dat is gemaakt vanuit een primair boortraject (een boortraject van
-                     de categorie 'primair') of vanuit een andere zijtak. Een zijtak begint niet bij het
-                     aardoppervlak. Iedere zijtak heeft één eindpunt; iedere eventuele afsplitsing ervan
-                     is een zijtak op zichzelf. Een boortraject van de categorie zijtak loopt vanaf het
-                     punt van afsplitsing tot het eindpunt ervan.</p>
+                  <p>Een boortraject waarvan het beginpunt van boren is gelegen in een primair boortraject
+                     (een boortraject van de categorie 'primair') of in een andere zijtak.<br clear="none">
+                     Een boortraject van de categorie zijtak loopt vanaf het punt van afsplitsing tot het
+                     eindpunt ervan.
+                     Een zijtak begint niet bij het oorspronkelijk verticaal referentiepunt. Iedere zijtak
+                     heeft één eindpunt. Iedere eventuele afsplitsing ervan is een zijtak op zichzelf.
+                     </p>
                   </td>
             </tr>
             <tr>
@@ -2827,7 +2825,7 @@
                <td>✔</td>
                <td>
                   
-                  <p>Het eerste boortraject dat is gemaakt in een boorgat. Vanuit het primaire boortraject
+                  <p>Het eerste boortraject dat is geboord in een boorgat. Vanuit het primaire boortraject
                      kunnen zijtakken (boortrajecten van de categorie 'zijtak') geboord worden. Een primair
                      boortraject begint bij het oorspronkelijk verticaal referentiepunt op de aangeleverde
                      locatie.</p>
@@ -3702,9 +3700,9 @@
             <tr>
                <td>
                   
-                  <p>De lijst met methodes volgens welke een aangeleverde locatie van een boorgat al in
-                     een eerder stadium is omgerekend naar een voor de basisregistratie ondergrond gangbaar
-                     referentiestelsel.</p>
+                  <p>De lijst met transformaties welke een aangeleverde locatie van een boorgat al in een
+                     eerder stadium is ondergaan om de locatie van een boorgat aan de basisregistratie
+                     ondergrond te kunnen leveren.</p>
                   </td>
             </tr>
          </tbody>
@@ -3723,7 +3721,7 @@
                <th>Omschrijving</th>
             </tr>
             <tr>
-               <td>ED50-WGS84</td>
+               <td>ED50naarWGS84</td>
                <td>✔</td>
                <td>✔</td>
                <td>
@@ -3733,7 +3731,7 @@
                   </td>
             </tr>
             <tr>
-               <td>ED50-RD</td>
+               <td>ED50naarRD</td>
                <td>✔</td>
                <td>✔</td>
                <td>
@@ -3743,7 +3741,7 @@
                   </td>
             </tr>
             <tr>
-               <td>RD-WGS84</td>
+               <td>RDnaarWGS84</td>
                <td>✔</td>
                <td>✔</td>
                <td>
@@ -3753,7 +3751,7 @@
                   </td>
             </tr>
             <tr>
-               <td>WGS84-RD</td>
+               <td>WGS84naarRD</td>
                <td>✔</td>
                <td>✔</td>
                <td>
@@ -3772,7 +3770,7 @@
                   </td>
             </tr>
             <tr>
-               <td>ED50-ETRS89</td>
+               <td>ED50naarETRS89</td>
                <td>✔</td>
                <td>✔</td>
                <td>
@@ -3782,7 +3780,7 @@
                   </td>
             </tr>
             <tr>
-               <td>WGS84-ETRS89</td>
+               <td>WGS84naarETRS89</td>
                <td>✔</td>
                <td>✔</td>
                <td>
@@ -3792,7 +3790,7 @@
                   </td>
             </tr>
             <tr>
-               <td>RD-ETRS89</td>
+               <td>RDnaarETRS89</td>
                <td>✔</td>
                <td>✔</td>
                <td>
@@ -3974,7 +3972,11 @@
                <td>geometrieBoortrajectGewijzigd</td>
                <td>✔</td>
                <td>✔</td>
-               <td></td>
+               <td>
+                  
+                  <p>De geometrie van een boortraject is gewijzigd.<br clear="none">
+                     \</p>
+                  </td>
             </tr>
          </tbody>
       </table>
@@ -4047,9 +4049,6 @@
                <td>
                   
                   <p>De lijst met de referentievlakken waarin de verticale positie is gedefinieerd.</p>
-                  
-                  <p>
-                     <strong>JV:</strong> Waar komt de alias 'VerticalDatum' vandaan?</p>
                   </td>
             </tr>
          </tbody>
