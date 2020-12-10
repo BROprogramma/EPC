@@ -15,7 +15,7 @@
    <body>
       <p>Conceptual model/Mijnbouwconstructies (EPC) - conceptueel - Mijnstelsel/20200727</p>
       <p>Imvertor: 1.62.2</p>
-      <p>Model release: Conceptualmodel-MijnbouwconstructiesEPC-conceptueel-Mijnstelsel-0.1versie27juli2020-1-20200727-20201210-143946</p>
+      <p>Model release: Conceptualmodel-MijnbouwconstructiesEPC-conceptueel-Mijnstelsel-0.1versie27juli2020-1-20200727-20201210-145928</p>
       <hr>
       <section>
          <h1>Artikel 1 Definitie van registratieobject, entiteiten en attributen</h1>
@@ -2986,6 +2986,23 @@
                            <td>
                               
                               <p>Een mijnstelsel voor de winning van steenkool.</p>
+                              
+                              <p>OPEN PUNT:
+                                 Dit entiteittype verwijderen? Aspecten hiervan:</p>
+                              
+                              <ul>
+                                 
+                                 <li>Dat maakt het mogelijk om in de toekomst  eventueel ook voor andere soorten mijnstelsels
+                                    kaarten op te nemen zonder dat het domeinmodel gewijzigd hoeft te worden</li>
+                                 
+                                 <li>Relatie Mijnstelsel - Mijnkaart wordt dan 0..*</li>
+                                 
+                                 <li>Attribuut 'code': te verplaatsen naar Mijnstelsel, of laten vervallen. Bij laten vervallen:
+                                    enig nadeel is dat niet alle mijnkaartcodes geverifieerd kunnen worden voor het gekoppelde
+                                    mijnstelsel. Bij verplaatsen naar Mijnstelsel: regel opnemen dat de code alleen voor
+                                    Steenkoolmijnen wordt ingevuld, óf voor iedere overige mijn ook een code bedenken
+                                    (dat lijkt me te ver gaan).</li>
+                                 </ul>
                               </td>
                         </tr>
                      </tbody>
