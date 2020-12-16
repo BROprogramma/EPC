@@ -531,7 +531,7 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d33885e1994"></a><section id="detail_d33885e1994">
+            </section><a class="anchor" id="detail_d30217e1994"></a><section id="detail_d30217e1994">
             <h4>  registratiegeschiedenis</h4>
             
             
@@ -569,7 +569,7 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d33885e2140"></a><section id="detail_d33885e2140">
+            </section><a class="anchor" id="detail_d30217e2140"></a><section id="detail_d30217e2140">
             <h4>  levensduur</h4>
             
             
@@ -607,7 +607,7 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d33885e2284"></a><section id="detail_d33885e2284">
+            </section><a class="anchor" id="detail_d30217e2284"></a><section id="detail_d30217e2284">
             <h4>  gebeurtenis</h4>
             
             
@@ -1247,25 +1247,14 @@
                      
                      <blockquote>
                         
-                        <blockquote>
-                           
-                           <blockquote>
-                              
-                              <p>HIERONDER DE UITBREIDING VOOR MIJNSTELSEL</p>
-                              </blockquote>
-                           </blockquote>
+                        <p>HIERONDER DE UITBREIDING VOOR MIJNSTELSEL</p>
                         </blockquote>
                      
                      <p>Er wordt geen <em>Levensduur</em> vastgelegd bij een <em>Mijnbouwconstructie</em> waarbij <em>soort mijnbouwconstructie</em> gelijk is aan 'Mijnstelsel'.</p>
                      
-                     <p>OPEN PUNT:</p>
-                     
-                     <p>Kardinaliteit van gegevensgroep aan te passen naar 0..1, of die van de ontstaansdatum.
-                        Die datum weet je namelijk voor de meeste kalksteengroeves niet, of bij benadering.
-                        Gegevens zijn ook niet voorhanden.
-                        Idem w.b. de datum buitengebruikstelling.
-                        Wat hiermee te doen? =&gt; uitgangspunt: voor wat ligt waar vraag niet interessant; hoogstens
-                        voor historici; niet opnemen</p>
+                     <p>(Voor samenvoeging domeinmodellen: Kardinaliteit van attribuut 'levensduur' bij Mijnbouwconstructie
+                        aan te passen naar 0..1. Bovenstaande regel opnemen bij attribuut 'levensduur' bij
+                        Mijnbouwconstructie?)</p>
                      </td>
                </tr>
             </tbody>
@@ -1775,7 +1764,7 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d33885e6330"></a><section id="detail_d33885e6330">
+            </section><a class="anchor" id="detail_d30217e6313"></a><section id="detail_d30217e6313">
             <h4>  gegevens locatiebepaling</h4>
             
             
@@ -1998,7 +1987,7 @@
                               daarover? Stel ik ben eigenaar van een perceel, ik ontdek een toegang, ben ik dan
                               verplicht om (o.a.) locatiegegevens daarover aan te leveren (aan gedeputeerde staten
                               van Limburg)?
-                              =&gt; neemt Joep mee als actiepunt</li>
+                              Bovenstaande is actiepunt voor Joep.</li>
                            </ol>
                         </td>
                   </tr>
@@ -2082,7 +2071,7 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d33885e7344"></a><section id="detail_d33885e7344">
+            </section><a class="anchor" id="detail_d30217e7327"></a><section id="detail_d30217e7327">
             <h4>  gegevens locatiebepaling</h4>
             
             
@@ -2338,7 +2327,7 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d33885e8269"></a><section id="detail_d33885e8269">
+            </section><a class="anchor" id="detail_d30217e8252"></a><section id="detail_d30217e8252">
             <h4>  gegevens locatiebepaling</h4>
             
             
@@ -2594,7 +2583,7 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d33885e9194"></a><section id="detail_d33885e9194">
+            </section><a class="anchor" id="detail_d30217e9177"></a><section id="detail_d30217e9177">
             <h4>  gegevens locatiebepaling</h4>
             
             
@@ -3279,120 +3268,6 @@
    </section>
 </section><section>
    <h1>Uitbreidbare waardelijsten</h1>
-   <section id="detail_class_Model_Cordinaattransformatie">
-      <h2>  Coördinaattransformatie</h2>
-      
-      <table style="width: 100%;" class="list">
-         <colgroup></colgroup>
-         <tbody>
-            <tr>
-               <td>
-                  
-                  <p>De lijst met de methoden waarmee de coördinaten zijn omgezet.</p>
-                  </td>
-            </tr>
-         </tbody>
-      </table>
-      
-      <table style="width: 100%;" class="list">
-         <colgroup style="width: 20%;"></colgroup>
-         <colgroup style="width: 5%;"></colgroup>
-         <colgroup style="width: 5%;"></colgroup>
-         <colgroup></colgroup>
-         <tbody>
-            <tr>
-               <th>Waarde</th>
-               <th>IMBRO</th>
-               <th>IMBRO/A</th>
-               <th>Omschrijving</th>
-            </tr>
-            <tr>
-               <td>7parameterTransformatie</td>
-               <td>✔</td>
-               <td>✔</td>
-               <td>
-                  
-                  <p>De gegevens zijn getransformeerd van WGS84 naar ETRS89, gebruikmakend van de 7-parameter
-                     transformatie. De transformatieparameters zijn afkomstig van de Dienst der Hydrografie
-                     en zijn tijdsafhankelijk. Voor elk jaar is een parameterset beschikbaar voor de berekening
-                     van coördinaten in ETRS89 in Nederland, waarna een transformatieprocedure naar de
-                     juiste dag volgt. </p>
-                  </td>
-            </tr>
-            <tr>
-               <td>7parameterTransformatie1989</td>
-               <td>✔</td>
-               <td>✔</td>
-               <td>
-                  
-                  <p>De gegevens zijn getransformeerd van WGS84 naar ETRS89, gebruikmakend van de 7-parameter
-                     transformatie. De transformatieparameters zijn afkomstig van de Dienst der Hydrografie
-                     en zijn tijdsafhankelijk. Bij transformatie is gebruik gemaakt van de parameterset
-                     1989.0.</p>
-                  </td>
-            </tr>
-            <tr>
-               <td>nietGetransformeerd</td>
-               <td>✔</td>
-               <td>✔</td>
-               <td>
-                  
-                  <p>De gegevens zijn aangeleverd in ETRS89; transformatie was niet nodig.</p>
-                  </td>
-            </tr>
-            <tr>
-               <td>RDNAPTRANS2008</td>
-               <td>✔</td>
-               <td>✔</td>
-               <td>
-                  
-                  <p>De gegevens zijn getransformeerd van RD naar ETRS89, gebruikmakend van de transformatie
-                     RDNAPTRANS™, versie 2008. RDNAPTRANS™ is de officiële transformatie tussen RD/NAP
-                     en ETRS89 afkomstig van het Kadaster.</p>
-                  </td>
-            </tr>
-            <tr>
-               <td>RDNAPTRANS2018</td>
-               <td>✔</td>
-               <td>✔</td>
-               <td>
-                  
-                  <p>De gegevens zijn getransformeerd van RD naar ETRS89, gebruikmakend van de transformatie
-                     RDNAPTRANS™, versie 2018. RDNAPTRANS™ is de officiële transformatie tussen RD/NAP
-                     en ETRS89 afkomstig van het Kadaster, Rijkswaterstaat en de Dienst der Hydrografie
-                     van de Koninklijke Marine in het samenwerkingsverband NSGI (Nederlandse Samenwerking
-                     Geodetische Infrastructuur).</p>
-                  </td>
-            </tr>
-            <tr>
-               <td>RDNAPTRANS2008MV0</td>
-               <td></td>
-               <td>✔</td>
-               <td>
-                  
-                  <p>De gegevens zijn getransformeerd van RD naar ETRS89, gebruikmakend van de transformatie
-                     RDNAPTRANS™, versie 2008. De positie van het aardoppervlak is onbekend, bij transformatie
-                     is uitgegaan van 0 m NAP. RDNAPTRANS™ is de officiële transformatie tussen RD/NAP
-                     en ETRS89 afkomstig van het Kadaster.</p>
-                  </td>
-            </tr>
-            <tr>
-               <td>RDNAPTRANS2018MV0</td>
-               <td></td>
-               <td>✔</td>
-               <td>
-                  
-                  <p>De gegevens zijn getransformeerd van RD naar ETRS89, gebruikmakend van de transformatie
-                     RDNAPTRANS™, versie 2018. De positie van het aardoppervlak is onbekend, bij transformatie
-                     is uitgegaan van 0 m NAP. RDNAPTRANS™ is de officiële transformatie tussen RD/NAP
-                     en ETRS89 afkomstig van het Kadaster, Rijkswaterstaat en de Dienst der Hydrografie
-                     van de Koninklijke Marine in het samenwerkingsverband NSGI (Nederlandse Samenwerking
-                     Geodetische Infrastructuur). </p>
-                  </td>
-            </tr>
-         </tbody>
-      </table>
-      </section>
    <section id="detail_class_Model_KaderAanlevering">
       <h2>  KaderAanlevering</h2>
       
@@ -3410,21 +3285,15 @@
       </table>
       
       <table style="width: 100%;" class="list">
-         <colgroup style="width: 20%;"></colgroup>
-         <colgroup style="width: 5%;"></colgroup>
-         <colgroup style="width: 5%;"></colgroup>
+         <colgroup style="width: 50%;"></colgroup>
          <colgroup></colgroup>
          <tbody>
             <tr>
                <th>Waarde</th>
-               <th>IMBRO</th>
-               <th>IMBRO/A</th>
                <th>Omschrijving</th>
             </tr>
             <tr>
                <td>MBW2003</td>
-               <td>✔</td>
-               <td>✔</td>
                <td>
                   
                   <p>De gegevens zijn aangeleverd in het kader van de Mijnbouwwet. De Wet is op 1 januari
@@ -3433,8 +3302,6 @@
             </tr>
             <tr>
                <td>MBW2008</td>
-               <td>✔</td>
-               <td>✔</td>
                <td>
                   
                   <p>De gegevens zijn aangeleverd in het kader van de Mijnbouwwet. De Wet is op 1 januari
@@ -3443,8 +3310,6 @@
             </tr>
             <tr>
                <td>MBW2010</td>
-               <td>✔</td>
-               <td>✔</td>
                <td>
                   
                   <p>De gegevens zijn aangeleverd in het kader van de Mijnbouwwet. De Wet is op 1 januari
@@ -3453,8 +3318,6 @@
             </tr>
             <tr>
                <td>MBW2011</td>
-               <td>✔</td>
-               <td>✔</td>
                <td>
                   
                   <p>De gegevens zijn aangeleverd in het kader van de Mijnbouwwet. De Wet is op 1 januari
@@ -3463,8 +3326,6 @@
             </tr>
             <tr>
                <td>MBW2016</td>
-               <td>✔</td>
-               <td>✔</td>
                <td>
                   
                   <p>De gegevens zijn aangeleverd in het kader van de Mijnbouwwet. De Wet is op 1 januari
@@ -3473,8 +3334,6 @@
             </tr>
             <tr>
                <td>MBW2017</td>
-               <td>✔</td>
-               <td>✔</td>
                <td>
                   
                   <p>De gegevens zijn aangeleverd in het kader van de Mijnbouwwet. De Wet is op 1 januari
@@ -3483,70 +3342,10 @@
             </tr>
             <tr>
                <td>MBW2020</td>
-               <td>✔</td>
-               <td>✔</td>
                <td>
                   
                   <p>De gegevens zijn aangeleverd in het kader van de Mijnbouwwet. De Wet is op 1 januari
                      2003 in werking getreden en gewijzigd per 1 januari 2020. </p>
-                  </td>
-            </tr>
-         </tbody>
-      </table>
-      </section>
-   <section id="detail_class_Model_LokaalVerticaalReferentiepunt">
-      <h2>  LokaalVerticaalReferentiepunt</h2>
-      
-      <table style="width: 100%;" class="list">
-         <colgroup></colgroup>
-         <tbody>
-            <tr>
-               <td>
-                  
-                  <p>De lijst met de referentiepunten voor de verticale positie.</p>
-                  </td>
-            </tr>
-         </tbody>
-      </table>
-      
-      <table style="width: 100%;" class="list">
-         <colgroup style="width: 20%;"></colgroup>
-         <colgroup style="width: 5%;"></colgroup>
-         <colgroup style="width: 5%;"></colgroup>
-         <colgroup></colgroup>
-         <tbody>
-            <tr>
-               <th>Waarde</th>
-               <th>IMBRO</th>
-               <th>IMBRO/A</th>
-               <th>Omschrijving</th>
-            </tr>
-            <tr>
-               <td>LAT</td>
-               <td>✔</td>
-               <td>✔</td>
-               <td>
-                  
-                  <p>Laagst mogelijke waterstand gebaseerd op de stand van zon en maan (Lowest Astronomical
-                     Tide).</p>
-                  </td>
-            </tr>
-            <tr>
-               <td>MSL</td>
-               <td>✔</td>
-               <td>✔</td>
-               <td>
-                  
-                  <p>Gemiddeld zeeniveau (Mean Sea Level).</p>
-                  </td>
-            </tr>
-            <tr>
-               <td>NAP</td>
-               <td>✔</td>
-               <td>✔</td>
-               <td>
-                  
-                  <p>Normaal Amsterdams Peil.</p>
                   </td>
             </tr>
          </tbody>
@@ -3564,28 +3363,23 @@
                   <p>De lijst met de methoden voor het bepalen van de locatie van de mijnbouwconstructie.</p>
                   
                   <p>OPEN PUNT:
-                     Uit te breiden met methoden die gebruikt kunnen worden i.r.t. steenkoolmijnen en kalksteengroeves.</p>
+                     Uit te breiden met methoden die gebruikt kunnen worden i.r.t. steenkoolmijnen en kalksteengroeves.
+                     Actiepunt Jacob.</p>
                   </td>
             </tr>
          </tbody>
       </table>
       
       <table style="width: 100%;" class="list">
-         <colgroup style="width: 20%;"></colgroup>
-         <colgroup style="width: 5%;"></colgroup>
-         <colgroup style="width: 5%;"></colgroup>
+         <colgroup style="width: 50%;"></colgroup>
          <colgroup></colgroup>
          <tbody>
             <tr>
                <th>Waarde</th>
-               <th>IMBRO</th>
-               <th>IMBRO/A</th>
                <th>Omschrijving</th>
             </tr>
             <tr>
                <td>DGPS50tot200cm</td>
-               <td>✔</td>
-               <td>✔</td>
                <td>
                   
                   <p>Meting d.m.v. satellietnavigatie met differentiaalcorrectie, in het dagelijks gebruik
@@ -3597,8 +3391,6 @@
             </tr>
             <tr>
                <td>GPS200tot1000cm</td>
-               <td>✔</td>
-               <td>✔</td>
                <td>
                   
                   <p>Meting d.m.v. satellietnavigatie zonder correctie, SPP (Single Point Positioning),
@@ -3610,8 +3402,6 @@
             </tr>
             <tr>
                <td>PPPGPS0tot2cm</td>
-               <td>✔</td>
-               <td>✔</td>
                <td>
                   
                   <p>Meting d.m.v. PPP (Precise Point Positioning) satellietnavigatie, afwijking kleiner
@@ -3624,8 +3414,6 @@
             </tr>
             <tr>
                <td>PPPGPS2tot5cm</td>
-               <td>✔</td>
-               <td>✔</td>
                <td>
                   
                   <p>Meting d.m.v. PPP (Precise Point Positioning) satellietnavigatie, afwijking tussen
@@ -3638,8 +3426,6 @@
             </tr>
             <tr>
                <td>PPPGPS5tot10cm</td>
-               <td>✔</td>
-               <td>✔</td>
                <td>
                   
                   <p>Meting d.m.v. PPP (Precise Point Positioning) satellietnavigatie, afwijking tussen
@@ -3652,8 +3438,6 @@
             </tr>
             <tr>
                <td>PPPGPS10tot50cm</td>
-               <td>✔</td>
-               <td>✔</td>
                <td>
                   
                   <p>Meting d.m.v. PPP (Precise Point Positioning) satellietnavigatie, afwijking tussen
@@ -3665,8 +3449,6 @@
             </tr>
             <tr>
                <td>RTKGPS0tot2cm</td>
-               <td>✔</td>
-               <td>✔</td>
                <td>
                   
                   <p>Meting d.m.v. RTK (Real Time Kinematic) satellietnavigatie, in het dagelijks gebruik
@@ -3679,8 +3461,6 @@
             </tr>
             <tr>
                <td>RTKGPS2tot5cm</td>
-               <td>✔</td>
-               <td>✔</td>
                <td>
                   
                   <p>Meting d.m.v. RTK (Real Time Kinematic) satellietnavigatie, in het dagelijks gebruik
@@ -3693,8 +3473,6 @@
             </tr>
             <tr>
                <td>RTKGPS5tot10cm</td>
-               <td>✔</td>
-               <td>✔</td>
                <td>
                   
                   <p>Meting d.m.v. RTK (Real Time Kinematic) satellietnavigatie, in het dagelijks gebruik
@@ -3707,8 +3485,6 @@
             </tr>
             <tr>
                <td>RTKGPS10tot50cm</td>
-               <td>✔</td>
-               <td>✔</td>
                <td>
                   
                   <p>Meting d.m.v. RTK (Real Time Kinematic) satellietnavigatie, in het dagelijks gebruik
@@ -3721,8 +3497,6 @@
             </tr>
             <tr>
                <td>tachymetrie0tot10cm</td>
-               <td>✔</td>
-               <td>✔</td>
                <td>
                   
                   <p>Meting d.m.v. tachymetrie, ook wel als landmeting of Total Station aangeduid, vanaf
@@ -3731,362 +3505,10 @@
             </tr>
             <tr>
                <td>tachymetrie10tot50cm</td>
-               <td>✔</td>
-               <td>✔</td>
                <td>
                   
                   <p>Meting d.m.v. tachymetrie, ook wel als landmeting of Total Station aangeduid, vanaf
                      een referentiepunt dat geen NAP-peilmerk is, afwijking tussen 10 en 50 cm.</p>
-                  </td>
-            </tr>
-         </tbody>
-      </table>
-      </section>
-   <section id="detail_class_Model_MethodeVerticalePositiebepaling">
-      <h2>  MethodeVerticalePositiebepaling</h2>
-      
-      <table style="width: 100%;" class="list">
-         <colgroup></colgroup>
-         <tbody>
-            <tr>
-               <td>
-                  
-                  <p>De lijst met de methoden voor het bepalen van de verticale positie van het onderzoek.</p>
-                  </td>
-            </tr>
-         </tbody>
-      </table>
-      
-      <table style="width: 100%;" class="list">
-         <colgroup style="width: 20%;"></colgroup>
-         <colgroup style="width: 5%;"></colgroup>
-         <colgroup style="width: 5%;"></colgroup>
-         <colgroup></colgroup>
-         <tbody>
-            <tr>
-               <th>Waarde</th>
-               <th>IMBRO</th>
-               <th>IMBRO/A</th>
-               <th>Omschrijving</th>
-            </tr>
-            <tr>
-               <td>AHN2_50cmRaster</td>
-               <td>✔</td>
-               <td>✔</td>
-               <td>
-                  
-                  <p>Positie bepaald m.b.v. Actueel Hoogtebestand Nederland, versie 2 ingewonnen tussen
-                     2007 en 2012. Voor de bepaling van de verticale positie is het rasterbestand van 50
-                     x 50 cm gebruikt. De uitvoerder heeft met kennis van zaken gebruik gemaakt van het
-                     ruwe rasterbestand of het gefilterde rasterbestand, het zogenaamde maaiveldraster
-                     is gefilterd voor elementen die op het maaiveld staan zoals begroeiing en bebouwing.</p>
-                  </td>
-            </tr>
-            <tr>
-               <td>AHN3_50cmRaster</td>
-               <td>✔</td>
-               <td>✔</td>
-               <td>
-                  
-                  <p>Positie bepaald m.b.v. Actueel Hoogtebestand Nederland, versie 3, ingewonnen tussen
-                     2014 en 2019. Voor de bepaling van de verticale positie is het rasterbestand van 50
-                     x 50 cm gebruikt. De uitvoerder heeft met kennis van zaken gebruik gemaakt van het
-                     ruwe rasterbestand of het gefilterde rasterbestand, het zogenaamde maaiveldraster
-                     is gefilterd voor elementen die op het maaiveld staan zoals begroeiing en bebouwing.</p>
-                  </td>
-            </tr>
-            <tr>
-               <td>PPPGPS0tot4cm</td>
-               <td>✔</td>
-               <td>✔</td>
-               <td>
-                  
-                  <p>Meting d.m.v. PPP (Precise Point Positioning) satellietnavigatie, afwijking kleiner
-                     dan 4 cm. De nauwkeurigheid wordt bereikt wanneer de meting is uitgevoerd met Ambiguity
-                     Resolution (PPP-AR) of bij een lange meettijd. PPP maakt gebruik van een wereldwijd
-                     satellietnavigatiesysteem, Global Navigation Satellite System (GNSS). GNSS wordt in
-                     het dagelijks gebruik vaak aangeduid met GPS als verzamelnaam voor de 4 systemen GPS,
-                     Glonass, Galileo en Beidou.</p>
-                  </td>
-            </tr>
-            <tr>
-               <td>PPPGPS4tot10cm</td>
-               <td>✔</td>
-               <td>✔</td>
-               <td>
-                  
-                  <p>Meting d.m.v. PPP (Precise Point Positioning) satellietnavigatie, afwijking tussen
-                     4 en 10 cm. De nauwkeurigheid wordt bereikt wanneer de meting is uitgevoerd met Ambiguity
-                     Resolution (PPP-AR) of bij een lange meettijd. PPP maakt gebruik van een wereldwijd
-                     satellietnavigatiesysteem, Global Navigation Satellite System (GNSS). GNSS wordt in
-                     het dagelijks gebruik vaak aangeduid met GPS als verzamelnaam voor de 4 systemen GPS,
-                     Glonass, Galileo en Beidou.</p>
-                  </td>
-            </tr>
-            <tr>
-               <td>PPPGPS10tot20cm</td>
-               <td>✔</td>
-               <td>✔</td>
-               <td>
-                  
-                  <p>Meting d.m.v. PPP (Precise Point Positioning) satellietnavigatie, afwijking tussen
-                     10 en 20 cm. De nauwkeurigheid wordt bereikt wanneer de meting is uitgevoerd met Ambiguity
-                     Resolution (PPP-AR) of bij een lange meettijd. PPP maakt gebruik van een wereldwijd
-                     satellietnavigatiesysteem, Global Navigation Satellite System (GNSS). GNSS wordt in
-                     het dagelijks gebruik vaak aangeduid met GPS als verzamelnaam voor de 4 systemen GPS,
-                     Glonass, Galileo en Beidou.</p>
-                  </td>
-            </tr>
-            <tr>
-               <td>PPPGPS20tot100cm</td>
-               <td>✔</td>
-               <td>✔</td>
-               <td>
-                  
-                  <p>Meting d.m.v. PPP (Precise Point Positioning) satellietnavigatie, afwijking tussen
-                     20 en 100 cm. De nauwkeurigheid wordt bereikt wanneer de meting is uitgevoerd in korte
-                     tijd zonder Ambiguity Resolution. PPP maakt gebruik van een wereldwijd satellietnavigatiesysteem,
-                     Global Navigation Satellite System (GNSS). GNSS wordt in het dagelijks gebruik vaak
-                     aangeduid met GPS als verzamelnaam voor de 4 systemen GPS, Glonass, Galileo en Beidou.</p>
-                  </td>
-            </tr>
-            <tr>
-               <td>RTKGPS0tot4cm</td>
-               <td>✔</td>
-               <td>✔</td>
-               <td>
-                  
-                  <p>Meting d.m.v. RTK (Real Time Kinematic) satellietnavigatie, in het dagelijks gebruik
-                     ook wel aangeduid als DGPS, afwijking kleiner dan 4 cm. De nauwkeurigheid wordt bereikt
-                     wanneer de meting is uitgevoerd met Ambiguity Resolution (ook wel fix). RTK maakt
-                     gebruik van een wereldwijd satellietnavigatiesysteem, Global Navigation Satellite
-                     System (GNSS). GNSS wordt in het dagelijks gebruik vaak aangeduid met GPS als verzamelnaam
-                     voor de 4 systemen GPS, Glonass, Galileo en Beidou.</p>
-                  </td>
-            </tr>
-            <tr>
-               <td>RTKGPS4tot10cm</td>
-               <td>✔</td>
-               <td>✔</td>
-               <td>
-                  
-                  <p>Meting d.m.v. RTK (Real Time Kinematic) satellietnavigatie, in het dagelijks gebruik
-                     ook wel aangeduid als DGPS, afwijking tussen 4 en 10 cm. De nauwkeurigheid wordt bereikt
-                     wanneer de meting is uitgevoerd met Ambiguity Resolution (ook wel fix). RTK maakt
-                     gebruik van een wereldwijd satellietnavigatiesysteem, Global Navigation Satellite
-                     System (GNSS). GNSS wordt in het dagelijks gebruik vaak aangeduid met GPS als verzamelnaam
-                     voor de 4 systemen GPS, Glonass, Galileo en Beidou.</p>
-                  </td>
-            </tr>
-            <tr>
-               <td>RTKGPS10tot20cm</td>
-               <td>✔</td>
-               <td>✔</td>
-               <td>
-                  
-                  <p>Meting d.m.v. RTK (Real Time Kinematic) satellietnavigatie, in het dagelijks gebruik
-                     ook wel aangeduid als DGPS, afwijking tussen 10 en 20 cm. De nauwkeurigheid wordt
-                     bereikt wanneer de meting is uitgevoerd met Ambiguity Resolution (ook wel fix). RTK
-                     maakt gebruik van een wereldwijd satellietnavigatiesysteem, Global Navigation Satellite
-                     System (GNSS). GNSS wordt in het dagelijks gebruik vaak aangeduid met GPS als verzamelnaam
-                     voor de 4 systemen GPS, Glonass, Galileo en Beidou.</p>
-                  </td>
-            </tr>
-            <tr>
-               <td>RTKGPS20tot100cm</td>
-               <td>✔</td>
-               <td>✔</td>
-               <td>
-                  
-                  <p>Meting d.m.v. RTK (Real Time Kinematic) satellietnavigatie, in het dagelijks gebruik
-                     ook wel aangeduid als DGPS, afwijking tussen 20 en 100 cm. De nauwkeurigheid wordt
-                     bereikt wanneer de meting is uitgevoerd zonder Ambiguity Resolution (ook wel fix).
-                     RTK maakt gebruik van een wereldwijd satellietnavigatiesysteem, Global Navigation
-                     Satellite System (GNSS). GNSS wordt in het dagelijks gebruik vaak aangeduid met GPS
-                     als verzamelnaam voor de 4 systemen GPS, Glonass, Galileo en Beidou.</p>
-                  </td>
-            </tr>
-            <tr>
-               <td>tachymetrie0tot10cm</td>
-               <td>✔</td>
-               <td>✔</td>
-               <td>
-                  
-                  <p>Meting d.m.v. tachymetrie, ook wel als landmeting of Total Station aangeduid, vanaf
-                     een referentiepunt dat geen NAP-peilmerk is, afwijking kleiner dan 10 cm.</p>
-                  </td>
-            </tr>
-            <tr>
-               <td>tachymetrie10tot50cm</td>
-               <td>✔</td>
-               <td>✔</td>
-               <td>
-                  
-                  <p>Meting d.m.v. tachymetrie, ook wel als landmeting of Total Station aangeduid, vanaf
-                     een referentiepunt dat geen NAP-peilmerk is, afwijking tussen 10 en 50 cm.</p>
-                  </td>
-            </tr>
-            <tr>
-               <td>waterpassing0tot2cm</td>
-               <td>✔</td>
-               <td>✔</td>
-               <td>
-                  
-                  <p>Meting d.m.v. waterpassing vanaf een NAP-peilmerk, afwijking kleiner dan 2 cm.</p>
-                  </td>
-            </tr>
-            <tr>
-               <td>waterpassing2tot4cm</td>
-               <td>✔</td>
-               <td>✔</td>
-               <td>
-                  
-                  <p>Meting d.m.v. waterpassing vanaf een NAP-peilmerk, afwijking tussen 2 en 4 cm.</p>
-                  </td>
-            </tr>
-            <tr>
-               <td>waterpassing4tot10cm</td>
-               <td>✔</td>
-               <td>✔</td>
-               <td>
-                  
-                  <p>Meting d.m.v. waterpassing vanaf een NAP-peilmerk, afwijking tussen 4 en 10 cm.</p>
-                  </td>
-            </tr>
-         </tbody>
-      </table>
-      </section>
-   <section id="detail_class_Model_OorspronkelijkVerticaalReferentiepunt">
-      <h2>  OorspronkelijkVerticaalReferentiepunt</h2>
-      
-      <table style="width: 100%;" class="list">
-         <colgroup></colgroup>
-         <tbody>
-            <tr>
-               <td>
-                  
-                  <p>[OPEN PUNT: definitie]</p>
-                  </td>
-            </tr>
-         </tbody>
-      </table>
-      
-      <table style="width: 100%;" class="list">
-         <colgroup style="width: 20%;"></colgroup>
-         <colgroup style="width: 5%;"></colgroup>
-         <colgroup style="width: 5%;"></colgroup>
-         <colgroup></colgroup>
-         <tbody>
-            <tr>
-               <th>Waarde</th>
-               <th>IMBRO</th>
-               <th>IMBRO/A</th>
-               <th>Omschrijving</th>
-            </tr>
-            <tr>
-               <td>maaiveld</td>
-               <td>✔</td>
-               <td>✔</td>
-               <td>
-                  
-                  <p>Het oppervlak van de vaste aarde, daar waar de aarde niet bedekt is met water. Het
-                     maaiveld vormt de grens tussen de ondergrond en de bovengrond.</p>
-                  </td>
-            </tr>
-            <tr>
-               <td>draaitafel</td>
-               <td>✔</td>
-               <td>✔</td>
-               <td>
-                  
-                  <p>Het draaiende gedeelte van de boorvloer dat de kracht levert om de boorstreng met
-                     de klok mee te draaien (van bovenaf gezien). </p>
-                  </td>
-            </tr>
-            <tr>
-               <td>KellyBushing</td>
-               <td>✔</td>
-               <td>✔</td>
-               <td>
-                  
-                  <p>De adapter die de draaitafel met de kelly verbind. </p>
-                  </td>
-            </tr>
-            <tr>
-               <td>boorvloer</td>
-               <td>✔</td>
-               <td>✔</td>
-               <td>
-                  
-                  <p>De boorvloer is het hart van elke boorinstallatie, het gebied waar de boorstreng zijn
-                     reis naar het aardoppervlak begint. </p>
-                  </td>
-            </tr>
-            <tr>
-               <td>keldervloer</td>
-               <td>✔</td>
-               <td>✔</td>
-               <td>
-                  
-                  <p>De vloer van de put onder de boorvloer welke extra hoogte bied tussen de boorvloer
-                     en de boorgatmond.</p>
-                  </td>
-            </tr>
-         </tbody>
-      </table>
-      </section>
-   <section id="detail_class_Model_Referentiestelsel">
-      <h2>  Referentiestelsel</h2>
-      
-      <table style="width: 100%;" class="list">
-         <colgroup></colgroup>
-         <tbody>
-            <tr>
-               <td>
-                  
-                  <p>De lijst met de referentiestelsels waarin de coördinaten zijn gedefinieerd.</p>
-                  </td>
-            </tr>
-         </tbody>
-      </table>
-      
-      <table style="width: 100%;" class="list">
-         <colgroup style="width: 20%;"></colgroup>
-         <colgroup style="width: 5%;"></colgroup>
-         <colgroup style="width: 5%;"></colgroup>
-         <colgroup></colgroup>
-         <tbody>
-            <tr>
-               <th>Waarde</th>
-               <th>IMBRO</th>
-               <th>IMBRO/A</th>
-               <th>Omschrijving</th>
-            </tr>
-            <tr>
-               <td>RD</td>
-               <td>✔</td>
-               <td>✔</td>
-               <td>
-                  
-                  <p>Rijks Driehoekmeting - Amersfoort RD New (EPSG 28992).</p>
-                  </td>
-            </tr>
-            <tr>
-               <td>ETRS89</td>
-               <td>✔</td>
-               <td>✔</td>
-               <td>
-                  
-                  <p>European Terrestrial Reference System 1989 (EPSG 4258).</p>
-                  </td>
-            </tr>
-            <tr>
-               <td>WGS84</td>
-               <td>✔</td>
-               <td>✔</td>
-               <td>
-                  
-                  <p>World Geodetic System 1984 (EPSG 4326).</p>
                   </td>
             </tr>
          </tbody>
@@ -4108,21 +3530,15 @@
       </table>
       
       <table style="width: 100%;" class="list">
-         <colgroup style="width: 20%;"></colgroup>
-         <colgroup style="width: 5%;"></colgroup>
-         <colgroup style="width: 5%;"></colgroup>
+         <colgroup style="width: 50%;"></colgroup>
          <colgroup></colgroup>
          <tbody>
             <tr>
                <th>Waarde</th>
-               <th>IMBRO</th>
-               <th>IMBRO/A</th>
                <th>Omschrijving</th>
             </tr>
             <tr>
                <td>aangevuld</td>
-               <td>✔</td>
-               <td>✔</td>
                <td>
                   
                   <p>Het registreren van de gegevens van het object heeft na de start van de registratie
@@ -4132,8 +3548,6 @@
             </tr>
             <tr>
                <td>geregistreerd</td>
-               <td>✔</td>
-               <td>✔</td>
                <td>
                   
                   <p>Het registreren van de gegevens van het object is gestart. De gegevens uit het eerste
@@ -4143,8 +3557,6 @@
             </tr>
             <tr>
                <td>voltooid</td>
-               <td>✔</td>
-               <td>✔</td>
                <td>
                   
                   <p>Het registreren van de gegevens van het object is voltooid. Alle gegevens zijn in
@@ -4172,21 +3584,15 @@
       </table>
       
       <table style="width: 100%;" class="list">
-         <colgroup style="width: 20%;"></colgroup>
-         <colgroup style="width: 5%;"></colgroup>
-         <colgroup style="width: 5%;"></colgroup>
+         <colgroup style="width: 50%;"></colgroup>
          <colgroup></colgroup>
          <tbody>
             <tr>
                <th>Waarde</th>
-               <th>IMBRO</th>
-               <th>IMBRO/A</th>
                <th>Omschrijving</th>
             </tr>
             <tr>
                <td>wettelijkeStatusGewijzigd</td>
-               <td>✔</td>
-               <td>✔</td>
                <td>
                   
                   <p>De wettelijke status van een mijnbouwconstructie is gewijzigd.</p>
@@ -4194,8 +3600,6 @@
             </tr>
             <tr>
                <td>eigenaarGewijzigd</td>
-               <td>✔</td>
-               <td>✔</td>
                <td>
                   
                   <p>De eigenaar van een mijnbouwconstructie is gewijzigd.</p>
@@ -4203,8 +3607,6 @@
             </tr>
             <tr>
                <td>geometrieBoortrajectGewijzigd</td>
-               <td>✔</td>
-               <td>✔</td>
                <td>
                   
                   <p>De geometrie van een boortraject is gewijzigd.<br clear="none">
@@ -4231,21 +3633,15 @@
       </table>
       
       <table style="width: 100%;" class="list">
-         <colgroup style="width: 20%;"></colgroup>
-         <colgroup style="width: 5%;"></colgroup>
-         <colgroup style="width: 5%;"></colgroup>
+         <colgroup style="width: 50%;"></colgroup>
          <colgroup></colgroup>
          <tbody>
             <tr>
                <th>Waarde</th>
-               <th>IMBRO</th>
-               <th>IMBRO/A</th>
                <th>Omschrijving</th>
             </tr>
             <tr>
                <td>boorgat</td>
-               <td>✔</td>
-               <td>✔</td>
                <td>
                   
                   <p>Een boorgat is een ondergrondse holte die bestaat uit een stelsel van een of meerdere
@@ -4259,8 +3655,6 @@
             </tr>
             <tr>
                <td>mijnstelsel</td>
-               <td>✔</td>
-               <td>✔</td>
                <td>
                   
                   <p>Een mijnstelsel is een ondergronds stelsel van gangen, schachten en/of ontgonnen of
@@ -4269,8 +3663,6 @@
             </tr>
             <tr>
                <td>zoutcaverne</td>
-               <td>✔</td>
-               <td>✔</td>
                <td></td>
             </tr>
          </tbody>
@@ -4292,21 +3684,15 @@
       </table>
       
       <table style="width: 100%;" class="list">
-         <colgroup style="width: 20%;"></colgroup>
-         <colgroup style="width: 5%;"></colgroup>
-         <colgroup style="width: 5%;"></colgroup>
+         <colgroup style="width: 50%;"></colgroup>
          <colgroup></colgroup>
          <tbody>
             <tr>
                <th>Waarde</th>
-               <th>IMBRO</th>
-               <th>IMBRO/A</th>
                <th>Omschrijving</th>
             </tr>
             <tr>
                <td>DrempelkaartIndividueel</td>
-               <td>✔</td>
-               <td>✔</td>
                <td>
                   
                   <p>Kaart waarop breuken, verzakkingen, verschuivingen en andere resultaten van aardbewegingen
@@ -4316,8 +3702,6 @@
             </tr>
             <tr>
                <td>DrempelkaartGecombineerd</td>
-               <td>✔</td>
-               <td>✔</td>
                <td>
                   
                   <p>Kaart, samengesteld uit individuele drempelkaarten, waarop breuken, verzakkingen,
@@ -4327,8 +3711,6 @@
             </tr>
             <tr>
                <td>HoofdgrondplanIndividueel</td>
-               <td>✔</td>
-               <td>✔</td>
                <td>
                   
                   <p>Kaart waarop een plattegrond is afgebeeld van de gangen op een bepaalde verdieping
@@ -4338,8 +3720,6 @@
             </tr>
             <tr>
                <td>HoofdgrondplanGecombineerd</td>
-               <td>✔</td>
-               <td>✔</td>
                <td>
                   
                   <p>Kaart, samengesteld uit individuele hoofdgrondplannen, waarop waarop een plattegrond
@@ -4348,8 +3728,6 @@
             </tr>
             <tr>
                <td>LaagplanIndividueel</td>
-               <td>✔</td>
-               <td>✔</td>
                <td>
                   
                   <p>Kaart waarop van een mijn de ontginningen van een bepaalde steenkoollaag zijn afgebeeld
@@ -4360,8 +3738,6 @@
             </tr>
             <tr>
                <td>LaagplanGecombineerd</td>
-               <td>✔</td>
-               <td>✔</td>
                <td>
                   
                   <p>Kaart, samengesteld uit individuele laagplannen, waarop voor een combinatie van mijnen
@@ -4387,21 +3763,15 @@
       </table>
       
       <table style="width: 100%;" class="list">
-         <colgroup style="width: 20%;"></colgroup>
-         <colgroup style="width: 5%;"></colgroup>
-         <colgroup style="width: 5%;"></colgroup>
+         <colgroup style="width: 50%;"></colgroup>
          <colgroup></colgroup>
          <tbody>
             <tr>
                <th>Waarde</th>
-               <th>IMBRO</th>
-               <th>IMBRO/A</th>
                <th>Omschrijving</th>
             </tr>
             <tr>
                <td>horizontale waterput</td>
-               <td>✔</td>
-               <td>✔</td>
                <td>
                   
                   <p>Een holte die vanaf de zijkant van een heuvel horizontaal is aangelegd naar een ondergrondse
@@ -4410,8 +3780,6 @@
             </tr>
             <tr>
                <td>kalksteengroeve</td>
-               <td>✔</td>
-               <td>✔</td>
                <td>
                   
                   <p>Een ondergrondse ruimte die is aangelegd voor het winnen van kalksteen, hetzij in
@@ -4420,8 +3788,6 @@
             </tr>
             <tr>
                <td>militaire tunnel</td>
-               <td>✔</td>
-               <td>✔</td>
                <td>
                   
                   <p>Een ondergrondse, in kalksteen aangelegde doorgang, bedoeld voor militaire doeleinden.</p>
@@ -4429,8 +3795,6 @@
             </tr>
             <tr>
                <td>opslagruimte</td>
-               <td>✔</td>
-               <td>✔</td>
                <td>
                   
                   <p>Een ondergrondse, in kalksteen aangelegde holte, bedoeld voor de opslag van goederen.</p>
@@ -4438,8 +3802,6 @@
             </tr>
             <tr>
                <td>schuilkelder</td>
-               <td>✔</td>
-               <td>✔</td>
                <td>
                   
                   <p>Een ondergrondse, in kalksteen aangelegde holte, bedoeld ter ontwijking door de bevolking
@@ -4448,8 +3810,6 @@
             </tr>
             <tr>
                <td>steenkoolmijn</td>
-               <td>✔</td>
-               <td>✔</td>
                <td>
                   
                   <p>Een mijnstelsel voor de winning van steenkool.</p>
@@ -4457,8 +3817,6 @@
             </tr>
             <tr>
                <td>transporttunnel</td>
-               <td>✔</td>
-               <td>✔</td>
                <td>
                   
                   <p>Een ondergronds, in kalksteen aangelegde doorgang, bedoeld voor transportdoeleinden.</p>
@@ -4466,8 +3824,6 @@
             </tr>
             <tr>
                <td>vuursteenmijn</td>
-               <td>✔</td>
-               <td>✔</td>
                <td>
                   
                   <p>Een ondergronds, in kalksteen aangelegde doorgang, bedoeld voor de winning van vuursteen.</p>
@@ -4492,21 +3848,15 @@
       </table>
       
       <table style="width: 100%;" class="list">
-         <colgroup style="width: 20%;"></colgroup>
-         <colgroup style="width: 5%;"></colgroup>
-         <colgroup style="width: 5%;"></colgroup>
+         <colgroup style="width: 50%;"></colgroup>
          <colgroup></colgroup>
          <tbody>
             <tr>
                <th>Waarde</th>
-               <th>IMBRO</th>
-               <th>IMBRO/A</th>
                <th>Omschrijving</th>
             </tr>
             <tr>
                <td>gang</td>
-               <td>✔</td>
-               <td>✔</td>
                <td>
                   
                   <p>Een voornamelijk horizontaal lopende toegang tot een mijnstelsel.</p>
@@ -4514,72 +3864,9 @@
             </tr>
             <tr>
                <td>schacht</td>
-               <td>✔</td>
-               <td>✔</td>
                <td>
                   
                   <p>Een voornamelijk verticaal lopende toegang tot een mijnstelsel.</p>
-                  </td>
-            </tr>
-         </tbody>
-      </table>
-      </section>
-   <section id="detail_class_Model_VerticaalReferentievlak">
-      <h2>  VerticaalReferentievlak</h2>
-      
-      <table style="width: 100%;" class="list">
-         <colgroup></colgroup>
-         <tbody>
-            <tr>
-               <td>
-                  
-                  <p>De lijst met de referentievlakken waarin de verticale positie is gedefinieerd.</p>
-                  
-                  <p>
-                     <strong>JV:</strong> Waar komt de alias 'VerticalDatum' vandaan?</p>
-                  </td>
-            </tr>
-         </tbody>
-      </table>
-      
-      <table style="width: 100%;" class="list">
-         <colgroup style="width: 20%;"></colgroup>
-         <colgroup style="width: 5%;"></colgroup>
-         <colgroup style="width: 5%;"></colgroup>
-         <colgroup></colgroup>
-         <tbody>
-            <tr>
-               <th>Waarde</th>
-               <th>IMBRO</th>
-               <th>IMBRO/A</th>
-               <th>Omschrijving</th>
-            </tr>
-            <tr>
-               <td>LAT</td>
-               <td>✔</td>
-               <td>✔</td>
-               <td>
-                  
-                  <p>Laagst mogelijke waterstand gebaseerd op de stand van zon en maan (Lowest Astronomical
-                     Tide).</p>
-                  </td>
-            </tr>
-            <tr>
-               <td>MSL</td>
-               <td>✔</td>
-               <td>✔</td>
-               <td>
-                  
-                  <p>Gemiddeld zeeniveau (Mean Sea Level).</p>
-                  </td>
-            </tr>
-            <tr>
-               <td>NAP</td>
-               <td>✔</td>
-               <td>✔</td>
-               <td>
-                  
-                  <p>Normaal Amsterdams Peil.</p>
                   </td>
             </tr>
          </tbody>
@@ -4601,21 +3888,15 @@
       </table>
       
       <table style="width: 100%;" class="list">
-         <colgroup style="width: 20%;"></colgroup>
-         <colgroup style="width: 5%;"></colgroup>
-         <colgroup style="width: 5%;"></colgroup>
+         <colgroup style="width: 50%;"></colgroup>
          <colgroup></colgroup>
          <tbody>
             <tr>
                <th>Waarde</th>
-               <th>IMBRO</th>
-               <th>IMBRO/A</th>
                <th>Omschrijving</th>
             </tr>
             <tr>
                <td>BuitenGebruik</td>
-               <td>✔</td>
-               <td>✔</td>
                <td>
                   
                   <p>De aanduiding dat een mijnbouwwerk volgens de wettelijke vereisten buiten gebruik
@@ -4624,8 +3905,6 @@
             </tr>
             <tr>
                <td>InGebruik</td>
-               <td>✔</td>
-               <td>✔</td>
                <td>
                   
                   <p>De aanduiding dat een mijnbouwwerk wettelijk gezien niet buiten gebruik is gesteld.
