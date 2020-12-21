@@ -593,7 +593,7 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d31373e2036"></a><section id="detail_d31373e2036">
+            </section><a class="anchor" id="detail_d31458e2036"></a><section id="detail_d31458e2036">
             <h4>  registratiegeschiedenis</h4>
             
             
@@ -631,7 +631,7 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d31373e2182"></a><section id="detail_d31373e2182">
+            </section><a class="anchor" id="detail_d31458e2182"></a><section id="detail_d31458e2182">
             <h4>  levensduur</h4>
             
             
@@ -669,7 +669,7 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d31373e2326"></a><section id="detail_d31373e2326">
+            </section><a class="anchor" id="detail_d31458e2326"></a><section id="detail_d31458e2326">
             <h4>  gebeurtenis</h4>
             
             
@@ -1616,7 +1616,7 @@
                   </tr>
                   <tr>
                      <th>Kardinaliteit</th>
-                     <td>0..1</td>
+                     <td>1</td>
                   </tr>
                   <tr>
                      <th>Domein</th>
@@ -1630,8 +1630,15 @@
                      <th>Regels</th>
                      <td>
                         
-                        <p>De <em>code</em> van een <em>Mijnstelsel</em> is uniek binnen de set met mijnstelsels in de basisregistratie ondergrond.
-                           <em>Code</em> moet aanwezig zijn wanneer het <em>soort mijnstelsel</em> gelijk is aan 'steenkoolmijn' en het <em>Mijnstelsel</em> is weergegeven op een <em>Mijnkaart</em>.</p>
+                        <p>De <em>code</em> van een <em>Mijnstelsel</em> is uniek binnen de set met mijnstelsels in de basisregistratie ondergrond.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Regels IMBRO/A</th>
+                     <td>
+                        
+                        <p>
+                           <em>Code</em> mag afwezig zijn wanneer het <em>soort mijnstelsel</em> ongelijk is aan 'steenkoolmijn' of het <em>Mijnstelsel</em> niet is weergegeven op een <em>Mijnkaart</em>.</p>
                         </td>
                   </tr>
                   <tr>
@@ -1829,7 +1836,7 @@
                   </tr>
                   <tr>
                      <th>Kardinaliteit</th>
-                     <td>0..*</td>
+                     <td>1..*</td>
                   </tr>
                   <tr>
                      <th>Relatiesoort naam</th>
@@ -1917,7 +1924,7 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d31373e6370"></a><section id="detail_d31373e6370">
+            </section><a class="anchor" id="detail_d31458e6395"></a><section id="detail_d31458e6395">
             <h4>  gegevens locatiebepaling</h4>
             
             
@@ -1977,15 +1984,22 @@
                      </td>
                </tr>
                <tr>
+                  <th>Regels IMBRO/A</th>
+                  <td>
+                     
+                     <p>Een <em>Mijnkaart</em> mag alleen aanwezig zijn bij een <em>Mijnstelsel</em> als de gegevens daarover zijn aangeleverd onder het kwaliteitsregime IMBRO/A.</p>
+                     
+                     <p>OPEN PUNT (voor volgende sprint):
+                        Hoe het geautomatiseerd bestand met daarin de kaart opnemen in het domeinmodel? Bijv.
+                        attribuut met een verwijzing naar een bestandsnaam?</p>
+                     </td>
+               </tr>
+               <tr>
                   <th>Toelichting</th>
                   <td>
                      
                      <p>Onder 'kaart' worden zowel afzonderlijke c.q. individuele kaartbladen verstaan als
                         kaarten die samengesteld c.q. gecombineerd zijn uit meerdere individuele kaartbladen.</p>
-                     
-                     <p>OPEN PUNT (voor volgende sprint):
-                        Hoe het geautomatiseerd bestand met daarin de kaart opnemen in het domeinmodel? Bijv.
-                        attribuut met een verwijzing naar een bestandsnaam?</p>
                      </td>
                </tr>
             </tbody>
@@ -2452,6 +2466,13 @@
                      </td>
                </tr>
                <tr>
+                  <th>Regels IMBRO/A</th>
+                  <td>
+                     
+                     <p>Een <em>Toegang</em> mag afwezig zijn bij een <em>Mijnstelsel</em> als de gegevens daarover zijn aangeleverd onder het kwaliteitsregime IMBRO/A.</p>
+                     </td>
+               </tr>
+               <tr>
                   <th>Toelichting</th>
                   <td>
                      
@@ -2721,7 +2742,8 @@
                      <td>
                         
                         <p>
-                           <em>Locatie</em> valt binnen het <em>gemijnd gebied</em> van het <em>Mijnstelsel</em> waar de <em>Toegang</em> onderdeel van is.</p>
+                           <em>Locatie</em> valt binnen het <em>gemijnd gebied</em> van het <em>Mijnstelsel</em> waar de <em>Toegang</em> onderdeel van is.
+                           De locaties van toegangen mogen elkaar niet overlappen, ongeacht het mijnstelsel.</p>
                         </td>
                   </tr>
                   <tr>
@@ -2730,7 +2752,7 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d31373e9016"></a><section id="detail_d31373e9016">
+            </section><a class="anchor" id="detail_d31458e9089"></a><section id="detail_d31458e9089">
             <h4>  gegevens locatiebepaling</h4>
             
             
@@ -3003,7 +3025,8 @@
                         
                         <p>
                            <em>Gebied</em> valt binnen het <em>gemijnd gebied</em> van het <em>Mijnstelsel</em> waar de <em>Transportzone</em> onderdeel van is.
-                           Gebied mag niet openbaar uitgeleverd worden wanneer de <em>Transportzone</em> behoort tot een <em>Mijnstelsel</em> waarbij het <em>soort mijnstelsel</em> ongelijk is aan 'steenkoolmijn'.</p>
+                           De gebieden van transportzones die tot hetzelfde <em>Mijnstelsel</em> behoren en dezelfde <em>verdieping</em> hebben, mogen elkaar niet overlappen.
+                           <em>Gebied</em> mag niet openbaar uitgeleverd worden wanneer de <em>Transportzone</em> behoort tot een <em>Mijnstelsel</em> waarbij het <em>soort mijnstelsel</em> ongelijk is aan 'steenkoolmijn'.</p>
                         </td>
                   </tr>
                   <tr>
@@ -3012,7 +3035,7 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d31373e10031"></a><section id="detail_d31373e10031">
+            </section><a class="anchor" id="detail_d31458e10132"></a><section id="detail_d31458e10132">
             <h4>  gegevens locatiebepaling</h4>
             
             
@@ -3286,6 +3309,7 @@
                         
                         <p>
                            <em>Gebied</em> valt binnen het <em>gemijnd gebied</em> van het <em>Mijnstelsel</em> waar de <em>Ontginningszone</em> onderdeel van is.
+                           De gebieden van ontginningszones die dezelfde <em>steenkoollaag</em> hebben, mogen elkaar niet overlappen.
                            Gebied mag niet openbaar uitgeleverd wanneer de <em>Ontginningszone</em> behoort tot een <em>Mijnstelsel</em> waarbij het <em>soort mijnstelsel</em> ongelijk is aan 'steenkoolmijn'.</p>
                         </td>
                   </tr>
@@ -3295,7 +3319,7 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d31373e11055"></a><section id="detail_d31373e11055">
+            </section><a class="anchor" id="detail_d31458e11160"></a><section id="detail_d31458e11160">
             <h4>  gegevens locatiebepaling</h4>
             
             
@@ -3569,15 +3593,21 @@
       </table>
       
       <table style="width: 100%;" class="list">
-         <colgroup style="width: 50%;"></colgroup>
+         <colgroup style="width: 20%;"></colgroup>
+         <colgroup style="width: 5%;"></colgroup>
+         <colgroup style="width: 5%;"></colgroup>
          <colgroup></colgroup>
          <tbody>
             <tr>
                <th>Waarde</th>
+               <th>IMBRO</th>
+               <th>IMBRO/A</th>
                <th>Omschrijving</th>
             </tr>
             <tr>
                <td>MBW2003</td>
+               <td>✔</td>
+               <td>✔</td>
                <td>
                   
                   <p>De gegevens zijn aangeleverd in het kader van de Mijnbouwwet. De Wet is op 1 januari
@@ -3586,6 +3616,8 @@
             </tr>
             <tr>
                <td>MBW2008</td>
+               <td>✔</td>
+               <td>✔</td>
                <td>
                   
                   <p>De gegevens zijn aangeleverd in het kader van de Mijnbouwwet. De Wet is op 1 januari
@@ -3594,6 +3626,8 @@
             </tr>
             <tr>
                <td>MBW2010</td>
+               <td>✔</td>
+               <td>✔</td>
                <td>
                   
                   <p>De gegevens zijn aangeleverd in het kader van de Mijnbouwwet. De Wet is op 1 januari
@@ -3602,6 +3636,8 @@
             </tr>
             <tr>
                <td>MBW2011</td>
+               <td>✔</td>
+               <td>✔</td>
                <td>
                   
                   <p>De gegevens zijn aangeleverd in het kader van de Mijnbouwwet. De Wet is op 1 januari
@@ -3610,6 +3646,8 @@
             </tr>
             <tr>
                <td>MBW2016</td>
+               <td>✔</td>
+               <td>✔</td>
                <td>
                   
                   <p>De gegevens zijn aangeleverd in het kader van de Mijnbouwwet. De Wet is op 1 januari
@@ -3618,6 +3656,8 @@
             </tr>
             <tr>
                <td>MBW2017</td>
+               <td>✔</td>
+               <td>✔</td>
                <td>
                   
                   <p>De gegevens zijn aangeleverd in het kader van de Mijnbouwwet. De Wet is op 1 januari
@@ -3626,6 +3666,8 @@
             </tr>
             <tr>
                <td>MBW2020</td>
+               <td>✔</td>
+               <td>✔</td>
                <td>
                   
                   <p>De gegevens zijn aangeleverd in het kader van de Mijnbouwwet. De Wet is op 1 januari
@@ -3656,15 +3698,21 @@
       </table>
       
       <table style="width: 100%;" class="list">
-         <colgroup style="width: 50%;"></colgroup>
+         <colgroup style="width: 20%;"></colgroup>
+         <colgroup style="width: 5%;"></colgroup>
+         <colgroup style="width: 5%;"></colgroup>
          <colgroup></colgroup>
          <tbody>
             <tr>
                <th>Waarde</th>
+               <th>IMBRO</th>
+               <th>IMBRO/A</th>
                <th>Omschrijving</th>
             </tr>
             <tr>
                <td>DGPS50tot200cm</td>
+               <td>✔</td>
+               <td>✔</td>
                <td>
                   
                   <p>Meting d.m.v. satellietnavigatie met differentiaalcorrectie, in het dagelijks gebruik
@@ -3676,6 +3724,8 @@
             </tr>
             <tr>
                <td>GPS200tot1000cm</td>
+               <td>✔</td>
+               <td>✔</td>
                <td>
                   
                   <p>Meting d.m.v. satellietnavigatie zonder correctie, SPP (Single Point Positioning),
@@ -3687,6 +3737,8 @@
             </tr>
             <tr>
                <td>PPPGPS0tot2cm</td>
+               <td>✔</td>
+               <td>✔</td>
                <td>
                   
                   <p>Meting d.m.v. PPP (Precise Point Positioning) satellietnavigatie, afwijking kleiner
@@ -3699,6 +3751,8 @@
             </tr>
             <tr>
                <td>PPPGPS2tot5cm</td>
+               <td>✔</td>
+               <td>✔</td>
                <td>
                   
                   <p>Meting d.m.v. PPP (Precise Point Positioning) satellietnavigatie, afwijking tussen
@@ -3711,6 +3765,8 @@
             </tr>
             <tr>
                <td>PPPGPS5tot10cm</td>
+               <td>✔</td>
+               <td>✔</td>
                <td>
                   
                   <p>Meting d.m.v. PPP (Precise Point Positioning) satellietnavigatie, afwijking tussen
@@ -3723,6 +3779,8 @@
             </tr>
             <tr>
                <td>PPPGPS10tot50cm</td>
+               <td>✔</td>
+               <td>✔</td>
                <td>
                   
                   <p>Meting d.m.v. PPP (Precise Point Positioning) satellietnavigatie, afwijking tussen
@@ -3734,6 +3792,8 @@
             </tr>
             <tr>
                <td>RTKGPS0tot2cm</td>
+               <td>✔</td>
+               <td>✔</td>
                <td>
                   
                   <p>Meting d.m.v. RTK (Real Time Kinematic) satellietnavigatie, in het dagelijks gebruik
@@ -3746,6 +3806,8 @@
             </tr>
             <tr>
                <td>RTKGPS2tot5cm</td>
+               <td>✔</td>
+               <td>✔</td>
                <td>
                   
                   <p>Meting d.m.v. RTK (Real Time Kinematic) satellietnavigatie, in het dagelijks gebruik
@@ -3758,6 +3820,8 @@
             </tr>
             <tr>
                <td>RTKGPS5tot10cm</td>
+               <td>✔</td>
+               <td>✔</td>
                <td>
                   
                   <p>Meting d.m.v. RTK (Real Time Kinematic) satellietnavigatie, in het dagelijks gebruik
@@ -3770,6 +3834,8 @@
             </tr>
             <tr>
                <td>RTKGPS10tot50cm</td>
+               <td>✔</td>
+               <td>✔</td>
                <td>
                   
                   <p>Meting d.m.v. RTK (Real Time Kinematic) satellietnavigatie, in het dagelijks gebruik
@@ -3782,6 +3848,8 @@
             </tr>
             <tr>
                <td>tachymetrie0tot10cm</td>
+               <td>✔</td>
+               <td>✔</td>
                <td>
                   
                   <p>Meting d.m.v. tachymetrie, ook wel als landmeting of Total Station aangeduid, vanaf
@@ -3790,6 +3858,8 @@
             </tr>
             <tr>
                <td>tachymetrie10tot50cm</td>
+               <td>✔</td>
+               <td>✔</td>
                <td>
                   
                   <p>Meting d.m.v. tachymetrie, ook wel als landmeting of Total Station aangeduid, vanaf
@@ -3815,15 +3885,21 @@
       </table>
       
       <table style="width: 100%;" class="list">
-         <colgroup style="width: 50%;"></colgroup>
+         <colgroup style="width: 20%;"></colgroup>
+         <colgroup style="width: 5%;"></colgroup>
+         <colgroup style="width: 5%;"></colgroup>
          <colgroup></colgroup>
          <tbody>
             <tr>
                <th>Waarde</th>
+               <th>IMBRO</th>
+               <th>IMBRO/A</th>
                <th>Omschrijving</th>
             </tr>
             <tr>
                <td>aangevuld</td>
+               <td>✔</td>
+               <td>✔</td>
                <td>
                   
                   <p>Het registreren van de gegevens van het object heeft na de start van de registratie
@@ -3833,6 +3909,8 @@
             </tr>
             <tr>
                <td>geregistreerd</td>
+               <td>✔</td>
+               <td>✔</td>
                <td>
                   
                   <p>Het registreren van de gegevens van het object is gestart. De gegevens uit het eerste
@@ -3842,6 +3920,8 @@
             </tr>
             <tr>
                <td>voltooid</td>
+               <td>✔</td>
+               <td>✔</td>
                <td>
                   
                   <p>Het registreren van de gegevens van het object is voltooid. Alle gegevens zijn in
@@ -3872,15 +3952,21 @@
       </table>
       
       <table style="width: 100%;" class="list">
-         <colgroup style="width: 50%;"></colgroup>
+         <colgroup style="width: 20%;"></colgroup>
+         <colgroup style="width: 5%;"></colgroup>
+         <colgroup style="width: 5%;"></colgroup>
          <colgroup></colgroup>
          <tbody>
             <tr>
                <th>Waarde</th>
+               <th>IMBRO</th>
+               <th>IMBRO/A</th>
                <th>Omschrijving</th>
             </tr>
             <tr>
                <td>wettelijkeStatusGewijzigd</td>
+               <td>✔</td>
+               <td>✔</td>
                <td>
                   
                   <p>De wettelijke status van een mijnbouwconstructie is gewijzigd.</p>
@@ -3888,6 +3974,8 @@
             </tr>
             <tr>
                <td>eigenaarGewijzigd</td>
+               <td>✔</td>
+               <td>✔</td>
                <td>
                   
                   <p>De eigenaar van een mijnbouwconstructie is gewijzigd.</p>
@@ -3895,6 +3983,8 @@
             </tr>
             <tr>
                <td>geometrieBoortrajectGewijzigd</td>
+               <td>✔</td>
+               <td>✔</td>
                <td>
                   
                   <p>De geometrie van een boortraject is gewijzigd.<br clear="none">
@@ -3903,6 +3993,8 @@
             </tr>
             <tr>
                <td>gemijndGebiedMijnstelselHerzien</td>
+               <td>✔</td>
+               <td>✔</td>
                <td>
                   
                   <p>Het gemijnd gebied van een mijnstelselsel is opnieuw bepaald.</p>
@@ -3910,6 +4002,8 @@
             </tr>
             <tr>
                <td>locatieToegangHerzien</td>
+               <td>✔</td>
+               <td>✔</td>
                <td>
                   
                   <p>De locatie van een toegang is opnieuw bepaald.</p>
@@ -3917,6 +4011,8 @@
             </tr>
             <tr>
                <td>gebiedTransportzoneHerzien</td>
+               <td>✔</td>
+               <td>✔</td>
                <td>
                   
                   <p>Het gebied van een transportzone is opnieuw bepaald.</p>
@@ -3924,6 +4020,8 @@
             </tr>
             <tr>
                <td>gebiedOntginningszoneHerzien</td>
+               <td>✔</td>
+               <td>✔</td>
                <td>
                   
                   <p>Het gebied van een ontginningszone is opnieuw bepaald.</p>
@@ -3949,15 +4047,21 @@
       </table>
       
       <table style="width: 100%;" class="list">
-         <colgroup style="width: 50%;"></colgroup>
+         <colgroup style="width: 20%;"></colgroup>
+         <colgroup style="width: 5%;"></colgroup>
+         <colgroup style="width: 5%;"></colgroup>
          <colgroup></colgroup>
          <tbody>
             <tr>
                <th>Waarde</th>
+               <th>IMBRO</th>
+               <th>IMBRO/A</th>
                <th>Omschrijving</th>
             </tr>
             <tr>
                <td>boorgat</td>
+               <td>✔</td>
+               <td>✔</td>
                <td>
                   
                   <p>Een boorgat is een ondergrondse holte die bestaat uit een stelsel van een of meerdere
@@ -3971,6 +4075,8 @@
             </tr>
             <tr>
                <td>mijnstelsel</td>
+               <td>✔</td>
+               <td>✔</td>
                <td>
                   
                   <p>Een mijnstelsel is een ondergronds stelsel van gangen, schachten en/of ontgonnen of
@@ -3979,6 +4085,8 @@
             </tr>
             <tr>
                <td>zoutcaverne</td>
+               <td>✔</td>
+               <td>✔</td>
                <td></td>
             </tr>
          </tbody>
@@ -4000,15 +4108,21 @@
       </table>
       
       <table style="width: 100%;" class="list">
-         <colgroup style="width: 50%;"></colgroup>
+         <colgroup style="width: 20%;"></colgroup>
+         <colgroup style="width: 5%;"></colgroup>
+         <colgroup style="width: 5%;"></colgroup>
          <colgroup></colgroup>
          <tbody>
             <tr>
                <th>Waarde</th>
+               <th>IMBRO</th>
+               <th>IMBRO/A</th>
                <th>Omschrijving</th>
             </tr>
             <tr>
                <td>DrempelkaartIndividueel</td>
+               <td></td>
+               <td>✔</td>
                <td>
                   
                   <p>Kaart waarop breuken, verzakkingen, verschuivingen en andere resultaten van aardbewegingen
@@ -4018,6 +4132,8 @@
             </tr>
             <tr>
                <td>DrempelkaartGecombineerd</td>
+               <td></td>
+               <td>✔</td>
                <td>
                   
                   <p>Kaart, samengesteld uit individuele drempelkaarten, waarop breuken, verzakkingen,
@@ -4027,6 +4143,8 @@
             </tr>
             <tr>
                <td>HoofdgrondplanIndividueel</td>
+               <td></td>
+               <td>✔</td>
                <td>
                   
                   <p>Kaart waarop een plattegrond is afgebeeld van de gangen op een bepaalde verdieping
@@ -4036,6 +4154,8 @@
             </tr>
             <tr>
                <td>HoofdgrondplanGecombineerd</td>
+               <td></td>
+               <td>✔</td>
                <td>
                   
                   <p>Kaart, samengesteld uit individuele hoofdgrondplannen, waarop waarop een plattegrond
@@ -4044,6 +4164,8 @@
             </tr>
             <tr>
                <td>LaagplanIndividueel</td>
+               <td></td>
+               <td>✔</td>
                <td>
                   
                   <p>Kaart waarop van een mijn de ontginningen van een bepaalde steenkoollaag zijn afgebeeld
@@ -4052,6 +4174,8 @@
             </tr>
             <tr>
                <td>LaagplanGecombineerd</td>
+               <td></td>
+               <td>✔</td>
                <td>
                   
                   <p>Kaart, samengesteld uit individuele laagplannen, waarop voor een combinatie van mijnen
@@ -4077,15 +4201,21 @@
       </table>
       
       <table style="width: 100%;" class="list">
-         <colgroup style="width: 50%;"></colgroup>
+         <colgroup style="width: 20%;"></colgroup>
+         <colgroup style="width: 5%;"></colgroup>
+         <colgroup style="width: 5%;"></colgroup>
          <colgroup></colgroup>
          <tbody>
             <tr>
                <th>Waarde</th>
+               <th>IMBRO</th>
+               <th>IMBRO/A</th>
                <th>Omschrijving</th>
             </tr>
             <tr>
                <td>horizontale waterput</td>
+               <td>✔</td>
+               <td>✔</td>
                <td>
                   
                   <p>Een holte die vanaf de zijkant van een heuvel horizontaal is aangelegd naar een ondergrondse
@@ -4094,6 +4224,8 @@
             </tr>
             <tr>
                <td>kalksteengroeve</td>
+               <td>✔</td>
+               <td>✔</td>
                <td>
                   
                   <p>Een ondergrondse ruimte die is aangelegd voor het winnen van kalksteen, hetzij in
@@ -4102,6 +4234,8 @@
             </tr>
             <tr>
                <td>militaire tunnel</td>
+               <td>✔</td>
+               <td>✔</td>
                <td>
                   
                   <p>Een ondergrondse, in kalksteen aangelegde doorgang, bedoeld voor militaire doeleinden.</p>
@@ -4109,6 +4243,8 @@
             </tr>
             <tr>
                <td>opslagruimte</td>
+               <td>✔</td>
+               <td>✔</td>
                <td>
                   
                   <p>Een ondergrondse, in kalksteen aangelegde holte, bedoeld voor de opslag van goederen.</p>
@@ -4116,6 +4252,8 @@
             </tr>
             <tr>
                <td>schuilkelder</td>
+               <td>✔</td>
+               <td>✔</td>
                <td>
                   
                   <p>Een ondergrondse, in kalksteen aangelegde holte, bedoeld ter ontwijking door de bevolking
@@ -4124,6 +4262,8 @@
             </tr>
             <tr>
                <td>steenkoolmijn</td>
+               <td>✔</td>
+               <td>✔</td>
                <td>
                   
                   <p>Een mijnstelsel voor de winning van steenkool.</p>
@@ -4131,6 +4271,8 @@
             </tr>
             <tr>
                <td>transporttunnel</td>
+               <td>✔</td>
+               <td>✔</td>
                <td>
                   
                   <p>Een ondergronds, in kalksteen aangelegde doorgang, bedoeld voor transportdoeleinden.</p>
@@ -4138,6 +4280,8 @@
             </tr>
             <tr>
                <td>vuursteenmijn</td>
+               <td>✔</td>
+               <td>✔</td>
                <td>
                   
                   <p>Een ondergronds, in kalksteen aangelegde doorgang, bedoeld voor de winning van vuursteen.</p>
@@ -4162,15 +4306,21 @@
       </table>
       
       <table style="width: 100%;" class="list">
-         <colgroup style="width: 50%;"></colgroup>
+         <colgroup style="width: 20%;"></colgroup>
+         <colgroup style="width: 5%;"></colgroup>
+         <colgroup style="width: 5%;"></colgroup>
          <colgroup></colgroup>
          <tbody>
             <tr>
                <th>Waarde</th>
+               <th>IMBRO</th>
+               <th>IMBRO/A</th>
                <th>Omschrijving</th>
             </tr>
             <tr>
                <td>gang</td>
+               <td>✔</td>
+               <td>✔</td>
                <td>
                   
                   <p>Een voornamelijk horizontaal lopende toegang tot een mijnstelsel.</p>
@@ -4178,6 +4328,8 @@
             </tr>
             <tr>
                <td>schacht</td>
+               <td>✔</td>
+               <td>✔</td>
                <td>
                   
                   <p>Een voornamelijk verticaal lopende toegang tot een mijnstelsel.</p>
@@ -4202,15 +4354,21 @@
       </table>
       
       <table style="width: 100%;" class="list">
-         <colgroup style="width: 50%;"></colgroup>
+         <colgroup style="width: 20%;"></colgroup>
+         <colgroup style="width: 5%;"></colgroup>
+         <colgroup style="width: 5%;"></colgroup>
          <colgroup></colgroup>
          <tbody>
             <tr>
                <th>Waarde</th>
+               <th>IMBRO</th>
+               <th>IMBRO/A</th>
                <th>Omschrijving</th>
             </tr>
             <tr>
                <td>BuitenGebruik</td>
+               <td>✔</td>
+               <td>✔</td>
                <td>
                   
                   <p>De aanduiding dat een mijnbouwwerk volgens de wettelijke vereisten buiten gebruik
@@ -4219,6 +4377,8 @@
             </tr>
             <tr>
                <td>InGebruik</td>
+               <td>✔</td>
+               <td>✔</td>
                <td>
                   
                   <p>De aanduiding dat een mijnbouwwerk wettelijk gezien niet buiten gebruik is gesteld.
