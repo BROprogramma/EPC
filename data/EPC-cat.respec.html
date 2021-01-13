@@ -1,4 +1,4 @@
-<section>
+<!DOCTYPE HTML><section>
    <h1>Gegevensdefinitie</h1>
    <section id="global_class_Model_Registratieobject">
       <h2>   Registratieobject</h2>
@@ -52,7 +52,7 @@
       </section>
    <section id="">
       <h2>Het domeinmodel   </h2>
-      <div class="imageinfo overview"><img src="data/Images/EAID_427D0B1B_02C7_47be_BB79_811DC7B03767.png" usemap="#imagemap-EAID_427D0B1B_02C7_47be_BB79_811DC7B03767" alt="Diagram &#xA;"><map name="imagemap-EAID_427D0B1B_02C7_47be_BB79_811DC7B03767"><area shape="rect" alt="Mijnbouwconstructie" coords="328,50,604,288" href="#graph_EAID_13895725_BEC6_4db9_94FA_45FD9EFF5B7A"><area shape="rect" alt="Mijnkaart" coords="921,315,1080,495" href="#graph_EAID_21D86031_1848_4114_BE7A_C7D59D904F70"><area shape="rect" alt="Ontginningszone" coords="616,527,896,698" href="#graph_EAID_D08FEA8B_2C37_4a07_8BA2_ACB20859D0D3"><area shape="rect" alt="Transportzone" coords="326,527,606,685" href="#graph_EAID_CFE642E9_B1B4_4565_826F_62987F16BE0C"><area shape="rect" alt="Toegang" coords="35,527,315,698" href="#graph_EAID_6E2D01B2_4E2A_4325_8E9B_4B6ABF5130B1"><area shape="rect" alt="Mijnstelsel" coords="326,315,606,473" href="#graph_EAID_775FFB45_C373_487e_9450_6549EE37260B"></map><p><b>Mijnbouwconstructies (EPC)</b></p>
+      <div class="imageinfo overview"><img src="data/Images/EAID_427D0B1B_02C7_47be_BB79_811DC7B03767.png" usemap="#imagemap-EAID_427D0B1B_02C7_47be_BB79_811DC7B03767" alt="Diagram &#xA;"><map name="imagemap-EAID_427D0B1B_02C7_47be_BB79_811DC7B03767"><area shape="rect" alt="Mijnbouwconstructie" coords="328,50,604,288" href="#graph_EAID_13895725_BEC6_4db9_94FA_45FD9EFF5B7A"><area shape="rect" alt="Mijnkaart" coords="801,311,960,477" href="#graph_EAID_21D86031_1848_4114_BE7A_C7D59D904F70"><area shape="rect" alt="Ontginningszone" coords="616,527,896,698" href="#graph_EAID_D08FEA8B_2C37_4a07_8BA2_ACB20859D0D3"><area shape="rect" alt="Transportzone" coords="326,527,606,685" href="#graph_EAID_CFE642E9_B1B4_4565_826F_62987F16BE0C"><area shape="rect" alt="Toegang" coords="35,527,315,698" href="#graph_EAID_6E2D01B2_4E2A_4325_8E9B_4B6ABF5130B1"><area shape="rect" alt="Mijnstelsel" coords="326,315,606,473" href="#graph_EAID_775FFB45_C373_487e_9450_6549EE37260B"></map><p><b>Mijnbouwconstructies (EPC)</b></p>
       </div>
    </section>
    <section id="">
@@ -74,6 +74,9 @@
                      
                      <p>De gegevens die de mijnbouwconstructie identificeren en inzicht geven in de geschiedenis
                         van het object voorafgaand aan opname in de registratie ondergrond.</p>
+                     
+                     <p>&gt; HIERONDER DE UITBREIDING VOOR MIJNSTELSEL
+                        (Kardinaliteit levensduur)</p>
                      </td>
                </tr>
             </tbody>
@@ -593,7 +596,7 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d33646e2030"></a><section id="detail_d33646e2030">
+            </section><a class="anchor" id="detail_d33714e2030"></a><section id="detail_d33714e2030">
             <h4>  registratiegeschiedenis</h4>
             
             
@@ -603,7 +606,7 @@
                <tbody>
                   <tr>
                      <th>Type gegeven</th>
-                     <td>Associatie van Mijnbouwconstructie</td>
+                     <td>Gegevensgroep van Mijnbouwconstructie</td>
                   </tr>
                   <tr>
                      <th>Juridische status</th>
@@ -627,11 +630,13 @@
                   </tr>
                   <tr>
                      <th>Target</th>
-                     <td>registratiegeschiedenis</td>
+                     <td>
+                        Registratiegeschiedenis
+                        </td>
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d33646e2176"></a><section id="detail_d33646e2176">
+            </section><a class="anchor" id="detail_d33714e2153"></a><section id="detail_d33714e2153">
             <h4>  levensduur</h4>
             
             
@@ -641,7 +646,7 @@
                <tbody>
                   <tr>
                      <th>Type gegeven</th>
-                     <td>Associatie van Mijnbouwconstructie</td>
+                     <td>Gegevensgroep van Mijnbouwconstructie</td>
                   </tr>
                   <tr>
                      <th>Juridische status</th>
@@ -649,7 +654,7 @@
                   </tr>
                   <tr>
                      <th>Kardinaliteit</th>
-                     <td>1</td>
+                     <td>0..1</td>
                   </tr>
                   <tr>
                      <th>Relatiesoort naam</th>
@@ -665,11 +670,13 @@
                   </tr>
                   <tr>
                      <th>Target</th>
-                     <td>levensduur</td>
+                     <td>
+                        Levensduur
+                        </td>
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d33646e2320"></a><section id="detail_d33646e2320">
+            </section><a class="anchor" id="detail_d33714e2275"></a><section id="detail_d33714e2275">
             <h4>  gebeurtenis</h4>
             
             
@@ -679,7 +686,7 @@
                <tbody>
                   <tr>
                      <th>Type gegeven</th>
-                     <td>Associatie van Mijnbouwconstructie</td>
+                     <td>Gegevensgroep van Mijnbouwconstructie</td>
                   </tr>
                   <tr>
                      <th>Juridische status</th>
@@ -703,7 +710,9 @@
                   </tr>
                   <tr>
                      <th>Target</th>
-                     <td>gebeurtenis</td>
+                     <td>
+                        Gebeurtenis
+                        </td>
                   </tr>
                </tbody>
             </table>
@@ -1880,7 +1889,9 @@
                   </tr>
                   <tr>
                      <th>Target</th>
-                     <td>is weergegeven op</td>
+                     <td>
+                        Mijnkaart
+                        </td>
                   </tr>
                </tbody>
             </table>
@@ -1914,7 +1925,9 @@
                   </tr>
                   <tr>
                      <th>Target</th>
-                     <td>bestaat uit</td>
+                     <td>
+                        Toegang
+                        </td>
                   </tr>
                </tbody>
             </table>
@@ -1948,7 +1961,9 @@
                   </tr>
                   <tr>
                      <th>Target</th>
-                     <td>bestaat uit</td>
+                     <td>
+                        Ontginningszone
+                        </td>
                   </tr>
                </tbody>
             </table>
@@ -1982,11 +1997,13 @@
                   </tr>
                   <tr>
                      <th>Target</th>
-                     <td>bestaat uit</td>
+                     <td>
+                        Transportzone
+                        </td>
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d33646e6544"></a><section id="detail_d33646e6544">
+            </section><a class="anchor" id="detail_d33714e6479"></a><section id="detail_d33714e6479">
             <h4>  gegevens locatiebepaling</h4>
             
             
@@ -1996,7 +2013,7 @@
                <tbody>
                   <tr>
                      <th>Type gegeven</th>
-                     <td>Associatie van Mijnstelsel</td>
+                     <td>Gegevensgroep van Mijnstelsel</td>
                   </tr>
                   <tr>
                      <th>Juridische status</th>
@@ -2020,7 +2037,9 @@
                   </tr>
                   <tr>
                      <th>Target</th>
-                     <td>gegevens locatiebepaling</td>
+                     <td>
+                        Metagegevens locatiebepaling
+                        </td>
                   </tr>
                </tbody>
             </table>
@@ -2806,7 +2825,7 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d33646e9251"></a><section id="detail_d33646e9251">
+            </section><a class="anchor" id="detail_d33714e9162"></a><section id="detail_d33714e9162">
             <h4>  gegevens locatiebepaling</h4>
             
             
@@ -2816,7 +2835,7 @@
                <tbody>
                   <tr>
                      <th>Type gegeven</th>
-                     <td>Associatie van Toegang</td>
+                     <td>Gegevensgroep van Toegang</td>
                   </tr>
                   <tr>
                      <th>Definitie</th>
@@ -2847,7 +2866,9 @@
                   </tr>
                   <tr>
                      <th>Target</th>
-                     <td>gegevens locatiebepaling</td>
+                     <td>
+                        Metagegevens locatiebepaling
+                        </td>
                   </tr>
                </tbody>
             </table>
@@ -3124,7 +3145,7 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d33646e10388"></a><section id="detail_d33646e10388">
+            </section><a class="anchor" id="detail_d33714e10275"></a><section id="detail_d33714e10275">
             <h4>  gegevens locatiebepaling</h4>
             
             
@@ -3134,7 +3155,7 @@
                <tbody>
                   <tr>
                      <th>Type gegeven</th>
-                     <td>Associatie van Transportzone</td>
+                     <td>Gegevensgroep van Transportzone</td>
                   </tr>
                   <tr>
                      <th>Definitie</th>
@@ -3165,7 +3186,9 @@
                   </tr>
                   <tr>
                      <th>Target</th>
-                     <td>gegevens locatiebepaling</td>
+                     <td>
+                        Metagegevens locatiebepaling
+                        </td>
                   </tr>
                   <tr>
                      <th>Regels</th>
@@ -3505,7 +3528,7 @@
                         <p>
                            <em>Gebied</em> ligt geheel binnen het <em>gemijnd gebied</em> van het <em>Mijnstelsel</em>.
                            De gebieden van ontginningszones die dezelfde <em>steenkoollaag</em> hebben, mogen elkaar niet overlappen.
-                           <em>Gebied</em> mag niet openbaar uitgeleverd wanneer het <em>soort mijnstelsel</em> ongelijk is aan 'steenkoolmijn'.</p>
+                           <em>Gebied</em> mag niet openbaar uitgeleverd worden wanneer het <em>soort mijnstelsel</em> ongelijk is aan 'steenkoolmijn'.</p>
                         </td>
                   </tr>
                   <tr>
@@ -3514,7 +3537,7 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d33646e11748"></a><section id="detail_d33646e11748">
+            </section><a class="anchor" id="detail_d33714e11611"></a><section id="detail_d33714e11611">
             <h4>  gegevens locatiebepaling</h4>
             
             
@@ -3524,7 +3547,7 @@
                <tbody>
                   <tr>
                      <th>Type gegeven</th>
-                     <td>Associatie van Ontginningszone</td>
+                     <td>Gegevensgroep van Ontginningszone</td>
                   </tr>
                   <tr>
                      <th>Definitie</th>
@@ -3555,7 +3578,9 @@
                   </tr>
                   <tr>
                      <th>Target</th>
-                     <td>gegevens locatiebepaling</td>
+                     <td>
+                        Metagegevens locatiebepaling
+                        </td>
                   </tr>
                   <tr>
                      <th>Regels</th>
