@@ -561,7 +561,7 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d47809e1999"></a><section id="detail_d47809e1999">
+            </section><a class="anchor" id="detail_d47857e1999"></a><section id="detail_d47857e1999">
             <h4>  registratiegeschiedenis</h4>
             
             
@@ -601,7 +601,7 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d47809e2122"></a><section id="detail_d47809e2122">
+            </section><a class="anchor" id="detail_d47857e2122"></a><section id="detail_d47857e2122">
             <h4>  aangeleverde locatie</h4>
             
             
@@ -641,7 +641,7 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d47809e2245"></a><section id="detail_d47809e2245">
+            </section><a class="anchor" id="detail_d47857e2245"></a><section id="detail_d47857e2245">
             <h4>  aangeleverde verticale positie</h4>
             
             
@@ -681,7 +681,7 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d47809e2368"></a><section id="detail_d47809e2368">
+            </section><a class="anchor" id="detail_d47857e2368"></a><section id="detail_d47857e2368">
             <h4>  levensduur</h4>
             
             
@@ -721,7 +721,7 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d47809e2491"></a><section id="detail_d47809e2491">
+            </section><a class="anchor" id="detail_d47857e2491"></a><section id="detail_d47857e2491">
             <h4>  gestandaardiseerde locatie</h4>
             
             
@@ -761,7 +761,7 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d47809e2614"></a><section id="detail_d47809e2614">
+            </section><a class="anchor" id="detail_d47857e2614"></a><section id="detail_d47857e2614">
             <h4>  gebeurtenis</h4>
             
             
@@ -1473,7 +1473,7 @@
                   </tr>
                   <tr>
                      <th>Kardinaliteit</th>
-                     <td>1</td>
+                     <td>0..1</td>
                   </tr>
                   <tr>
                      <th>Domein</th>
@@ -1484,13 +1484,24 @@
                      <td>Datum</td>
                   </tr>
                   <tr>
+                     <th>&nbsp;&nbsp;Naam IMBRO/A</th>
+                     <td>OnvolledigeDatum</td>
+                  </tr>
+                  <tr>
                      <th>Regels</th>
+                     <td>
+                        
+                        <p>Het attribuut <em>* moet aanwezig zijn wanneer de waarde van het attribuut</em>soort mijnbouwconstructie<em>ongelijk is aan</em>mijnstelsel*.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Regels IMBRO/A</th>
                      <td>
                         
                         <p>Het attribuut <em> </em> mag afwezig zijn wanneer de gegevens zijn aangeleverd onder het kwaliteitsregime
                            IMBRO/A.
-                           Het attribuut <em> </em> moet aanwezig zijn wanneer de gegevens zijn aangeleverd onder het kwaliteitsregime
-                           IMBRO.</p>
+                           Het attribuut mag een onvolledige datum bevatten wanneer de gegevens zijn aangeleverd
+                           onder het kwaliteitsregime IMBRO/A en de waarde van het attribuut <em>soort mijnbouwconstructie</em> gelijk is aan <em>mijnstelsel</em>.</p>
                         </td>
                   </tr>
                   <tr>
@@ -1542,10 +1553,15 @@
                      <td>Datum</td>
                   </tr>
                   <tr>
-                     <th>Regels</th>
+                     <th>&nbsp;&nbsp;Naam IMBRO/A</th>
+                     <td>OnvolledigeDatum</td>
+                  </tr>
+                  <tr>
+                     <th>Regels IMBRO/A</th>
                      <td>
                         
-                        <p>Het attribuut <em>* mag een onvolledige datum bevatten bij een</em>Mijnstelsel* wanneer de gegevens daarover voldoen aan het kwaliteitsregime IMBRO/A.</p>
+                        <p>Het attribuut mag een onvolledige datum bevatten wanneer de gegevens zijn aangeleverd
+                           onder het kwaliteitsregime IMBRO/A en de waarde van het attribuut <em>soort mijnbouwconstructie</em> gelijk is aan <em>mijnstelsel</em>.</p>
                         </td>
                   </tr>
                   <tr>
@@ -2928,7 +2944,7 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d47809e9781"></a><section id="detail_d47809e9781">
+            </section><a class="anchor" id="detail_d47857e9835"></a><section id="detail_d47857e9835">
             <h4>  boortraject locatie</h4>
             
             
@@ -3598,7 +3614,7 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d47809e11830"></a><section id="detail_d47809e11830">
+            </section><a class="anchor" id="detail_d47857e11884"></a><section id="detail_d47857e11884">
             <h4>  gegevens locatiebepaling</h4>
             
             
@@ -3941,7 +3957,7 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d47809e12953"></a><section id="detail_d47809e12953">
+            </section><a class="anchor" id="detail_d47857e13007"></a><section id="detail_d47857e13007">
             <h4>  gegevens locatiebepaling</h4>
             
             
@@ -4262,7 +4278,7 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d47809e14063"></a><section id="detail_d47809e14063">
+            </section><a class="anchor" id="detail_d47857e14117"></a><section id="detail_d47857e14117">
             <h4>  gegevens locatiebepaling</h4>
             
             
@@ -4655,7 +4671,7 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d47809e15398"></a><section id="detail_d47809e15398">
+            </section><a class="anchor" id="detail_d47857e15452"></a><section id="detail_d47857e15452">
             <h4>  gegevens locatiebepaling</h4>
             
             
