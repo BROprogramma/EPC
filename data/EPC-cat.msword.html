@@ -15,7 +15,7 @@
    <body>
       <p>Conceptual model/Mijnbouwconstructies (EPC) - conceptueel/20200727</p>
       <p>Imvertor: 1.62.2</p>
-      <p>Model release: Conceptualmodel-MijnbouwconstructiesEPC-conceptueel-0.1versie27juli2020-1-20200727-20210127-145901</p>
+      <p>Model release: Conceptualmodel-MijnbouwconstructiesEPC-conceptueel-0.1versie27juli2020-1-20200727-20210127-155743</p>
       <hr>
       <section>
          <h1>Artikel 1 Definitie van registratieobject, entiteiten en attributen</h1>
@@ -346,11 +346,13 @@
                                        wijzigen tot het moment dat de gehele productie-installatie is geabandonneerd.  De
                                        organisatie die eigenaar was ten tijde de abandonnering van de gehele productie-installatie
                                        is de (laatste) eigenaar van het boorgat.<br clear="none">
-                                       De eigenaar van de zoutcaverne is gelijk aan de eigenaar van  het boorgat of de boorgaten
-                                       waarvan één of meerdere boortrajecten de zoutcaverne ontsluiten.<br clear="none">
-                                       Het gegeven is door de dataleverancier bij de overdracht meegegeven in het geval de
-                                       dataleverancier niet de bronhouder is.</li>
+                                       </li>
                                     </ul>
+                                 
+                                 <p>De eigenaar van de zoutcaverne is gelijk aan de eigenaar van  het boorgat of de boorgaten
+                                    waarvan één of meerdere boortrajecten de zoutcaverne ontsluiten.<br clear="none">
+                                    Het gegeven is door de dataleverancier bij de overdracht meegegeven in het geval de
+                                    dataleverancier niet de bronhouder is.</p>
                                  
                                  <p>OPEN PUNT: Toelichting voor mijnstelsel.</p>
                                  </td>
@@ -656,7 +658,7 @@
                            </tr>
                         </tbody>
                      </table>
-                     </section><a class="anchor" id="detail_d48403e2172"></a><section id="detail_d48403e2172">
+                     </section><a class="anchor" id="detail_d48574e2177"></a><section id="detail_d48574e2177">
                      <h4>  gebeurtenis</h4>
                      
                      
@@ -694,7 +696,7 @@
                            </tr>
                         </tbody>
                      </table>
-                     </section><a class="anchor" id="detail_d48403e2318"></a><section id="detail_d48403e2318">
+                     </section><a class="anchor" id="detail_d48574e2323"></a><section id="detail_d48574e2323">
                      <h4>  gestandaardiseerde locatie</h4>
                      
                      
@@ -732,7 +734,7 @@
                            </tr>
                         </tbody>
                      </table>
-                     </section><a class="anchor" id="detail_d48403e2464"></a><section id="detail_d48403e2464">
+                     </section><a class="anchor" id="detail_d48574e2469"></a><section id="detail_d48574e2469">
                      <h4>  levensduur</h4>
                      
                      
@@ -770,7 +772,7 @@
                            </tr>
                         </tbody>
                      </table>
-                     </section><a class="anchor" id="detail_d48403e2610"></a><section id="detail_d48403e2610">
+                     </section><a class="anchor" id="detail_d48574e2615"></a><section id="detail_d48574e2615">
                      <h4>  registratiegeschiedenis</h4>
                      
                      
@@ -1582,6 +1584,15 @@
                               <th>Materiële geschiedenis</th>
                               <td>Nee</td>
                            </tr>
+                           <tr>
+                              <th>Toelichting</th>
+                              <td>
+                                 
+                                 <p>Het attribuut is optioneel omdat de wetgeving niet verplicht deze gegevens aan te
+                                    leveren voor het soort mijnbouwconstructie zoutcaverne.<br clear="none">
+                                    </p>
+                                 </td>
+                           </tr>
                         </tbody>
                      </table>
                      </section><a class="anchor" id="detail_attribute_Model_Levensduur_ontstaansdatum"></a><section id="detail_attribute_Model_Levensduur_ontstaansdatum">
@@ -1637,7 +1648,10 @@
                               <td>
                                  
                                  <p>Bij een mijnbouwconstructie van het soort 'boorgat' betreft dit de datum waarop het
-                                    boren van het primaire boortraject is gestart.</p>
+                                    boren van het primaire boortraject is gestart.<br clear="none">
+                                    Het attribuut is optioneel omdat de wetgeving niet verplicht deze gegevens aan te
+                                    leveren voor het soort mijnbouwconstructie zoutcaverne.<br clear="none">
+                                    </p>
                                  </td>
                            </tr>
                         </tbody>
@@ -2175,7 +2189,7 @@
                            </tr>
                         </tbody>
                      </table>
-                     </section><a class="anchor" id="detail_d48403e7323"></a><section id="detail_d48403e7323">
+                     </section><a class="anchor" id="detail_d48574e7365"></a><section id="detail_d48574e7365">
                      <h4>  aangeleverde verticale positie</h4>
                      
                      
@@ -2213,7 +2227,7 @@
                            </tr>
                         </tbody>
                      </table>
-                     </section><a class="anchor" id="detail_d48403e7469"></a><section id="detail_d48403e7469">
+                     </section><a class="anchor" id="detail_d48574e7511"></a><section id="detail_d48574e7511">
                      <h4>  locatie</h4>
                      
                      
@@ -2974,7 +2988,7 @@
                            </tr>
                         </tbody>
                      </table>
-                     </section><a class="anchor" id="detail_d48403e10082"></a><section id="detail_d48403e10082">
+                     </section><a class="anchor" id="detail_d48574e10124"></a><section id="detail_d48574e10124">
                      <h4>  boortraject locatie</h4>
                      
                      
@@ -6182,12 +6196,30 @@
                      <th>Omschrijving</th>
                   </tr>
                   <tr>
+                     <td>aanlegBoorgat</td>
+                     <td>✔</td>
+                     <td>✔</td>
+                     <td>
+                        
+                        <p>Een nieuw boorgat wordt aangelegd.</p>
+                        </td>
+                  </tr>
+                  <tr>
                      <td>eigenaarGewijzigd</td>
                      <td>✔</td>
                      <td>✔</td>
                      <td>
                         
                         <p>De eigenaar van een mijnbouwconstructie is gewijzigd.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <td>eindeBoorgat</td>
+                     <td>✔</td>
+                     <td>✔</td>
+                     <td>
+                        
+                        <p>Het boorgat eindigd te bestaan.</p>
                         </td>
                   </tr>
                   <tr>
