@@ -15,7 +15,7 @@
    <body>
       <p>Conceptual model/Mijnbouwconstructies (EPC) - conceptueel/20200727</p>
       <p>Imvertor: 1.63.0</p>
-      <p>Model release: Conceptualmodel-MijnbouwconstructiesEPC-conceptueel-0.1versie27juli2020-1-20200727-20210128-080028</p>
+      <p>Model release: Conceptualmodel-MijnbouwconstructiesEPC-conceptueel-0.1versie27juli2020-1-20200727-20210129-075113</p>
       <hr>
       <section>
          <h1>Artikel 1 Definitie van registratieobject, entiteiten en attributen</h1>
@@ -62,7 +62,7 @@
          <section>
             <h2>Het domeinmodel</h2>
             <section id="">
-               <div class="imageinfo overview"><img src="Images/EAID_017CB205_53B6_4659_8664_F773CFA9FA2C.png" usemap="#imagemap-EAID_017CB205_53B6_4659_8664_F773CFA9FA2C" alt="Diagram "><map name="imagemap-EAID_017CB205_53B6_4659_8664_F773CFA9FA2C"><area shape="rect" alt="Mijnbouwwetvergunning" coords="667,11,845,91" href="#graph_EAID_27B442E5_A032_4487_8D18_F4E249D79776"><area shape="rect" alt="Zoutcaverne" coords="305,341,524,443" href="#graph_EAID_B71159A1_F213_4de2_AED5_550473F15950"><area shape="rect" alt="Mijnkaart" coords="868,341,1029,513" href="#graph_EAID_1A8DB415_AEF6_4f69_8E8C_0187A61B4D1B"><area shape="rect" alt="Ontginningszone" coords="811,593,1029,748" href="#graph_EAID_B1D55B65_6D27_4eb4_86EC_32DE6BA11322"><area shape="rect" alt="Transportzone" coords="540,593,760,737" href="#graph_EAID_828E18BC_B644_41e8_BF25_CBDE10E9249E"><area shape="rect" alt="Toegang" coords="326,593,503,737" href="#graph_EAID_35D7E222_DC56_4b0e_B219_FCFEF3AE6D86"><area shape="rect" alt="Mijnstelsel" coords="549,341,750,482" href="#graph_EAID_CACC8EE7_6654_4fe8_8333_101AC6BA294D"><area shape="rect" alt="Boorgat" coords="10,341,281,430" href="#graph_EAID_78FEC25A_E260_4420_9D1D_66F309EA2C60"><area shape="rect" alt="Boortraject" coords="10,485,223,656" href="#graph_EAID_4E52826A_2252_4994_8AD0_986AD45E18C9"><area shape="rect" alt="Mijnbouwconstructie" coords="253,10,533,264" href="#graph_EAID_69DE8D60_7E06_4b57_94CD_8338348EDAE5"></map><p><b>Mijnbouwconstructies (EPC) -  overzicht</b></p>
+               <div class="imageinfo overview"><img src="Images/EAID_017CB205_53B6_4659_8664_F773CFA9FA2C.png" usemap="#imagemap-EAID_017CB205_53B6_4659_8664_F773CFA9FA2C" alt="Diagram "><map name="imagemap-EAID_017CB205_53B6_4659_8664_F773CFA9FA2C"><area shape="rect" alt="Mijnbouwwetvergunning" coords="667,11,845,91" href="#graph_EAID_27B442E5_A032_4487_8D18_F4E249D79776"><area shape="rect" alt="Zoutcaverne" coords="303,341,527,443" href="#graph_EAID_B71159A1_F213_4de2_AED5_550473F15950"><area shape="rect" alt="Mijnkaart" coords="868,341,1029,513" href="#graph_EAID_1A8DB415_AEF6_4f69_8E8C_0187A61B4D1B"><area shape="rect" alt="Ontginningszone" coords="800,593,1018,748" href="#graph_EAID_B1D55B65_6D27_4eb4_86EC_32DE6BA11322"><area shape="rect" alt="Transportzone" coords="540,593,760,737" href="#graph_EAID_828E18BC_B644_41e8_BF25_CBDE10E9249E"><area shape="rect" alt="Toegang" coords="326,593,503,737" href="#graph_EAID_35D7E222_DC56_4b0e_B219_FCFEF3AE6D86"><area shape="rect" alt="Mijnstelsel" coords="549,341,750,482" href="#graph_EAID_CACC8EE7_6654_4fe8_8333_101AC6BA294D"><area shape="rect" alt="Boorgat" coords="10,341,281,430" href="#graph_EAID_78FEC25A_E260_4420_9D1D_66F309EA2C60"><area shape="rect" alt="Boortraject" coords="10,485,223,656" href="#graph_EAID_4E52826A_2252_4994_8AD0_986AD45E18C9"><area shape="rect" alt="Mijnbouwconstructie" coords="253,10,533,264" href="#graph_EAID_69DE8D60_7E06_4b57_94CD_8338348EDAE5"></map><p><b>Mijnbouwconstructies (EPC) -  overzicht</b></p>
                </div>
             </section>
          </section>
@@ -542,6 +542,14 @@
                               <td>Organisatie</td>
                            </tr>
                            <tr>
+                              <th>Regels IMBRO/A</th>
+                              <td>
+                                 
+                                 <p>Voor IMBRO/A gegevens mag het attribuut ontbreken wanneer de waarde van het attribuut
+                                    <em>mijnbouwactiviteit</em> gelijk is aan <em>opsporenDelfstof</em>.</p>
+                                 </td>
+                           </tr>
+                           <tr>
                               <th>Materiële geschiedenis</th>
                               <td>Nee</td>
                            </tr>
@@ -553,26 +561,26 @@
                               <th>Reden geen waarde</th>
                               <td>
                                  
-                                 <p>Voor IMBRO/A gegevens mag de eigenaar ontbreken wanneer het attribuut mijnbouwactiviteit
-                                    gelijk is aan opsporenDelfstof (steenkool).<br clear="none">
-                                    De waarde mag ontbreken wanneer de laatste eigenaar van een boorgat failliet is gegaan
-                                    en het bedrijf niet is overgenomen door een ander bedrijf. Op dat moment is het boorgat
-                                    zonder eigenaar.<br clear="none">
-                                    De waarde moet ontbreken wanneer de eigenaar van het Mijnstelsel een natuurlijk persoon
-                                    is.<br clear="none">
-                                    De waarde moet ontbreken wanneer het Mijnstelsel niet van het soort mijnstelsel 'steenkoolmijn'
-                                    is en toegangen heeft met verschillende eigenaren.<br clear="none">
-                                    De waarde moet ontbreken wanneer het Mijnstelsel niet van het soort mijnstelsel 'steenkoolmijn'
-                                    is en alleen toegangen heeft die buiten Nederland liggen.<br clear="none">
-                                    De waarde moet ontbreken wanneer het Mijnstelsel niet van het soort mijnstelsel 'steenkoolmijn'
-                                    is en geen bekende toegangen heeft.</p>
+                                 <p>De laatste eigenaar van het Boorgat is failliet gegaan en het bedrijf is niet overgenomen
+                                    door een ander bedrijf.<br clear="none">
+                                    De eigenaar van het Mijnstelsel is een natuurlijk persoon.<br clear="none">
+                                    Het Mijnstelsel is niet van het soort mijnstelsel 'steenkoolmijn' en heeft toegangen
+                                    met verschillende eigenaren.<br clear="none">
+                                    Het Mijnstelsel is niet van het soort mijnstelsel 'steenkoolmijn' en heeft alleen
+                                    toegangen die buiten Nederland liggen.<br clear="none">
+                                    Het Mijnstelsel is niet van het soort mijnstelsel 'steenkoolmijn' en heeft geen bekende
+                                    toegangen.</p>
                                  </td>
                            </tr>
                            <tr>
                               <th>Toelichting</th>
                               <td>
                                  
-                                 <p>De eigenaar van het boorgat is gelijk aan de vergunninghouder van de vergunning waar
+                                 <p>Het gegeven is door de dataleverancier bij de overdracht meegegeven in het geval de
+                                    dataleverancier niet de bronhouder is.<br clear="none">
+                                    </p>
+                                 
+                                 <p>De eigenaar van een boorgat is gelijk aan de vergunninghouder van de vergunning waar
                                     het boorgat onder valt.<br clear="none">
                                     </p>
                                  
@@ -595,15 +603,12 @@
                                  
                                  <p>De eigenaar van de zoutcaverne is gelijk aan de eigenaar van  het boorgat of de boorgaten
                                     waarvan één of meerdere boortrajecten de zoutcaverne ontsluiten.<br clear="none">
-                                    Het gegeven is door de dataleverancier bij de overdracht meegegeven in het geval de
-                                    dataleverancier niet de bronhouder is.</p>
-                                 
-                                 <p>OPEN PUNT: Toelichting voor mijnstelsel.</p>
+                                    </p>
                                  </td>
                            </tr>
                         </tbody>
                      </table>
-                     </section><a class="anchor" id="detail_d48665e2189"></a><section id="detail_d48665e2189">
+                     </section><a class="anchor" id="detail_d48684e2217"></a><section id="detail_d48684e2217">
                      <h4>  levensduur</h4>
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -629,7 +634,7 @@
                            </tr>
                         </tbody>
                      </table>
-                  </section><a class="anchor" id="detail_d48665e2312"></a><section id="detail_d48665e2312">
+                  </section><a class="anchor" id="detail_d48684e2340"></a><section id="detail_d48684e2340">
                      <h4>  gebeurtenis</h4>
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -655,7 +660,7 @@
                            </tr>
                         </tbody>
                      </table>
-                  </section><a class="anchor" id="detail_d48665e2435"></a><section id="detail_d48665e2435">
+                  </section><a class="anchor" id="detail_d48684e2463"></a><section id="detail_d48684e2463">
                      <h4>  registratiegeschiedenis</h4>
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -681,7 +686,7 @@
                            </tr>
                         </tbody>
                      </table>
-                  </section><a class="anchor" id="detail_d48665e2558"></a><section id="detail_d48665e2558">
+                  </section><a class="anchor" id="detail_d48684e2586"></a><section id="detail_d48684e2586">
                      <h4>  gestandaardiseerde locatie</h4>
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -2104,7 +2109,7 @@
                               </td>
                         </tr>
                      </tbody>
-                  </table><a class="anchor" id="detail_d48665e7280"></a><section id="detail_d48665e7280">
+                  </table><a class="anchor" id="detail_d48684e7308"></a><section id="detail_d48684e7308">
                      <h4>  locatie</h4>
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -2149,7 +2154,7 @@
                            </tr>
                         </tbody>
                      </table>
-                  </section><a class="anchor" id="detail_d48665e7542"></a><section id="detail_d48665e7542">
+                  </section><a class="anchor" id="detail_d48684e7570"></a><section id="detail_d48684e7570">
                      <h4>  aangeleverde verticale positie</h4>
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -2920,7 +2925,7 @@
                            </tr>
                         </tbody>
                      </table>
-                     </section><a class="anchor" id="detail_d48665e9992"></a><section id="detail_d48665e9992">
+                     </section><a class="anchor" id="detail_d48684e10020"></a><section id="detail_d48684e10020">
                      <h4>  boortraject locatie</h4>
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -4718,16 +4723,15 @@
                               
                               <p>Een geografische weergave van een gebied waar mijnbouwactiviteiten plaatsvinden of
                                  hebben plaatsgevonden.</p>
-                              
-                              <p>OPEN PUNT: Attribuut nog op te nemen voor de mijnkaart zelf als afbeelding, of als
-                                 verwijzing naar bestand.</p>
                               </td>
                         </tr>
                         <tr>
                            <th>Toelichting</th>
                            <td>
                               
-                              <p>Onder 'kaart' worden zowel afzonderlijke c.q. individuele kaartbladen verstaan als
+                              <p>Mijnkaarten van steenkoolmijnen zijn in de registratie ondergrond beschikbaar als
+                                 gegevensbestanden in een bestandsformaat voor geogerefereerde afbeeldingen.
+                                 Onder 'kaart' worden zowel afzonderlijke c.q. individuele kaartbladen verstaan als
                                  kaarten die samengesteld c.q. gecombineerd zijn uit meerdere individuele kaartbladen.</p>
                               </td>
                         </tr>
