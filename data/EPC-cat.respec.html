@@ -30,9 +30,9 @@
                <th>Populatie</th>
                <td>
                   
-                  <p>De populatie mijnbouwwerken in de basisregistratie ondergrond omvat de mijnbouwwerken
-                     die onder het regime van de mijnbouwwet vallen. Ieder werk heeft ter identificatie
-                     een eigen BRO-ID.</p>
+                  <p>De populatie mijnbouwconstructies in de basisregistratie ondergrond omvat de mijnbouwconstructies
+                     die onder het regime van de mijnbouwwetgeving vallen. Iedere constructie heeft ter
+                     identificatie een eigen BRO-ID.</p>
                   </td>
             </tr>
          </tbody>
@@ -46,7 +46,7 @@
    <section id="">
       <h2>Entiteiten en attributen   </h2><a class="anchor" id="graph_EAID_69DE8D60_7E06_4b57_94CD_8338348EDAE5"></a><a class="anchor" id="global_class_Model_Mijnbouwconstructie"></a><section id="global_class_Model_Mijnbouwconstructie">
          <h3>   Mijnbouwconstructie</h3>
-         <div class="imageinfo "><img src="data/Images/EAID_4918A086_07EB_4d65_A8F1_3AE97E085019.png" usemap="#imagemap-EAID_4918A086_07EB_4d65_A8F1_3AE97E085019" alt="Diagram "><map name="imagemap-EAID_4918A086_07EB_4d65_A8F1_3AE97E085019"><area shape="rect" alt="Mijnbouwwetvergunning" coords="701,10,879,90" href="#graph_EAID_27B442E5_A032_4487_8D18_F4E249D79776"><area shape="rect" alt="Zoutcaverne" coords="374,396,453,448" href="#graph_EAID_B71159A1_F213_4de2_AED5_550473F15950"><area shape="rect" alt="Gebeurtenis" coords="48,359,217,448" href="#graph_EAID_9C6EA470_E1F4_479d_B21A_A6E8EA9D3F88"><area shape="rect" alt="Mijnstelsel" coords="480,396,561,448" href="#graph_EAID_CACC8EE7_6654_4fe8_8333_101AC6BA294D"><area shape="rect" alt="Boorgat" coords="272,396,351,448" href="#graph_EAID_78FEC25A_E260_4420_9D1D_66F309EA2C60"><area shape="rect" alt="Levensduur" coords="48,249,217,338" href="#graph_EAID_C36A9725_3F81_4f6c_BDE2_5CED730905A2"><area shape="rect" alt="Gestandaardiseerde locatie" coords="626,257,879,348" href="#graph_EAID_95E39295_3080_4135_862A_30756039B864"><area shape="rect" alt="Mijnbouwconstructie" coords="272,10,561,279" href="#graph_EAID_69DE8D60_7E06_4b57_94CD_8338348EDAE5"><area shape="rect" alt="Registratiegeschiedenis" coords="10,10,246,229" href="#graph_EAID_8550146B_496A_40ca_BE86_AFD377E5A6D8"><area shape="rect" alt="Aangeleverde locatie" coords="626,111,879,229" href="#graph_EAID_EDA11EEA_8FED_44be_AC04_18B58CB46F11"></map><p><b></b></p>
+         <div class="imageinfo "><img src="data/Images/EAID_4918A086_07EB_4d65_A8F1_3AE97E085019.png" usemap="#imagemap-EAID_4918A086_07EB_4d65_A8F1_3AE97E085019" alt="Diagram "><map name="imagemap-EAID_4918A086_07EB_4d65_A8F1_3AE97E085019"><area shape="rect" alt="Mijnbouwwetvergunning" coords="701,10,879,90" href="#graph_EAID_27B442E5_A032_4487_8D18_F4E249D79776"><area shape="rect" alt="Zoutcaverne" coords="374,396,453,448" href="#graph_EAID_B71159A1_F213_4de2_AED5_550473F15950"><area shape="rect" alt="Gebeurtenis" coords="48,359,217,448" href="#graph_EAID_9C6EA470_E1F4_479d_B21A_A6E8EA9D3F88"><area shape="rect" alt="Mijnstelsel" coords="480,396,561,448" href="#graph_EAID_CACC8EE7_6654_4fe8_8333_101AC6BA294D"><area shape="rect" alt="Boorgat" coords="272,396,351,448" href="#graph_EAID_78FEC25A_E260_4420_9D1D_66F309EA2C60"><area shape="rect" alt="Levensduur" coords="48,249,217,338" href="#graph_EAID_C36A9725_3F81_4f6c_BDE2_5CED730905A2"><area shape="rect" alt="Gestandaardiseerde locatie" coords="627,186,880,277" href="#graph_EAID_95E39295_3080_4135_862A_30756039B864"><area shape="rect" alt="Mijnbouwconstructie" coords="272,10,561,279" href="#graph_EAID_69DE8D60_7E06_4b57_94CD_8338348EDAE5"><area shape="rect" alt="Registratiegeschiedenis" coords="10,10,246,229" href="#graph_EAID_8550146B_496A_40ca_BE86_AFD377E5A6D8"></map><p><b></b></p>
          </div>
          <table style="width: 100%;">
             <colgroup style="width: 30%;"></colgroup>
@@ -475,6 +475,13 @@
                      <td>Waardelijst uitbreidbaar</td>
                   </tr>
                   <tr>
+                     <th>Regels</th>
+                     <td>
+                        
+                        <p>De waarde van het attribuut mag niet gelijk zijn aan <em>inGebruikAnderDoeleinde</em> wanneer de waarde van het attribuut <em>soort mijnbouwconstructie</em> ongelijk is aan <em>mijnstelsel</em>.</p>
+                        </td>
+                  </tr>
+                  <tr>
                      <th>Materiële geschiedenis</th>
                      <td>Ja</td>
                   </tr>
@@ -584,85 +591,7 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d48373e2217"></a><section id="detail_d48373e2217">
-            <h4>  levensduur</h4>
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Type gegeven</th>
-                     <td>Gegevensgroep van Mijnbouwconstructie</td>
-                  </tr>
-                  <tr>
-                     <th>Juridische status</th>
-                     <td>Authentiek</td>
-                  </tr>
-                  <tr>
-                     <th>Kardinaliteit</th>
-                     <td>0..1</td>
-                  </tr>
-                  <tr>
-                     <th>Gegevensgroeptype</th>
-                     <td>
-                        Levensduur
-                        </td>
-                  </tr>
-               </tbody>
-            </table>
-         </section><a class="anchor" id="detail_d48373e2340"></a><section id="detail_d48373e2340">
-            <h4>  gebeurtenis</h4>
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Type gegeven</th>
-                     <td>Gegevensgroep van Mijnbouwconstructie</td>
-                  </tr>
-                  <tr>
-                     <th>Juridische status</th>
-                     <td>Authentiek</td>
-                  </tr>
-                  <tr>
-                     <th>Kardinaliteit</th>
-                     <td>0..*</td>
-                  </tr>
-                  <tr>
-                     <th>Gegevensgroeptype</th>
-                     <td>
-                        Gebeurtenis
-                        </td>
-                  </tr>
-               </tbody>
-            </table>
-         </section><a class="anchor" id="detail_d48373e2463"></a><section id="detail_d48373e2463">
-            <h4>  gestandaardiseerde locatie</h4>
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Type gegeven</th>
-                     <td>Gegevensgroep van Mijnbouwconstructie</td>
-                  </tr>
-                  <tr>
-                     <th>Juridische status</th>
-                     <td>Authentiek</td>
-                  </tr>
-                  <tr>
-                     <th>Kardinaliteit</th>
-                     <td>1</td>
-                  </tr>
-                  <tr>
-                     <th>Gegevensgroeptype</th>
-                     <td>
-                        Gestandaardiseerde locatie
-                        </td>
-                  </tr>
-               </tbody>
-            </table>
-         </section><a class="anchor" id="detail_d48373e2586"></a><section id="detail_d48373e2586">
+            </section><a class="anchor" id="detail_d48016e2251"></a><section id="detail_d48016e2251">
             <h4>  registratiegeschiedenis</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -684,6 +613,99 @@
                      <th>Gegevensgroeptype</th>
                      <td>
                         Registratiegeschiedenis
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+         </section><a class="anchor" id="detail_d48016e2374"></a><section id="detail_d48016e2374">
+            <h4>  levensduur</h4>
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Type gegeven</th>
+                     <td>Gegevensgroep van Mijnbouwconstructie</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>De periode gedurende welke de mijnbouwconstructie heeft bestaan.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Juridische status</th>
+                     <td>Authentiek</td>
+                  </tr>
+                  <tr>
+                     <th>Kardinaliteit</th>
+                     <td>0..1</td>
+                  </tr>
+                  <tr>
+                     <th>Gegevensgroeptype</th>
+                     <td>
+                        Levensduur
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+         </section><a class="anchor" id="detail_d48016e2541"></a><section id="detail_d48016e2541">
+            <h4>  gebeurtenis</h4>
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Type gegeven</th>
+                     <td>Gegevensgroep van Mijnbouwconstructie</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>Het geheel van gebeurtenissen dat de geschiedenis van de mijnbouwconstructie in de
+                           werkelijkheid beschrijft. </p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Juridische status</th>
+                     <td>Authentiek</td>
+                  </tr>
+                  <tr>
+                     <th>Kardinaliteit</th>
+                     <td>0..*</td>
+                  </tr>
+                  <tr>
+                     <th>Gegevensgroeptype</th>
+                     <td>
+                        Gebeurtenis
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+         </section><a class="anchor" id="detail_d48016e2708"></a><section id="detail_d48016e2708">
+            <h4>  gestandaardiseerde locatie</h4>
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Type gegeven</th>
+                     <td>Gegevensgroep van Mijnbouwconstructie</td>
+                  </tr>
+                  <tr>
+                     <th>Juridische status</th>
+                     <td>Authentiek</td>
+                  </tr>
+                  <tr>
+                     <th>Kardinaliteit</th>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <th>Gegevensgroeptype</th>
+                     <td>
+                        Gestandaardiseerde locatie
                         </td>
                   </tr>
                </tbody>
@@ -818,14 +840,6 @@
                   <tr>
                      <th>Materiële geschiedenis</th>
                      <td>Nee</td>
-                  </tr>
-                  <tr>
-                     <th>Toelichting</th>
-                     <td>
-                        
-                        <p>De basisregistratie ondergrond kent bij registratie automatisch de juiste waarde aan
-                           het object toe. </p>
-                        </td>
                   </tr>
                </tbody>
             </table>
@@ -1473,7 +1487,7 @@
                   <th>Definitie</th>
                   <td>
                      
-                     <p>De periode gedurende welke de mijnbouwconstructie bestaat in de fysieke wereld.</p>
+                     <p>De periode gedurende welke het object in de werkelijkheid heeft bestaan.</p>
                      </td>
                </tr>
             </tbody>
@@ -1610,8 +1624,7 @@
                   <th>Definitie</th>
                   <td>
                      
-                     <p>Een gebeurtenis die binnen de levensduur van de mijnbouwconstructie heeft plaatsgevonden.
-                        </p>
+                     <p>Een gebeurtenis die binnen de levensduur van het object heeft plaatsgevonden. </p>
                      </td>
                </tr>
             </tbody>
@@ -1696,244 +1709,6 @@
                   <tr>
                      <th>Materiële geschiedenis</th>
                      <td>Nee</td>
-                  </tr>
-               </tbody>
-            </table>
-            </section>
-      </section><a class="anchor" id="graph_EAID_EDA11EEA_8FED_44be_AC04_18B58CB46F11"></a><a class="anchor" id="global_class_Model_Aangeleverdelocatie"></a><section id="global_class_Model_Aangeleverdelocatie">
-         <h3>   Aangeleverde locatie</h3>
-         <div class="imageinfo "><img src="data/Images/EAID_4CAB2639_838A_4331_A6F3_5A53D1DA0505.png" usemap="#imagemap-EAID_4CAB2639_838A_4331_A6F3_5A53D1DA0505" alt="Diagram "><map name="imagemap-EAID_4CAB2639_838A_4331_A6F3_5A53D1DA0505"><area shape="rect" alt="Aangeleverde locatie" coords="10,10,282,130" href="#graph_EAID_EDA11EEA_8FED_44be_AC04_18B58CB46F11"></map><p><b></b></p>
-         </div>
-         <table style="width: 100%;">
-            <colgroup style="width: 30%;"></colgroup>
-            <colgroup style="width: 70%;"></colgroup>
-            <tbody>
-               <tr>
-                  <th>Type gegeven</th>
-                  <td>Entiteit</td>
-               </tr>
-               <tr>
-                  <th>Definitie</th>
-                  <td>
-                     
-                     <p>De gegevens over de locatie van een mijnbouwconstructie of een deel ervan en over
-                        het bepalen van die locatie, zoals deze zijn aangeleverd aan de basisregistratie ondergrond.</p>
-                     </td>
-               </tr>
-            </tbody>
-         </table><a class="anchor" id="detail_attribute_Model_Aangeleverdelocatie_locatie"></a><section id="detail_attribute_Model_Aangeleverdelocatie_locatie">
-            <h4>  locatie</h4>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Type gegeven</th>
-                     <td>Attribuut van Aangeleverde locatie</td>
-                  </tr>
-                  <tr>
-                     <th>Definitie</th>
-                     <td>
-                        
-                        <p>De locatie van een mijnbouwconstructie zoals aangeleverd door de bronhouder, bestaand
-                           uit coördinaten en een referentiestelsel.</p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Juridische status</th>
-                     <td>Authentiek</td>
-                  </tr>
-                  <tr>
-                     <th>Kardinaliteit</th>
-                     <td>1</td>
-                  </tr>
-                  <tr>
-                     <th>Domein</th>
-                     <td></td>
-                  </tr>
-                  <tr>
-                     <th>&nbsp;&nbsp;Naam</th>
-                     <td>GM_Object</td>
-                  </tr>
-                  <tr>
-                     <th>Materiële geschiedenis</th>
-                     <td>Nee</td>
-                  </tr>
-               </tbody>
-            </table>
-            </section><a class="anchor" id="detail_attribute_Model_Aangeleverdelocatie_datumlocatiebepaling"></a><section id="detail_attribute_Model_Aangeleverdelocatie_datumlocatiebepaling">
-            <h4>  datum locatiebepaling</h4>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Type gegeven</th>
-                     <td>Attribuut van Aangeleverde locatie</td>
-                  </tr>
-                  <tr>
-                     <th>Definitie</th>
-                     <td>
-                        
-                        <p>De datum waarop de locatie van de mijnbouwconstructie of een deel ervan is ingemeten.</p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Juridische status</th>
-                     <td>Authentiek</td>
-                  </tr>
-                  <tr>
-                     <th>Kardinaliteit</th>
-                     <td>0..1</td>
-                  </tr>
-                  <tr>
-                     <th>Domein</th>
-                     <td></td>
-                  </tr>
-                  <tr>
-                     <th>&nbsp;&nbsp;Naam</th>
-                     <td>Datum</td>
-                  </tr>
-                  <tr>
-                     <th>Regels</th>
-                     <td>
-                        
-                        <p>De <em>datum locatiebepaling</em> mag niet liggen na de <em>ontstaansdatum</em> van de entiteit <em>Levensduur</em> wanneer het soort mijnbouwconstructie gelijk is aan 'boorgat'.</p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Materiële geschiedenis</th>
-                     <td>Nee</td>
-                  </tr>
-                  <tr>
-                     <th>Toelichting</th>
-                     <td>
-                        
-                        <p>Het attribuut is optioneel omdat de mijnbouwwetgeving niet verplicht om deze gegevens
-                           aan te leveren.</p>
-                        </td>
-                  </tr>
-               </tbody>
-            </table>
-            </section><a class="anchor" id="detail_attribute_Model_Aangeleverdelocatie_methodelocatiebepaling"></a><section id="detail_attribute_Model_Aangeleverdelocatie_methodelocatiebepaling">
-            <h4>  methode locatiebepaling</h4>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Type gegeven</th>
-                     <td>Attribuut van Aangeleverde locatie</td>
-                  </tr>
-                  <tr>
-                     <th>Definitie</th>
-                     <td>
-                        
-                        <p>De werkwijze die is gevolgd bij het inmeten van de locatie van de mijnbouwconstructie
-                           of een deel ervan.</p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Juridische status</th>
-                     <td>Authentiek</td>
-                  </tr>
-                  <tr>
-                     <th>Kardinaliteit</th>
-                     <td>0..1</td>
-                  </tr>
-                  <tr>
-                     <th>Domein</th>
-                     <td></td>
-                  </tr>
-                  <tr>
-                     <th>&nbsp;&nbsp;Naam</th>
-                     <td><a class="link" href="#detail_class_Model_MethodeLocatiebepaling">MethodeLocatiebepaling</a></td>
-                  </tr>
-                  <tr>
-                     <th>&nbsp;&nbsp;Type</th>
-                     <td>Waardelijst uitbreidbaar</td>
-                  </tr>
-                  <tr>
-                     <th>Materiële geschiedenis</th>
-                     <td>Nee</td>
-                  </tr>
-                  <tr>
-                     <th>Toelichting</th>
-                     <td>
-                        
-                        <p>Het attribuut is optioneel omdat de mijnbouwwetgeving niet verplicht om deze gegevens
-                           aan te leveren.<br clear="none">
-                           Het gegeven geeft inzicht in de nauwkeurigheid waarmee de locatie van de mijnbouwconstructie
-                           of een deel ervan is bepaald.<br clear="none">
-                           De meest gebruikte technieken om de locatie te bepalen van onshore boorgaten zijn
-                           klassiek landmeten en satellietnavigatie. Beide hebben een indicatieve nauwkeurigheid
-                           van beter dan 1 meter.<br clear="none">
-                           De meest gebruikte technieken om de locatie te bepalen van offshore boorgaten, zijn
-                           klassiek landmeten met een indicatieve nauwkeurigheid van beter dan 5 meter, radiopositionering
-                           met een indicatieve nauwkeurigheid van beter dan 50 meter en satellietnavigatie met
-                           een indicatieve nauwkeurigheid van beter dan 2 meter.</p>
-                        </td>
-                  </tr>
-               </tbody>
-            </table>
-            </section><a class="anchor" id="detail_attribute_Model_Aangeleverdelocatie_uitvoerderlocatiebepaling"></a><section id="detail_attribute_Model_Aangeleverdelocatie_uitvoerderlocatiebepaling">
-            <h4>  uitvoerder locatiebepaling</h4>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Type gegeven</th>
-                     <td>Attribuut van Aangeleverde locatie</td>
-                  </tr>
-                  <tr>
-                     <th>Definitie</th>
-                     <td>
-                        
-                        <p>Het KvK-nummer van de onderneming of de maatschappelijke activiteit van de rechtspersoon
-                           die voor de bronhouder geldt als verantwoordelijk voor de uitvoering van de plaatsbepaling,
-                           of het equivalent daarvan in een handelsregister van een andere lidstaat van de Europese
-                           Unie dan Nederland.</p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Juridische status</th>
-                     <td>Niet-authentiek</td>
-                  </tr>
-                  <tr>
-                     <th>Kardinaliteit</th>
-                     <td>0..1</td>
-                  </tr>
-                  <tr>
-                     <th>Domein</th>
-                     <td></td>
-                  </tr>
-                  <tr>
-                     <th>&nbsp;&nbsp;Naam</th>
-                     <td>Organisatie</td>
-                  </tr>
-                  <tr>
-                     <th>Regels</th>
-                     <td>
-                        
-                        <p>Het gegeven wordt alleen uitgeleverd aan de dataleverancier en de bronhouder.</p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Materiële geschiedenis</th>
-                     <td>Nee</td>
-                  </tr>
-                  <tr>
-                     <th>Toelichting</th>
-                     <td>
-                        
-                        <p>Het attribuut is optioneel omdat de mijnbouwwetgeving niet verplicht om deze gegevens
-                           aan te leveren.</p>
-                        </td>
                   </tr>
                </tbody>
             </table>
@@ -2085,7 +1860,7 @@
                      </td>
                </tr>
             </tbody>
-         </table><a class="anchor" id="detail_d48373e7308"></a><section id="detail_d48373e7308">
+         </table><a class="anchor" id="detail_d48016e6636"></a><section id="detail_d48016e6636">
             <h4>  locatie</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -2122,15 +1897,12 @@
                      <td>
                         
                         <p>Het type geometrie in het attribuut <em>locatie</em> moet gelijk zijn aan GM_Point.<br clear="none">
-                           De locatie moet liggen in Nederland of zijn Exclusieve Economische Zone.<br clear="none">
-                           Het referentiestelsel in het attribuut <em>locatie</em> moet gelijk zijn aan <em>ETRS89</em> of <em>RD</em> wanneer de locatie aan de landzijde van de mijnbouwgrens ligt.<br clear="none">
-                           Het referentiestelsel in het attribuut <em>locatie</em> moet gelijk zijn aan <em>ETRS89</em> of <em>WGS84</em> wanneer de locatie aan de zeezijde van de mijnbouwgrens ligt.<br clear="none">
                            </p>
                         </td>
                   </tr>
                </tbody>
             </table>
-         </section><a class="anchor" id="detail_d48373e7570"></a><section id="detail_d48373e7570">
+         </section><a class="anchor" id="detail_d48016e6854"></a><section id="detail_d48016e6854">
             <h4>  aangeleverde verticale positie</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -2139,6 +1911,14 @@
                   <tr>
                      <th>Type gegeven</th>
                      <td>Gegevensgroep van Boorgat</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>De gegevens over de plaats van de oorsprong van het boorgat in het verticale vlak,
+                           zoals aangeleverd aan de basisregistratie ondergrond.</p>
+                        </td>
                   </tr>
                   <tr>
                      <th>Juridische status</th>
@@ -2198,6 +1978,247 @@
                </tbody>
             </table>
          </section>
+      </section><a class="anchor" id="graph_EAID_EDA11EEA_8FED_44be_AC04_18B58CB46F11"></a><a class="anchor" id="global_class_Model_Aangeleverdelocatie"></a><section id="global_class_Model_Aangeleverdelocatie">
+         <h3>   Aangeleverde locatie</h3>
+         <div class="imageinfo "><img src="data/Images/EAID_4CAB2639_838A_4331_A6F3_5A53D1DA0505.png" usemap="#imagemap-EAID_4CAB2639_838A_4331_A6F3_5A53D1DA0505" alt="Diagram "><map name="imagemap-EAID_4CAB2639_838A_4331_A6F3_5A53D1DA0505"><area shape="rect" alt="Aangeleverde locatie" coords="10,10,282,130" href="#graph_EAID_EDA11EEA_8FED_44be_AC04_18B58CB46F11"></map><p><b></b></p>
+         </div>
+         <table style="width: 100%;">
+            <colgroup style="width: 30%;"></colgroup>
+            <colgroup style="width: 70%;"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Type gegeven</th>
+                  <td>Entiteit</td>
+               </tr>
+               <tr>
+                  <th>Definitie</th>
+                  <td>
+                     
+                     <p>De gegevens over de locatie van een mijnbouwconstructie of een deel ervan en over
+                        het bepalen van die locatie, zoals deze zijn aangeleverd aan de basisregistratie ondergrond.</p>
+                     </td>
+               </tr>
+            </tbody>
+         </table><a class="anchor" id="detail_attribute_Model_Aangeleverdelocatie_locatie"></a><section id="detail_attribute_Model_Aangeleverdelocatie_locatie">
+            <h4>  locatie</h4>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Type gegeven</th>
+                     <td>Attribuut van Aangeleverde locatie</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>De locatie van een mijnbouwconstructie zoals aangeleverd door de bronhouder, bestaand
+                           uit coördinaten en een referentiestelsel.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Juridische status</th>
+                     <td>Authentiek</td>
+                  </tr>
+                  <tr>
+                     <th>Kardinaliteit</th>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <th>Domein</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>&nbsp;&nbsp;Naam</th>
+                     <td>GM_Object</td>
+                  </tr>
+                  <tr>
+                     <th>Regels</th>
+                     <td>
+                        
+                        <p>De locatie moet liggen in Nederland of zijn Exclusieve Economische Zone.<br clear="none">
+                           Het referentiestelsel moet gelijk zijn aan <em>ETRS89</em> of <em>RD</em> wanneer de locatie aan de landzijde van de mijnbouwgrens ligt.<br clear="none">
+                           Het referentiestelsel moet gelijk zijn aan <em>ETRS89</em> of <em>WGS84</em> wanneer de locatie aan de zeezijde van de mijnbouwgrens ligt.<br clear="none">
+                           </p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Materiële geschiedenis</th>
+                     <td>Nee</td>
+                  </tr>
+               </tbody>
+            </table>
+            </section><a class="anchor" id="detail_attribute_Model_Aangeleverdelocatie_datumlocatiebepaling"></a><section id="detail_attribute_Model_Aangeleverdelocatie_datumlocatiebepaling">
+            <h4>  datum locatiebepaling</h4>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Type gegeven</th>
+                     <td>Attribuut van Aangeleverde locatie</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>De datum waarop de locatie van de mijnbouwconstructie of een deel ervan is ingemeten.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Juridische status</th>
+                     <td>Authentiek</td>
+                  </tr>
+                  <tr>
+                     <th>Kardinaliteit</th>
+                     <td>0..1</td>
+                  </tr>
+                  <tr>
+                     <th>Domein</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>&nbsp;&nbsp;Naam</th>
+                     <td>Datum</td>
+                  </tr>
+                  <tr>
+                     <th>Materiële geschiedenis</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>
+                        
+                        <p>Het attribuut is optioneel omdat de mijnbouwwetgeving niet verplicht om deze gegevens
+                           aan te leveren.</p>
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+            </section><a class="anchor" id="detail_attribute_Model_Aangeleverdelocatie_methodelocatiebepaling"></a><section id="detail_attribute_Model_Aangeleverdelocatie_methodelocatiebepaling">
+            <h4>  methode locatiebepaling</h4>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Type gegeven</th>
+                     <td>Attribuut van Aangeleverde locatie</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>De werkwijze die is gevolgd bij het inmeten van de locatie van de mijnbouwconstructie
+                           of een deel ervan.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Juridische status</th>
+                     <td>Authentiek</td>
+                  </tr>
+                  <tr>
+                     <th>Kardinaliteit</th>
+                     <td>0..1</td>
+                  </tr>
+                  <tr>
+                     <th>Domein</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>&nbsp;&nbsp;Naam</th>
+                     <td><a class="link" href="#detail_class_Model_MethodeLocatiebepaling">MethodeLocatiebepaling</a></td>
+                  </tr>
+                  <tr>
+                     <th>&nbsp;&nbsp;Type</th>
+                     <td>Waardelijst uitbreidbaar</td>
+                  </tr>
+                  <tr>
+                     <th>Materiële geschiedenis</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>
+                        
+                        <p>Het attribuut is optioneel omdat de mijnbouwwetgeving niet verplicht om deze gegevens
+                           aan te leveren.<br clear="none">
+                           Het gegeven geeft inzicht in de nauwkeurigheid waarmee de locatie van de mijnbouwconstructie
+                           of een deel ervan is bepaald.<br clear="none">
+                           De meest gebruikte technieken om de locatie te bepalen van onshore boorgaten zijn
+                           klassiek landmeten en satellietnavigatie. Beide hebben een indicatieve nauwkeurigheid
+                           van beter dan 1 meter.<br clear="none">
+                           De meest gebruikte technieken om de locatie te bepalen van offshore boorgaten, zijn
+                           klassiek landmeten met een indicatieve nauwkeurigheid van beter dan 5 meter, radiopositionering
+                           met een indicatieve nauwkeurigheid van beter dan 50 meter en satellietnavigatie met
+                           een indicatieve nauwkeurigheid van beter dan 2 meter.</p>
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+            </section><a class="anchor" id="detail_attribute_Model_Aangeleverdelocatie_uitvoerderlocatiebepaling"></a><section id="detail_attribute_Model_Aangeleverdelocatie_uitvoerderlocatiebepaling">
+            <h4>  uitvoerder locatiebepaling</h4>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Type gegeven</th>
+                     <td>Attribuut van Aangeleverde locatie</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>Het KvK-nummer van de onderneming of de maatschappelijke activiteit van de rechtspersoon
+                           die voor de bronhouder geldt als verantwoordelijk voor de uitvoering van de plaatsbepaling,
+                           of het equivalent daarvan in een handelsregister van een andere lidstaat van de Europese
+                           Unie dan Nederland.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Juridische status</th>
+                     <td>Niet-authentiek</td>
+                  </tr>
+                  <tr>
+                     <th>Kardinaliteit</th>
+                     <td>0..1</td>
+                  </tr>
+                  <tr>
+                     <th>Domein</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>&nbsp;&nbsp;Naam</th>
+                     <td>Organisatie</td>
+                  </tr>
+                  <tr>
+                     <th>Regels</th>
+                     <td>
+                        
+                        <p>Het gegeven wordt alleen uitgeleverd aan de dataleverancier en de bronhouder.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Materiële geschiedenis</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>
+                        
+                        <p>Het attribuut is optioneel omdat de mijnbouwwetgeving niet verplicht om deze gegevens
+                           aan te leveren.</p>
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+            </section>
       </section><a class="anchor" id="graph_EAID_A249D799_B098_49cd_98AA_DCAE0EB07DE7"></a><a class="anchor" id="global_class_Model_Aangeleverdeverticalepositie"></a><section id="global_class_Model_Aangeleverdeverticalepositie">
          <h3>   Aangeleverde verticale positie</h3>
          <div class="imageinfo "><img src="data/Images/EAID_E43DE41D_1042_4cc7_BE46_F2443ACF1254.png" usemap="#imagemap-EAID_E43DE41D_1042_4cc7_BE46_F2443ACF1254" alt="Diagram "><map name="imagemap-EAID_E43DE41D_1042_4cc7_BE46_F2443ACF1254"><area shape="rect" alt="Aangeleverde verticale positie" coords="10,10,379,155" href="#graph_EAID_A249D799_B098_49cd_98AA_DCAE0EB07DE7"></map><p><b></b></p>
@@ -2214,7 +2235,7 @@
                   <th>Definitie</th>
                   <td>
                      
-                     <p>De gegevens over de plaats van de oorsprong van het boorgat in het verticale vlak,
+                     <p>De gegevens over de plaats van de oorsprong van het object in het verticale vlak,
                         zoals aangeleverd aan de basisregistratie ondergrond.</p>
                      </td>
                </tr>
@@ -2423,14 +2444,6 @@
                   <tr>
                      <th>&nbsp;&nbsp;Naam</th>
                      <td>Datum</td>
-                  </tr>
-                  <tr>
-                     <th>Regels</th>
-                     <td>
-                        
-                        <p>De datum verticale positiebepaling mag niet liggen na de ontstaansdatum van de entiteit
-                           <em>Levensduur</em>.</p>
-                        </td>
                   </tr>
                   <tr>
                      <th>Materiële geschiedenis</th>
@@ -2899,7 +2912,7 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d48373e10027"></a><section id="detail_d48373e10027">
+            </section><a class="anchor" id="detail_d48016e10105"></a><section id="detail_d48016e10105">
             <h4>  boortraject locatie</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -2908,6 +2921,13 @@
                   <tr>
                      <th>Type gegeven</th>
                      <td>Gegevensgroep van Boortraject</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>De afmetingen en ondergrondse positie van het boortraject.</p>
+                        </td>
                   </tr>
                   <tr>
                      <th>Juridische status</th>
@@ -3048,7 +3068,8 @@
                      <th>Definitie</th>
                      <td>
                         
-                        <p>De langs het boortraject gemeten grootste lengte. </p>
+                        <p>De langs het boortraject gemeten grootste lengte t.o.v. het oorspronkelijk verticaal
+                           referentiepunt.</p>
                         </td>
                   </tr>
                   <tr>
@@ -3154,7 +3175,7 @@
             </section>
       </section><a class="anchor" id="graph_EAID_CACC8EE7_6654_4fe8_8333_101AC6BA294D"></a><a class="anchor" id="global_class_Model_Mijnstelsel"></a><section id="global_class_Model_Mijnstelsel">
          <h3>   Mijnstelsel</h3>
-         <div class="imageinfo "><img src="data/Images/EAID_67F72C4D_DF53_4b8d_8AC2_B9F0DA906A69.png" usemap="#imagemap-EAID_67F72C4D_DF53_4b8d_8AC2_B9F0DA906A69" alt="Diagram "><map name="imagemap-EAID_67F72C4D_DF53_4b8d_8AC2_B9F0DA906A69"><area shape="rect" alt="Aangeleverde locatie" coords="530,174,783,289" href="#graph_EAID_EDA11EEA_8FED_44be_AC04_18B58CB46F11"><area shape="rect" alt="Mijnkaart" coords="572,62,724,112" href="#graph_EAID_1A8DB415_AEF6_4f69_8E8C_0187A61B4D1B"><area shape="rect" alt="Ontginningszone" coords="363,239,499,289" href="#graph_EAID_B1D55B65_6D27_4eb4_86EC_32DE6BA11322"><area shape="rect" alt="Transportzone" coords="189,239,336,289" href="#graph_EAID_828E18BC_B644_41e8_BF25_CBDE10E9249E"><area shape="rect" alt="Toegang" coords="10,239,162,289" href="#graph_EAID_35D7E222_DC56_4b0e_B219_FCFEF3AE6D86"><area shape="rect" alt="Mijnstelsel" coords="122,10,402,184" href="#graph_EAID_CACC8EE7_6654_4fe8_8333_101AC6BA294D"></map><p><b></b></p>
+         <div class="imageinfo "><img src="data/Images/EAID_67F72C4D_DF53_4b8d_8AC2_B9F0DA906A69.png" usemap="#imagemap-EAID_67F72C4D_DF53_4b8d_8AC2_B9F0DA906A69" alt="Diagram "><map name="imagemap-EAID_67F72C4D_DF53_4b8d_8AC2_B9F0DA906A69"><area shape="rect" alt="Aangeleverde locatie" coords="530,174,783,289" href="#graph_EAID_EDA11EEA_8FED_44be_AC04_18B58CB46F11"><area shape="rect" alt="Mijnkaart" coords="572,61,724,111" href="#graph_EAID_1A8DB415_AEF6_4f69_8E8C_0187A61B4D1B"><area shape="rect" alt="Ontginningszone" coords="363,239,499,289" href="#graph_EAID_B1D55B65_6D27_4eb4_86EC_32DE6BA11322"><area shape="rect" alt="Transportzone" coords="189,239,336,289" href="#graph_EAID_828E18BC_B644_41e8_BF25_CBDE10E9249E"><area shape="rect" alt="Toegang" coords="10,239,162,289" href="#graph_EAID_35D7E222_DC56_4b0e_B219_FCFEF3AE6D86"><area shape="rect" alt="Mijnstelsel" coords="122,10,402,184" href="#graph_EAID_CACC8EE7_6654_4fe8_8333_101AC6BA294D"></map><p><b></b></p>
          </div>
          <table style="width: 100%;">
             <colgroup style="width: 30%;"></colgroup>
@@ -3204,7 +3225,7 @@
                   </tr>
                   <tr>
                      <th>&nbsp;&nbsp;Naam</th>
-                     <td>Tekst </td>
+                     <td>Tekst 100</td>
                   </tr>
                   <tr>
                      <th>Regels</th>
@@ -3251,7 +3272,7 @@
                   </tr>
                   <tr>
                      <th>&nbsp;&nbsp;Naam</th>
-                     <td>Tekst </td>
+                     <td>Tekst 5</td>
                   </tr>
                   <tr>
                      <th>Regels</th>
@@ -3307,7 +3328,7 @@
                   </tr>
                   <tr>
                      <th>&nbsp;&nbsp;Naam</th>
-                     <td>Tekst </td>
+                     <td>Tekst 100</td>
                   </tr>
                   <tr>
                      <th>Regels</th>
@@ -3417,7 +3438,8 @@
                      <td>
                         
                         <p>Van de Toegangen, Transportzones en Ontginningszones waaruit een Mijnstelsel bestaat,
-                           is er minimaal één waarbij de waarde van het attribuut <em>is afgegraven</em> gelijk is aan <em>nee</em> wanneer het attribuut <em>is afgegraven</em> van het Mijnstelsel gelijk is aan <em>nee</em>.</p>
+                           is er minimaal één waarbij de waarde van het attribuut <em>is afgegraven</em> gelijk is aan <em>nee</em> wanneer het attribuut <em>is afgegraven</em> van het Mijnstelsel gelijk is aan <em>nee</em>.<br clear="none">
+                           De waarde van het attribuut mag niet gelijk zijn aan <em>ja</em> wanneer de waarde van het attribuut <em>wettelijke status</em> van de entiteit Mijnbouwconstructie gelijk is aan <em>inGebruikMijnbouw</em> of <em>inGebruikAnderDoeleinde</em>.</p>
                         </td>
                   </tr>
                   <tr>
@@ -3426,7 +3448,7 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d48373e12335"></a><section id="detail_d48373e12335">
+            </section><a class="anchor" id="detail_d48016e12497"></a><section id="detail_d48016e12497">
             <h4>  gemijnd gebied</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -3724,7 +3746,7 @@
                   </tr>
                   <tr>
                      <th>&nbsp;&nbsp;Naam</th>
-                     <td>Nummer </td>
+                     <td>Nummer 3</td>
                   </tr>
                   <tr>
                      <th>Regels</th>
@@ -3771,7 +3793,7 @@
                   </tr>
                   <tr>
                      <th>&nbsp;&nbsp;Naam</th>
-                     <td>Tekst </td>
+                     <td>Tekst 100</td>
                   </tr>
                   <tr>
                      <th>Regels</th>
@@ -3818,7 +3840,7 @@
                   </tr>
                   <tr>
                      <th>&nbsp;&nbsp;Naam</th>
-                     <td>Tekst </td>
+                     <td>Tekst 100</td>
                   </tr>
                   <tr>
                      <th>Regels</th>
@@ -3936,7 +3958,7 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d48373e13506"></a><section id="detail_d48373e13506">
+            </section><a class="anchor" id="detail_d48016e13695"></a><section id="detail_d48016e13695">
             <h4>  locatie</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -4034,7 +4056,7 @@
                   </tr>
                   <tr>
                      <th>&nbsp;&nbsp;Naam</th>
-                     <td>Nummer </td>
+                     <td>Nummer 3</td>
                   </tr>
                   <tr>
                      <th>Regels</th>
@@ -4081,7 +4103,7 @@
                   </tr>
                   <tr>
                      <th>&nbsp;&nbsp;Naam</th>
-                     <td>Tekst </td>
+                     <td>Tekst 100</td>
                   </tr>
                   <tr>
                      <th>Regels</th>
@@ -4180,7 +4202,7 @@
                   </tr>
                   <tr>
                      <th>&nbsp;&nbsp;Naam</th>
-                     <td>Tekst </td>
+                     <td>Tekst 8</td>
                   </tr>
                   <tr>
                      <th>Regels</th>
@@ -4249,7 +4271,7 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d48373e14695"></a><section id="detail_d48373e14695">
+            </section><a class="anchor" id="detail_d48016e14911"></a><section id="detail_d48016e14911">
             <h4>  gebied</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -4365,7 +4387,7 @@
                   </tr>
                   <tr>
                      <th>&nbsp;&nbsp;Naam</th>
-                     <td>Nummer </td>
+                     <td>Nummer 3</td>
                   </tr>
                   <tr>
                      <th>Regels</th>
@@ -4412,7 +4434,7 @@
                   </tr>
                   <tr>
                      <th>&nbsp;&nbsp;Naam</th>
-                     <td>Tekst </td>
+                     <td>Tekst 100</td>
                   </tr>
                   <tr>
                      <th>Regels</th>
@@ -4466,6 +4488,13 @@
                      <td>Waardelijst niet uitbreidbaar</td>
                   </tr>
                   <tr>
+                     <th>Regels</th>
+                     <td>
+                        
+                        <p>De waarde van het attribuut moet gelijk zijn aan <em>nee</em> wanneer de waarde van het attribuut <em>wettelijke status</em> van de entiteit <em>Mijnbouwconstructie</em> gelijk is aan <em>buitenGebruik</em> of <em>inGebruikAnderDoeleinde</em>.</p>
+                        </td>
+                  </tr>
+                  <tr>
                      <th>Materiële geschiedenis</th>
                      <td>Ja</td>
                   </tr>
@@ -4514,8 +4543,7 @@
                      <td>
                         
                         <p>De waarde van het attribuut moet gelijk zijn aan <em>ja</em> wanneer de waarde van het attribuut <em>is afgegraven</em> van de entiteit <em>Mijnstelsel</em> gelijk is aan <em>ja</em>.<br clear="none">
-                           De waarde van het attribuut moet gelijk zijn aan <em>nee</em> wanneer de waarde van het attribuut<br clear="none">
-                           <em>is in ontginning</em> gelijk is aan <em>ja</em>.</p>
+                           De waarde van het attribuut moet gelijk zijn aan <em>nee</em> wanneer de waarde van het attribuut <em>is in ontginning</em> gelijk is aan <em>ja</em>.</p>
                         </td>
                   </tr>
                   <tr>
@@ -4556,7 +4584,7 @@
                   </tr>
                   <tr>
                      <th>&nbsp;&nbsp;Naam</th>
-                     <td>Tekst </td>
+                     <td>Tekst 15</td>
                   </tr>
                   <tr>
                      <th>Regels</th>
@@ -4630,7 +4658,7 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d48373e16099"></a><section id="detail_d48373e16099">
+            </section><a class="anchor" id="detail_d48016e16378"></a><section id="detail_d48016e16378">
             <h4>  gebied</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -4745,7 +4773,7 @@
                   </tr>
                   <tr>
                      <th>&nbsp;&nbsp;Naam</th>
-                     <td>Tekst </td>
+                     <td>Tekst 53</td>
                   </tr>
                   <tr>
                      <th>Regels</th>
@@ -4757,6 +4785,32 @@
                   <tr>
                      <th>Materiële geschiedenis</th>
                      <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>
+                        
+                        <p>De mijnkaartcode bestaat uit de volgende elementen, deels afhankelijk van het soort
+                           mijnkaart en gescheiden door een underscore, als volgt:</p>
+                        
+                        <ol>
+                           
+                           <li>code van het mijnstelsel waarbij de mijnkaart hoort;</li>
+                           
+                           <li>code die het soort mijnkaart aanduidt (DK, HG of LP voor respectievelijk drempelkaart,
+                              hoofdgrondplan of laagplan);</li>
+                           
+                           <li>wanneer het een hoofdgrondplan betreft: verdieping;</li>
+                           
+                           <li>wanneer het een laagplan betreft: steenkoollaag;</li>
+                           
+                           <li>wanneer het een individuele kaart of een gecombineerd hoofdgrondplan betreft: kaartserie;</li>
+                           
+                           <li>wanneer het een individuele kaart betreft: kaarblad;</li>
+                           
+                           <li>kaartversie.</li>
+                           </ol>
+                        </td>
                   </tr>
                </tbody>
             </table>
@@ -4846,7 +4900,7 @@
                   </tr>
                   <tr>
                      <th>&nbsp;&nbsp;Naam</th>
-                     <td>Tekst </td>
+                     <td>Tekst 8</td>
                   </tr>
                   <tr>
                      <th>Regels</th>
@@ -4904,7 +4958,7 @@
                   </tr>
                   <tr>
                      <th>&nbsp;&nbsp;Naam</th>
-                     <td>Tekst </td>
+                     <td>Tekst 15</td>
                   </tr>
                   <tr>
                      <th>Regels</th>
@@ -5029,7 +5083,7 @@
                   </tr>
                   <tr>
                      <th>&nbsp;&nbsp;Naam</th>
-                     <td>Tekst </td>
+                     <td>Tekst 15</td>
                   </tr>
                   <tr>
                      <th>Regels</th>
@@ -5141,7 +5195,7 @@
                   </tr>
                   <tr>
                      <th>&nbsp;&nbsp;Naam</th>
-                     <td>GM_Surface</td>
+                     <td>GM_Envelope</td>
                   </tr>
                   <tr>
                      <th>Materiële geschiedenis</th>
@@ -5274,7 +5328,7 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d48373e18517"></a><section id="detail_d48373e18517">
+            </section><a class="anchor" id="detail_d48016e18892"></a><section id="detail_d48016e18892">
             <h4>  holruimtecontour</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -5578,73 +5632,13 @@
                <th>Omschrijving</th>
             </tr>
             <tr>
-               <td>MBW2003</td>
+               <td>MBW</td>
                <td>✔</td>
                <td>✔</td>
                <td>
                   
-                  <p>De gegevens zijn aangeleverd in het kader van de Mijnbouwwet. De Wet is op 1 januari
-                     2003 in werking getreden. </p>
-                  </td>
-            </tr>
-            <tr>
-               <td>MBW2008</td>
-               <td>✔</td>
-               <td>✔</td>
-               <td>
-                  
-                  <p>De gegevens zijn aangeleverd in het kader van de Mijnbouwwet. De Wet is op 1 januari
-                     2003 in werking getreden en gewijzigd per 8 augustus 2008.</p>
-                  </td>
-            </tr>
-            <tr>
-               <td>MBW2010</td>
-               <td>✔</td>
-               <td>✔</td>
-               <td>
-                  
-                  <p>De gegevens zijn aangeleverd in het kader van de Mijnbouwwet. De Wet is op 1 januari
-                     2003 in werking getreden en gewijzigd per 1 januari 2010. </p>
-                  </td>
-            </tr>
-            <tr>
-               <td>MBW2011</td>
-               <td>✔</td>
-               <td>✔</td>
-               <td>
-                  
-                  <p>De gegevens zijn aangeleverd in het kader van de Mijnbouwwet. De Wet is op 1 januari
-                     2003 in werking getreden en gewijzigd per 10 september 2011. </p>
-                  </td>
-            </tr>
-            <tr>
-               <td>MBW2016</td>
-               <td>✔</td>
-               <td>✔</td>
-               <td>
-                  
-                  <p>De gegevens zijn aangeleverd in het kader van de Mijnbouwwet. De Wet is op 1 januari
-                     2003 in werking getreden en gewijzigd per 31 december 2016.</p>
-                  </td>
-            </tr>
-            <tr>
-               <td>MBW2017</td>
-               <td>✔</td>
-               <td>✔</td>
-               <td>
-                  
-                  <p>De gegevens zijn aangeleverd in het kader van de Mijnbouwwet. De Wet is op 1 januari
-                     2003 in werking getreden en gewijzigd per 1 januari 2017. </p>
-                  </td>
-            </tr>
-            <tr>
-               <td>MBW2020</td>
-               <td>✔</td>
-               <td>✔</td>
-               <td>
-                  
-                  <p>De gegevens zijn aangeleverd in het kader van de Mijnbouwwet. De Wet is op 1 januari
-                     2003 in werking getreden en gewijzigd per 1 januari 2020. </p>
+                  <p>De gegevens zijn aangeleverd in het kader van de Mijnbouwwet. De wet is op 1 januari
+                     2003 in werking getreden.</p>
                   </td>
             </tr>
          </tbody>
@@ -6008,7 +6002,7 @@
                <td>✔</td>
                <td>
                   
-                  <p>Het permanent opslaan van CO2.</p>
+                  <p>Het permanent opslaan van CO<sub>2</sub>.</p>
                   </td>
             </tr>
             <tr>
@@ -6017,7 +6011,8 @@
                <td>✔</td>
                <td>
                   
-                  <p>Het opslaan van stoffen op een diepte van meer dan 100 meter beneden het aardoppervlak.</p>
+                  <p>Het brengen of houden van stoffen op een diepte van meer dan 100 meter beneden het
+                     aardoppervlak, dan wel het terughalen van deze stoffen.</p>
                   </td>
             </tr>
             <tr>
@@ -6026,7 +6021,9 @@
                <td>✔</td>
                <td>
                   
-                  <p>Het opsporen van aardwarmte op een diepte van meer dan 500 meter beneden het aardoppervlak.</p>
+                  <p>Het opsporen van aardwarmte op een diepte van meer dan 500 meter beneden het aardoppervlak,
+                     met gebruikmaking van een boorgat. Vanaf 2021 valt hier ook een korte periode van
+                     winnen onder.</p>
                   </td>
             </tr>
             <tr>
@@ -6035,7 +6032,8 @@
                <td>✔</td>
                <td>
                   
-                  <p>Het opsporen van delfstoffen op een diepte van meer dan 100 meter beneden het aardoppervlak.</p>
+                  <p>Het opsporen van delfstoffen op een diepte van meer dan 100 meter beneden het aardoppervlak,
+                     met gebruikmaking van een boorgat.</p>
                   </td>
             </tr>
             <tr>
@@ -6044,7 +6042,9 @@
                <td>✔</td>
                <td>
                   
-                  <p>Het opsporen van opslagcomplexen.</p>
+                  <p>Het opsporen van CO<sub>2</sub> opslagcomplexen, met gebruikmaking van een boorgat of door het verrichten van proeven
+                     met injectie van CO<sub>2.</sub>
+                     </p>
                   </td>
             </tr>
             <tr>
@@ -6063,7 +6063,18 @@
                <td>
                   
                   <p>Het winnen, alsmede het opsporen, van delfstoffen op een diepte van meer dan 100 meter
-                     beneden het aardoppervlak.</p>
+                     beneden het aardoppervlak, met gebruikmaking van een boorgat, tunnel, schacht of ander
+                     ondergronds werk. </p>
+                  </td>
+            </tr>
+            <tr>
+               <td>winnenKalksteen</td>
+               <td>✔</td>
+               <td>✔</td>
+               <td>
+                  
+                  <p>Het winnen van kalksteen onder het aardoppervlak, met gebruikmaking van een tunnel,
+                     schacht of ander ondergronds werk. </p>
                   </td>
             </tr>
          </tbody>
@@ -6098,6 +6109,25 @@
                <th>Omschrijving</th>
             </tr>
             <tr>
+               <td>aanlegBoorgat</td>
+               <td>✔</td>
+               <td>✔</td>
+               <td>
+                  
+                  <p>Een nieuw boorgat wordt aangelegd.</p>
+                  </td>
+            </tr>
+            <tr>
+               <td>bestaanMijnstelselVastgesteld</td>
+               <td>✔</td>
+               <td>✔</td>
+               <td>
+                  
+                  <p>Het bestaan van een mijnstelsel is vastgesteld. Dit betreft het ontdekken van een
+                     reeds bestaand mijnstelsel, of, bij uitzondering, de aanleg van een nieuw mijnstelsel.</p>
+                  </td>
+            </tr>
+            <tr>
                <td>eigenaarGewijzigd</td>
                <td>✔</td>
                <td>✔</td>
@@ -6107,30 +6137,12 @@
                   </td>
             </tr>
             <tr>
-               <td>gebiedOntginningszoneGewijzigd</td>
+               <td>eindeBoorgat</td>
                <td>✔</td>
                <td>✔</td>
                <td>
                   
-                  <p>Een ontginningszone is uitgebreid of gedeeltelijk afgegraven.</p>
-                  </td>
-            </tr>
-            <tr>
-               <td>gebiedTransportzoneGewijzigd</td>
-               <td>✔</td>
-               <td>✔</td>
-               <td>
-                  
-                  <p>Een transportzone is uitgebreid of gedeeltelijk afgegraven.</p>
-                  </td>
-            </tr>
-            <tr>
-               <td>gemijndGebiedMijnstelselGewijzigd</td>
-               <td>✔</td>
-               <td>✔</td>
-               <td>
-                  
-                  <p>Een mijnstelsel is uitgebreid of gedeeltelijk afgegraven.</p>
+                  <p>Het boorgat eindigt te bestaan.</p>
                   </td>
             </tr>
             <tr>
@@ -6143,39 +6155,24 @@
                   </td>
             </tr>
             <tr>
-               <td>ontginningsStatusGewijzigd</td>
+               <td>mijnbouwwetvergunningVerleningGestart</td>
                <td>✔</td>
                <td>✔</td>
                <td>
                   
-                  <p>In een ontginningszone van een mijnstelsel is winning gestart of beëindigd.</p>
+                  <p>De vergunningverlener heeft het besluit genomen aan een bepaalde partij een vergunning
+                     te willen verlenen in relatie tot een mijnbouwconstructie.</p>
                   </td>
             </tr>
             <tr>
-               <td>ontginningszoneAfgegraven</td>
+               <td>mijnstelselGewijzigd</td>
                <td>✔</td>
                <td>✔</td>
                <td>
                   
-                  <p>Een ontginningszone is verdwenen door afgraving.</p>
-                  </td>
-            </tr>
-            <tr>
-               <td>toegangAfgegraven</td>
-               <td>✔</td>
-               <td>✔</td>
-               <td>
-                  
-                  <p>Een toegang is verdwenen door afgraving.</p>
-                  </td>
-            </tr>
-            <tr>
-               <td>transportzoneAfgegraven</td>
-               <td>✔</td>
-               <td>✔</td>
-               <td>
-                  
-                  <p>Een transportzone is verdwenen door afgraving.</p>
+                  <p>Het mijnstelsel is gewijzigd door toevoeging of uitbreiding van toegangen, transporzones
+                     of ontginningszones, door (gedeeltelijke) afgraving ervan of door start of stopzetting
+                     van ontginningsactiviteiten.</p>
                   </td>
             </tr>
             <tr>
@@ -6185,24 +6182,6 @@
                <td>
                   
                   <p>De wettelijke status van een mijnbouwconstructie is gewijzigd.</p>
-                  </td>
-            </tr>
-            <tr>
-               <td>aanlegBoorgat</td>
-               <td>✔</td>
-               <td>✔</td>
-               <td>
-                  
-                  <p>Een nieuw boorgat wordt aangelegd.</p>
-                  </td>
-            </tr>
-            <tr>
-               <td>eindeBoorgat</td>
-               <td>✔</td>
-               <td>✔</td>
-               <td>
-                  
-                  <p>Het boorgat eindigt te bestaan.</p>
                   </td>
             </tr>
          </tbody>
