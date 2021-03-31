@@ -39,7 +39,7 @@
       </section>
    <section id="">
       <h2>Het domeinmodel   </h2>
-      <div class="imageinfo overview"><img src="data/Images/EAID_017CB205_53B6_4659_8664_F773CFA9FA2C.png" usemap="#imagemap-EAID_017CB205_53B6_4659_8664_F773CFA9FA2C" alt="Diagram "><map name="imagemap-EAID_017CB205_53B6_4659_8664_F773CFA9FA2C"><area shape="rect" alt="Mijnbouwwetvergunning" coords="701,10,879,90" href="#graph_EAID_27B442E5_A032_4487_8D18_F4E249D79776"><area shape="rect" alt="Zoutcaverne" coords="337,341,561,460" href="#graph_EAID_B71159A1_F213_4de2_AED5_550473F15950"><area shape="rect" alt="Mijnkaart" coords="902,341,1063,513" href="#graph_EAID_1A8DB415_AEF6_4f69_8E8C_0187A61B4D1B"><area shape="rect" alt="Ontginningszone" coords="834,592,1052,763" href="#graph_EAID_B1D55B65_6D27_4eb4_86EC_32DE6BA11322"><area shape="rect" alt="Transportzone" coords="574,592,794,750" href="#graph_EAID_828E18BC_B644_41e8_BF25_CBDE10E9249E"><area shape="rect" alt="Toegang" coords="360,593,537,751" href="#graph_EAID_35D7E222_DC56_4b0e_B219_FCFEF3AE6D86"><area shape="rect" alt="Mijnstelsel" coords="596,341,797,499" href="#graph_EAID_CACC8EE7_6654_4fe8_8333_101AC6BA294D"><area shape="rect" alt="Boorgat" coords="44,341,315,430" href="#graph_EAID_78FEC25A_E260_4420_9D1D_66F309EA2C60"><area shape="rect" alt="Boortraject" coords="44,485,257,656" href="#graph_EAID_4E52826A_2252_4994_8AD0_986AD45E18C9"><area shape="rect" alt="Mijnbouwconstructie" coords="287,10,567,264" href="#graph_EAID_69DE8D60_7E06_4b57_94CD_8338348EDAE5"></map><p><b>Mijnbouwconstructies (EPC) -  overzicht</b></p>
+      <div class="imageinfo overview"><img src="data/Images/EAID_017CB205_53B6_4659_8664_F773CFA9FA2C.png" usemap="#imagemap-EAID_017CB205_53B6_4659_8664_F773CFA9FA2C" alt="Diagram "><map name="imagemap-EAID_017CB205_53B6_4659_8664_F773CFA9FA2C"><area shape="rect" alt="Mijnbouwwetvergunning" coords="701,10,879,90" href="#graph_EAID_27B442E5_A032_4487_8D18_F4E249D79776"><area shape="rect" alt="Zoutcaverne" coords="337,341,561,460" href="#graph_EAID_B71159A1_F213_4de2_AED5_550473F15950"><area shape="rect" alt="Mijnkaart" coords="902,341,1063,513" href="#graph_EAID_1A8DB415_AEF6_4f69_8E8C_0187A61B4D1B"><area shape="rect" alt="Ontginningszone" coords="834,593,1052,764" href="#graph_EAID_B1D55B65_6D27_4eb4_86EC_32DE6BA11322"><area shape="rect" alt="Transportzone" coords="573,592,793,750" href="#graph_EAID_828E18BC_B644_41e8_BF25_CBDE10E9249E"><area shape="rect" alt="Toegang" coords="360,593,537,751" href="#graph_EAID_35D7E222_DC56_4b0e_B219_FCFEF3AE6D86"><area shape="rect" alt="Mijnstelsel" coords="596,341,797,499" href="#graph_EAID_CACC8EE7_6654_4fe8_8333_101AC6BA294D"><area shape="rect" alt="Boorgat" coords="44,341,315,430" href="#graph_EAID_78FEC25A_E260_4420_9D1D_66F309EA2C60"><area shape="rect" alt="Boortraject" coords="44,485,257,669" href="#graph_EAID_4E52826A_2252_4994_8AD0_986AD45E18C9"><area shape="rect" alt="Mijnbouwconstructie" coords="287,10,567,264" href="#graph_EAID_69DE8D60_7E06_4b57_94CD_8338348EDAE5"></map><p><b>Mijnbouwconstructies (EPC) -  overzicht</b></p>
       </div>
    </section>
    <section id="">
@@ -537,11 +537,18 @@
                      <td>Organisatie</td>
                   </tr>
                   <tr>
+                     <th>Regels</th>
+                     <td>
+                        
+                        <p>De organisatie moet bekend zijn binnen de basisregistratie ondergrond als mijnbouwonderneming.</p>
+                        </td>
+                  </tr>
+                  <tr>
                      <th>Regels IMBRO/A</th>
                      <td>
                         
                         <p>Voor IMBRO/A gegevens mag het attribuut ontbreken wanneer de waarde van het attribuut
-                           <em>mijnbouwactiviteit</em> gelijk is aan <em>opsporenDelfstof</em>.</p>
+                           <em>boringdoel</em> van de entiteit <em>boortraject</em> waarbij het attribuut <em>categorie</em> gelijk is aan <em>primair</em> gelijk is aan <em>opsporenDelfstof</em>.</p>
                         </td>
                   </tr>
                   <tr>
@@ -571,10 +578,6 @@
                      <th>Toelichting</th>
                      <td>
                         
-                        <p>Het gegeven is door de dataleverancier bij de overdracht meegegeven in het geval de
-                           dataleverancier niet de bronhouder is.<br clear="none">
-                           </p>
-                        
                         <p>De eigenaar van een boorgat is gelijk aan de vergunninghouder van de vergunning waar
                            het boorgat onder valt.<br clear="none">
                            </p>
@@ -591,19 +594,20 @@
                            
                            <li>In het geval het boorgat behoort tot een productie-installatie dan kan de eigenaar
                               wijzigen tot het moment dat de gehele productie-installatie is geabandonneerd.  De
-                              organisatie die eigenaar was ten tijde de abandonnering van de gehele productie-installatie
+                              organisatie die eigenaar was ten tijde van de abandonnering van de gehele productie-installatie
                               is de (laatste) eigenaar van het boorgat.<br clear="none">
                               </li>
                            </ul>
                         
-                        <p>De eigenaar van de zoutcaverne is gelijk aan de eigenaar van  het boorgat of de boorgaten
-                           waarvan één of meerdere boortrajecten de zoutcaverne ontsluiten.<br clear="none">
-                           </p>
+                        <p>De eigenaar van de zoutcaverne is gelijk aan de eigenaar van het boorgat of de boorgaten
+                           waarvan één of meerdere boortrajecten de zoutcaverne ontsluiten. In de praktijk komt
+                           het niet voor dat er verschillende eigenaren zijn van de boorgaten via welke een zoutcaverne
+                           wordt ontsloten.</p>
                         </td>
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d48389e2289"></a><section id="detail_d48389e2289">
+            </section><a class="anchor" id="detail_d48861e2393"></a><section id="detail_d48861e2393">
             <h4>  registratiegeschiedenis</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -637,7 +641,7 @@
                   </tr>
                </tbody>
             </table>
-         </section><a class="anchor" id="detail_d48389e2456"></a><section id="detail_d48389e2456">
+         </section><a class="anchor" id="detail_d48861e2560"></a><section id="detail_d48861e2560">
             <h4>  levensduur</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -671,7 +675,7 @@
                   </tr>
                </tbody>
             </table>
-         </section><a class="anchor" id="detail_d48389e2623"></a><section id="detail_d48389e2623">
+         </section><a class="anchor" id="detail_d48861e2727"></a><section id="detail_d48861e2727">
             <h4>  gebeurtenis</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -704,7 +708,7 @@
                   </tr>
                </tbody>
             </table>
-         </section><a class="anchor" id="detail_d48389e2790"></a><section id="detail_d48389e2790">
+         </section><a class="anchor" id="detail_d48861e2894"></a><section id="detail_d48861e2894">
             <h4>  gestandaardiseerde locatie</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -769,6 +773,10 @@
                         </td>
                   </tr>
                   <tr>
+                     <th>Juridische status</th>
+                     <td>Authentiek</td>
+                  </tr>
+                  <tr>
                      <th>Kardinaliteit</th>
                      <td>0..*</td>
                   </tr>
@@ -807,6 +815,16 @@
                      <td>
                         
                         <p>Voor IMBRO/A-gegevens mag het objecttype Mijnbouwwetvergunning afwezig zijn.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>
+                        
+                        <p>Bij een zoutcaverne wordt geen mijnbouwwetvergunning vastgelegd omdat deze is af te
+                           leiden via de vergunning bij het boorgat of de boorgaten waarvan één of meerdere boortrajecten
+                           die zoutcaverne ontsluiten. De vergunning waaronder een boorgat is aangelegd, wordt
+                           namelijk gevolgd door een zoutwinningsvergunning waaronder die zoutcaverne is aangelegd.</p>
                         </td>
                   </tr>
                </tbody>
@@ -1907,7 +1925,7 @@
                      </td>
                </tr>
             </tbody>
-         </table><a class="anchor" id="detail_d48389e6858"></a><section id="detail_d48389e6858">
+         </table><a class="anchor" id="detail_d48861e7017"></a><section id="detail_d48861e7017">
             <h4>  locatie</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -1943,12 +1961,15 @@
                      <th>Regels</th>
                      <td>
                         
-                        <p>Het type geometrie in het attribuut <em>locatie</em> moet gelijk zijn aan GM_Point.</p>
+                        <p>Het type geometrie in het attribuut <em>locatie</em> moet gelijk zijn aan GM_Point.<br clear="none">
+                           De locatie moet liggen in Nederland of zijn Exclusieve Economische Zone.<br clear="none">
+                           Het referentiestelsel moet gelijk zijn aan <em>ETRS89</em> of <em>RD</em> wanneer de locatie aan de landzijde van de mijnbouwgrens ligt.<br clear="none">
+                           Het referentiestelsel moet gelijk zijn aan <em>ETRS89</em> of <em>WGS84</em> wanneer de locatie aan de zeezijde van de mijnbouwgrens ligt.</p>
                         </td>
                   </tr>
                </tbody>
             </table>
-         </section><a class="anchor" id="detail_d48389e7072"></a><section id="detail_d48389e7072">
+         </section><a class="anchor" id="detail_d48861e7267"></a><section id="detail_d48861e7267">
             <h4>  aangeleverde verticale positie</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -1997,6 +2018,10 @@
                         
                         <p>Een boortraject dat onderdeel is van een boorgat.</p>
                         </td>
+                  </tr>
+                  <tr>
+                     <th>Juridische status</th>
+                     <td>Authentiek</td>
                   </tr>
                   <tr>
                      <th>Kardinaliteit</th>
@@ -2087,16 +2112,6 @@
                   <tr>
                      <th>&nbsp;&nbsp;Naam</th>
                      <td>GM_Object</td>
-                  </tr>
-                  <tr>
-                     <th>Regels</th>
-                     <td>
-                        
-                        <p>De locatie moet liggen in Nederland of zijn Exclusieve Economische Zone.<br clear="none">
-                           Het referentiestelsel moet gelijk zijn aan <em>ETRS89</em> of <em>RD</em> wanneer de locatie aan de landzijde van de mijnbouwgrens ligt.<br clear="none">
-                           Het referentiestelsel moet gelijk zijn aan <em>ETRS89</em> of <em>WGS84</em> wanneer de locatie aan de zeezijde van de mijnbouwgrens ligt.<br clear="none">
-                           </p>
-                        </td>
                   </tr>
                   <tr>
                      <th>Materiële geschiedenis</th>
@@ -2623,7 +2638,7 @@
             </section>
       </section><a class="anchor" id="graph_EAID_4E52826A_2252_4994_8AD0_986AD45E18C9"></a><a class="anchor" id="global_class_Model_Boortraject"></a><section id="global_class_Model_Boortraject">
          <h3>   Boortraject</h3>
-         <div class="imageinfo "><img src="data/Images/EAID_BA6E007B_5918_48b8_B6CE_00666B2D4C8C.png" usemap="#imagemap-EAID_BA6E007B_5918_48b8_B6CE_00666B2D4C8C" alt="Diagram "><map name="imagemap-EAID_BA6E007B_5918_48b8_B6CE_00666B2D4C8C"><area shape="rect" alt="Boortraject locatie" coords="282,10,485,112" href="#graph_EAID_410F626E_1E87_47b5_AB5A_014C2D41B9B7"><area shape="rect" alt="Boortraject" coords="10,10,236,181" href="#graph_EAID_4E52826A_2252_4994_8AD0_986AD45E18C9"></map><p><b></b></p>
+         <div class="imageinfo "><img src="data/Images/EAID_BA6E007B_5918_48b8_B6CE_00666B2D4C8C.png" usemap="#imagemap-EAID_BA6E007B_5918_48b8_B6CE_00666B2D4C8C" alt="Diagram "><map name="imagemap-EAID_BA6E007B_5918_48b8_B6CE_00666B2D4C8C"><area shape="rect" alt="Boortraject locatie" coords="273,-10,476,92" href="#graph_EAID_410F626E_1E87_47b5_AB5A_014C2D41B9B7"><area shape="rect" alt="Boortraject" coords="1,-10,227,174" href="#graph_EAID_4E52826A_2252_4994_8AD0_986AD45E18C9"></map><p><b></b></p>
          </div>
          <table style="width: 100%;">
             <colgroup style="width: 30%;"></colgroup>
@@ -2691,7 +2706,7 @@
                      <th>Regels</th>
                      <td>
                         
-                        <p>De boortrajectcode is uniek binnen de set van boortrajecten waaruit het boorgat bestaat.</p>
+                        <p>De boortrajectcode is uniek binnen het boorgat.</p>
                         </td>
                   </tr>
                   <tr>
@@ -2964,7 +2979,40 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d48389e10351"></a><section id="detail_d48389e10351">
+            </section><a class="anchor" id="detail_attribute_Model_Boortraject_naam"></a><section id="detail_attribute_Model_Boortraject_naam">
+            <h4>  naam</h4>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Type gegeven</th>
+                     <td>Attribuut van Boortraject</td>
+                  </tr>
+                  <tr>
+                     <th>Juridische status</th>
+                     <td>Authentiek</td>
+                  </tr>
+                  <tr>
+                     <th>Kardinaliteit</th>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <th>Domein</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>&nbsp;&nbsp;Naam</th>
+                     <td>Tekst </td>
+                  </tr>
+                  <tr>
+                     <th>Materiële geschiedenis</th>
+                     <td>Nee</td>
+                  </tr>
+               </tbody>
+            </table>
+            </section><a class="anchor" id="detail_d48861e10563"></a><section id="detail_d48861e10563">
             <h4>  boortraject locatie</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -3283,7 +3331,8 @@
                      <th>Regels</th>
                      <td>
                         
-                        <p>De <em>naam</em> is uniek binnen de set van mijnstelsels in de basisregistratie ondergrond.</p>
+                        <p>De <em>naam</em> is uniek binnen de set met mijnstelsels binnen het registatieobjecttype Mijnbouwconstructie
+                           (EPC).</p>
                         </td>
                   </tr>
                   <tr>
@@ -3330,7 +3379,8 @@
                      <th>Regels</th>
                      <td>
                         
-                        <p>De <em>code</em> is uniek binnen de set van mijnstelsels in de basisregistratie ondergrond.<br clear="none">
+                        <p>De <em>code</em> is uniek binnen de set met mijnstelsels binnen het registatieobjecttype Mijnbouwconstructie
+                           (EPC).<br clear="none">
                            Het attribuut moet aanwezig zijn wanneer de waarde van het attribuut <em>soort mijnstelsel</em> gelijk is aan <em>steenkoolmijn</em>.</p>
                         </td>
                   </tr>
@@ -3500,7 +3550,7 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d48389e12748"></a><section id="detail_d48389e12748">
+            </section><a class="anchor" id="detail_d48861e13272"></a><section id="detail_d48861e13272">
             <h4>  gemijnd gebied</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -3544,6 +3594,61 @@
                   </tr>
                </tbody>
             </table>
+         </section><a class="anchor" id="detail_association_Model_Mijnstelsel_gerelateerdetoegang"></a><section id="detail_association_Model_Mijnstelsel_gerelateerdetoegang">
+            <h4>  gerelateerde toegang</h4>
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Type gegeven</th>
+                     <td>Associatie van Mijnstelsel</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>Een toegang die onderdeel is van een mijnstelsel en via welke dat mijnstelsel fysiek
+                           toegankelijk is.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Juridische status</th>
+                     <td>Authentiek</td>
+                  </tr>
+                  <tr>
+                     <th>Kardinaliteit</th>
+                     <td>0..*</td>
+                  </tr>
+                  <tr>
+                     <th>Relatiesoort naam</th>
+                     <td>bestaat uit</td>
+                  </tr>
+                  <tr>
+                     <th>Relatierol naam</th>
+                     <td>gerelateerde toegang</td>
+                  </tr>
+                  <tr>
+                     <th>Bron</th>
+                     <td>Mijnstelsel</td>
+                  </tr>
+                  <tr>
+                     <th>Doel</th>
+                     <td>
+                        Toegang
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>
+                        
+                        <p>Een toegang is optioneel bij een mijnstelsel omdat met name bij niet-steenkoolmijnen
+                           het voorkomt dat niet bekend is waar toegangen tot een mijnstelsel zijn of hebben
+                           gelegen.</p>
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
          </section><a class="anchor" id="detail_association_Model_Mijnstelsel_gerelateerdetransportzone"></a><section id="detail_association_Model_Mijnstelsel_gerelateerdetransportzone">
             <h4>  gerelateerde transportzone</h4>
             <table style="width: 100%;">
@@ -3560,6 +3665,10 @@
                         
                         <p>Een transportzone die onderdeel is van een mijnstelsel.</p>
                         </td>
+                  </tr>
+                  <tr>
+                     <th>Juridische status</th>
+                     <td>Authentiek</td>
                   </tr>
                   <tr>
                      <th>Kardinaliteit</th>
@@ -3603,6 +3712,10 @@
                         </td>
                   </tr>
                   <tr>
+                     <th>Juridische status</th>
+                     <td>Authentiek</td>
+                  </tr>
+                  <tr>
                      <th>Kardinaliteit</th>
                      <td>0..*</td>
                   </tr>
@@ -3626,57 +3739,6 @@
                   </tr>
                </tbody>
             </table>
-         </section><a class="anchor" id="detail_association_Model_Mijnstelsel_gerelateerdetoegang"></a><section id="detail_association_Model_Mijnstelsel_gerelateerdetoegang">
-            <h4>  gerelateerde toegang</h4>
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Type gegeven</th>
-                     <td>Associatie van Mijnstelsel</td>
-                  </tr>
-                  <tr>
-                     <th>Definitie</th>
-                     <td>
-                        
-                        <p>Een toegang die onderdeel is van een mijnstelsel en via welke dat mijnstelsel fysiek
-                           toegankelijk is.</p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Kardinaliteit</th>
-                     <td>0..*</td>
-                  </tr>
-                  <tr>
-                     <th>Relatiesoort naam</th>
-                     <td>bestaat uit</td>
-                  </tr>
-                  <tr>
-                     <th>Relatierol naam</th>
-                     <td>gerelateerde toegang</td>
-                  </tr>
-                  <tr>
-                     <th>Bron</th>
-                     <td>Mijnstelsel</td>
-                  </tr>
-                  <tr>
-                     <th>Doel</th>
-                     <td>
-                        Toegang
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Toelichting</th>
-                     <td>
-                        
-                        <p>Een toegang is optioneel bij een mijnstelsel omdat met name bij niet-steenkoolmijnen
-                           het voorkomt dat niet bekend is waar toegangen tot een mijnstelsel zijn of hebben
-                           gelegen.</p>
-                        </td>
-                  </tr>
-               </tbody>
-            </table>
          </section><a class="anchor" id="detail_association_Model_Mijnstelsel_gerelateerdemijnkaart"></a><section id="detail_association_Model_Mijnstelsel_gerelateerdemijnkaart">
             <h4>  gerelateerde mijnkaart</h4>
             <table style="width: 100%;">
@@ -3693,6 +3755,10 @@
                         
                         <p>Een mijnkaart waarop (een gedeelte van) een mijnstelsel is afgebeeld.</p>
                         </td>
+                  </tr>
+                  <tr>
+                     <th>Juridische status</th>
+                     <td>Authentiek</td>
                   </tr>
                   <tr>
                      <th>Kardinaliteit</th>
@@ -3849,7 +3915,8 @@
                      <th>Regels</th>
                      <td>
                         
-                        <p>De <em>naam</em> is uniek binnen de set van toegangen waaruit een <em>Mijnstelsel</em> bestaat.</p>
+                        <p>De <em>naam</em> is uniek binnen de set met toegangen binnen het registatieobjecttype Mijnbouwconstructie
+                           (EPC).</p>
                         </td>
                   </tr>
                   <tr>
@@ -4008,7 +4075,7 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d48389e13941"></a><section id="detail_d48389e13941">
+            </section><a class="anchor" id="detail_d48861e14463"></a><section id="detail_d48861e14463">
             <h4>  locatie</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -4321,7 +4388,7 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d48389e15163"></a><section id="detail_d48389e15163">
+            </section><a class="anchor" id="detail_d48861e15685"></a><section id="detail_d48861e15685">
             <h4>  gebied</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -4708,7 +4775,7 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d48389e16641"></a><section id="detail_d48389e16641">
+            </section><a class="anchor" id="detail_d48861e17163"></a><section id="detail_d48861e17163">
             <h4>  gebied</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -4830,7 +4897,8 @@
                      <th>Regels</th>
                      <td>
                         
-                        <p>De <em>mijnkaartcode</em> is uniek binnen de set met mijnkaarten binnen de registratie ondergrond.</p>
+                        <p>De <em>mijnkaartcode</em> is uniek binnen de set met mijnkaarten binnen het registratieobjecttype Mijnbouwconstructie
+                           (EPC).</p>
                         </td>
                   </tr>
                   <tr>
@@ -5379,7 +5447,7 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d48389e19175"></a><section id="detail_d48389e19175">
+            </section><a class="anchor" id="detail_d48861e19752"></a><section id="detail_d48861e19752">
             <h4>  holruimtecontour</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -5445,6 +5513,10 @@
                         
                         <p>Een boortraject via welke een zoutcaverne wordt ontsloten.</p>
                         </td>
+                  </tr>
+                  <tr>
+                     <th>Juridische status</th>
+                     <td>Authentiek</td>
                   </tr>
                   <tr>
                      <th>Kardinaliteit</th>
