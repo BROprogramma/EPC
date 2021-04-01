@@ -178,56 +178,6 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_attribute_Model_Mijnbouwconstructie_objectIDbronhouder"></a><section id="detail_attribute_Model_Mijnbouwconstructie_objectIDbronhouder">
-            <h4>  object-ID bronhouder</h4>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Type gegeven</th>
-                     <td>Attribuut van Mijnbouwconstructie</td>
-                  </tr>
-                  <tr>
-                     <th>Definitie</th>
-                     <td>
-                        
-                        <p>De identificatie die door of voor de bronhouder is gebruikt om het object in de eigen
-                           administratie te kunnen vinden.</p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Juridische status</th>
-                     <td>Niet-authentiek</td>
-                  </tr>
-                  <tr>
-                     <th>Kardinaliteit</th>
-                     <td>1</td>
-                  </tr>
-                  <tr>
-                     <th>Domein</th>
-                     <td></td>
-                  </tr>
-                  <tr>
-                     <th>&nbsp;&nbsp;Naam</th>
-                     <td>Tekst 200</td>
-                  </tr>
-                  <tr>
-                     <th>Materiële geschiedenis</th>
-                     <td>Nee</td>
-                  </tr>
-                  <tr>
-                     <th>Toelichting</th>
-                     <td>
-                        
-                        <p>Het gegeven wordt alleen uitgeleverd aan de dataleverancier en de bronhouder. Het
-                           is in de registratie opgenomen om de communicatie tussen de registerbeheerder en de
-                           bronhouder of dataleverancier te vergemakkelijken.</p>
-                        </td>
-                  </tr>
-               </tbody>
-            </table>
             </section><a class="anchor" id="detail_attribute_Model_Mijnbouwconstructie_dataleverancier"></a><section id="detail_attribute_Model_Mijnbouwconstructie_dataleverancier">
             <h4>  dataleverancier</h4>
             
@@ -286,8 +236,8 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_attribute_Model_Mijnbouwconstructie_kwaliteitsregime"></a><section id="detail_attribute_Model_Mijnbouwconstructie_kwaliteitsregime">
-            <h4>  kwaliteitsregime</h4>
+            </section><a class="anchor" id="detail_attribute_Model_Mijnbouwconstructie_eigenaar"></a><section id="detail_attribute_Model_Mijnbouwconstructie_eigenaar">
+            <h4>  eigenaar</h4>
             
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -301,7 +251,10 @@
                      <th>Definitie</th>
                      <td>
                         
-                        <p>De aanduiding van de kwaliteitseis waaraan de gegevens van het object voldoen.</p>
+                        <p>Het KvK-nummer van de onderneming of de maatschappelijke activiteit van de rechtspersoon
+                           die eigenaar is van het object dat aan de basisregistratie ondergrond is aangeleverd
+                           door de dataleverancier, of het equivalent daarvan in een handelsregister van een
+                           andere lidstaat van de Europese Unie dan Nederland.</p>
                         </td>
                   </tr>
                   <tr>
@@ -318,21 +271,75 @@
                   </tr>
                   <tr>
                      <th>&nbsp;&nbsp;Naam</th>
-                     <td>Kwaliteitsregime</td>
+                     <td>Organisatie</td>
                   </tr>
                   <tr>
-                     <th>&nbsp;&nbsp;Type</th>
-                     <td>Waardelijst niet uitbreidbaar</td>
+                     <th>Regels</th>
+                     <td>
+                        
+                        <p>De organisatie moet bekend zijn binnen de basisregistratie ondergrond als mijnbouwonderneming.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Regels IMBRO/A</th>
+                     <td>
+                        
+                        <p>Voor IMBRO/A gegevens mag het attribuut ontbreken wanneer de waarde van het attribuut
+                           <em>boringdoel</em> van de entiteit <em>boortraject</em> waarbij het attribuut <em>categorie</em> gelijk is aan <em>primair</em> gelijk is aan <em>opsporenDelfstof</em>.</p>
+                        </td>
                   </tr>
                   <tr>
                      <th>Materiële geschiedenis</th>
-                     <td>Nee</td>
+                     <td>Ja</td>
+                  </tr>
+                  <tr>
+                     <th>Mogelijk geen waarde</th>
+                     <td>Ja</td>
+                  </tr>
+                  <tr>
+                     <th>Reden geen waarde</th>
+                     <td>
+                        
+                        <p>De laatste eigenaar van het Boorgat is failliet gegaan en het bedrijf is niet overgenomen
+                           door een ander bedrijf.<br clear="none">
+                           De eigenaar van het Mijnstelsel is een natuurlijk persoon.<br clear="none">
+                           Het Mijnstelsel is niet van het soort mijnstelsel 'steenkoolmijn' en heeft toegangen
+                           met verschillende eigenaren.<br clear="none">
+                           Het Mijnstelsel is niet van het soort mijnstelsel 'steenkoolmijn' en heeft alleen
+                           toegangen die buiten Nederland liggen.<br clear="none">
+                           Het Mijnstelsel is niet van het soort mijnstelsel 'steenkoolmijn' en heeft geen bekende
+                           toegangen.</p>
+                        </td>
                   </tr>
                   <tr>
                      <th>Toelichting</th>
                      <td>
                         
-                        <p>Het gegeven is door de dataleverancier bij de overdracht meegegeven.</p>
+                        <p>De eigenaar van een boorgat is gelijk aan de vergunninghouder van de vergunning waar
+                           het boorgat onder valt.<br clear="none">
+                           </p>
+                        
+                        <ul>
+                           
+                           <li>In het geval de vergunninghouder een consortium is, dan is de penvoerder van  het
+                              consortium de eigenaar van het boorgat.<br clear="none">
+                              </li>
+                           
+                           <li>In het geval het boorgat een alleenstaand geabandonneerd boorgat is, dan is de organisatie
+                              die eigenaar was ten tijde van de abandonnering de (laatste) eigenaar van het boorgat.<br clear="none">
+                              </li>
+                           
+                           <li>In het geval het boorgat behoort tot een productie-installatie dan kan de eigenaar
+                              wijzigen tot het moment dat de gehele productie-installatie is geabandonneerd.  De
+                              organisatie die eigenaar was ten tijde van de abandonnering van de gehele productie-installatie
+                              is de (laatste) eigenaar van het boorgat.<br clear="none">
+                              </li>
+                           </ul>
+                        
+                        <p>De eigenaar van de zoutcaverne is gelijk aan de eigenaar van het boorgat of de boorgaten
+                           waarvan één of meerdere boortrajecten de zoutcaverne ontsluiten. In de praktijk komt
+                           het niet voor dat er verschillende eigenaren zijn van de boorgaten via welke een zoutcaverne
+                           wordt ontsloten.</p>
                         </td>
                   </tr>
                </tbody>
@@ -387,6 +394,107 @@
                         <p>De wetgever stipuleert dat het gegeven moet zijn vastgelegd om inzicht te geven in
                            de relatie met de taken van een bestuursorgaan. Het gegeven geeft inzicht in de maatschappelijke
                            betekenis van de informatie.</p>
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+            </section><a class="anchor" id="detail_attribute_Model_Mijnbouwconstructie_kwaliteitsregime"></a><section id="detail_attribute_Model_Mijnbouwconstructie_kwaliteitsregime">
+            <h4>  kwaliteitsregime</h4>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Type gegeven</th>
+                     <td>Attribuut van Mijnbouwconstructie</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>De aanduiding van de kwaliteitseis waaraan de gegevens van het object voldoen.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Juridische status</th>
+                     <td>Authentiek</td>
+                  </tr>
+                  <tr>
+                     <th>Kardinaliteit</th>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <th>Domein</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>&nbsp;&nbsp;Naam</th>
+                     <td>Kwaliteitsregime</td>
+                  </tr>
+                  <tr>
+                     <th>&nbsp;&nbsp;Type</th>
+                     <td>Waardelijst niet uitbreidbaar</td>
+                  </tr>
+                  <tr>
+                     <th>Materiële geschiedenis</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>
+                        
+                        <p>Het gegeven is door de dataleverancier bij de overdracht meegegeven.</p>
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+            </section><a class="anchor" id="detail_attribute_Model_Mijnbouwconstructie_objectIDbronhouder"></a><section id="detail_attribute_Model_Mijnbouwconstructie_objectIDbronhouder">
+            <h4>  object-ID bronhouder</h4>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Type gegeven</th>
+                     <td>Attribuut van Mijnbouwconstructie</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>De identificatie die door of voor de bronhouder is gebruikt om het object in de eigen
+                           administratie te kunnen vinden.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Juridische status</th>
+                     <td>Niet-authentiek</td>
+                  </tr>
+                  <tr>
+                     <th>Kardinaliteit</th>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <th>Domein</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>&nbsp;&nbsp;Naam</th>
+                     <td>Tekst 200</td>
+                  </tr>
+                  <tr>
+                     <th>Materiële geschiedenis</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>
+                        
+                        <p>Het gegeven wordt alleen uitgeleverd aan de dataleverancier en de bronhouder. Het
+                           is in de registratie opgenomen om de communicatie tussen de registerbeheerder en de
+                           bronhouder of dataleverancier te vergemakkelijken.</p>
                         </td>
                   </tr>
                </tbody>
@@ -500,183 +608,7 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_attribute_Model_Mijnbouwconstructie_eigenaar"></a><section id="detail_attribute_Model_Mijnbouwconstructie_eigenaar">
-            <h4>  eigenaar</h4>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Type gegeven</th>
-                     <td>Attribuut van Mijnbouwconstructie</td>
-                  </tr>
-                  <tr>
-                     <th>Definitie</th>
-                     <td>
-                        
-                        <p>Het KvK-nummer van de onderneming of de maatschappelijke activiteit van de rechtspersoon
-                           die eigenaar is van het object dat aan de basisregistratie ondergrond is aangeleverd
-                           door de dataleverancier, of het equivalent daarvan in een handelsregister van een
-                           andere lidstaat van de Europese Unie dan Nederland.</p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Juridische status</th>
-                     <td>Authentiek</td>
-                  </tr>
-                  <tr>
-                     <th>Kardinaliteit</th>
-                     <td>1</td>
-                  </tr>
-                  <tr>
-                     <th>Domein</th>
-                     <td></td>
-                  </tr>
-                  <tr>
-                     <th>&nbsp;&nbsp;Naam</th>
-                     <td>Organisatie</td>
-                  </tr>
-                  <tr>
-                     <th>Regels</th>
-                     <td>
-                        
-                        <p>De organisatie moet bekend zijn binnen de basisregistratie ondergrond als mijnbouwonderneming.</p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Regels IMBRO/A</th>
-                     <td>
-                        
-                        <p>Voor IMBRO/A gegevens mag het attribuut ontbreken wanneer de waarde van het attribuut
-                           <em>boringdoel</em> van de entiteit <em>boortraject</em> waarbij het attribuut <em>categorie</em> gelijk is aan <em>primair</em> gelijk is aan <em>opsporenDelfstof</em>.</p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Materiële geschiedenis</th>
-                     <td>Ja</td>
-                  </tr>
-                  <tr>
-                     <th>Mogelijk geen waarde</th>
-                     <td>Ja</td>
-                  </tr>
-                  <tr>
-                     <th>Reden geen waarde</th>
-                     <td>
-                        
-                        <p>De laatste eigenaar van het Boorgat is failliet gegaan en het bedrijf is niet overgenomen
-                           door een ander bedrijf.<br clear="none">
-                           De eigenaar van het Mijnstelsel is een natuurlijk persoon.<br clear="none">
-                           Het Mijnstelsel is niet van het soort mijnstelsel 'steenkoolmijn' en heeft toegangen
-                           met verschillende eigenaren.<br clear="none">
-                           Het Mijnstelsel is niet van het soort mijnstelsel 'steenkoolmijn' en heeft alleen
-                           toegangen die buiten Nederland liggen.<br clear="none">
-                           Het Mijnstelsel is niet van het soort mijnstelsel 'steenkoolmijn' en heeft geen bekende
-                           toegangen.</p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Toelichting</th>
-                     <td>
-                        
-                        <p>De eigenaar van een boorgat is gelijk aan de vergunninghouder van de vergunning waar
-                           het boorgat onder valt.<br clear="none">
-                           </p>
-                        
-                        <ul>
-                           
-                           <li>In het geval de vergunninghouder een consortium is, dan is de penvoerder van  het
-                              consortium de eigenaar van het boorgat.<br clear="none">
-                              </li>
-                           
-                           <li>In het geval het boorgat een alleenstaand geabandonneerd boorgat is, dan is de organisatie
-                              die eigenaar was ten tijde van de abandonnering de (laatste) eigenaar van het boorgat.<br clear="none">
-                              </li>
-                           
-                           <li>In het geval het boorgat behoort tot een productie-installatie dan kan de eigenaar
-                              wijzigen tot het moment dat de gehele productie-installatie is geabandonneerd.  De
-                              organisatie die eigenaar was ten tijde van de abandonnering van de gehele productie-installatie
-                              is de (laatste) eigenaar van het boorgat.<br clear="none">
-                              </li>
-                           </ul>
-                        
-                        <p>De eigenaar van de zoutcaverne is gelijk aan de eigenaar van het boorgat of de boorgaten
-                           waarvan één of meerdere boortrajecten de zoutcaverne ontsluiten. In de praktijk komt
-                           het niet voor dat er verschillende eigenaren zijn van de boorgaten via welke een zoutcaverne
-                           wordt ontsloten.</p>
-                        </td>
-                  </tr>
-               </tbody>
-            </table>
-            </section><a class="anchor" id="detail_d49052e2393"></a><section id="detail_d49052e2393">
-            <h4>  registratiegeschiedenis</h4>
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Type gegeven</th>
-                     <td>Gegevensgroep van Mijnbouwconstructie</td>
-                  </tr>
-                  <tr>
-                     <th>Definitie</th>
-                     <td>
-                        
-                        <p>De gegevens die de geschiedenis van de mijnbouwconstructie in de registratie ondergrond
-                           markeren.</p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Juridische status</th>
-                     <td>Authentiek</td>
-                  </tr>
-                  <tr>
-                     <th>Kardinaliteit</th>
-                     <td>1</td>
-                  </tr>
-                  <tr>
-                     <th>Gegevensgroeptype</th>
-                     <td>
-                        Registratiegeschiedenis
-                        </td>
-                  </tr>
-               </tbody>
-            </table>
-         </section><a class="anchor" id="detail_d49052e2560"></a><section id="detail_d49052e2560">
-            <h4>  levensduur</h4>
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Type gegeven</th>
-                     <td>Gegevensgroep van Mijnbouwconstructie</td>
-                  </tr>
-                  <tr>
-                     <th>Definitie</th>
-                     <td>
-                        
-                        <p>De periode gedurende welke de mijnbouwconstructie in de werkelijkheid bestaat of heeft
-                           bestaan.</p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Juridische status</th>
-                     <td>Authentiek</td>
-                  </tr>
-                  <tr>
-                     <th>Kardinaliteit</th>
-                     <td>0..1</td>
-                  </tr>
-                  <tr>
-                     <th>Gegevensgroeptype</th>
-                     <td>
-                        Levensduur
-                        </td>
-                  </tr>
-               </tbody>
-            </table>
-         </section><a class="anchor" id="detail_d49052e2727"></a><section id="detail_d49052e2727">
+            </section><a class="anchor" id="detail_d48982e2393"></a><section id="detail_d48982e2393">
             <h4>  gebeurtenis</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -709,7 +641,7 @@
                   </tr>
                </tbody>
             </table>
-         </section><a class="anchor" id="detail_d49052e2894"></a><section id="detail_d49052e2894">
+         </section><a class="anchor" id="detail_d48982e2560"></a><section id="detail_d48982e2560">
             <h4>  gestandaardiseerde locatie</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -751,6 +683,74 @@
                            te zee boven de waterspiegel. En de locatie van een zoutcaverne of van een mijnstelsel
                            is een projectie op het aardoppervlak van de maximale ondergrondse contour ervan.<br clear="none">
                            OPEN PUNT: Deze toelichting controleren na overleg met Frank Waardenburg.</p>
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+         </section><a class="anchor" id="detail_d48982e2776"></a><section id="detail_d48982e2776">
+            <h4>  levensduur</h4>
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Type gegeven</th>
+                     <td>Gegevensgroep van Mijnbouwconstructie</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>De periode gedurende welke de mijnbouwconstructie in de werkelijkheid bestaat of heeft
+                           bestaan.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Juridische status</th>
+                     <td>Authentiek</td>
+                  </tr>
+                  <tr>
+                     <th>Kardinaliteit</th>
+                     <td>0..1</td>
+                  </tr>
+                  <tr>
+                     <th>Gegevensgroeptype</th>
+                     <td>
+                        Levensduur
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+         </section><a class="anchor" id="detail_d48982e2943"></a><section id="detail_d48982e2943">
+            <h4>  registratiegeschiedenis</h4>
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Type gegeven</th>
+                     <td>Gegevensgroep van Mijnbouwconstructie</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>De gegevens die de geschiedenis van de mijnbouwconstructie in de registratie ondergrond
+                           markeren.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Juridische status</th>
+                     <td>Authentiek</td>
+                  </tr>
+                  <tr>
+                     <th>Kardinaliteit</th>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <th>Gegevensgroeptype</th>
+                     <td>
+                        Registratiegeschiedenis
                         </td>
                   </tr>
                </tbody>
@@ -859,199 +859,7 @@
                      </td>
                </tr>
             </tbody>
-         </table><a class="anchor" id="detail_attribute_Model_Registratiegeschiedenis_tijdstipregistratieobject"></a><section id="detail_attribute_Model_Registratiegeschiedenis_tijdstipregistratieobject">
-            <h4>  tijdstip registratie object</h4>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Type gegeven</th>
-                     <td>Attribuut van Registratiegeschiedenis</td>
-                  </tr>
-                  <tr>
-                     <th>Definitie</th>
-                     <td>
-                        
-                        <p>De datum en het tijdstip waarop voor het eerst gegevens van het object in de registratie
-                           ondergrond zijn opgenomen.</p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Juridische status</th>
-                     <td>Authentiek</td>
-                  </tr>
-                  <tr>
-                     <th>Kardinaliteit</th>
-                     <td>1</td>
-                  </tr>
-                  <tr>
-                     <th>Domein</th>
-                     <td></td>
-                  </tr>
-                  <tr>
-                     <th>&nbsp;&nbsp;Naam</th>
-                     <td>DatumTijd</td>
-                  </tr>
-                  <tr>
-                     <th>Materiële geschiedenis</th>
-                     <td>Nee</td>
-                  </tr>
-               </tbody>
-            </table>
-            </section><a class="anchor" id="detail_attribute_Model_Registratiegeschiedenis_registratiestatus"></a><section id="detail_attribute_Model_Registratiegeschiedenis_registratiestatus">
-            <h4>  registratiestatus</h4>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Type gegeven</th>
-                     <td>Attribuut van Registratiegeschiedenis</td>
-                  </tr>
-                  <tr>
-                     <th>Definitie</th>
-                     <td>
-                        
-                        <p>De actuele fase van registratie waarin het object zich bevindt.</p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Juridische status</th>
-                     <td>Authentiek</td>
-                  </tr>
-                  <tr>
-                     <th>Kardinaliteit</th>
-                     <td>1</td>
-                  </tr>
-                  <tr>
-                     <th>Domein</th>
-                     <td></td>
-                  </tr>
-                  <tr>
-                     <th>&nbsp;&nbsp;Naam</th>
-                     <td><a class="link" href="#detail_class_Model_Registratiestatus">Registratiestatus</a></td>
-                  </tr>
-                  <tr>
-                     <th>&nbsp;&nbsp;Type</th>
-                     <td>Waardelijst uitbreidbaar</td>
-                  </tr>
-                  <tr>
-                     <th>Materiële geschiedenis</th>
-                     <td>Nee</td>
-                  </tr>
-               </tbody>
-            </table>
-            </section><a class="anchor" id="detail_attribute_Model_Registratiegeschiedenis_tijdstiplaatsteaanvulling"></a><section id="detail_attribute_Model_Registratiegeschiedenis_tijdstiplaatsteaanvulling">
-            <h4>  tijdstip laatste aanvulling</h4>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Type gegeven</th>
-                     <td>Attribuut van Registratiegeschiedenis</td>
-                  </tr>
-                  <tr>
-                     <th>Definitie</th>
-                     <td>
-                        
-                        <p>De datum en het tijdstip waarop de laatste aanvulling op de gegevens in de registratie
-                           ondergrond is doorgevoerd.</p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Juridische status</th>
-                     <td>Authentiek</td>
-                  </tr>
-                  <tr>
-                     <th>Kardinaliteit</th>
-                     <td>0..1</td>
-                  </tr>
-                  <tr>
-                     <th>Domein</th>
-                     <td></td>
-                  </tr>
-                  <tr>
-                     <th>&nbsp;&nbsp;Naam</th>
-                     <td>DatumTijd</td>
-                  </tr>
-                  <tr>
-                     <th>Materiële geschiedenis</th>
-                     <td>Nee</td>
-                  </tr>
-                  <tr>
-                     <th>Toelichting</th>
-                     <td>
-                        
-                        <p>Het gegeven is alleen aanwezig wanneer na de registratie van een eerste deelonderzoek
-                           een ander deelonderzoek is vastgelegd.</p>
-                        </td>
-                  </tr>
-               </tbody>
-            </table>
-            </section><a class="anchor" id="detail_attribute_Model_Registratiegeschiedenis_tijdstipvoltooiingregistratie"></a><section id="detail_attribute_Model_Registratiegeschiedenis_tijdstipvoltooiingregistratie">
-            <h4>  tijdstip voltooiing registratie</h4>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Type gegeven</th>
-                     <td>Attribuut van Registratiegeschiedenis</td>
-                  </tr>
-                  <tr>
-                     <th>Definitie</th>
-                     <td>
-                        
-                        <p>De datum en het tijdstip waarop alle gegevens van het object in de registratie ondergrond
-                           zijn opgenomen.</p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Juridische status</th>
-                     <td>Authentiek</td>
-                  </tr>
-                  <tr>
-                     <th>Kardinaliteit</th>
-                     <td>0..1</td>
-                  </tr>
-                  <tr>
-                     <th>Domein</th>
-                     <td></td>
-                  </tr>
-                  <tr>
-                     <th>&nbsp;&nbsp;Naam</th>
-                     <td>DatumTijd</td>
-                  </tr>
-                  <tr>
-                     <th>Regels</th>
-                     <td>
-                        
-                        <p>Het attribuut moet aanwezig zijn wanneer de waarde van het attribuut <em>registratiestatus</em> gelijk is aan <em>voltooid</em>.<br clear="none">
-                           Het attribuut mag niet aanwezig zijn in alle andere gevallen.</p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Materiële geschiedenis</th>
-                     <td>Nee</td>
-                  </tr>
-                  <tr>
-                     <th>Toelichting</th>
-                     <td>
-                        
-                        <p>Het gegeven is alleen aanwezig als alle aan te leveren gegevens zijn geregistreerd.
-                           Na dit tijdstip kunnen geen nieuwe gegevens meer ter registratie worden aangeboden.
-                           Wel kunnen fouten in de registratie worden verbeterd.</p>
-                        </td>
-                  </tr>
-               </tbody>
-            </table>
-            </section><a class="anchor" id="detail_attribute_Model_Registratiegeschiedenis_gecorrigeerd"></a><section id="detail_attribute_Model_Registratiegeschiedenis_gecorrigeerd">
+         </table><a class="anchor" id="detail_attribute_Model_Registratiegeschiedenis_gecorrigeerd"></a><section id="detail_attribute_Model_Registratiegeschiedenis_gecorrigeerd">
             <h4>  gecorrigeerd</h4>
             
             <table style="width: 100%;">
@@ -1089,55 +897,6 @@
                   <tr>
                      <th>&nbsp;&nbsp;Type</th>
                      <td>Waardelijst niet uitbreidbaar</td>
-                  </tr>
-                  <tr>
-                     <th>Materiële geschiedenis</th>
-                     <td>Nee</td>
-                  </tr>
-               </tbody>
-            </table>
-            </section><a class="anchor" id="detail_attribute_Model_Registratiegeschiedenis_tijdstiplaatstecorrectie"></a><section id="detail_attribute_Model_Registratiegeschiedenis_tijdstiplaatstecorrectie">
-            <h4>  tijdstip laatste correctie</h4>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Type gegeven</th>
-                     <td>Attribuut van Registratiegeschiedenis</td>
-                  </tr>
-                  <tr>
-                     <th>Definitie</th>
-                     <td>
-                        
-                        <p>De datum en het tijdstip waarop de laatste verbetering in de gegevens van het object
-                           is doorgevoerd.</p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Juridische status</th>
-                     <td>Authentiek</td>
-                  </tr>
-                  <tr>
-                     <th>Kardinaliteit</th>
-                     <td>0..1</td>
-                  </tr>
-                  <tr>
-                     <th>Domein</th>
-                     <td></td>
-                  </tr>
-                  <tr>
-                     <th>&nbsp;&nbsp;Naam</th>
-                     <td>DatumTijd</td>
-                  </tr>
-                  <tr>
-                     <th>Regels</th>
-                     <td>
-                        
-                        <p>Het attribuut moet aanwezig zijn wanneer de waarde van het attribuut <em>gecorrigeerd</em> gelijk is aan <em>ja</em>.<br clear="none">
-                           Het attribuut mag niet aanwezig zijn in alle andere gevallen.</p>
-                        </td>
                   </tr>
                   <tr>
                      <th>Materiële geschiedenis</th>
@@ -1249,6 +1008,344 @@
                   </tr>
                </tbody>
             </table>
+            </section><a class="anchor" id="detail_attribute_Model_Registratiegeschiedenis_registratiestatus"></a><section id="detail_attribute_Model_Registratiegeschiedenis_registratiestatus">
+            <h4>  registratiestatus</h4>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Type gegeven</th>
+                     <td>Attribuut van Registratiegeschiedenis</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>De actuele fase van registratie waarin het object zich bevindt.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Juridische status</th>
+                     <td>Authentiek</td>
+                  </tr>
+                  <tr>
+                     <th>Kardinaliteit</th>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <th>Domein</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>&nbsp;&nbsp;Naam</th>
+                     <td><a class="link" href="#detail_class_Model_Registratiestatus">Registratiestatus</a></td>
+                  </tr>
+                  <tr>
+                     <th>&nbsp;&nbsp;Type</th>
+                     <td>Waardelijst uitbreidbaar</td>
+                  </tr>
+                  <tr>
+                     <th>Materiële geschiedenis</th>
+                     <td>Nee</td>
+                  </tr>
+               </tbody>
+            </table>
+            </section><a class="anchor" id="detail_attribute_Model_Registratiegeschiedenis_tijdstiplaatsteaanvulling"></a><section id="detail_attribute_Model_Registratiegeschiedenis_tijdstiplaatsteaanvulling">
+            <h4>  tijdstip laatste aanvulling</h4>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Type gegeven</th>
+                     <td>Attribuut van Registratiegeschiedenis</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>De datum en het tijdstip waarop de laatste aanvulling op de gegevens in de registratie
+                           ondergrond is doorgevoerd.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Juridische status</th>
+                     <td>Authentiek</td>
+                  </tr>
+                  <tr>
+                     <th>Kardinaliteit</th>
+                     <td>0..1</td>
+                  </tr>
+                  <tr>
+                     <th>Domein</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>&nbsp;&nbsp;Naam</th>
+                     <td>DatumTijd</td>
+                  </tr>
+                  <tr>
+                     <th>Materiële geschiedenis</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>
+                        
+                        <p>Het gegeven is alleen aanwezig wanneer na de registratie van een eerste deelonderzoek
+                           een ander deelonderzoek is vastgelegd.</p>
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+            </section><a class="anchor" id="detail_attribute_Model_Registratiegeschiedenis_tijdstiplaatstecorrectie"></a><section id="detail_attribute_Model_Registratiegeschiedenis_tijdstiplaatstecorrectie">
+            <h4>  tijdstip laatste correctie</h4>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Type gegeven</th>
+                     <td>Attribuut van Registratiegeschiedenis</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>De datum en het tijdstip waarop de laatste verbetering in de gegevens van het object
+                           is doorgevoerd.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Juridische status</th>
+                     <td>Authentiek</td>
+                  </tr>
+                  <tr>
+                     <th>Kardinaliteit</th>
+                     <td>0..1</td>
+                  </tr>
+                  <tr>
+                     <th>Domein</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>&nbsp;&nbsp;Naam</th>
+                     <td>DatumTijd</td>
+                  </tr>
+                  <tr>
+                     <th>Regels</th>
+                     <td>
+                        
+                        <p>Het attribuut moet aanwezig zijn wanneer de waarde van het attribuut <em>gecorrigeerd</em> gelijk is aan <em>ja</em>.<br clear="none">
+                           Het attribuut mag niet aanwezig zijn in alle andere gevallen.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Materiële geschiedenis</th>
+                     <td>Nee</td>
+                  </tr>
+               </tbody>
+            </table>
+            </section><a class="anchor" id="detail_attribute_Model_Registratiegeschiedenis_tijdstipregistratieobject"></a><section id="detail_attribute_Model_Registratiegeschiedenis_tijdstipregistratieobject">
+            <h4>  tijdstip registratie object</h4>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Type gegeven</th>
+                     <td>Attribuut van Registratiegeschiedenis</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>De datum en het tijdstip waarop voor het eerst gegevens van het object in de registratie
+                           ondergrond zijn opgenomen.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Juridische status</th>
+                     <td>Authentiek</td>
+                  </tr>
+                  <tr>
+                     <th>Kardinaliteit</th>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <th>Domein</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>&nbsp;&nbsp;Naam</th>
+                     <td>DatumTijd</td>
+                  </tr>
+                  <tr>
+                     <th>Materiële geschiedenis</th>
+                     <td>Nee</td>
+                  </tr>
+               </tbody>
+            </table>
+            </section><a class="anchor" id="detail_attribute_Model_Registratiegeschiedenis_tijdstipuitregistratiegenomen"></a><section id="detail_attribute_Model_Registratiegeschiedenis_tijdstipuitregistratiegenomen">
+            <h4>  tijdstip uit registratie genomen</h4>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Type gegeven</th>
+                     <td>Attribuut van Registratiegeschiedenis</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>De datum en het tijdstip waarop het object uit registratie is genomen.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Juridische status</th>
+                     <td>Authentiek</td>
+                  </tr>
+                  <tr>
+                     <th>Kardinaliteit</th>
+                     <td>0..1</td>
+                  </tr>
+                  <tr>
+                     <th>Domein</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>&nbsp;&nbsp;Naam</th>
+                     <td>DatumTijd</td>
+                  </tr>
+                  <tr>
+                     <th>Regels</th>
+                     <td>
+                        
+                        <p>Het attribuut moet aanwezig zijn wanneer de waarde van het attribuut <em>uit registratie genomen</em> gelijk is aan <em>ja</em>.<br clear="none">
+                           Het attribuut mag niet aanwezig zijn in alle andere gevallen.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Materiële geschiedenis</th>
+                     <td>Nee</td>
+                  </tr>
+               </tbody>
+            </table>
+            </section><a class="anchor" id="detail_attribute_Model_Registratiegeschiedenis_tijdstipvoltooiingregistratie"></a><section id="detail_attribute_Model_Registratiegeschiedenis_tijdstipvoltooiingregistratie">
+            <h4>  tijdstip voltooiing registratie</h4>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Type gegeven</th>
+                     <td>Attribuut van Registratiegeschiedenis</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>De datum en het tijdstip waarop alle gegevens van het object in de registratie ondergrond
+                           zijn opgenomen.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Juridische status</th>
+                     <td>Authentiek</td>
+                  </tr>
+                  <tr>
+                     <th>Kardinaliteit</th>
+                     <td>0..1</td>
+                  </tr>
+                  <tr>
+                     <th>Domein</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>&nbsp;&nbsp;Naam</th>
+                     <td>DatumTijd</td>
+                  </tr>
+                  <tr>
+                     <th>Regels</th>
+                     <td>
+                        
+                        <p>Het attribuut moet aanwezig zijn wanneer de waarde van het attribuut <em>registratiestatus</em> gelijk is aan <em>voltooid</em>.<br clear="none">
+                           Het attribuut mag niet aanwezig zijn in alle andere gevallen.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Materiële geschiedenis</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>
+                        
+                        <p>Het gegeven is alleen aanwezig als alle aan te leveren gegevens zijn geregistreerd.
+                           Na dit tijdstip kunnen geen nieuwe gegevens meer ter registratie worden aangeboden.
+                           Wel kunnen fouten in de registratie worden verbeterd.</p>
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+            </section><a class="anchor" id="detail_attribute_Model_Registratiegeschiedenis_tijdstipweerinregistratiegenomen"></a><section id="detail_attribute_Model_Registratiegeschiedenis_tijdstipweerinregistratiegenomen">
+            <h4>  tijdstip weer in registratie genomen</h4>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Type gegeven</th>
+                     <td>Attribuut van Registratiegeschiedenis</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>De datum en het tijdstip waarop het object in de registratie ondergrond is opgenomen,
+                           nadat het uit registratie was genomen.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Juridische status</th>
+                     <td>Authentiek</td>
+                  </tr>
+                  <tr>
+                     <th>Kardinaliteit</th>
+                     <td>0..1</td>
+                  </tr>
+                  <tr>
+                     <th>Domein</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>&nbsp;&nbsp;Naam</th>
+                     <td>DatumTijd</td>
+                  </tr>
+                  <tr>
+                     <th>Regels</th>
+                     <td>
+                        
+                        <p>Het attribuut moet aanwezig zijn wanneer de waarde van het attribuut <em>weer in registratie genomen</em> gelijk is aan <em>ja</em>.<br clear="none">
+                           Het attribuut mag niet aanwezig zijn in alle andere gevallen.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Materiële geschiedenis</th>
+                     <td>Nee</td>
+                  </tr>
+               </tbody>
+            </table>
             </section><a class="anchor" id="detail_attribute_Model_Registratiegeschiedenis_uitregistratiegenomen"></a><section id="detail_attribute_Model_Registratiegeschiedenis_uitregistratiegenomen">
             <h4>  uit registratie genomen</h4>
             
@@ -1306,54 +1403,6 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_attribute_Model_Registratiegeschiedenis_tijdstipuitregistratiegenomen"></a><section id="detail_attribute_Model_Registratiegeschiedenis_tijdstipuitregistratiegenomen">
-            <h4>  tijdstip uit registratie genomen</h4>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Type gegeven</th>
-                     <td>Attribuut van Registratiegeschiedenis</td>
-                  </tr>
-                  <tr>
-                     <th>Definitie</th>
-                     <td>
-                        
-                        <p>De datum en het tijdstip waarop het object uit registratie is genomen.</p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Juridische status</th>
-                     <td>Authentiek</td>
-                  </tr>
-                  <tr>
-                     <th>Kardinaliteit</th>
-                     <td>0..1</td>
-                  </tr>
-                  <tr>
-                     <th>Domein</th>
-                     <td></td>
-                  </tr>
-                  <tr>
-                     <th>&nbsp;&nbsp;Naam</th>
-                     <td>DatumTijd</td>
-                  </tr>
-                  <tr>
-                     <th>Regels</th>
-                     <td>
-                        
-                        <p>Het attribuut moet aanwezig zijn wanneer de waarde van het attribuut <em>uit registratie genomen</em> gelijk is aan <em>ja</em>.<br clear="none">
-                           Het attribuut mag niet aanwezig zijn in alle andere gevallen.</p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Materiële geschiedenis</th>
-                     <td>Nee</td>
-                  </tr>
-               </tbody>
-            </table>
             </section><a class="anchor" id="detail_attribute_Model_Registratiegeschiedenis_weerinregistratiegenomen"></a><section id="detail_attribute_Model_Registratiegeschiedenis_weerinregistratiegenomen">
             <h4>  weer in registratie genomen</h4>
             
@@ -1405,55 +1454,6 @@
                            hij eenmalig ongedaan maken. Ook hiervoor geldt dat akkoord van de bronhouder vereist
                            is.</p>
                         </td>
-                  </tr>
-               </tbody>
-            </table>
-            </section><a class="anchor" id="detail_attribute_Model_Registratiegeschiedenis_tijdstipweerinregistratiegenomen"></a><section id="detail_attribute_Model_Registratiegeschiedenis_tijdstipweerinregistratiegenomen">
-            <h4>  tijdstip weer in registratie genomen</h4>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Type gegeven</th>
-                     <td>Attribuut van Registratiegeschiedenis</td>
-                  </tr>
-                  <tr>
-                     <th>Definitie</th>
-                     <td>
-                        
-                        <p>De datum en het tijdstip waarop het object in de registratie ondergrond is opgenomen,
-                           nadat het uit registratie was genomen.</p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Juridische status</th>
-                     <td>Authentiek</td>
-                  </tr>
-                  <tr>
-                     <th>Kardinaliteit</th>
-                     <td>0..1</td>
-                  </tr>
-                  <tr>
-                     <th>Domein</th>
-                     <td></td>
-                  </tr>
-                  <tr>
-                     <th>&nbsp;&nbsp;Naam</th>
-                     <td>DatumTijd</td>
-                  </tr>
-                  <tr>
-                     <th>Regels</th>
-                     <td>
-                        
-                        <p>Het attribuut moet aanwezig zijn wanneer de waarde van het attribuut <em>weer in registratie genomen</em> gelijk is aan <em>ja</em>.<br clear="none">
-                           Het attribuut mag niet aanwezig zijn in alle andere gevallen.</p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Materiële geschiedenis</th>
-                     <td>Nee</td>
                   </tr>
                </tbody>
             </table>
@@ -1615,7 +1615,47 @@
                      </td>
                </tr>
             </tbody>
-         </table><a class="anchor" id="detail_attribute_Model_Gebeurtenis_naam"></a><section id="detail_attribute_Model_Gebeurtenis_naam">
+         </table><a class="anchor" id="detail_attribute_Model_Gebeurtenis_datum"></a><section id="detail_attribute_Model_Gebeurtenis_datum">
+            <h4>  datum</h4>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Type gegeven</th>
+                     <td>Attribuut van Gebeurtenis</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>De datum waarop de gebeurtenis heeft plaatsgevonden.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Juridische status</th>
+                     <td>Authentiek</td>
+                  </tr>
+                  <tr>
+                     <th>Kardinaliteit</th>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <th>Domein</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>&nbsp;&nbsp;Naam</th>
+                     <td>Datum</td>
+                  </tr>
+                  <tr>
+                     <th>Materiële geschiedenis</th>
+                     <td>Nee</td>
+                  </tr>
+               </tbody>
+            </table>
+            </section><a class="anchor" id="detail_attribute_Model_Gebeurtenis_naam"></a><section id="detail_attribute_Model_Gebeurtenis_naam">
             <h4>  naam</h4>
             
             <table style="width: 100%;">
@@ -1659,46 +1699,6 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_attribute_Model_Gebeurtenis_datum"></a><section id="detail_attribute_Model_Gebeurtenis_datum">
-            <h4>  datum</h4>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Type gegeven</th>
-                     <td>Attribuut van Gebeurtenis</td>
-                  </tr>
-                  <tr>
-                     <th>Definitie</th>
-                     <td>
-                        
-                        <p>De datum waarop de gebeurtenis heeft plaatsgevonden.</p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Juridische status</th>
-                     <td>Authentiek</td>
-                  </tr>
-                  <tr>
-                     <th>Kardinaliteit</th>
-                     <td>1</td>
-                  </tr>
-                  <tr>
-                     <th>Domein</th>
-                     <td></td>
-                  </tr>
-                  <tr>
-                     <th>&nbsp;&nbsp;Naam</th>
-                     <td>Datum</td>
-                  </tr>
-                  <tr>
-                     <th>Materiële geschiedenis</th>
-                     <td>Nee</td>
-                  </tr>
-               </tbody>
-            </table>
             </section>
       </section><a class="anchor" id="graph_EAID_95E39295_3080_4135_862A_30756039B864"></a><a class="anchor" id="global_class_Model_Gestandaardiseerdelocatie"></a><section id="global_class_Model_Gestandaardiseerdelocatie">
          <h3>   Gestandaardiseerde locatie</h3>
@@ -1731,48 +1731,7 @@
                      </td>
                </tr>
             </tbody>
-         </table><a class="anchor" id="detail_attribute_Model_Gestandaardiseerdelocatie_locatie"></a><section id="detail_attribute_Model_Gestandaardiseerdelocatie_locatie">
-            <h4>  locatie</h4>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Type gegeven</th>
-                     <td>Attribuut van Gestandaardiseerde locatie</td>
-                  </tr>
-                  <tr>
-                     <th>Definitie</th>
-                     <td>
-                        
-                        <p>De locatie van een mijnbouwconstructie zoals getransformeerd door de basisregistratie
-                           ondergrond, bestaand uit coördinaten in het standaard referentiestelsel.</p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Juridische status</th>
-                     <td>Authentiek</td>
-                  </tr>
-                  <tr>
-                     <th>Kardinaliteit</th>
-                     <td>1</td>
-                  </tr>
-                  <tr>
-                     <th>Domein</th>
-                     <td></td>
-                  </tr>
-                  <tr>
-                     <th>&nbsp;&nbsp;Naam</th>
-                     <td>GM_Object</td>
-                  </tr>
-                  <tr>
-                     <th>Materiële geschiedenis</th>
-                     <td>Nee</td>
-                  </tr>
-               </tbody>
-            </table>
-            </section><a class="anchor" id="detail_attribute_Model_Gestandaardiseerdelocatie_cordinaattransformatie"></a><section id="detail_attribute_Model_Gestandaardiseerdelocatie_cordinaattransformatie">
+         </table><a class="anchor" id="detail_attribute_Model_Gestandaardiseerdelocatie_cordinaattransformatie"></a><section id="detail_attribute_Model_Gestandaardiseerdelocatie_cordinaattransformatie">
             <h4>  coördinaattransformatie</h4>
             
             <table style="width: 100%;">
@@ -1806,6 +1765,47 @@
                   <tr>
                      <th>&nbsp;&nbsp;Naam</th>
                      <td>Coördinaattransformatie</td>
+                  </tr>
+                  <tr>
+                     <th>Materiële geschiedenis</th>
+                     <td>Nee</td>
+                  </tr>
+               </tbody>
+            </table>
+            </section><a class="anchor" id="detail_attribute_Model_Gestandaardiseerdelocatie_locatie"></a><section id="detail_attribute_Model_Gestandaardiseerdelocatie_locatie">
+            <h4>  locatie</h4>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Type gegeven</th>
+                     <td>Attribuut van Gestandaardiseerde locatie</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>De locatie van een mijnbouwconstructie zoals getransformeerd door de basisregistratie
+                           ondergrond, bestaand uit coördinaten in het standaard referentiestelsel.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Juridische status</th>
+                     <td>Authentiek</td>
+                  </tr>
+                  <tr>
+                     <th>Kardinaliteit</th>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <th>Domein</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>&nbsp;&nbsp;Naam</th>
+                     <td>GM_Object</td>
                   </tr>
                   <tr>
                      <th>Materiële geschiedenis</th>
@@ -1926,7 +1926,40 @@
                      </td>
                </tr>
             </tbody>
-         </table><a class="anchor" id="detail_d49052e7017"></a><section id="detail_d49052e7017">
+         </table><a class="anchor" id="detail_d48982e7017"></a><section id="detail_d48982e7017">
+            <h4>  aangeleverde verticale positie</h4>
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Type gegeven</th>
+                     <td>Gegevensgroep van Boorgat</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>De gegevens over de plaats van de oorsprong van het boorgat in het verticale vlak.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Juridische status</th>
+                     <td>Authentiek</td>
+                  </tr>
+                  <tr>
+                     <th>Kardinaliteit</th>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <th>Gegevensgroeptype</th>
+                     <td>
+                        Aangeleverde verticale positie
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+         </section><a class="anchor" id="detail_d48982e7184"></a><section id="detail_d48982e7184">
             <h4>  locatie</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -1956,39 +1989,6 @@
                      <th>Gegevensgroeptype</th>
                      <td>
                         Aangeleverde locatie
-                        </td>
-                  </tr>
-               </tbody>
-            </table>
-         </section><a class="anchor" id="detail_d49052e7184"></a><section id="detail_d49052e7184">
-            <h4>  aangeleverde verticale positie</h4>
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Type gegeven</th>
-                     <td>Gegevensgroep van Boorgat</td>
-                  </tr>
-                  <tr>
-                     <th>Definitie</th>
-                     <td>
-                        
-                        <p>De gegevens over de plaats van de oorsprong van het boorgat in het verticale vlak.</p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Juridische status</th>
-                     <td>Authentiek</td>
-                  </tr>
-                  <tr>
-                     <th>Kardinaliteit</th>
-                     <td>1</td>
-                  </tr>
-                  <tr>
-                     <th>Gegevensgroeptype</th>
-                     <td>
-                        Aangeleverde verticale positie
                         </td>
                   </tr>
                </tbody>
@@ -2069,7 +2069,55 @@
                      </td>
                </tr>
             </tbody>
-         </table><a class="anchor" id="detail_attribute_Model_Aangeleverdelocatie_locatie"></a><section id="detail_attribute_Model_Aangeleverdelocatie_locatie">
+         </table><a class="anchor" id="detail_attribute_Model_Aangeleverdelocatie_datumlocatiebepaling"></a><section id="detail_attribute_Model_Aangeleverdelocatie_datumlocatiebepaling">
+            <h4>  datum locatiebepaling</h4>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Type gegeven</th>
+                     <td>Attribuut van Aangeleverde locatie</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>De datum waarop de locatie van de mijnbouwconstructie of een deel ervan is ingemeten.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Juridische status</th>
+                     <td>Authentiek</td>
+                  </tr>
+                  <tr>
+                     <th>Kardinaliteit</th>
+                     <td>0..1</td>
+                  </tr>
+                  <tr>
+                     <th>Domein</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>&nbsp;&nbsp;Naam</th>
+                     <td>Datum</td>
+                  </tr>
+                  <tr>
+                     <th>Materiële geschiedenis</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>
+                        
+                        <p>Het attribuut is optioneel omdat de mijnbouwwetgeving niet verplicht om deze gegevens
+                           aan te leveren.</p>
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+            </section><a class="anchor" id="detail_attribute_Model_Aangeleverdelocatie_locatie"></a><section id="detail_attribute_Model_Aangeleverdelocatie_locatie">
             <h4>  locatie</h4>
             
             <table style="width: 100%;">
@@ -2230,54 +2278,6 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_attribute_Model_Aangeleverdelocatie_datumlocatiebepaling"></a><section id="detail_attribute_Model_Aangeleverdelocatie_datumlocatiebepaling">
-            <h4>  datum locatiebepaling</h4>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Type gegeven</th>
-                     <td>Attribuut van Aangeleverde locatie</td>
-                  </tr>
-                  <tr>
-                     <th>Definitie</th>
-                     <td>
-                        
-                        <p>De datum waarop de locatie van de mijnbouwconstructie of een deel ervan is ingemeten.</p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Juridische status</th>
-                     <td>Authentiek</td>
-                  </tr>
-                  <tr>
-                     <th>Kardinaliteit</th>
-                     <td>0..1</td>
-                  </tr>
-                  <tr>
-                     <th>Domein</th>
-                     <td></td>
-                  </tr>
-                  <tr>
-                     <th>&nbsp;&nbsp;Naam</th>
-                     <td>Datum</td>
-                  </tr>
-                  <tr>
-                     <th>Materiële geschiedenis</th>
-                     <td>Nee</td>
-                  </tr>
-                  <tr>
-                     <th>Toelichting</th>
-                     <td>
-                        
-                        <p>Het attribuut is optioneel omdat de mijnbouwwetgeving niet verplicht om deze gegevens
-                           aan te leveren.</p>
-                        </td>
-                  </tr>
-               </tbody>
-            </table>
             </section><a class="anchor" id="detail_attribute_Model_Aangeleverdelocatie_methodelocatiebepaling"></a><section id="detail_attribute_Model_Aangeleverdelocatie_methodelocatiebepaling">
             <h4>  methode locatiebepaling</h4>
             
@@ -2419,7 +2419,56 @@
                      </td>
                </tr>
             </tbody>
-         </table><a class="anchor" id="detail_attribute_Model_Aangeleverdeverticalepositie_lokaalverticaalreferentiepunt"></a><section id="detail_attribute_Model_Aangeleverdeverticalepositie_lokaalverticaalreferentiepunt">
+         </table><a class="anchor" id="detail_attribute_Model_Aangeleverdeverticalepositie_datumverticalepositiebepaling"></a><section id="detail_attribute_Model_Aangeleverdeverticalepositie_datumverticalepositiebepaling">
+            <h4>  datum verticale positiebepaling</h4>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Type gegeven</th>
+                     <td>Attribuut van Aangeleverde verticale positie</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>De datum waarop de verticale positie van het oorspronkelijk verticaal referentiepunt
+                           is bepaald.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Juridische status</th>
+                     <td>Authentiek</td>
+                  </tr>
+                  <tr>
+                     <th>Kardinaliteit</th>
+                     <td>0..1</td>
+                  </tr>
+                  <tr>
+                     <th>Domein</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>&nbsp;&nbsp;Naam</th>
+                     <td>Datum</td>
+                  </tr>
+                  <tr>
+                     <th>Materiële geschiedenis</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>
+                        
+                        <p>Het attribuut is optioneel omdat de mijnbouwwetgeving niet verplicht om deze gegevens
+                           aan te leveren.</p>
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+            </section><a class="anchor" id="detail_attribute_Model_Aangeleverdeverticalepositie_lokaalverticaalreferentiepunt"></a><section id="detail_attribute_Model_Aangeleverdeverticalepositie_lokaalverticaalreferentiepunt">
             <h4>  lokaal verticaal referentiepunt</h4>
             
             <table style="width: 100%;">
@@ -2472,6 +2521,118 @@
                   </tr>
                </tbody>
             </table>
+            </section><a class="anchor" id="detail_attribute_Model_Aangeleverdeverticalepositie_oorspronkelijkverticaalreferentiepunt"></a><section id="detail_attribute_Model_Aangeleverdeverticalepositie_oorspronkelijkverticaalreferentiepunt">
+            <h4>  oorspronkelijk verticaal referentiepunt</h4>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Type gegeven</th>
+                     <td>Attribuut van Aangeleverde verticale positie</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>Het punt op het verticale vlak van waaruit de geometrie van het boortraject begint.<br clear="none">
+                           </p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Juridische status</th>
+                     <td>Authentiek</td>
+                  </tr>
+                  <tr>
+                     <th>Kardinaliteit</th>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <th>Domein</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>&nbsp;&nbsp;Naam</th>
+                     <td><a class="link" href="#detail_class_Model_OorspronkelijkVerticaalReferentiepunt">OorspronkelijkVerticaalReferentiepunt</a></td>
+                  </tr>
+                  <tr>
+                     <th>&nbsp;&nbsp;Type</th>
+                     <td>Waardelijst uitbreidbaar</td>
+                  </tr>
+                  <tr>
+                     <th>Materiële geschiedenis</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>
+                        
+                        <p>Dit is het punt van waaruit de locatie van de boortrajecten van het boorgat zijn ingemeten.
+                           </p>
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+            </section><a class="anchor" id="detail_attribute_Model_Aangeleverdeverticalepositie_oorspronkelijkeverschuiving"></a><section id="detail_attribute_Model_Aangeleverdeverticalepositie_oorspronkelijkeverschuiving">
+            <h4>  oorspronkelijke verschuiving</h4>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Type gegeven</th>
+                     <td>Attribuut van Aangeleverde verticale positie</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>De verticale positie van het oorspronkelijk verticaal referentiepunt ten opzichte
+                           van het verticaal referentievlak.<br clear="none">
+                           </p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Juridische status</th>
+                     <td>Authentiek</td>
+                  </tr>
+                  <tr>
+                     <th>Kardinaliteit</th>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <th>Domein</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>&nbsp;&nbsp;Naam</th>
+                     <td>Meetwaarde 
+                        3.0</td>
+                  </tr>
+                  <tr>
+                     <th>&nbsp;&nbsp;Eenheid</th>
+                     <td>m (meter)</td>
+                  </tr>
+                  <tr>
+                     <th>&nbsp;&nbsp;Waardebereik</th>
+                     <td>0 tot 500</td>
+                  </tr>
+                  <tr>
+                     <th>Materiële geschiedenis</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>
+                        
+                        <p>Met behulp van de oorspronkelijke verschuiving wordt de hoogte van het oorspronkelijke
+                           verticaal referentiepunt aangegeven. </p>
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
             </section><a class="anchor" id="detail_attribute_Model_Aangeleverdeverticalepositie_verschuiving"></a><section id="detail_attribute_Model_Aangeleverdeverticalepositie_verschuiving">
             <h4>  verschuiving</h4>
             
@@ -2506,7 +2667,7 @@
                   <tr>
                      <th>&nbsp;&nbsp;Naam</th>
                      <td>Meetwaarde 
-                        </td>
+                        3.0</td>
                   </tr>
                   <tr>
                      <th>&nbsp;&nbsp;Eenheid</th>
@@ -2593,167 +2754,6 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_attribute_Model_Aangeleverdeverticalepositie_datumverticalepositiebepaling"></a><section id="detail_attribute_Model_Aangeleverdeverticalepositie_datumverticalepositiebepaling">
-            <h4>  datum verticale positiebepaling</h4>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Type gegeven</th>
-                     <td>Attribuut van Aangeleverde verticale positie</td>
-                  </tr>
-                  <tr>
-                     <th>Definitie</th>
-                     <td>
-                        
-                        <p>De datum waarop de verticale positie van het oorspronkelijk verticaal referentiepunt
-                           is bepaald.</p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Juridische status</th>
-                     <td>Authentiek</td>
-                  </tr>
-                  <tr>
-                     <th>Kardinaliteit</th>
-                     <td>0..1</td>
-                  </tr>
-                  <tr>
-                     <th>Domein</th>
-                     <td></td>
-                  </tr>
-                  <tr>
-                     <th>&nbsp;&nbsp;Naam</th>
-                     <td>Datum</td>
-                  </tr>
-                  <tr>
-                     <th>Materiële geschiedenis</th>
-                     <td>Nee</td>
-                  </tr>
-                  <tr>
-                     <th>Toelichting</th>
-                     <td>
-                        
-                        <p>Het attribuut is optioneel omdat de mijnbouwwetgeving niet verplicht om deze gegevens
-                           aan te leveren.</p>
-                        </td>
-                  </tr>
-               </tbody>
-            </table>
-            </section><a class="anchor" id="detail_attribute_Model_Aangeleverdeverticalepositie_oorspronkelijkeverschuiving"></a><section id="detail_attribute_Model_Aangeleverdeverticalepositie_oorspronkelijkeverschuiving">
-            <h4>  oorspronkelijke verschuiving</h4>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Type gegeven</th>
-                     <td>Attribuut van Aangeleverde verticale positie</td>
-                  </tr>
-                  <tr>
-                     <th>Definitie</th>
-                     <td>
-                        
-                        <p>De verticale positie van het oorspronkelijk verticaal referentiepunt ten opzichte
-                           van het verticaal referentievlak.<br clear="none">
-                           </p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Juridische status</th>
-                     <td>Authentiek</td>
-                  </tr>
-                  <tr>
-                     <th>Kardinaliteit</th>
-                     <td>1</td>
-                  </tr>
-                  <tr>
-                     <th>Domein</th>
-                     <td></td>
-                  </tr>
-                  <tr>
-                     <th>&nbsp;&nbsp;Naam</th>
-                     <td>Meetwaarde 
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>&nbsp;&nbsp;Eenheid</th>
-                     <td>m (meter)</td>
-                  </tr>
-                  <tr>
-                     <th>&nbsp;&nbsp;Waardebereik</th>
-                     <td>0 tot 500</td>
-                  </tr>
-                  <tr>
-                     <th>Materiële geschiedenis</th>
-                     <td>Nee</td>
-                  </tr>
-                  <tr>
-                     <th>Toelichting</th>
-                     <td>
-                        
-                        <p>Met behulp van de oorspronkelijke verschuiving wordt de hoogte van het oorspronkelijke
-                           verticaal referentiepunt aangegeven. </p>
-                        </td>
-                  </tr>
-               </tbody>
-            </table>
-            </section><a class="anchor" id="detail_attribute_Model_Aangeleverdeverticalepositie_oorspronkelijkverticaalreferentiepunt"></a><section id="detail_attribute_Model_Aangeleverdeverticalepositie_oorspronkelijkverticaalreferentiepunt">
-            <h4>  oorspronkelijk verticaal referentiepunt</h4>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Type gegeven</th>
-                     <td>Attribuut van Aangeleverde verticale positie</td>
-                  </tr>
-                  <tr>
-                     <th>Definitie</th>
-                     <td>
-                        
-                        <p>Het punt op het verticale vlak van waaruit de geometrie van het boortraject begint.<br clear="none">
-                           </p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Juridische status</th>
-                     <td>Authentiek</td>
-                  </tr>
-                  <tr>
-                     <th>Kardinaliteit</th>
-                     <td>1</td>
-                  </tr>
-                  <tr>
-                     <th>Domein</th>
-                     <td></td>
-                  </tr>
-                  <tr>
-                     <th>&nbsp;&nbsp;Naam</th>
-                     <td><a class="link" href="#detail_class_Model_OorspronkelijkVerticaalReferentiepunt">OorspronkelijkVerticaalReferentiepunt</a></td>
-                  </tr>
-                  <tr>
-                     <th>&nbsp;&nbsp;Type</th>
-                     <td>Waardelijst uitbreidbaar</td>
-                  </tr>
-                  <tr>
-                     <th>Materiële geschiedenis</th>
-                     <td>Nee</td>
-                  </tr>
-                  <tr>
-                     <th>Toelichting</th>
-                     <td>
-                        
-                        <p>Dit is het punt van waaruit de locatie van de boortrajecten van het boorgat zijn ingemeten.
-                           </p>
-                        </td>
-                  </tr>
-               </tbody>
-            </table>
             </section>
       </section><a class="anchor" id="graph_EAID_4E52826A_2252_4994_8AD0_986AD45E18C9"></a><a class="anchor" id="global_class_Model_Boortraject"></a><section id="global_class_Model_Boortraject">
          <h3>   Boortraject</h3>
@@ -2825,7 +2825,7 @@
                      <th>Regels</th>
                      <td>
                         
-                        <p>De boortrajectcode is uniek binnen het boorgat.</p>
+                        <p>De <em>boortrajectcode</em> is uniek binnen de set van <em>boortrajecten</em> waaruit een <em>Boorgat</em> bestaat.</p>
                         </td>
                   </tr>
                   <tr>
@@ -2838,6 +2838,58 @@
                         
                         <p>De boortrajectcode komt overeen met de code waaronder de bronhouder gegevens over
                            het boortraject publiek beschikbaar stelt.</p>
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+            </section><a class="anchor" id="detail_attribute_Model_Boortraject_boringdoel"></a><section id="detail_attribute_Model_Boortraject_boringdoel">
+            <h4>  boringdoel</h4>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Type gegeven</th>
+                     <td>Attribuut van Boortraject</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>Het initiële doel waarvoor het boortraject is geboord. </p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Juridische status</th>
+                     <td>Authentiek</td>
+                  </tr>
+                  <tr>
+                     <th>Kardinaliteit</th>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <th>Domein</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>&nbsp;&nbsp;Naam</th>
+                     <td><a class="link" href="#detail_class_Model_Boringdoel">Boringdoel</a></td>
+                  </tr>
+                  <tr>
+                     <th>&nbsp;&nbsp;Type</th>
+                     <td>Waardelijst uitbreidbaar</td>
+                  </tr>
+                  <tr>
+                     <th>Materiële geschiedenis</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>
+                        
+                        <p>Het gebruiksdoel van een boortraject kan nadat het geboord is nog wijzigen. Dit wordt
+                           niet in de registratie ondergrond opgenomen.</p>
                         </td>
                   </tr>
                </tbody>
@@ -2886,152 +2938,6 @@
                      <td>
                         
                         <p>Bij het <em>Boorgat</em> moet precies één <em>Boortraject</em> aanwezig zijn waarbij de waarde van het attribuut <em>categorie</em> gelijk is aan <em>primair</em>.</p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Materiële geschiedenis</th>
-                     <td>Nee</td>
-                  </tr>
-               </tbody>
-            </table>
-            </section><a class="anchor" id="detail_attribute_Model_Boortraject_boringdoel"></a><section id="detail_attribute_Model_Boortraject_boringdoel">
-            <h4>  boringdoel</h4>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Type gegeven</th>
-                     <td>Attribuut van Boortraject</td>
-                  </tr>
-                  <tr>
-                     <th>Definitie</th>
-                     <td>
-                        
-                        <p>Het oorspronkelijke gebruiksdoel waarvoor een boortraject is gemaakt.</p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Juridische status</th>
-                     <td>Authentiek</td>
-                  </tr>
-                  <tr>
-                     <th>Kardinaliteit</th>
-                     <td>1</td>
-                  </tr>
-                  <tr>
-                     <th>Domein</th>
-                     <td></td>
-                  </tr>
-                  <tr>
-                     <th>&nbsp;&nbsp;Naam</th>
-                     <td><a class="link" href="#detail_class_Model_Boringdoel">Boringdoel</a></td>
-                  </tr>
-                  <tr>
-                     <th>&nbsp;&nbsp;Type</th>
-                     <td>Waardelijst uitbreidbaar</td>
-                  </tr>
-                  <tr>
-                     <th>Materiële geschiedenis</th>
-                     <td>Nee</td>
-                  </tr>
-                  <tr>
-                     <th>Toelichting</th>
-                     <td>
-                        
-                        <p>Het gebruiksdoel van een boortraject kan nadat het geboord is nog wijzigen. Dit wordt
-                           niet in de registratie ondergrond opgenomen.</p>
-                        </td>
-                  </tr>
-               </tbody>
-            </table>
-            </section><a class="anchor" id="detail_attribute_Model_Boortraject_startdatumboring"></a><section id="detail_attribute_Model_Boortraject_startdatumboring">
-            <h4>  startdatum boring</h4>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Type gegeven</th>
-                     <td>Attribuut van Boortraject</td>
-                  </tr>
-                  <tr>
-                     <th>Definitie</th>
-                     <td>
-                        
-                        <p>De datum waarop het boren van het boortraject is begonnen.</p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Juridische status</th>
-                     <td>Authentiek</td>
-                  </tr>
-                  <tr>
-                     <th>Kardinaliteit</th>
-                     <td>1</td>
-                  </tr>
-                  <tr>
-                     <th>Domein</th>
-                     <td></td>
-                  </tr>
-                  <tr>
-                     <th>&nbsp;&nbsp;Naam</th>
-                     <td>Datum</td>
-                  </tr>
-                  <tr>
-                     <th>Regels</th>
-                     <td>
-                        
-                        <p>De <em>startdatum boring</em> van een <em>Boortraject</em> waarbij de waarde van het attribuut <em>categorie</em> gelijk is aan <em>zijtak</em> mag niet liggen voor de <em>einddatum boring</em> van het <em>Boortraject</em> bij hetzelfde <em>Boorgat</em> waarbij de waarde van het attribuut <em>categorie</em> gelijk is aan <em>primair</em>.</p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Materiële geschiedenis</th>
-                     <td>Nee</td>
-                  </tr>
-               </tbody>
-            </table>
-            </section><a class="anchor" id="detail_attribute_Model_Boortraject_einddatumboring"></a><section id="detail_attribute_Model_Boortraject_einddatumboring">
-            <h4>  einddatum boring</h4>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Type gegeven</th>
-                     <td>Attribuut van Boortraject</td>
-                  </tr>
-                  <tr>
-                     <th>Definitie</th>
-                     <td>
-                        
-                        <p>De datum waarop het boren van het boortraject is beëindigd.</p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Juridische status</th>
-                     <td>Authentiek</td>
-                  </tr>
-                  <tr>
-                     <th>Kardinaliteit</th>
-                     <td>0..1</td>
-                  </tr>
-                  <tr>
-                     <th>Domein</th>
-                     <td></td>
-                  </tr>
-                  <tr>
-                     <th>&nbsp;&nbsp;Naam</th>
-                     <td>Datum</td>
-                  </tr>
-                  <tr>
-                     <th>Regels</th>
-                     <td>
-                        
-                        <p>De <em>einddatum boring</em> mag niet liggen voor de <em>startdatum boring</em>.</p>
                         </td>
                   </tr>
                   <tr>
@@ -3098,6 +3004,53 @@
                   </tr>
                </tbody>
             </table>
+            </section><a class="anchor" id="detail_attribute_Model_Boortraject_einddatumboring"></a><section id="detail_attribute_Model_Boortraject_einddatumboring">
+            <h4>  einddatum boring</h4>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Type gegeven</th>
+                     <td>Attribuut van Boortraject</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>De datum waarop het boren van het boortraject is beëindigd.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Juridische status</th>
+                     <td>Authentiek</td>
+                  </tr>
+                  <tr>
+                     <th>Kardinaliteit</th>
+                     <td>0..1</td>
+                  </tr>
+                  <tr>
+                     <th>Domein</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>&nbsp;&nbsp;Naam</th>
+                     <td>Datum</td>
+                  </tr>
+                  <tr>
+                     <th>Regels</th>
+                     <td>
+                        
+                        <p>De <em>einddatum boring</em> mag niet liggen voor de <em>startdatum boring</em>.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Materiële geschiedenis</th>
+                     <td>Nee</td>
+                  </tr>
+               </tbody>
+            </table>
             </section><a class="anchor" id="detail_attribute_Model_Boortraject_naam"></a><section id="detail_attribute_Model_Boortraject_naam">
             <h4>  naam</h4>
             
@@ -3152,7 +3105,54 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d49052e11167"></a><section id="detail_d49052e11167">
+            </section><a class="anchor" id="detail_attribute_Model_Boortraject_startdatumboring"></a><section id="detail_attribute_Model_Boortraject_startdatumboring">
+            <h4>  startdatum boring</h4>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Type gegeven</th>
+                     <td>Attribuut van Boortraject</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>De datum waarop het boren van het boortraject is begonnen.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Juridische status</th>
+                     <td>Authentiek</td>
+                  </tr>
+                  <tr>
+                     <th>Kardinaliteit</th>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <th>Domein</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>&nbsp;&nbsp;Naam</th>
+                     <td>Datum</td>
+                  </tr>
+                  <tr>
+                     <th>Regels</th>
+                     <td>
+                        
+                        <p>De <em>startdatum boring</em> van een <em>Boortraject</em> waarbij de waarde van het attribuut <em>categorie</em> gelijk is aan <em>zijtak</em> mag niet liggen voor de <em>einddatum boring</em> van het <em>Boortraject</em> bij hetzelfde <em>Boorgat</em> waarbij de waarde van het attribuut <em>categorie</em> gelijk is aan <em>primair</em>.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Materiële geschiedenis</th>
+                     <td>Nee</td>
+                  </tr>
+               </tbody>
+            </table>
+            </section><a class="anchor" id="detail_d48982e11183"></a><section id="detail_d48982e11183">
             <h4>  boortraject locatie</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -3231,135 +3231,7 @@
                      </td>
                </tr>
             </tbody>
-         </table><a class="anchor" id="detail_attribute_Model_Boortrajectlocatie_werkelijkeverticaleeinddiepte"></a><section id="detail_attribute_Model_Boortrajectlocatie_werkelijkeverticaleeinddiepte">
-            <h4>  werkelijke verticale einddiepte</h4>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Type gegeven</th>
-                     <td>Attribuut van Boortraject locatie</td>
-                  </tr>
-                  <tr>
-                     <th>Definitie</th>
-                     <td>
-                        
-                        <p>De werkelijke verticale diepte vanaf het lokaal verticaal referentiepunt van het boorgat
-                           tot aan het punt in de ondergrond waar het boortraject eindigt.</p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Juridische status</th>
-                     <td>Authentiek</td>
-                  </tr>
-                  <tr>
-                     <th>Kardinaliteit</th>
-                     <td>1</td>
-                  </tr>
-                  <tr>
-                     <th>Domein</th>
-                     <td></td>
-                  </tr>
-                  <tr>
-                     <th>&nbsp;&nbsp;Naam</th>
-                     <td>Meetwaarde 
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>&nbsp;&nbsp;Eenheid</th>
-                     <td>m (meter)</td>
-                  </tr>
-                  <tr>
-                     <th>&nbsp;&nbsp;Waardebereik</th>
-                     <td> vanaf 0</td>
-                  </tr>
-                  <tr>
-                     <th>Materiële geschiedenis</th>
-                     <td>Nee</td>
-                  </tr>
-                  <tr>
-                     <th>Toelichting</th>
-                     <td>
-                        
-                        <p>Binnen het vakgebied mijnbouw is dit gegeven ook bekend onder de naam 'True Vertical
-                           Depth' (TVD). Bij andere registratieobjecten in de basisregistratie ondergrond is
-                           dit gegeven bekend onder de naam 'einddiepte'.</p>
-                        </td>
-                  </tr>
-               </tbody>
-            </table>
-            </section><a class="anchor" id="detail_attribute_Model_Boortrajectlocatie_totalelengte"></a><section id="detail_attribute_Model_Boortrajectlocatie_totalelengte">
-            <h4>  totale lengte</h4>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Type gegeven</th>
-                     <td>Attribuut van Boortraject locatie</td>
-                  </tr>
-                  <tr>
-                     <th>Definitie</th>
-                     <td>
-                        
-                        <p>De langs het boortraject gemeten grootste lengte t.o.v. het oorspronkelijk verticaal
-                           referentiepunt.</p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Juridische status</th>
-                     <td>Authentiek</td>
-                  </tr>
-                  <tr>
-                     <th>Kardinaliteit</th>
-                     <td>1</td>
-                  </tr>
-                  <tr>
-                     <th>Domein</th>
-                     <td></td>
-                  </tr>
-                  <tr>
-                     <th>&nbsp;&nbsp;Naam</th>
-                     <td>Meetwaarde 
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>&nbsp;&nbsp;Eenheid</th>
-                     <td>m (meter)</td>
-                  </tr>
-                  <tr>
-                     <th>&nbsp;&nbsp;Waardebereik</th>
-                     <td> vanaf 0</td>
-                  </tr>
-                  <tr>
-                     <th>Regels</th>
-                     <td>
-                        
-                        <p>De waarde van het attribuut <em>totale lengte</em> moet gelijk zijn aan of groter zijn dan de waarde van het attribuut <em>werkelijke verticale diepte</em>.</p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Materiële geschiedenis</th>
-                     <td>Nee</td>
-                  </tr>
-                  <tr>
-                     <th>Toelichting</th>
-                     <td>
-                        
-                        <p>Binnen het vakgebied mijnbouw is dit gegeven ook bekend onder de naam gemeten diepte
-                           of Measured Depth (MD). De totale lengte van een primair boortraject is de volledige
-                           lengte van dat boortraject. De totale lengte van een zijtak is de volledige lengte
-                           van die zijtak met daarbij opgeteld de lengtes van de stukken van het primaire boortraject
-                           en van eventuele zijtakken gemeten vanaf de oorsprong van het boorgat tot aan het
-                           punt waar de zijtak begint.</p>
-                        </td>
-                  </tr>
-               </tbody>
-            </table>
-            </section><a class="anchor" id="detail_attribute_Model_Boortrajectlocatie_geometrie"></a><section id="detail_attribute_Model_Boortrajectlocatie_geometrie">
+         </table><a class="anchor" id="detail_attribute_Model_Boortrajectlocatie_geometrie"></a><section id="detail_attribute_Model_Boortrajectlocatie_geometrie">
             <h4>  geometrie</h4>
             
             <table style="width: 100%;">
@@ -3416,6 +3288,134 @@
                   </tr>
                </tbody>
             </table>
+            </section><a class="anchor" id="detail_attribute_Model_Boortrajectlocatie_totalelengte"></a><section id="detail_attribute_Model_Boortrajectlocatie_totalelengte">
+            <h4>  totale lengte</h4>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Type gegeven</th>
+                     <td>Attribuut van Boortraject locatie</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>De langs het boortraject gemeten grootste lengte t.o.v. het oorspronkelijk verticaal
+                           referentiepunt.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Juridische status</th>
+                     <td>Authentiek</td>
+                  </tr>
+                  <tr>
+                     <th>Kardinaliteit</th>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <th>Domein</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>&nbsp;&nbsp;Naam</th>
+                     <td>Meetwaarde 
+                        N.2</td>
+                  </tr>
+                  <tr>
+                     <th>&nbsp;&nbsp;Eenheid</th>
+                     <td>m (meter)</td>
+                  </tr>
+                  <tr>
+                     <th>&nbsp;&nbsp;Waardebereik</th>
+                     <td> vanaf 0</td>
+                  </tr>
+                  <tr>
+                     <th>Regels</th>
+                     <td>
+                        
+                        <p>De waarde van het attribuut <em>totale lengte</em> moet gelijk zijn aan of groter zijn dan de waarde van het attribuut <em>werkelijke verticale diepte</em>.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Materiële geschiedenis</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>
+                        
+                        <p>Binnen het vakgebied mijnbouw is dit gegeven ook bekend onder de naam gemeten diepte
+                           of Measured Depth (MD). De totale lengte van een primair boortraject is de volledige
+                           lengte van dat boortraject. De totale lengte van een zijtak is de volledige lengte
+                           van die zijtak met daarbij opgeteld de lengtes van de stukken van het primaire boortraject
+                           en van eventuele zijtakken gemeten vanaf de oorsprong van het boorgat tot aan het
+                           punt waar de zijtak begint.</p>
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+            </section><a class="anchor" id="detail_attribute_Model_Boortrajectlocatie_werkelijkeverticaleeinddiepte"></a><section id="detail_attribute_Model_Boortrajectlocatie_werkelijkeverticaleeinddiepte">
+            <h4>  werkelijke verticale einddiepte</h4>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Type gegeven</th>
+                     <td>Attribuut van Boortraject locatie</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>De werkelijke verticale diepte vanaf het lokaal verticaal referentiepunt van het boorgat
+                           tot aan het punt in de ondergrond waar het boortraject eindigt.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Juridische status</th>
+                     <td>Authentiek</td>
+                  </tr>
+                  <tr>
+                     <th>Kardinaliteit</th>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <th>Domein</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>&nbsp;&nbsp;Naam</th>
+                     <td>Meetwaarde 
+                        N.2</td>
+                  </tr>
+                  <tr>
+                     <th>&nbsp;&nbsp;Eenheid</th>
+                     <td>m (meter)</td>
+                  </tr>
+                  <tr>
+                     <th>&nbsp;&nbsp;Waardebereik</th>
+                     <td> vanaf 0</td>
+                  </tr>
+                  <tr>
+                     <th>Materiële geschiedenis</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>
+                        
+                        <p>Binnen het vakgebied mijnbouw is dit gegeven ook bekend onder de naam 'True Vertical
+                           Depth' (TVD). Bij andere registratieobjecten in de basisregistratie ondergrond is
+                           dit gegeven bekend onder de naam 'einddiepte'.</p>
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
             </section>
       </section><a class="anchor" id="graph_EAID_CACC8EE7_6654_4fe8_8333_101AC6BA294D"></a><a class="anchor" id="global_class_Model_Mijnstelsel"></a><section id="global_class_Model_Mijnstelsel">
          <h3>   Mijnstelsel</h3>
@@ -3437,8 +3437,8 @@
                      </td>
                </tr>
             </tbody>
-         </table><a class="anchor" id="detail_attribute_Model_Mijnstelsel_naam"></a><section id="detail_attribute_Model_Mijnstelsel_naam">
-            <h4>  naam</h4>
+         </table><a class="anchor" id="detail_attribute_Model_Mijnstelsel_alternatievenaam"></a><section id="detail_attribute_Model_Mijnstelsel_alternatievenaam">
+            <h4>  alternatieve naam</h4>
             
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -3452,16 +3452,16 @@
                      <th>Definitie</th>
                      <td>
                         
-                        <p>De unieke identificatie van een mijnstelsel middels de voorkeursbenaming.</p>
+                        <p>De aanduiding van een mijnstelsel middels een alternatieve benaming.</p>
                         </td>
                   </tr>
                   <tr>
                      <th>Juridische status</th>
-                     <td>Authentiek</td>
+                     <td>Niet-authentiek</td>
                   </tr>
                   <tr>
                      <th>Kardinaliteit</th>
-                     <td>1</td>
+                     <td>0..*</td>
                   </tr>
                   <tr>
                      <th>Domein</th>
@@ -3475,13 +3475,20 @@
                      <th>Regels</th>
                      <td>
                         
-                        <p>De <em>naam</em> is uniek binnen de set met mijnstelsels binnen het registatieobjecttype Mijnbouwconstructie
-                           (EPC).</p>
+                        <p>De <em>alternatieve naam</em> moet uniek zijn binnen het Mijnstelsel.</p>
                         </td>
                   </tr>
                   <tr>
                      <th>Materiële geschiedenis</th>
                      <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>
+                        
+                        <p>Er kunnen lokaal een of meer alternatieve benamingen in gebruik zijn om het mijnstelsel
+                           aan te duiden.</p>
+                        </td>
                   </tr>
                </tbody>
             </table>
@@ -3542,105 +3549,6 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_attribute_Model_Mijnstelsel_alternatievenaam"></a><section id="detail_attribute_Model_Mijnstelsel_alternatievenaam">
-            <h4>  alternatieve naam</h4>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Type gegeven</th>
-                     <td>Attribuut van Mijnstelsel</td>
-                  </tr>
-                  <tr>
-                     <th>Definitie</th>
-                     <td>
-                        
-                        <p>De aanduiding van een mijnstelsel middels een alternatieve benaming.</p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Juridische status</th>
-                     <td>Niet-authentiek</td>
-                  </tr>
-                  <tr>
-                     <th>Kardinaliteit</th>
-                     <td>0..*</td>
-                  </tr>
-                  <tr>
-                     <th>Domein</th>
-                     <td></td>
-                  </tr>
-                  <tr>
-                     <th>&nbsp;&nbsp;Naam</th>
-                     <td>Tekst 100</td>
-                  </tr>
-                  <tr>
-                     <th>Regels</th>
-                     <td>
-                        
-                        <p>De <em>alternatieve naam</em> moet uniek zijn binnen het Mijnstelsel.</p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Materiële geschiedenis</th>
-                     <td>Nee</td>
-                  </tr>
-                  <tr>
-                     <th>Toelichting</th>
-                     <td>
-                        
-                        <p>Er kunnen lokaal een of meer alternatieve benamingen in gebruik zijn om het mijnstelsel
-                           aan te duiden.</p>
-                        </td>
-                  </tr>
-               </tbody>
-            </table>
-            </section><a class="anchor" id="detail_attribute_Model_Mijnstelsel_soortmijnstelsel"></a><section id="detail_attribute_Model_Mijnstelsel_soortmijnstelsel">
-            <h4>  soort mijnstelsel</h4>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Type gegeven</th>
-                     <td>Attribuut van Mijnstelsel</td>
-                  </tr>
-                  <tr>
-                     <th>Definitie</th>
-                     <td>
-                        
-                        <p>De aanduiding van het oorspronkelijke doeleinde waarvoor een mijnstelsel is aangelegd.</p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Juridische status</th>
-                     <td>Authentiek</td>
-                  </tr>
-                  <tr>
-                     <th>Kardinaliteit</th>
-                     <td>1</td>
-                  </tr>
-                  <tr>
-                     <th>Domein</th>
-                     <td></td>
-                  </tr>
-                  <tr>
-                     <th>&nbsp;&nbsp;Naam</th>
-                     <td><a class="link" href="#detail_class_Model_SoortMijnstelsel">SoortMijnstelsel</a></td>
-                  </tr>
-                  <tr>
-                     <th>&nbsp;&nbsp;Type</th>
-                     <td>Waardelijst uitbreidbaar</td>
-                  </tr>
-                  <tr>
-                     <th>Materiële geschiedenis</th>
-                     <td>Nee</td>
-                  </tr>
-               </tbody>
-            </table>
             </section><a class="anchor" id="detail_attribute_Model_Mijnstelsel_isafgegraven"></a><section id="detail_attribute_Model_Mijnstelsel_isafgegraven">
             <h4>  is afgegraven</h4>
             
@@ -3694,7 +3602,99 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d49052e13904"></a><section id="detail_d49052e13904">
+            </section><a class="anchor" id="detail_attribute_Model_Mijnstelsel_naam"></a><section id="detail_attribute_Model_Mijnstelsel_naam">
+            <h4>  naam</h4>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Type gegeven</th>
+                     <td>Attribuut van Mijnstelsel</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>De unieke identificatie van een mijnstelsel middels de voorkeursbenaming.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Juridische status</th>
+                     <td>Authentiek</td>
+                  </tr>
+                  <tr>
+                     <th>Kardinaliteit</th>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <th>Domein</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>&nbsp;&nbsp;Naam</th>
+                     <td>Tekst 100</td>
+                  </tr>
+                  <tr>
+                     <th>Regels</th>
+                     <td>
+                        
+                        <p>De <em>naam</em> is uniek binnen de set met mijnstelsels binnen het registatieobjecttype Mijnbouwconstructie
+                           (EPC).</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Materiële geschiedenis</th>
+                     <td>Nee</td>
+                  </tr>
+               </tbody>
+            </table>
+            </section><a class="anchor" id="detail_attribute_Model_Mijnstelsel_soortmijnstelsel"></a><section id="detail_attribute_Model_Mijnstelsel_soortmijnstelsel">
+            <h4>  soort mijnstelsel</h4>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Type gegeven</th>
+                     <td>Attribuut van Mijnstelsel</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>De aanduiding van het oorspronkelijke doeleinde waarvoor een mijnstelsel is aangelegd.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Juridische status</th>
+                     <td>Authentiek</td>
+                  </tr>
+                  <tr>
+                     <th>Kardinaliteit</th>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <th>Domein</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>&nbsp;&nbsp;Naam</th>
+                     <td><a class="link" href="#detail_class_Model_SoortMijnstelsel">SoortMijnstelsel</a></td>
+                  </tr>
+                  <tr>
+                     <th>&nbsp;&nbsp;Type</th>
+                     <td>Waardelijst uitbreidbaar</td>
+                  </tr>
+                  <tr>
+                     <th>Materiële geschiedenis</th>
+                     <td>Nee</td>
+                  </tr>
+               </tbody>
+            </table>
+            </section><a class="anchor" id="detail_d48982e13920"></a><section id="detail_d48982e13920">
             <h4>  gemijnd gebied</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -3963,103 +3963,7 @@
                      </td>
                </tr>
             </tbody>
-         </table><a class="anchor" id="detail_attribute_Model_Toegang_toegangsID"></a><section id="detail_attribute_Model_Toegang_toegangsID">
-            <h4>  toegangsID</h4>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Type gegeven</th>
-                     <td>Attribuut van Toegang</td>
-                  </tr>
-                  <tr>
-                     <th>Definitie</th>
-                     <td>
-                        
-                        <p>De unieke identificatie van een toegang binnen de scope van een mijnstelsel in de
-                           registratie ondergrond middels een ID.</p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Juridische status</th>
-                     <td>Authentiek</td>
-                  </tr>
-                  <tr>
-                     <th>Kardinaliteit</th>
-                     <td>1</td>
-                  </tr>
-                  <tr>
-                     <th>Domein</th>
-                     <td></td>
-                  </tr>
-                  <tr>
-                     <th>&nbsp;&nbsp;Naam</th>
-                     <td>Nummer 3</td>
-                  </tr>
-                  <tr>
-                     <th>Regels</th>
-                     <td>
-                        
-                        <p>Het <em>toegangsID</em> is uniek binnen de set van toegangen waaruit een <em>Mijnstelsel</em> bestaat.</p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Materiële geschiedenis</th>
-                     <td>Nee</td>
-                  </tr>
-               </tbody>
-            </table>
-            </section><a class="anchor" id="detail_attribute_Model_Toegang_naam"></a><section id="detail_attribute_Model_Toegang_naam">
-            <h4>  naam</h4>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Type gegeven</th>
-                     <td>Attribuut van Toegang</td>
-                  </tr>
-                  <tr>
-                     <th>Definitie</th>
-                     <td>
-                        
-                        <p>De aanduiding van een toegang binnen een mijnstelsel middels de voorkeursbenaming.</p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Juridische status</th>
-                     <td>Authentiek</td>
-                  </tr>
-                  <tr>
-                     <th>Kardinaliteit</th>
-                     <td>1</td>
-                  </tr>
-                  <tr>
-                     <th>Domein</th>
-                     <td></td>
-                  </tr>
-                  <tr>
-                     <th>&nbsp;&nbsp;Naam</th>
-                     <td>Tekst 100</td>
-                  </tr>
-                  <tr>
-                     <th>Regels</th>
-                     <td>
-                        
-                        <p>De <em>naam</em> is uniek binnen de set met toegangen binnen het registatieobjecttype Mijnbouwconstructie
-                           (EPC).</p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Materiële geschiedenis</th>
-                     <td>Nee</td>
-                  </tr>
-               </tbody>
-            </table>
-            </section><a class="anchor" id="detail_attribute_Model_Toegang_alternatievenaam"></a><section id="detail_attribute_Model_Toegang_alternatievenaam">
+         </table><a class="anchor" id="detail_attribute_Model_Toegang_alternatievenaam"></a><section id="detail_attribute_Model_Toegang_alternatievenaam">
             <h4>  alternatieve naam</h4>
             
             <table style="width: 100%;">
@@ -4114,50 +4018,6 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_attribute_Model_Toegang_soorttoegang"></a><section id="detail_attribute_Model_Toegang_soorttoegang">
-            <h4>  soort toegang</h4>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Type gegeven</th>
-                     <td>Attribuut van Toegang</td>
-                  </tr>
-                  <tr>
-                     <th>Definitie</th>
-                     <td>
-                        
-                        <p>Het soort toegang tot een mijnstelsel.</p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Juridische status</th>
-                     <td>Authentiek</td>
-                  </tr>
-                  <tr>
-                     <th>Kardinaliteit</th>
-                     <td>1</td>
-                  </tr>
-                  <tr>
-                     <th>Domein</th>
-                     <td></td>
-                  </tr>
-                  <tr>
-                     <th>&nbsp;&nbsp;Naam</th>
-                     <td><a class="link" href="#detail_class_Model_SoortToegang">SoortToegang</a></td>
-                  </tr>
-                  <tr>
-                     <th>&nbsp;&nbsp;Type</th>
-                     <td>Waardelijst uitbreidbaar</td>
-                  </tr>
-                  <tr>
-                     <th>Materiële geschiedenis</th>
-                     <td>Nee</td>
-                  </tr>
-               </tbody>
-            </table>
             </section><a class="anchor" id="detail_attribute_Model_Toegang_isafgegraven"></a><section id="detail_attribute_Model_Toegang_isafgegraven">
             <h4>  is afgegraven</h4>
             
@@ -4209,7 +4069,147 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d49052e15018"></a><section id="detail_d49052e15018">
+            </section><a class="anchor" id="detail_attribute_Model_Toegang_naam"></a><section id="detail_attribute_Model_Toegang_naam">
+            <h4>  naam</h4>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Type gegeven</th>
+                     <td>Attribuut van Toegang</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>De aanduiding van een toegang binnen een mijnstelsel middels de voorkeursbenaming.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Juridische status</th>
+                     <td>Authentiek</td>
+                  </tr>
+                  <tr>
+                     <th>Kardinaliteit</th>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <th>Domein</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>&nbsp;&nbsp;Naam</th>
+                     <td>Tekst 100</td>
+                  </tr>
+                  <tr>
+                     <th>Regels</th>
+                     <td>
+                        
+                        <p>De <em>naam</em> is uniek binnen de set met toegangen binnen het registatieobjecttype Mijnbouwconstructie
+                           (EPC).</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Materiële geschiedenis</th>
+                     <td>Nee</td>
+                  </tr>
+               </tbody>
+            </table>
+            </section><a class="anchor" id="detail_attribute_Model_Toegang_soorttoegang"></a><section id="detail_attribute_Model_Toegang_soorttoegang">
+            <h4>  soort toegang</h4>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Type gegeven</th>
+                     <td>Attribuut van Toegang</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>Het soort toegang tot een mijnstelsel.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Juridische status</th>
+                     <td>Authentiek</td>
+                  </tr>
+                  <tr>
+                     <th>Kardinaliteit</th>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <th>Domein</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>&nbsp;&nbsp;Naam</th>
+                     <td><a class="link" href="#detail_class_Model_SoortToegang">SoortToegang</a></td>
+                  </tr>
+                  <tr>
+                     <th>&nbsp;&nbsp;Type</th>
+                     <td>Waardelijst uitbreidbaar</td>
+                  </tr>
+                  <tr>
+                     <th>Materiële geschiedenis</th>
+                     <td>Nee</td>
+                  </tr>
+               </tbody>
+            </table>
+            </section><a class="anchor" id="detail_attribute_Model_Toegang_toegangsID"></a><section id="detail_attribute_Model_Toegang_toegangsID">
+            <h4>  toegangsID</h4>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Type gegeven</th>
+                     <td>Attribuut van Toegang</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>De unieke identificatie van een toegang binnen de scope van een mijnstelsel in de
+                           registratie ondergrond middels een ID.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Juridische status</th>
+                     <td>Authentiek</td>
+                  </tr>
+                  <tr>
+                     <th>Kardinaliteit</th>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <th>Domein</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>&nbsp;&nbsp;Naam</th>
+                     <td>Nummer 3</td>
+                  </tr>
+                  <tr>
+                     <th>Regels</th>
+                     <td>
+                        
+                        <p>Het <em>toegangsID</em> is uniek binnen de set van toegangen waaruit een <em>Mijnstelsel</em> bestaat.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Materiële geschiedenis</th>
+                     <td>Nee</td>
+                  </tr>
+               </tbody>
+            </table>
+            </section><a class="anchor" id="detail_d48982e15034"></a><section id="detail_d48982e15034">
             <h4>  locatie</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -4271,8 +4271,8 @@
                      </td>
                </tr>
             </tbody>
-         </table><a class="anchor" id="detail_attribute_Model_Transportzone_transportzoneID"></a><section id="detail_attribute_Model_Transportzone_transportzoneID">
-            <h4>  transportzoneID</h4>
+         </table><a class="anchor" id="detail_attribute_Model_Transportzone_isafgegraven"></a><section id="detail_attribute_Model_Transportzone_isafgegraven">
+            <h4>  is afgegraven</h4>
             
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -4286,8 +4286,7 @@
                      <th>Definitie</th>
                      <td>
                         
-                        <p>De unieke identificatie van een transportzone binnen de scope van een mijnstelsel
-                           in de registratie ondergrond middels een ID.</p>
+                        <p>Indicatie of een transportzone is verdwenen vanwege afgraving.</p>
                         </td>
                   </tr>
                   <tr>
@@ -4304,14 +4303,62 @@
                   </tr>
                   <tr>
                      <th>&nbsp;&nbsp;Naam</th>
-                     <td>Nummer 3</td>
+                     <td>IndicatieJaNee</td>
+                  </tr>
+                  <tr>
+                     <th>&nbsp;&nbsp;Type</th>
+                     <td>Waardelijst niet uitbreidbaar</td>
                   </tr>
                   <tr>
                      <th>Regels</th>
                      <td>
                         
-                        <p>Het <em>transportzoneID</em> is uniek binnen de set van transportzones waaruit een <em>Mijnstelsel</em> bestaat.</p>
+                        <p>De waarde van het attribuut moet gelijk zijn aan <em>ja</em> wanneer de waarde van het attribuut <em>is afgegraven</em> van het Mijnstelsel gelijk is aan <em>ja</em>.</p>
                         </td>
+                  </tr>
+                  <tr>
+                     <th>Materiële geschiedenis</th>
+                     <td>Ja</td>
+                  </tr>
+               </tbody>
+            </table>
+            </section><a class="anchor" id="detail_attribute_Model_Transportzone_isopenbaarraadpleegbaar"></a><section id="detail_attribute_Model_Transportzone_isopenbaarraadpleegbaar">
+            <h4>  is openbaar raadpleegbaar</h4>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Type gegeven</th>
+                     <td>Attribuut van Transportzone</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>Indicatie of het attribuut gebied transportzone publiek toegankelijk is.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Juridische status</th>
+                     <td>Authentiek</td>
+                  </tr>
+                  <tr>
+                     <th>Kardinaliteit</th>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <th>Domein</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>&nbsp;&nbsp;Naam</th>
+                     <td>IndicatieJaNee</td>
+                  </tr>
+                  <tr>
+                     <th>&nbsp;&nbsp;Type</th>
+                     <td>Waardelijst niet uitbreidbaar</td>
                   </tr>
                   <tr>
                      <th>Materiële geschiedenis</th>
@@ -4366,8 +4413,8 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_attribute_Model_Transportzone_isafgegraven"></a><section id="detail_attribute_Model_Transportzone_isafgegraven">
-            <h4>  is afgegraven</h4>
+            </section><a class="anchor" id="detail_attribute_Model_Transportzone_transportzoneID"></a><section id="detail_attribute_Model_Transportzone_transportzoneID">
+            <h4>  transportzoneID</h4>
             
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -4381,7 +4428,8 @@
                      <th>Definitie</th>
                      <td>
                         
-                        <p>Indicatie of een transportzone is verdwenen vanwege afgraving.</p>
+                        <p>De unieke identificatie van een transportzone binnen de scope van een mijnstelsel
+                           in de registratie ondergrond middels een ID.</p>
                         </td>
                   </tr>
                   <tr>
@@ -4398,22 +4446,18 @@
                   </tr>
                   <tr>
                      <th>&nbsp;&nbsp;Naam</th>
-                     <td>IndicatieJaNee</td>
-                  </tr>
-                  <tr>
-                     <th>&nbsp;&nbsp;Type</th>
-                     <td>Waardelijst niet uitbreidbaar</td>
+                     <td>Nummer 3</td>
                   </tr>
                   <tr>
                      <th>Regels</th>
                      <td>
                         
-                        <p>De waarde van het attribuut moet gelijk zijn aan <em>ja</em> wanneer de waarde van het attribuut <em>is afgegraven</em> van het Mijnstelsel gelijk is aan <em>ja</em>.</p>
+                        <p>Het <em>transportzoneID</em> is uniek binnen de set van transportzones waaruit een <em>Mijnstelsel</em> bestaat.</p>
                         </td>
                   </tr>
                   <tr>
                      <th>Materiële geschiedenis</th>
-                     <td>Ja</td>
+                     <td>Nee</td>
                   </tr>
                </tbody>
             </table>
@@ -4475,51 +4519,7 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_attribute_Model_Transportzone_isopenbaarraadpleegbaar"></a><section id="detail_attribute_Model_Transportzone_isopenbaarraadpleegbaar">
-            <h4>  is openbaar raadpleegbaar</h4>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Type gegeven</th>
-                     <td>Attribuut van Transportzone</td>
-                  </tr>
-                  <tr>
-                     <th>Definitie</th>
-                     <td>
-                        
-                        <p>Indicatie of het attribuut gebied transportzone publiek toegankelijk is.</p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Juridische status</th>
-                     <td>Authentiek</td>
-                  </tr>
-                  <tr>
-                     <th>Kardinaliteit</th>
-                     <td>1</td>
-                  </tr>
-                  <tr>
-                     <th>Domein</th>
-                     <td></td>
-                  </tr>
-                  <tr>
-                     <th>&nbsp;&nbsp;Naam</th>
-                     <td>IndicatieJaNee</td>
-                  </tr>
-                  <tr>
-                     <th>&nbsp;&nbsp;Type</th>
-                     <td>Waardelijst niet uitbreidbaar</td>
-                  </tr>
-                  <tr>
-                     <th>Materiële geschiedenis</th>
-                     <td>Nee</td>
-                  </tr>
-               </tbody>
-            </table>
-            </section><a class="anchor" id="detail_d49052e16190"></a><section id="detail_d49052e16190">
+            </section><a class="anchor" id="detail_d48982e16206"></a><section id="detail_d48982e16206">
             <h4>  gebied</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -4599,8 +4599,8 @@
                      </td>
                </tr>
             </tbody>
-         </table><a class="anchor" id="detail_attribute_Model_Ontginningszone_ontginningszoneID"></a><section id="detail_attribute_Model_Ontginningszone_ontginningszoneID">
-            <h4>  ontginningszoneID</h4>
+         </table><a class="anchor" id="detail_attribute_Model_Ontginningszone_isafgegraven"></a><section id="detail_attribute_Model_Ontginningszone_isafgegraven">
+            <h4>  is afgegraven</h4>
             
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -4614,8 +4614,7 @@
                      <th>Definitie</th>
                      <td>
                         
-                        <p>De unieke identificatie van een ontginningszone binnen de scope van een mijnstelsel
-                           in de registratie ondergrond middels een ID.</p>
+                        <p>Indicatie of een transportzone is verdwenen vanwege afgraving.</p>
                         </td>
                   </tr>
                   <tr>
@@ -4632,65 +4631,23 @@
                   </tr>
                   <tr>
                      <th>&nbsp;&nbsp;Naam</th>
-                     <td>Nummer 3</td>
+                     <td>IndicatieJaNee</td>
+                  </tr>
+                  <tr>
+                     <th>&nbsp;&nbsp;Type</th>
+                     <td>Waardelijst niet uitbreidbaar</td>
                   </tr>
                   <tr>
                      <th>Regels</th>
                      <td>
                         
-                        <p>Het <em>ontginningszoneID</em> is uniek binnen de set van ontginningszones waaruit een <em>Mijnstelsel</em> bestaat.</p>
+                        <p>De waarde van het attribuut moet gelijk zijn aan <em>ja</em> wanneer de waarde van het attribuut <em>is afgegraven</em> van de entiteit <em>Mijnstelsel</em> gelijk is aan <em>ja</em>.<br clear="none">
+                           De waarde van het attribuut moet gelijk zijn aan <em>nee</em> wanneer de waarde van het attribuut <em>is in ontginning</em> gelijk is aan <em>ja</em>.</p>
                         </td>
                   </tr>
                   <tr>
                      <th>Materiële geschiedenis</th>
-                     <td>Nee</td>
-                  </tr>
-               </tbody>
-            </table>
-            </section><a class="anchor" id="detail_attribute_Model_Ontginningszone_naam"></a><section id="detail_attribute_Model_Ontginningszone_naam">
-            <h4>  naam</h4>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Type gegeven</th>
-                     <td>Attribuut van Ontginningszone</td>
-                  </tr>
-                  <tr>
-                     <th>Definitie</th>
-                     <td>
-                        
-                        <p>De aanduiding van een ontginningszone binnen een mijnstelsel middels een naam.</p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Juridische status</th>
-                     <td>Authentiek</td>
-                  </tr>
-                  <tr>
-                     <th>Kardinaliteit</th>
-                     <td>0..1</td>
-                  </tr>
-                  <tr>
-                     <th>Domein</th>
-                     <td></td>
-                  </tr>
-                  <tr>
-                     <th>&nbsp;&nbsp;Naam</th>
-                     <td>Tekst 100</td>
-                  </tr>
-                  <tr>
-                     <th>Regels</th>
-                     <td>
-                        
-                        <p>De <em>naam</em> is uniek binnen de set van ontginningszones waaruit een <em>Mijnstelsel</em> bestaat.</p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Materiële geschiedenis</th>
-                     <td>Nee</td>
+                     <td>Ja</td>
                   </tr>
                </tbody>
             </table>
@@ -4745,8 +4702,8 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_attribute_Model_Ontginningszone_isafgegraven"></a><section id="detail_attribute_Model_Ontginningszone_isafgegraven">
-            <h4>  is afgegraven</h4>
+            </section><a class="anchor" id="detail_attribute_Model_Ontginningszone_isopenbaarraadpleegbaar"></a><section id="detail_attribute_Model_Ontginningszone_isopenbaarraadpleegbaar">
+            <h4>  is openbaar raadpleegbaar</h4>
             
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -4760,7 +4717,7 @@
                      <th>Definitie</th>
                      <td>
                         
-                        <p>Indicatie of een transportzone is verdwenen vanwege afgraving.</p>
+                        <p>Indicatie of het attribuut gebied ontginningszone publiek toegankelijk is.</p>
                         </td>
                   </tr>
                   <tr>
@@ -4784,16 +4741,103 @@
                      <td>Waardelijst niet uitbreidbaar</td>
                   </tr>
                   <tr>
+                     <th>Materiële geschiedenis</th>
+                     <td>Nee</td>
+                  </tr>
+               </tbody>
+            </table>
+            </section><a class="anchor" id="detail_attribute_Model_Ontginningszone_naam"></a><section id="detail_attribute_Model_Ontginningszone_naam">
+            <h4>  naam</h4>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Type gegeven</th>
+                     <td>Attribuut van Ontginningszone</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>De aanduiding van een ontginningszone binnen een mijnstelsel middels een naam.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Juridische status</th>
+                     <td>Authentiek</td>
+                  </tr>
+                  <tr>
+                     <th>Kardinaliteit</th>
+                     <td>0..1</td>
+                  </tr>
+                  <tr>
+                     <th>Domein</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>&nbsp;&nbsp;Naam</th>
+                     <td>Tekst 100</td>
+                  </tr>
+                  <tr>
                      <th>Regels</th>
                      <td>
                         
-                        <p>De waarde van het attribuut moet gelijk zijn aan <em>ja</em> wanneer de waarde van het attribuut <em>is afgegraven</em> van de entiteit <em>Mijnstelsel</em> gelijk is aan <em>ja</em>.<br clear="none">
-                           De waarde van het attribuut moet gelijk zijn aan <em>nee</em> wanneer de waarde van het attribuut <em>is in ontginning</em> gelijk is aan <em>ja</em>.</p>
+                        <p>De <em>naam</em> is uniek binnen de set van ontginningszones waaruit een <em>Mijnstelsel</em> bestaat.</p>
                         </td>
                   </tr>
                   <tr>
                      <th>Materiële geschiedenis</th>
-                     <td>Ja</td>
+                     <td>Nee</td>
+                  </tr>
+               </tbody>
+            </table>
+            </section><a class="anchor" id="detail_attribute_Model_Ontginningszone_ontginningszoneID"></a><section id="detail_attribute_Model_Ontginningszone_ontginningszoneID">
+            <h4>  ontginningszoneID</h4>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Type gegeven</th>
+                     <td>Attribuut van Ontginningszone</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>De unieke identificatie van een ontginningszone binnen de scope van een mijnstelsel
+                           in de registratie ondergrond middels een ID.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Juridische status</th>
+                     <td>Authentiek</td>
+                  </tr>
+                  <tr>
+                     <th>Kardinaliteit</th>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <th>Domein</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>&nbsp;&nbsp;Naam</th>
+                     <td>Nummer 3</td>
+                  </tr>
+                  <tr>
+                     <th>Regels</th>
+                     <td>
+                        
+                        <p>Het <em>ontginningszoneID</em> is uniek binnen de set van ontginningszones waaruit een <em>Mijnstelsel</em> bestaat.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Materiële geschiedenis</th>
+                     <td>Nee</td>
                   </tr>
                </tbody>
             </table>
@@ -4859,51 +4903,7 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_attribute_Model_Ontginningszone_isopenbaarraadpleegbaar"></a><section id="detail_attribute_Model_Ontginningszone_isopenbaarraadpleegbaar">
-            <h4>  is openbaar raadpleegbaar</h4>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Type gegeven</th>
-                     <td>Attribuut van Ontginningszone</td>
-                  </tr>
-                  <tr>
-                     <th>Definitie</th>
-                     <td>
-                        
-                        <p>Indicatie of het attribuut gebied ontginningszone publiek toegankelijk is.</p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Juridische status</th>
-                     <td>Authentiek</td>
-                  </tr>
-                  <tr>
-                     <th>Kardinaliteit</th>
-                     <td>1</td>
-                  </tr>
-                  <tr>
-                     <th>Domein</th>
-                     <td></td>
-                  </tr>
-                  <tr>
-                     <th>&nbsp;&nbsp;Naam</th>
-                     <td>IndicatieJaNee</td>
-                  </tr>
-                  <tr>
-                     <th>&nbsp;&nbsp;Type</th>
-                     <td>Waardelijst niet uitbreidbaar</td>
-                  </tr>
-                  <tr>
-                     <th>Materiële geschiedenis</th>
-                     <td>Nee</td>
-                  </tr>
-               </tbody>
-            </table>
-            </section><a class="anchor" id="detail_d49052e17618"></a><section id="detail_d49052e17618">
+            </section><a class="anchor" id="detail_d48982e17634"></a><section id="detail_d48982e17634">
             <h4>  gebied</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -4983,7 +4983,222 @@
                      </td>
                </tr>
             </tbody>
-         </table><a class="anchor" id="detail_attribute_Model_Mijnkaart_mijnkaartcode"></a><section id="detail_attribute_Model_Mijnkaart_mijnkaartcode">
+         </table><a class="anchor" id="detail_attribute_Model_Mijnkaart_kaartbereik"></a><section id="detail_attribute_Model_Mijnkaart_kaartbereik">
+            <h4>  kaartbereik</h4>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Type gegeven</th>
+                     <td>Attribuut van Mijnkaart</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>Het geografische gebied dat op de kaart is afgebeeld, uitgedrukt in een geometrisch
+                           vlak.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Juridische status</th>
+                     <td>Authentiek</td>
+                  </tr>
+                  <tr>
+                     <th>Kardinaliteit</th>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <th>Domein</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>&nbsp;&nbsp;Naam</th>
+                     <td>GM_Envelope</td>
+                  </tr>
+                  <tr>
+                     <th>Materiële geschiedenis</th>
+                     <td>Nee</td>
+                  </tr>
+               </tbody>
+            </table>
+            </section><a class="anchor" id="detail_attribute_Model_Mijnkaart_kaartblad"></a><section id="detail_attribute_Model_Mijnkaart_kaartblad">
+            <h4>  kaartblad</h4>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Type gegeven</th>
+                     <td>Attribuut van Mijnkaart</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>De aanduiding van het kaartblad.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Juridische status</th>
+                     <td>Authentiek</td>
+                  </tr>
+                  <tr>
+                     <th>Kardinaliteit</th>
+                     <td>0..1</td>
+                  </tr>
+                  <tr>
+                     <th>Domein</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>&nbsp;&nbsp;Naam</th>
+                     <td>Tekst 15</td>
+                  </tr>
+                  <tr>
+                     <th>Regels</th>
+                     <td>
+                        
+                        <p>Het attribuut moet aanwezig zijn wanneer de waarde van het attribuut <em>soort mijnkaart</em> gelijk is aan <em>DrempelkaartIndividueel</em>, <em>HoofdgrondplanIndividueel</em> of <em>LaagplanIndividueel</em>.<br clear="none">
+                           Het attribuut mag niet aanwezig zijn in alle andere gevallen.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Materiële geschiedenis</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>
+                        
+                        <p>In de registratie ondergrond wordt voor mijnkaarten geen onderscheid gemaakt tussen
+                           kaarten en kaartbladen - waarbij een kaart bestaat uit meerdere kaartbladen. Individuele
+                           kaarten hebben echter een kaartbladcode.</p>
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+            </section><a class="anchor" id="detail_attribute_Model_Mijnkaart_kaartserie"></a><section id="detail_attribute_Model_Mijnkaart_kaartserie">
+            <h4>  kaartserie</h4>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Type gegeven</th>
+                     <td>Attribuut van Mijnkaart</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>De aanduiding van de serie van kaarten waartoe een mijnkaart behoort.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Juridische status</th>
+                     <td>Authentiek</td>
+                  </tr>
+                  <tr>
+                     <th>Kardinaliteit</th>
+                     <td>0..1</td>
+                  </tr>
+                  <tr>
+                     <th>Domein</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>&nbsp;&nbsp;Naam</th>
+                     <td>Tekst 1</td>
+                  </tr>
+                  <tr>
+                     <th>Regels</th>
+                     <td>
+                        
+                        <p>Het attribuut moet aanwezig zijn wanneer de waarde van het attribuut <em>soort mijnkaart</em> gelijk is aan <em>DrempelkaartIndividueel</em>, <em>HoofdgrondplanIndividueel</em>, <em>HoofdgrondplanGecombineerd</em> of <em>LaagplanIndividueel</em>.<br clear="none">
+                           Het attribuut mag niet aanwezig zijn in alle andere gevallen.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Materiële geschiedenis</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>
+                        
+                        <p>Een kaartserie wordt gebruikt om aan te geven dat er samenhang is tussen mijnkaarten,
+                           behalve dat ze hetzelfde mijnstelsel, verdieping en/of steenkoollaag weergeven. Deze
+                           samenhang is bijvoorbeeld dat kaarten in dezelfde periode zijn gemaakt. En als er
+                           voor een mijnstelsel drempelkaarten, hoofdgrondplannen en laagplannen bestaan in dezelfde
+                           kaartserie, dan zijn bijvoorbeeld de kaartbereiken ervan op elkaar afgestemd.<br clear="none">
+                           Kaarten in een kaartserie betreffen meestal gedeeltelijke of algehele revisies van
+                           kaarten uit een voorgaande kaartserie.<br clear="none">
+                           Bij een gecombineerd hoofdgrondplan geeft de kaartserie aan tot welke kaartserie de
+                           individuele hoofdgrondplannen, waaruit die gecombineerde kaart is samengesteld, behoren.</p>
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+            </section><a class="anchor" id="detail_attribute_Model_Mijnkaart_kaartversie"></a><section id="detail_attribute_Model_Mijnkaart_kaartversie">
+            <h4>  kaartversie</h4>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Type gegeven</th>
+                     <td>Attribuut van Mijnkaart</td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>
+                        
+                        <p>De aanduiding van de versie van een kaart.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Juridische status</th>
+                     <td>Authentiek</td>
+                  </tr>
+                  <tr>
+                     <th>Kardinaliteit</th>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <th>Domein</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>&nbsp;&nbsp;Naam</th>
+                     <td>Tekst 1</td>
+                  </tr>
+                  <tr>
+                     <th>Materiële geschiedenis</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Toelichting</th>
+                     <td>
+                        
+                        <p>Van een kaart uit dezelfde serie en met hetzelfde kaartblad kunnen meerdere versies
+                           bestaan. Verschillende versies kunnen ontstaan zijn doordat kopieën van een kaart
+                           in het bezit kwamen van meerdere instanties die elk annotaties op hun eigen exemplaar
+                           geplaatst hebben. Een andere mogelijkheid is dat na tientallen jaren verder is getekend
+                           op een kaart - in tegenstelling tot het maken van een geheel nieuwe kaart waarbij
+                           een nieuwe kaartserie zou zijn ontstaan. Er kan, maar hoeft dus geen tijdsvolgorde
+                           te bestaan tussen verschillende versies. Om de gedachte aan een tijdsvolgorde te verminderen,
+                           worden versies niet met nummers maar met letters aangeduid.</p>
+                        </td>
+                  </tr>
+               </tbody>
+            </table>
+            </section><a class="anchor" id="detail_attribute_Model_Mijnkaart_mijnkaartcode"></a><section id="detail_attribute_Model_Mijnkaart_mijnkaartcode">
             <h4>  mijnkaartcode</h4>
             
             <table style="width: 100%;">
@@ -5111,65 +5326,6 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_attribute_Model_Mijnkaart_verdieping"></a><section id="detail_attribute_Model_Mijnkaart_verdieping">
-            <h4>  verdieping</h4>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Type gegeven</th>
-                     <td>Attribuut van Mijnkaart</td>
-                  </tr>
-                  <tr>
-                     <th>Definitie</th>
-                     <td>
-                        
-                        <p>De aanduiding van de verdieping binnen het mijnstelsel waar de mijnkaart betrekking
-                           op heeft.</p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Juridische status</th>
-                     <td>Authentiek</td>
-                  </tr>
-                  <tr>
-                     <th>Kardinaliteit</th>
-                     <td>0..1</td>
-                  </tr>
-                  <tr>
-                     <th>Domein</th>
-                     <td></td>
-                  </tr>
-                  <tr>
-                     <th>&nbsp;&nbsp;Naam</th>
-                     <td>Tekst 8</td>
-                  </tr>
-                  <tr>
-                     <th>Regels</th>
-                     <td>
-                        
-                        <p>Het attribuut moet aanwezig zijn wanneer de waarde van het attribuut <em>soort mijnkaart</em> gelijk is aan <em>HoofdgrondplanIndividueel</em> of <em>HoofdgrondplanGecombineerd</em>.<br clear="none">
-                           Het attribuut mag niet aanwezig zijn in alle andere gevallen.</p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Materiële geschiedenis</th>
-                     <td>Nee</td>
-                  </tr>
-                  <tr>
-                     <th>Toelichting</th>
-                     <td>
-                        
-                        <p>Een verdieping binnen een mijnstelsel wordt uitgedrukt als het aantal meters dat het
-                           plafond van die verdieping beneden het maaiveld ligt. Gerekend wordt met het maaiveld
-                           ter plaatse van de hoofdschacht van het mijnstelsel. Het aantal meters is bij benadering:
-                           de ligging van verdiepingen is niet per se exact horizontaal.</p>
-                        </td>
-                  </tr>
-               </tbody>
-            </table>
             </section><a class="anchor" id="detail_attribute_Model_Mijnkaart_steenkoollaag"></a><section id="detail_attribute_Model_Mijnkaart_steenkoollaag">
             <h4>  steenkoollaag</h4>
             
@@ -5232,8 +5388,8 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_attribute_Model_Mijnkaart_kaartserie"></a><section id="detail_attribute_Model_Mijnkaart_kaartserie">
-            <h4>  kaartserie</h4>
+            </section><a class="anchor" id="detail_attribute_Model_Mijnkaart_verdieping"></a><section id="detail_attribute_Model_Mijnkaart_verdieping">
+            <h4>  verdieping</h4>
             
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -5247,7 +5403,8 @@
                      <th>Definitie</th>
                      <td>
                         
-                        <p>De aanduiding van de serie van kaarten waartoe een mijnkaart behoort.</p>
+                        <p>De aanduiding van de verdieping binnen het mijnstelsel waar de mijnkaart betrekking
+                           op heeft.</p>
                         </td>
                   </tr>
                   <tr>
@@ -5264,13 +5421,13 @@
                   </tr>
                   <tr>
                      <th>&nbsp;&nbsp;Naam</th>
-                     <td>Tekst 1</td>
+                     <td>Tekst 8</td>
                   </tr>
                   <tr>
                      <th>Regels</th>
                      <td>
                         
-                        <p>Het attribuut moet aanwezig zijn wanneer de waarde van het attribuut <em>soort mijnkaart</em> gelijk is aan <em>DrempelkaartIndividueel</em>, <em>HoofdgrondplanIndividueel</em>, <em>HoofdgrondplanGecombineerd</em> of <em>LaagplanIndividueel</em>.<br clear="none">
+                        <p>Het attribuut moet aanwezig zijn wanneer de waarde van het attribuut <em>soort mijnkaart</em> gelijk is aan <em>HoofdgrondplanIndividueel</em> of <em>HoofdgrondplanGecombineerd</em>.<br clear="none">
                            Het attribuut mag niet aanwezig zijn in alle andere gevallen.</p>
                         </td>
                   </tr>
@@ -5282,168 +5439,11 @@
                      <th>Toelichting</th>
                      <td>
                         
-                        <p>Een kaartserie wordt gebruikt om aan te geven dat er samenhang is tussen mijnkaarten,
-                           behalve dat ze hetzelfde mijnstelsel, verdieping en/of steenkoollaag weergeven. Deze
-                           samenhang is bijvoorbeeld dat kaarten in dezelfde periode zijn gemaakt. En als er
-                           voor een mijnstelsel drempelkaarten, hoofdgrondplannen en laagplannen bestaan in dezelfde
-                           kaartserie, dan zijn bijvoorbeeld de kaartbereiken ervan op elkaar afgestemd.<br clear="none">
-                           Kaarten in een kaartserie betreffen meestal gedeeltelijke of algehele revisies van
-                           kaarten uit een voorgaande kaartserie.<br clear="none">
-                           Bij een gecombineerd hoofdgrondplan geeft de kaartserie aan tot welke kaartserie de
-                           individuele hoofdgrondplannen, waaruit die gecombineerde kaart is samengesteld, behoren.</p>
+                        <p>Een verdieping binnen een mijnstelsel wordt uitgedrukt als het aantal meters dat het
+                           plafond van die verdieping beneden het maaiveld ligt. Gerekend wordt met het maaiveld
+                           ter plaatse van de hoofdschacht van het mijnstelsel. Het aantal meters is bij benadering:
+                           de ligging van verdiepingen is niet per se exact horizontaal.</p>
                         </td>
-                  </tr>
-               </tbody>
-            </table>
-            </section><a class="anchor" id="detail_attribute_Model_Mijnkaart_kaartblad"></a><section id="detail_attribute_Model_Mijnkaart_kaartblad">
-            <h4>  kaartblad</h4>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Type gegeven</th>
-                     <td>Attribuut van Mijnkaart</td>
-                  </tr>
-                  <tr>
-                     <th>Definitie</th>
-                     <td>
-                        
-                        <p>De aanduiding van het kaartblad.</p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Juridische status</th>
-                     <td>Authentiek</td>
-                  </tr>
-                  <tr>
-                     <th>Kardinaliteit</th>
-                     <td>0..1</td>
-                  </tr>
-                  <tr>
-                     <th>Domein</th>
-                     <td></td>
-                  </tr>
-                  <tr>
-                     <th>&nbsp;&nbsp;Naam</th>
-                     <td>Tekst 15</td>
-                  </tr>
-                  <tr>
-                     <th>Regels</th>
-                     <td>
-                        
-                        <p>Het attribuut moet aanwezig zijn wanneer de waarde van het attribuut <em>soort mijnkaart</em> gelijk is aan <em>DrempelkaartIndividueel</em>, <em>HoofdgrondplanIndividueel</em> of <em>LaagplanIndividueel</em>.<br clear="none">
-                           Het attribuut mag niet aanwezig zijn in alle andere gevallen.</p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Materiële geschiedenis</th>
-                     <td>Nee</td>
-                  </tr>
-                  <tr>
-                     <th>Toelichting</th>
-                     <td>
-                        
-                        <p>In de registratie ondergrond wordt voor mijnkaarten geen onderscheid gemaakt tussen
-                           kaarten en kaartbladen - waarbij een kaart bestaat uit meerdere kaartbladen. Individuele
-                           kaarten hebben echter een kaartbladcode.</p>
-                        </td>
-                  </tr>
-               </tbody>
-            </table>
-            </section><a class="anchor" id="detail_attribute_Model_Mijnkaart_kaartversie"></a><section id="detail_attribute_Model_Mijnkaart_kaartversie">
-            <h4>  kaartversie</h4>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Type gegeven</th>
-                     <td>Attribuut van Mijnkaart</td>
-                  </tr>
-                  <tr>
-                     <th>Definitie</th>
-                     <td>
-                        
-                        <p>De aanduiding van de versie van een kaart.</p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Juridische status</th>
-                     <td>Authentiek</td>
-                  </tr>
-                  <tr>
-                     <th>Kardinaliteit</th>
-                     <td>1</td>
-                  </tr>
-                  <tr>
-                     <th>Domein</th>
-                     <td></td>
-                  </tr>
-                  <tr>
-                     <th>&nbsp;&nbsp;Naam</th>
-                     <td>Tekst 1</td>
-                  </tr>
-                  <tr>
-                     <th>Materiële geschiedenis</th>
-                     <td>Nee</td>
-                  </tr>
-                  <tr>
-                     <th>Toelichting</th>
-                     <td>
-                        
-                        <p>Van een kaart uit dezelfde serie en met hetzelfde kaartblad kunnen meerdere versies
-                           bestaan. Verschillende versies kunnen ontstaan zijn doordat kopieën van een kaart
-                           in het bezit kwamen van meerdere instanties die elk annotaties op hun eigen exemplaar
-                           geplaatst hebben. Een andere mogelijkheid is dat na tientallen jaren verder is getekend
-                           op een kaart - in tegenstelling tot het maken van een geheel nieuwe kaart waarbij
-                           een nieuwe kaartserie zou zijn ontstaan. Er kan, maar hoeft dus geen tijdsvolgorde
-                           te bestaan tussen verschillende versies. Om de gedachte aan een tijdsvolgorde te verminderen,
-                           worden versies niet met nummers maar met letters aangeduid.</p>
-                        </td>
-                  </tr>
-               </tbody>
-            </table>
-            </section><a class="anchor" id="detail_attribute_Model_Mijnkaart_kaartbereik"></a><section id="detail_attribute_Model_Mijnkaart_kaartbereik">
-            <h4>  kaartbereik</h4>
-            
-            <table style="width: 100%;">
-               <colgroup style="width: 30%;"></colgroup>
-               <colgroup style="width: 70%;"></colgroup>
-               <tbody>
-                  <tr>
-                     <th>Type gegeven</th>
-                     <td>Attribuut van Mijnkaart</td>
-                  </tr>
-                  <tr>
-                     <th>Definitie</th>
-                     <td>
-                        
-                        <p>Het geografische gebied dat op de kaart is afgebeeld, uitgedrukt in een geometrisch
-                           vlak.</p>
-                        </td>
-                  </tr>
-                  <tr>
-                     <th>Juridische status</th>
-                     <td>Authentiek</td>
-                  </tr>
-                  <tr>
-                     <th>Kardinaliteit</th>
-                     <td>1</td>
-                  </tr>
-                  <tr>
-                     <th>Domein</th>
-                     <td></td>
-                  </tr>
-                  <tr>
-                     <th>&nbsp;&nbsp;Naam</th>
-                     <td>GM_Envelope</td>
-                  </tr>
-                  <tr>
-                     <th>Materiële geschiedenis</th>
-                     <td>Nee</td>
                   </tr>
                </tbody>
             </table>
@@ -5572,7 +5572,7 @@
                   </tr>
                </tbody>
             </table>
-            </section><a class="anchor" id="detail_d49052e20159"></a><section id="detail_d49052e20159">
+            </section><a class="anchor" id="detail_d48982e20175"></a><section id="detail_d48982e20175">
             <h4>  holruimtecontour</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -5800,6 +5800,18 @@
                   </td>
             </tr>
             <tr>
+               <td>RDNAPTRANS2008MV0</td>
+               <td>✔</td>
+               <td>✔</td>
+               <td>
+                  
+                  <p>De gegevens zijn getransformeerd van RD naar ETRS89, gebruikmakend van de transformatie
+                     RDNAPTRANS™, versie 2008. De positie van het aardoppervlak is onbekend, bij transformatie
+                     is uitgegaan van 0 m NAP. RDNAPTRANS™ is de officiële transformatie tussen RD/NAP
+                     en ETRS89 afkomstig van het Kadaster.</p>
+                  </td>
+            </tr>
+            <tr>
                <td>RDNAPTRANS2018</td>
                <td>✔</td>
                <td>✔</td>
@@ -5810,18 +5822,6 @@
                      en ETRS89 afkomstig van het Kadaster, Rijkswaterstaat en de Dienst der Hydrografie
                      van de Koninklijke Marine in het samenwerkingsverband NSGI (Nederlandse Samenwerking
                      Geodetische Infrastructuur).</p>
-                  </td>
-            </tr>
-            <tr>
-               <td>RDNAPTRANS2008MV0</td>
-               <td>✔</td>
-               <td>✔</td>
-               <td>
-                  
-                  <p>De gegevens zijn getransformeerd van RD naar ETRS89, gebruikmakend van de transformatie
-                     RDNAPTRANS™, versie 2008. De positie van het aardoppervlak is onbekend, bij transformatie
-                     is uitgegaan van 0 m NAP. RDNAPTRANS™ is de officiële transformatie tussen RD/NAP
-                     en ETRS89 afkomstig van het Kadaster.</p>
                   </td>
             </tr>
             <tr>
@@ -6028,6 +6028,19 @@
                   </td>
             </tr>
             <tr>
+               <td>PPPGPS10tot50cm</td>
+               <td>✔</td>
+               <td>✔</td>
+               <td>
+                  
+                  <p>Meting d.m.v. PPP (Precise Point Positioning) satellietnavigatie, afwijking tussen
+                     10 en 50 cm. De nauwkeurigheid wordt bereikt wanneer de meting is uitgevoerd in korte
+                     tijd zonder Ambiguity Resolution. PPP maakt gebruik van een wereldwijd satellietnavigatiesysteem,
+                     Global Navigation Satellite System (GNSS). GNSS wordt in het dagelijks gebruik vaak
+                     aangeduid met GPS als verzamelnaam voor de 4 systemen GPS, Glonass, Galileo en Beidou.</p>
+                  </td>
+            </tr>
+            <tr>
                <td>PPPGPS2tot5cm</td>
                <td>✔</td>
                <td>✔</td>
@@ -6056,19 +6069,6 @@
                   </td>
             </tr>
             <tr>
-               <td>PPPGPS10tot50cm</td>
-               <td>✔</td>
-               <td>✔</td>
-               <td>
-                  
-                  <p>Meting d.m.v. PPP (Precise Point Positioning) satellietnavigatie, afwijking tussen
-                     10 en 50 cm. De nauwkeurigheid wordt bereikt wanneer de meting is uitgevoerd in korte
-                     tijd zonder Ambiguity Resolution. PPP maakt gebruik van een wereldwijd satellietnavigatiesysteem,
-                     Global Navigation Satellite System (GNSS). GNSS wordt in het dagelijks gebruik vaak
-                     aangeduid met GPS als verzamelnaam voor de 4 systemen GPS, Glonass, Galileo en Beidou.</p>
-                  </td>
-            </tr>
-            <tr>
                <td>RTKGPS0tot2cm</td>
                <td>✔</td>
                <td>✔</td>
@@ -6080,6 +6080,20 @@
                      gebruik van een wereldwijd satellietnavigatiesysteem, Global Navigation Satellite
                      System (GNSS). GNSS wordt in het dagelijks gebruik vaak aangeduid met GPS als verzamelnaam
                      voor de 4 systemen GPS, Glonass, Galileo en Beidou.</p>
+                  </td>
+            </tr>
+            <tr>
+               <td>RTKGPS10tot50cm</td>
+               <td>✔</td>
+               <td>✔</td>
+               <td>
+                  
+                  <p>Meting d.m.v. RTK (Real Time Kinematic) satellietnavigatie, in het dagelijks gebruik
+                     ook wel aangeduid als DGPS, afwijking tussen 10 en 50 cm. De nauwkeurigheid wordt
+                     bereikt wanneer de meting is uitgevoerd zonder Ambiguity Resolution (ook wel fix).
+                     RTK maakt gebruik van een wereldwijd satellietnavigatiesysteem, Global Navigation
+                     Satellite System (GNSS). GNSS wordt in het dagelijks gebruik vaak aangeduid met GPS
+                     als verzamelnaam voor de 4 systemen GPS, Glonass, Galileo en Beidou.</p>
                   </td>
             </tr>
             <tr>
@@ -6108,20 +6122,6 @@
                      gebruik van een wereldwijd satellietnavigatiesysteem, Global Navigation Satellite
                      System (GNSS). GNSS wordt in het dagelijks gebruik vaak aangeduid met GPS als verzamelnaam
                      voor de 4 systemen GPS, Glonass, Galileo en Beidou.</p>
-                  </td>
-            </tr>
-            <tr>
-               <td>RTKGPS10tot50cm</td>
-               <td>✔</td>
-               <td>✔</td>
-               <td>
-                  
-                  <p>Meting d.m.v. RTK (Real Time Kinematic) satellietnavigatie, in het dagelijks gebruik
-                     ook wel aangeduid als DGPS, afwijking tussen 10 en 50 cm. De nauwkeurigheid wordt
-                     bereikt wanneer de meting is uitgevoerd zonder Ambiguity Resolution (ook wel fix).
-                     RTK maakt gebruik van een wereldwijd satellietnavigatiesysteem, Global Navigation
-                     Satellite System (GNSS). GNSS wordt in het dagelijks gebruik vaak aangeduid met GPS
-                     als verzamelnaam voor de 4 systemen GPS, Glonass, Galileo en Beidou.</p>
                   </td>
             </tr>
             <tr>
@@ -6165,16 +6165,6 @@
                   </td>
             </tr>
             <tr>
-               <td>vectoriserenKaart500tot2000cm</td>
-               <td>✔</td>
-               <td>✔</td>
-               <td>
-                  
-                  <p>Locatie bepaald d.m.v. georefereren en vectoriseren van een analoge kaart, afwijking
-                     tussen 500 en 2000 cm.</p>
-                  </td>
-            </tr>
-            <tr>
                <td>vectoriserenKaart2000tot5000cm</td>
                <td>✔</td>
                <td>✔</td>
@@ -6182,6 +6172,16 @@
                   
                   <p>Locatie bepaald d.m.v. georefereren en vectoriseren van een analoge kaart, afwijking
                      tussen 2000 en 5000 cm.</p>
+                  </td>
+            </tr>
+            <tr>
+               <td>vectoriserenKaart500tot2000cm</td>
+               <td>✔</td>
+               <td>✔</td>
+               <td>
+                  
+                  <p>Locatie bepaald d.m.v. georefereren en vectoriseren van een analoge kaart, afwijking
+                     tussen 500 en 2000 cm.</p>
                   </td>
             </tr>
             <tr>
@@ -6299,15 +6299,6 @@
                <td>
                   
                   <p>Het winnen van delfstoffen op een diepte van meer dan 100 meter onder het aardoppervlak.</p>
-                  </td>
-            </tr>
-            <tr>
-               <td>winnenKalksteen</td>
-               <td>✔</td>
-               <td>✔</td>
-               <td>
-                  
-                  <p>Het winnen van kalksteen onder het aardoppervlak.</p>
                   </td>
             </tr>
          </tbody>
