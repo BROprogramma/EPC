@@ -15,7 +15,7 @@
    <body>
       <p>Conceptual model/Mijnbouwconstructies (EPC) - conceptueel/20210315</p>
       <p>Imvertor: 1.64.0</p>
-      <p>Model release: Conceptualmodel-MijnbouwconstructiesEPC-conceptueel-0.1versie27juli2020-1-20210315-20210420-145311</p>
+      <p>Model release: Conceptualmodel-MijnbouwconstructiesEPC-conceptueel-0.1versie27juli2020-1-20210315-20210420-152308</p>
       <hr>
       <section>
          <h1>Artikel 1 Definitie van registratieobject, entiteiten en attributen</h1>
@@ -632,7 +632,7 @@
                            </tr>
                         </tbody>
                      </table>
-                     </section><a class="anchor" id="detail_d50979e2392"></a><section id="detail_d50979e2392">
+                     </section><a class="anchor" id="detail_d51046e2392"></a><section id="detail_d51046e2392">
                      <h4>  constructiegeschiedenis</h4>
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -665,7 +665,7 @@
                            </tr>
                         </tbody>
                      </table>
-                  </section><a class="anchor" id="detail_d50979e2559"></a><section id="detail_d50979e2559">
+                  </section><a class="anchor" id="detail_d51046e2559"></a><section id="detail_d51046e2559">
                      <h4>  gestandaardiseerde locatie</h4>
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -710,7 +710,7 @@
                            </tr>
                         </tbody>
                      </table>
-                  </section><a class="anchor" id="detail_d50979e2767"></a><section id="detail_d50979e2767">
+                  </section><a class="anchor" id="detail_d51046e2767"></a><section id="detail_d51046e2767">
                      <h4>  levensduur</h4>
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -744,7 +744,7 @@
                            </tr>
                         </tbody>
                      </table>
-                  </section><a class="anchor" id="detail_d50979e2934"></a><section id="detail_d50979e2934">
+                  </section><a class="anchor" id="detail_d51046e2934"></a><section id="detail_d51046e2934">
                      <h4>  registratiegeschiedenis</h4>
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -1656,7 +1656,7 @@
                               </td>
                         </tr>
                      </tbody>
-                  </table><a class="anchor" id="detail_d50979e5816"></a><section id="detail_d50979e5816">
+                  </table><a class="anchor" id="detail_d51046e5816"></a><section id="detail_d51046e5816">
                      <h4>  gebeurtenis</h4>
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -2042,8 +2042,7 @@
                               <th>Definitie</th>
                               <td>
                                  
-                                 <p>De gegevens over de locatie van de oorsprong van het boorgat en over het bepalen van
-                                    die locatie.</p>
+                                 <p>De locatie van de oorsprong van het boorgat.</p>
                                  </td>
                            </tr>
                            <tr>
@@ -2063,12 +2062,23 @@
                               <td>GM_Point</td>
                            </tr>
                            <tr>
+                              <th>Regels</th>
+                              <td>
+                                 
+                                 <p>De locatie moet liggen in Nederland of zijn Exclusieve Economische Zone.<br clear="none">
+                                    Het referentiestelsel moet gelijk zijn aan ETRS89 of RD wanneer de locatie aan de
+                                    landzijde van de mijnbouwgrens ligt.<br clear="none">
+                                    Het referentiestelsel moet gelijk zijn aan ETRS89 of WGS84 wanneer de locatie aan
+                                    de landzijde van de mijnbouwgrens ligt.</p>
+                                 </td>
+                           </tr>
+                           <tr>
                               <th>Materiële geschiedenis</th>
                               <td>Nee</td>
                            </tr>
                         </tbody>
                      </table>
-                     </section><a class="anchor" id="detail_d50979e7501"></a><section id="detail_d50979e7501">
+                     </section><a class="anchor" id="detail_d51046e7537"></a><section id="detail_d51046e7537">
                      <h4>  aangeleverde verticale positie</h4>
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -3283,7 +3293,7 @@
                            </tr>
                         </tbody>
                      </table>
-                     </section><a class="anchor" id="detail_d50979e11549"></a><section id="detail_d50979e11549">
+                     </section><a class="anchor" id="detail_d51046e11585"></a><section id="detail_d51046e11585">
                      <h4>  Boortraject locatie</h4>
                      <table style="width: 100%;">
                         <colgroup style="width: 30%;"></colgroup>
@@ -3695,8 +3705,7 @@
                               <th>Definitie</th>
                               <td>
                                  
-                                 <p>Gegevens over de contour van het mijnstelsel, geprojecteerd op het aardoppervlak,
-                                    en over het bepalen van die contour.</p>
+                                 <p>De contour van het mijnstelsel, geprojecteerd op het aardoppervlak.</p>
                                  </td>
                            </tr>
                            <tr>
@@ -3714,6 +3723,15 @@
                            <tr>
                               <th>&nbsp;&nbsp;Naam</th>
                               <td>GM_MultiSurface</td>
+                           </tr>
+                           <tr>
+                              <th>Regels</th>
+                              <td>
+                                 
+                                 <p>Het gemijnd gebied mag gedeeltelijk buiten het grondgebied van Nederland of zijn Exclusieve
+                                    Economische zone liggen.<br clear="none">
+                                    Het referentiestelsel moet gelijk zijn aan ETRS89.</p>
+                                 </td>
                            </tr>
                            <tr>
                               <th>Materiële geschiedenis</th>
@@ -4221,8 +4239,7 @@
                               <th>Definitie</th>
                               <td>
                                  
-                                 <p>Gegevens over de plaats van de toegang op het aardoppervlak en over het bepalen van
-                                    die plaats.</p>
+                                 <p>De plaats van de toegang op het aardoppervlak.</p>
                                  </td>
                            </tr>
                            <tr>
@@ -4245,7 +4262,9 @@
                               <th>Regels</th>
                               <td>
                                  
-                                 <p>Locaties van toegangen mogen niet op elkaar liggen, ongeacht het mijnstelsel.</p>
+                                 <p>De locatie moet liggen in het gemijnd gebied van de entiteit <em>Mijnstelsel</em>.<br clear="none">
+                                    Het referentiestelsel moet gelijk zijn aan ETRS89.<br clear="none">
+                                    Locaties van toegangen mogen niet op elkaar liggen, ongeacht het mijnstelsel.</p>
                                  </td>
                            </tr>
                            <tr>
@@ -4429,8 +4448,7 @@
                               <th>Definitie</th>
                               <td>
                                  
-                                 <p>Gegevens over de contour van de transportzone, geprojecteerd op het aardoppervlak,
-                                    en over het bepalen van die contour.</p>
+                                 <p>De contour van de transportzone, geprojecteerd op het aardoppervlak.</p>
                                  </td>
                            </tr>
                            <tr>
@@ -4453,7 +4471,9 @@
                               <th>Regels</th>
                               <td>
                                  
-                                 <p>De gebieden van transportzones die tot hetzelfde <em>Mijnstelsel</em> behoren en dezelfde <em>verdieping</em> hebben, mogen elkaar niet overlappen.</p>
+                                 <p>Het gebied moet liggen in het gemijnd gebied van de entiteit <em>Mijnstelsel</em>.<br clear="none">
+                                    Het referentiestelsel moet gelijk zijn aan ETRS89.<br clear="none">
+                                    De gebieden van transportzones die tot hetzelfde <em>Mijnstelsel</em> behoren en dezelfde <em>verdieping</em> hebben, mogen elkaar niet overlappen.</p>
                                  </td>
                            </tr>
                            <tr>
@@ -4764,8 +4784,7 @@
                               <th>Definitie</th>
                               <td>
                                  
-                                 <p>Gegevens over de contour van de ontginningszone, geprojecteerd op het aardoppervlak,
-                                    en over het bepalen van die contour.</p>
+                                 <p>De contour van de ontginningszone, geprojecteerd op het aardoppervlak. </p>
                                  </td>
                            </tr>
                            <tr>
@@ -4788,7 +4807,9 @@
                               <th>Regels</th>
                               <td>
                                  
-                                 <p>De gebieden van ontginningszones die dezelfde <em>steenkoollaag</em> hebben, mogen elkaar niet overlappen.</p>
+                                 <p>Het gebied moet liggen in het gemijnd gebied van de entiteit <em>Mijnstelsel</em>.<br clear="none">
+                                    Het referentiestelsel moet gelijk zijn aan ETRS89.<br clear="none">
+                                    De gebieden van ontginningszones die dezelfde <em>steenkoollaag</em> hebben, mogen elkaar niet overlappen.</p>
                                  </td>
                            </tr>
                            <tr>
@@ -5716,6 +5737,17 @@
                            <tr>
                               <th>&nbsp;&nbsp;Naam</th>
                               <td>GM_Surface</td>
+                           </tr>
+                           <tr>
+                              <th>Regels</th>
+                              <td>
+                                 
+                                 <p>De holruimtecontour moet liggen in Nederland of zijn Exclusieve Economische zone.<br clear="none">
+                                    Het referentiestelsel moet gelijk zijn aan ETRS89 of RD wanneer de holruimtecontour
+                                    aan de landzijde van de mijnbouwgrens ligt.<br clear="none">
+                                    Het referentiestelsel moet gelijk zijn aan ETRS89 of WGS84 wanneer de holruimtecontour
+                                    aan de landzijde van de mijnbouwgrens ligt.</p>
+                                 </td>
                            </tr>
                            <tr>
                               <th>Materiële geschiedenis</th>
