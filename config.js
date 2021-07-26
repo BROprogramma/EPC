@@ -1,9 +1,13 @@
 var respecConfig = {
-  specStatus: "GN-VV",
+  specStatus: "GN-WV",
   specType: "IM",
   //subtitle: "",
   //canonicalURI: "VV",
+<<<<<<< HEAD
   publishDate: "2021-08-01",
+=======
+  //publishDate: "2021-07-21",
+>>>>>>> parent of 0475c11 (Update config.js)
   maxTocLevel: 4,	
 logos: [
   {
