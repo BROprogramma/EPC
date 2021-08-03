@@ -50,7 +50,7 @@
 <section id="Mijnbouwconstructie algemene inleiding">
 <h2>Mijnbouwconstructie - algemene inleiding</h2>
 <p>Binnen het domein mijnbouw is mijnbouwconstructie, naast mijnbouwwetvergunning, een van de twee registratieobjecten. De twee registratieobjecten hebben als relatie dat een mijnbouwconstructie is aangelegd of voor mijnbouwactiviteiten wordt gebruikt onder een mijnbouwwetvergunning. In de catalogus wordt dit toegelicht.</p>
-<p>In de registratie ondergrond worden drie soorten mijnbouwconstructies onderscheiden, namelijk boorgat, mijnstelsel en zoutcaverne. Onderstaande paragrafen zijn deels generiek voor de drie soorten, deels specifiek.</p>	
+<p>In de registratie ondergrond worden drie soorten mijnbouwconstructies onderscheiden, namelijk boorgat, mijnstelsel (steenkoolmijnen en kalksteengroeves) en zoutcaverne. Onderstaande paragrafen zijn deels generiek voor de drie soorten, deels specifiek.</p>	
 	<section id="Term mijnbouwconstructie">
 	<h3>Term 'mijnbouwconstructie'</h3>
 	<p>Gegevens over boorgaten, mijnstelsels en zoutcavernes worden aangeleverd in het kader van de mijnbouwwetgeving. De term mijnbouwwerk, die in deze wetgeving wordt gebruikt, wordt in de registratie ondergrond niet gehanteerd. Reden hiervoor is dat in die wetgeving met die term zowel het ondergrondse als het bovengrondse deel van een werk bedoeld wordt. Voor de registratie ondergrond is echter alleen het ondergrondse gedeelte relevant, dat wil zeggen wat zich beneden maaiveld of zeebodem bevindt.</p>			
@@ -71,7 +71,7 @@
 	<h3>Vertrouwelijkheid van gegevens</h3>
 	<p>Gegevens die aan de basisregistratie ondergrond zijn aangeleverd, zijn openbaar, tijdelijk niet-openbaar of permanent niet-openbaar.</p>
 	<p>Gegevens over de ondergrondse ligging van een boortraject hebben vanwege de mijnbouwwetgeving een vertrouwelijk karakter gedurende een periode van een aantal jaren vanaf het tijdstip waarop de gegevens door de vergunninghouder zijn verstrekt. Na deze periode zijn de gegevens openbaar raadpleegbaar via de basisregistratie ondergrond. Gegevens over de positie van een boorgat aan het aardoppervlak en over het bestaan van een boortraject hebben geen vertrouwelijk karakter.</p>	  
-	<p>Van mijnstelsels hebben liggingsgegevens van transport- en ontginningszones een permanent vertrouwelijk karakter voor zover het niet-steenkoolmijnen betreft.</p>
+	<p>Bij mijnstelsels geeft de bronhouder via een attribuut aan of de liggingsgegevens van transport- en ontginningszones ervan een permanent vertrouwelijk karakter hebben.</p>
 	</section>
 	
 	<section id="BoorgatenInleiding">
@@ -177,12 +177,12 @@
 		
 		<section id="Boorgaten">
 		<h4>Boorgaten</h4>
-		<p>In de Nederlandse ondergrond worden boorgaten gemaakt\ voor het opsporen en winnen van delfstoffen (zoals aardgas, aardolie en zout), het opsporen en winnen van aardwarmte (geothermie) en het ondergronds opslaan en terugwinnen van (delf)stoffen. In de Nederlandse ondergrond zijn boorgaten gerealiseerd met een geboorde afstand van meer dan 8 kilometer en tot op een loodrecht naar beneden gemeten diepte van ruim 5 kilometer.<br>In de basisregistratie ondergrond worden alleen boorgaten opgenomen die onder de Mijnbouwwet vallen. Hiervan is sprake als een boorgat is ontstaan bij een boring a) naar een diepte van meer dan 100 meter beneden de aardoppervlakte voor delfstoffen of voor het opslaan van stoffen in de ondergrond, of b) naar een diepte van meer dan 500 meter beneden de aardoppervlakte voor aardwarmte.</p>
+		<p>In de Nederlandse ondergrond worden boorgaten gemaakt voor het opsporen en winnen van delfstoffen (zoals aardgas, aardolie en zout), het opsporen en winnen van aardwarmte (geothermie) en het ondergronds opslaan en terugwinnen van (delf)stoffen. In de Nederlandse ondergrond zijn boorgaten gerealiseerd met een geboorde afstand van meer dan 8 kilometer en tot op een loodrecht naar beneden gemeten diepte van ruim 5 kilometer. <br>In de basisregistratie ondergrond worden alleen boorgaten opgenomen die onder de Mijnbouwwet vallen, uitgezonderd als het boorgat betrekking heeft op steenkool of kalksteen. Een boorgat valt onder de Mijnbouwwet als een boorgat is ontstaan bij een boring a) naar een diepte van meer dan 100 meter beneden de aardoppervlakte voor delfstoffen of voor het opslaan van stoffen in de ondergrond, of b) naar een diepte van meer dan 500 meter beneden de aardoppervlakte voor aardwarmte.</p>
 		</section>
 		
 		<section id="Mijnstelsels">
 		<h4>Mijnstelsels</h4>
-		<p>In de provincie Limburg zijn ondergrondse mijnstelsels aangelegd voor de winning van steenkool en kalksteen. In de kalksteen zijn ook ondergrondse stelsels aangelegd voor andere doeleinden dan het winnen van kalksteen.</p>
+		<p>In de provincie Limburg zijn ondergrondse mijnstelsels aangelegd voor de winning van steenkool en kalksteen. In de kalksteen zijn ook ondergrondse stelsels aangelegd voor andere doeleinden dan het winnen van kalksteen. Deze stelsels worden gerekend onder de kalksteengroeves.</p>
 		</section>
 		
 		<section id="Steenkoolmijnen">
@@ -446,15 +446,15 @@
 			<section id="mijnstelselEntiteit">
 			<h5>Mijnstelsel</h5>
 			<p>Een mijnstelsel is het geheel van ondergrondse structuren waaruit een mijn bestaat. Het omvat de toegangen, de transportzones en de ontginningszones. Mijnstelsel is gedefinieerd als subtype van de entiteit Mijnbouwconstructie. De gegevens die bij de entiteit Mijnbouwconstructie zijn gedefinieerd, gelden daarom ook voor zoutcaverne.</p>
-			<p>In <a href="#image014">figuur 14</a> is een 3D-model weergegeven van een steenkoolmijn met bovengrondse gebouwen, schacht (gemarkeerd met een blauwe stip), ondergrondse transportgang (gemarkeerd met een gele lijn) en ondergrondse ontginning van een schuin liggende steenkoollaag (gemarkeerd met een oranje lijn). Dit geheel vormt een mijnstelsel (gemarkeerd met een rode lijn).</p>
-			<p>In <a href="#image015">figuur 15</a> is de vertaling gegeven van het 3D-model naar de gegevens zoals ze middels 2D-objecten opgenomen worden in de basisregistratie ondergrond. De bovengrondse elementen zoals de gebouwen worden niet opgenomen. Schachten worden als punt-objecten opgenomen onder de entiteit Toegang. Transportzones en ontginningszones worden als multivlak-objecten opgenomen onder de entiteit Transportzone resp. Ontginningszone. Het mijnstelsel als geheel wordt opgenomen onder de entiteit Mijnstelsel als multivlak-object.</p>
+			<p>In <a href="#image014">figuur 14</a> is een 3D-model weergegeven van een steenkoolmijn met bovengrondse gebouwen, een schacht, een ondergrondse transportgang en een ondergrondse ontginning van een schuin liggende steenkoollaag. Dit geheel vormt een mijnstelsel (gemarkeerd met een rode lijn).</p>
+			<p>In <a href="#image015">figuur 15</a> is de vertaling gegeven van het 3D-model naar de gegevens zoals ze middels 2D-objecten opgenomen worden in de basisregistratie ondergrond. De bovengrondse elementen, de schachten, de transportgangen en de ondergrondse ontginningen worden niet opgenomen. Alleen het mijnstelsel als geheel wordt opgenomen onder de entiteit Mijnstelsel als multivlak-object.</p>
 			<p>Een 3D opname van een steenkoolmijn in de basisregistratie ondergrond is niet wenselijk. De hoogtegegevens van de ontginningen zijn weliswaar zeer nauwkeurig, maar door na-ijleffecten kan niet met zekerheid vastgesteld worden wat de huidige situatie is van dieptegegevens.</p>
 				<figure id='image014'>
-				<img src="./data/Images/3DSteenkoolmijn_Toegang_Transportzone_Ontginningszone.png" width="150"/>
+				<img src="./data/Images/3DSteenkoolmijn_Toegang_Transportzone_OntginningszoneV2.png" width="150"/>
 				<figcaption>: 3D-model van een steenkoolmijn met één toegang, één transportzone en één ontginningszone.</figcaption>
 				</figure>
 				<figure id='image015'>
-				<img src="./data/Images/2DSteenkoolmijn.png" width="150"/>
+				<img src="./data/Images/2DSteenkoolmijnV2.png" width="150"/>
 				<figcaption>: 2D-model van een steenkoolmijn als vertaling van het 3D-model ervan.</figcaption>
 				</figure>
 			<p>De meeste ondergrondse constructies in kalksteen zijn initieel als steengroeve gebruikt en worden in de basisregistratie ondergrond als soort mijnstelsel ‘kalksteengroeve’ opgenomen naar hun primaire gebruik. Het secundaire gebruik van de kalksteengroeve voor diverse doeleinden zoals champignonkweek, opslag, toerisme, enzovoorts wordt niet in de basisregistratie ondergrond opgenomen.</p>
