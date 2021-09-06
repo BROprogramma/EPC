@@ -3,11 +3,7 @@ var respecConfig = {
   specType: "IM",
   //subtitle: "",
   //canonicalURI: "VV",
-<<<<<<< HEAD
-  publishDate: "2021-08-01",
-=======
-  //publishDate: "2021-07-21",
->>>>>>> parent of 0475c11 (Update config.js)
+  //publishDate: "2021-08-01",
   maxTocLevel: 4,	
 logos: [
   {
