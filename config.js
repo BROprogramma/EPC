@@ -3,7 +3,7 @@ var respecConfig = {
   specType: "IM",
   //subtitle: "",
   //canonicalURI: "VV",
-  publishDate: "2021-10-07",
+  publishDate: "2021-09-07",
   maxTocLevel: 4,	
 logos: [
   {
@@ -28,7 +28,7 @@ logos: [
   shortName: "EPC",
   pubDomain: "bro",
   github: "https://github.com/BROprogramma/EPC",
-  //previousPublishDate: "2017-01-01",
+  //previousPublishDate: "2021-09-07",
   //previousStatus: "GN-CV",
   //localBiblio: {},
 };
