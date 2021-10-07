@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:brocom="http://www.broservices.nl/xsd/brocommon/3.0"
-           xmlns:dlogger="http://www.armatiek.nl/functions/dlogger-proxy"
-           xmlns:epccom="/1.0"
+           xmlns:epccom="http://www.broservices.nl/xsd/epccommon/1.0"
            xmlns:gml="http://www.opengis.net/gml/3.2"
            xmlns:gmlsf="http://www.opengis.net/gmlsf/2.0"
            xmlns:imf="http://www.imvertor.org/xsl/functions"
+           xmlns:imvert="http://www.imvertor.org/schema/system"
            xmlns:math="http://www.w3.org/2005/xpath-functions/math"
            xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           targetNamespace="/1.0"
+           targetNamespace="http://www.broservices.nl/xsd/epccommon/1.0"
            elementFormDefault="qualified"
            attributeFormDefault="unqualified"
            version="1.0.0">
-   
    <xs:annotation>
       <xs:appinfo source="http://schemas.opengis.net/gmlsfProfile/2.0/gmlsfLevels.xsd">
          <gmlsf:ComplianceLevel>0</gmlsf:ComplianceLevel>
@@ -19,26 +18,7 @@
    </xs:annotation>
    <xs:import namespace="http://www.broservices.nl/xsd/brocommon/3.0" schemaLocation="https://schema.broservices.nl/xsd/brocommon/3.0/brocommon.xsd"/>
    <xs:import namespace="http://www.opengis.net/gml/3.2" schemaLocation="https://schema.broservices.nl/profile/gml/1.0/gml-profile.xsd"/>
-   <xs:element name="Registrationobject" 
-               type="epccom:RegistrationobjectType"
-               substitutionGroup="gml:AbstractFeature">
-      <xs:annotation>
-         <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Name: Mijnbouwconstructie
-Definition: Het geheel van gegevens dat betrekking heeft op een mijnbouwwerk in de ondergrond die op een bepaalde locatie in Nederland, in zijn Exclusieve Economische Zone of in door verdragen vastgestelde ontginningszones op Duits en Belgisch grondgebied is ingericht voor het winnen of benutten van in de ondergrond aanwezige natuurlijke hulpbronnen en/of voor het opslaan van stoffen in de ondergrond.
-Explanation: De huidige gegevensdefinitie beperkt zich tot de gegevens met betrekking tot het ondergrondse gedeelte van mijnbouwwerken.</xs:documentation>
-      </xs:annotation>
-   </xs:element>
-   <xs:complexType name="RegistrationobjectType">
-      <xs:complexContent>
-         <xs:extension base="gml:AbstractFeatureType"/>
-      </xs:complexContent>
-   </xs:complexType>
-   <xs:complexType name="RegistrationobjectPropertyType">
-      <xs:sequence minOccurs="0">
-         <xs:element ref="epccom:Registrationobject"/>
-      </xs:sequence>
-      <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
-   </xs:complexType>
+   <!--<xs:import namespace="http://www.opengis.net/gml/3.2" schemaLocation="file:\\\C:\Apache24\htdocs\EPC\20201006 EPC logisch\gml-profile.xsd"/>-->
    <xs:element name="AbstractMiningConstruction"
                type="epccom:AbstractMiningConstructionType"
                abstract="true"
@@ -86,7 +66,7 @@ Explanation: De wettelijke status is optioneel wanneer de mijnbouwconstructie ee
 Explanation: De eigenaar van een boorgat is gelijk aan de vergunninghouder van de vergunning waar het boorgat onder valt. In het geval de vergunninghouder een consortium is, dan is de penvoerder van het consortium de eigenaar van het boorgat. In het geval het boorgat een alleenstaand geabandonneerd boorgat is, dan is de organisatie die eigenaar was ten tijde van de abandonnering de (laatste) eigenaar van het boorgat. In het geval het boorgat behoort tot een productie-installatie dan kan de eigenaar wijzigen tot het moment dat de gehele productie-installatie is geabandonneerd. De organisatie die eigenaar was ten tijde van de abandonnering van de gehele productie-installatie is de (laatste) eigenaar van het boorgat. De eigenaar van de zoutcaverne is gelijk aan de eigenaar van het boorgat of de boorgaten waarvan één of meerdere boortrajecten de zoutcaverne ontsluiten. In de praktijk komt het niet voor dat er verschillende eigenaren zijn van de boorgaten via welke een zoutcaverne wordt ontsloten.</xs:documentation>
                   </xs:annotation>
                </xs:element>
-               <xs:element minOccurs="1"
+               <xs:element minOccurs="0"
                            maxOccurs="1"
                            name="registrationHistory"
                            nillable="false"
@@ -95,7 +75,7 @@ Explanation: De eigenaar van een boorgat is gelijk aan de vergunninghouder van d
                      <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De geschiedenis van de mijnbouwconstructie in de registratie ondergrond.</xs:documentation>
                   </xs:annotation>
                </xs:element>
-               <xs:element minOccurs="1"
+               <xs:element minOccurs="0"
                            maxOccurs="1"
                            name="lifespan"
                            nillable="false"
@@ -104,7 +84,7 @@ Explanation: De eigenaar van een boorgat is gelijk aan de vergunninghouder van d
                      <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De periode gedurende welke de mijnbouwconstructie in de werkelijkheid bestaat of heeft bestaan.</xs:documentation>
                   </xs:annotation>
                </xs:element>
-               <xs:element minOccurs="1"
+               <xs:element minOccurs="0"
                            maxOccurs="1"
                            name="constructionHistory"
                            nillable="false"
@@ -129,7 +109,7 @@ Explanation: De eigenaar van een boorgat is gelijk aan de vergunninghouder van d
       <xs:sequence minOccurs="0">
          <xs:element ref="epccom:AbstractMiningConstruction"/>
       </xs:sequence>
-      <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+      <!--<xs:attributeGroup ref="gml:AssociationAttributeGroup"/>-->
    </xs:complexType>
    <xs:element name="Borehole"
                type="epccom:BoreholeType"
@@ -181,12 +161,12 @@ Explanation: De locatie van een boorgat hoeft zich niet op het aardoppervlak te 
                </xs:element>
                <xs:element minOccurs="1"
                            maxOccurs="unbounded"
-                           name="relatedBoreholeSegment"
+                           name="boreholeSegment"
                            nillable="false"
                            type="epccom:BoreholeSegmentPropertyType"/>
                <xs:element minOccurs="1"
                            maxOccurs="1"
-                           name="explorationProductionLicence"
+                           name="relatedExplorationProductionLicence"
                            nillable="false"
                            type="epccom:ExplorationProductionLicencePropertyType"/>
             </xs:sequence>
@@ -197,7 +177,7 @@ Explanation: De locatie van een boorgat hoeft zich niet op het aardoppervlak te 
       <xs:sequence minOccurs="0">
          <xs:element ref="epccom:Borehole"/>
       </xs:sequence>
-      <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+      <!--<xs:attributeGroup ref="gml:AssociationAttributeGroup"/>-->
    </xs:complexType>
    <xs:element name="BoreholeSegment"
                type="epccom:BoreholeSegmentType"
@@ -229,7 +209,7 @@ Explanation: In het werkveld is dit een herkenbare naam.</xs:documentation>
                   </xs:annotation>
                   <xs:simpleType>
                      <xs:restriction base="xs:string">
-                        <xs:length value="100"/>
+                        <xs:maxLength value="100"/>
                      </xs:restriction>
                   </xs:simpleType>
                </xs:element>
@@ -300,7 +280,7 @@ Explanation: De gegevens over de ligging van een boortraject hebben conform de m
       <xs:sequence minOccurs="0">
          <xs:element ref="epccom:BoreholeSegment"/>
       </xs:sequence>
-      <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+      <!--<xs:attributeGroup ref="gml:AssociationAttributeGroup"/>-->
    </xs:complexType>
    <xs:element name="Entrance"
                type="epccom:EntranceType"
@@ -330,7 +310,7 @@ Explanation: Er kan sprake zijn van verticale toegangen (schachten) of horizonta
                   </xs:annotation>
                   <xs:simpleType>
                      <xs:restriction base="xs:string">
-                        <xs:length value="100"/>
+                        <xs:maxLength value="100"/>
                      </xs:restriction>
                   </xs:simpleType>
                </xs:element>
@@ -341,7 +321,7 @@ Explanation: Er kunnen lokaal meer alternatieve benamingen in gebruik zijn om de
                   </xs:annotation>
                   <xs:simpleType>
                      <xs:restriction base="xs:string">
-                        <xs:length value="100"/>
+                        <xs:maxLength value="100"/>
                      </xs:restriction>
                   </xs:simpleType>
                </xs:element>
@@ -391,7 +371,7 @@ Explanation: Van een toegang die is afgegraven, is de locatie gelijk aan de loca
       <xs:sequence minOccurs="0">
          <xs:element ref="epccom:Entrance"/>
       </xs:sequence>
-      <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+      <!--<xs:attributeGroup ref="gml:AssociationAttributeGroup"/>-->
    </xs:complexType>
    <xs:element name="ExploitationZone"
                type="epccom:ExploitationZoneType"
@@ -421,7 +401,7 @@ Explanation: Bij niet-steenkoolmijnen is een veel voorkomende situatie dat een z
                   </xs:annotation>
                   <xs:simpleType>
                      <xs:restriction base="xs:string">
-                        <xs:length value="100"/>
+                        <xs:maxLength value="100"/>
                      </xs:restriction>
                   </xs:simpleType>
                </xs:element>
@@ -450,14 +430,8 @@ Explanation: Van een ontginningszone die is afgegraven, is het gebied gelijk aan
                      <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Indicatie of het attribuut gebied ontginningszone publiek toegankelijk is.</xs:documentation>
                   </xs:annotation>
                </xs:element>
-               <!-- De multisurface is nog niet geimplementeerd in het gml-profile. Totdat het profiel is gewijzigd wordt voor iedere geometrie een punt-geometrie gebruikt -->
-				<!--<xs:element name="area"
-                           type="gml:MultiSurfaceType"
-                           type="gml:PointPropertyType"
-                           minOccurs="1"
-                           maxOccurs="1">-->
                <xs:element name="area"
-                           type="gml:PointPropertyType"
+                           type="gml:MultiSurfaceType"
                            minOccurs="1"
                            maxOccurs="1">
                   <xs:annotation>
@@ -482,7 +456,7 @@ Explanation: Het gebied van een ontginningszone is publiek beschikbaar wanneer h
       <xs:sequence minOccurs="0">
          <xs:element ref="epccom:ExploitationZone"/>
       </xs:sequence>
-      <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+      <!--<xs:attributeGroup ref="gml:AssociationAttributeGroup"/>-->
    </xs:complexType>
    <xs:element name="ExplorationProductionLicence"
                type="epccom:ExplorationProductionLicenceType"
@@ -512,14 +486,14 @@ Explanation: Het registratieobject Mijnbouwwetvergunning wordt in de BRO gegeven
       <xs:sequence minOccurs="0">
          <xs:element ref="epccom:ExplorationProductionLicence"/>
       </xs:sequence>
-      <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+      <!--<xs:attributeGroup ref="gml:AssociationAttributeGroup"/>-->
    </xs:complexType>
    <xs:element name="MiningMap"
                type="epccom:MiningMapType"
                substitutionGroup="gml:AbstractFeature">
       <xs:annotation>
          <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Een geografische weergave van een gebied waar mijnbouwactiviteiten plaatsvinden of hebben plaatsgevonden.
-Explanation: Mijnkaarten van steenkoolmijnen zijn in de registratie ondergrond beschikbaar als gegevensbestanden in een bestandsformaat voor geogerefereerde afbeeldingen. Onder 'kaart' worden zowel afzonderlijke c.q. individuele kaartbladen verstaan als kaarten die samengesteld c.q. gecombineerd zijn uit meerdere individuele kaartbladen.</xs:documentation>
+Explanation: In de registratie ondergrond is een referentie opgenomen naar de mijnkaarten van steenkoolmijnen. Onder 'kaart' worden zowel afzonderlijke c.q. individuele kaartbladen verstaan als kaarten die samengesteld c.q. gecombineerd zijn uit meerdere individuele kaartbladen.</xs:documentation>
       </xs:annotation>
    </xs:element>
    <xs:complexType name="MiningMapType">
@@ -533,7 +507,7 @@ Explanation: De mijnkaartcode bestaat uit de volgende elementen, deels afhankeli
                   </xs:annotation>
                   <xs:simpleType>
                      <xs:restriction base="xs:string">
-                        <xs:length value="53"/>
+                        <xs:maxLength value="53"/>
                      </xs:restriction>
                   </xs:simpleType>
                </xs:element>
@@ -544,7 +518,7 @@ Explanation: Een verdieping binnen een mijnstelsel wordt uitgedrukt als het aant
                   </xs:annotation>
                   <xs:simpleType>
                      <xs:restriction base="xs:string">
-                        <xs:length value="8"/>
+                        <xs:maxLength value="8"/>
                      </xs:restriction>
                   </xs:simpleType>
                </xs:element>
@@ -568,7 +542,7 @@ Explanation: Door het Geologisch Bureau (afgekort: GB) is aan iedere steenkoolla
                   </xs:annotation>
                   <xs:simpleType>
                      <xs:restriction base="xs:string">
-                        <xs:length value="15"/>
+                        <xs:maxLength value="15"/>
                      </xs:restriction>
                   </xs:simpleType>
                </xs:element>
@@ -579,7 +553,7 @@ Explanation: Een kaartserie wordt gebruikt om aan te geven dat er samenhang is t
                   </xs:annotation>
                   <xs:simpleType>
                      <xs:restriction base="xs:string">
-                        <xs:length value="1"/>
+                        <xs:maxLength value="1"/>
                      </xs:restriction>
                   </xs:simpleType>
                </xs:element>
@@ -590,7 +564,7 @@ Explanation: In de registratie ondergrond wordt voor mijnkaarten geen onderschei
                   </xs:annotation>
                   <xs:simpleType>
                      <xs:restriction base="xs:string">
-                        <xs:length value="15"/>
+                        <xs:maxLength value="15"/>
                      </xs:restriction>
                   </xs:simpleType>
                </xs:element>
@@ -601,7 +575,7 @@ Explanation: Van een kaart uit dezelfde serie en met hetzelfde kaartblad kunnen 
                   </xs:annotation>
                   <xs:simpleType>
                      <xs:restriction base="xs:string">
-                        <xs:length value="1"/>
+                        <xs:maxLength value="1"/>
                      </xs:restriction>
                   </xs:simpleType>
                </xs:element>
@@ -621,7 +595,7 @@ Explanation: Van een kaart uit dezelfde serie en met hetzelfde kaartblad kunnen 
       <xs:sequence minOccurs="0">
          <xs:element ref="epccom:MiningMap"/>
       </xs:sequence>
-      <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+      <!--<xs:attributeGroup ref="gml:AssociationAttributeGroup"/>-->
    </xs:complexType>
    <xs:element name="MiningSystem"
                type="epccom:MiningSystemType"
@@ -640,7 +614,7 @@ Explanation: Van een kaart uit dezelfde serie en met hetzelfde kaartblad kunnen 
                   </xs:annotation>
                   <xs:simpleType>
                      <xs:restriction base="xs:string">
-                        <xs:length value="100"/>
+                        <xs:maxLength value="100"/>
                      </xs:restriction>
                   </xs:simpleType>
                </xs:element>
@@ -651,7 +625,7 @@ Explanation: Een code is bij steenkoolmijnen verplicht omdat deze code opgenomen
                   </xs:annotation>
                   <xs:simpleType>
                      <xs:restriction base="xs:string">
-                        <xs:length value="5"/>
+                        <xs:maxLength value="5"/>
                      </xs:restriction>
                   </xs:simpleType>
                </xs:element>
@@ -662,7 +636,7 @@ Explanation: Er kunnen lokaal meer alternatieve benamingen in gebruik zijn om he
                   </xs:annotation>
                   <xs:simpleType>
                      <xs:restriction base="xs:string">
-                        <xs:length value="100"/>
+                        <xs:maxLength value="100"/>
                      </xs:restriction>
                   </xs:simpleType>
                </xs:element>
@@ -687,14 +661,8 @@ Explanation: Er kunnen lokaal meer alternatieve benamingen in gebruik zijn om he
 Explanation: Van een mijnstelsel dat is afgegraven, is het gemijnd gebied gelijk aan de contour zoals die was juist voordat het mijnstelsel volledig werd afgegraven.</xs:documentation>
                   </xs:annotation>
                </xs:element>
-               <!-- De multisurface is nog niet geimplementeerd in het gml-profile. Totdat het profiel is gewijzigd wordt voor iedere geometrie een punt-geometrie gebruikt -->
-               <!--<xs:element name="miningArea"
+               <xs:element name="miningArea"
                            type="gml:MultiSurfaceType"
-                           minOccurs="1"
-                           maxOccurs="1">
-                  <xs:annotation>-->
-                  <xs:element name="miningArea"
-                           type="gml:PointType"
                            minOccurs="1"
                            maxOccurs="1">
                   <xs:annotation>
@@ -720,26 +688,26 @@ Explanation: Van een mijnstelsel dat is afgegraven, is het gemijnd gebied gelijk
 Explanation: De locatie van een mijnstelsel bevindt zich niet op het aardoppervlak, het is een projectie op het aardoppervlak van de maximale ondergrondse contour ervan.</xs:documentation>
                   </xs:annotation>
                </xs:element>
-               <xs:element minOccurs="0"
+               <xs:element minOccurs="1"
                            maxOccurs="unbounded"
-                           name="entrance"
+                           name="productionLicence"
                            nillable="false"
-                           type="epccom:EntrancePropertyType"/>
+                           type="epccom:ExplorationProductionLicencePropertyType"/>
                <xs:element minOccurs="0"
                            maxOccurs="unbounded"
-                           name="transportationZone"
+                           name="relatedExploitationZone"
+                           nillable="false"
+                           type="epccom:ExploitationZonePropertyType"/>
+               <xs:element minOccurs="0"
+                           maxOccurs="unbounded"
+                           name="relatedTransportzone"
                            nillable="false"
                            type="epccom:TransportationZonePropertyType"/>
                <xs:element minOccurs="0"
                            maxOccurs="unbounded"
-                           name="exploitationZone"
+                           name="relatedEntrance"
                            nillable="false"
-                           type="epccom:ExploitationZonePropertyType"/>
-               <xs:element minOccurs="1"
-                           maxOccurs="unbounded"
-                           name="explorationProductionLicence"
-                           nillable="false"
-                           type="epccom:ExplorationProductionLicencePropertyType"/>
+                           type="epccom:EntrancePropertyType"/>
                <xs:element minOccurs="0"
                            maxOccurs="unbounded"
                            name="miningMap"
@@ -753,7 +721,64 @@ Explanation: De locatie van een mijnstelsel bevindt zich niet op het aardoppervl
       <xs:sequence minOccurs="0">
          <xs:element ref="epccom:MiningSystem"/>
       </xs:sequence>
-      <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+      <!--<xs:attributeGroup ref="gml:AssociationAttributeGroup"/>-->
+   </xs:complexType>
+   <xs:element name="Registrationobject"
+               type="epccom:RegistrationobjectType"
+               substitutionGroup="gml:AbstractFeature">
+      <xs:annotation>
+         <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Name: Mijnbouwconstructie
+Definition: Het geheel van gegevens dat betrekking heeft op een mijnbouwwerk in de ondergrond die op een bepaalde locatie in Nederland, in zijn Exclusieve Economische Zone of in door verdragen vastgestelde ontginningszones op Duits en Belgisch grondgebied is ingericht voor het winnen of benutten van in de ondergrond aanwezige natuurlijke hulpbronnen en/of voor het opslaan van stoffen in de ondergrond.
+Explanation: De huidige gegevensdefinitie beperkt zich tot de gegevens met betrekking tot het ondergrondse gedeelte van mijnbouwwerken.</xs:documentation>
+      </xs:annotation>
+   </xs:element>
+   <xs:complexType name="RegistrationobjectType">
+      <xs:complexContent>
+         <xs:extension base="gml:AbstractFeatureType">
+            <xs:sequence>
+               <xs:element name="objectIdAccountableParty"
+                           type="brocom:OrganizationType"
+                           minOccurs="1"
+                           maxOccurs="1"/>
+               <xs:element name="deliveryContext"
+                           minOccurs="1"
+                           maxOccurs="1"
+                           type="epccom:DeliveryContextType">
+                  <xs:annotation>
+                     <xs:appinfo>
+                        <CodeListName>DeliveryContext</CodeListName>
+                        <CodeListURI/>
+                     </xs:appinfo>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="legalStatus"
+                           minOccurs="1"
+                           maxOccurs="1"
+                           type="epccom:LegalStatusType">
+                  <xs:annotation>
+                     <xs:appinfo>
+                        <CodeListName>LegalStatus</CodeListName>
+                        <CodeListURI/>
+                     </xs:appinfo>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="owner"
+                           type="brocom:OrganizationType"
+                           minOccurs="1"
+                           maxOccurs="1"/>
+               <xs:element name="sourceReference"
+                           type="brocom:OrganizationType"
+                           minOccurs="1"
+                           maxOccurs="1"/>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType name="RegistrationobjectPropertyType">
+      <xs:sequence minOccurs="0">
+         <xs:element ref="epccom:Registrationobject"/>
+      </xs:sequence>
+      <!--<xs:attributeGroup ref="gml:AssociationAttributeGroup"/>-->
    </xs:complexType>
    <xs:element name="SaltCavern"
                type="epccom:SaltCavernType"
@@ -814,7 +839,7 @@ Explanation: De locatie van de zoutcaverne ligt niet op het aardoppervlak, het i
                </xs:element>
                <xs:element minOccurs="1"
                            maxOccurs="unbounded"
-                           name="boreholeSegment"
+                           name="relatedBoreholeSegment"
                            nillable="false"
                            type="epccom:BoreholeSegmentPropertyType"/>
             </xs:sequence>
@@ -825,7 +850,7 @@ Explanation: De locatie van de zoutcaverne ligt niet op het aardoppervlak, het i
       <xs:sequence minOccurs="0">
          <xs:element ref="epccom:SaltCavern"/>
       </xs:sequence>
-      <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+      <!--<xs:attributeGroup ref="gml:AssociationAttributeGroup"/>-->
    </xs:complexType>
    <xs:element name="TransportationZone"
                type="epccom:TransportationZoneType"
@@ -854,7 +879,7 @@ Explanation: De locatie van de zoutcaverne ligt niet op het aardoppervlak, het i
                   </xs:annotation>
                   <xs:simpleType>
                      <xs:restriction base="xs:string">
-                        <xs:length value="100"/>
+                        <xs:maxLength value="100"/>
                      </xs:restriction>
                   </xs:simpleType>
                </xs:element>
@@ -875,13 +900,8 @@ Explanation: Van een transportzone die is afgegraven, is het gebied gelijk aan d
                      <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Indicatie of het attribuut gebied transportzone publiek toegankelijk is.</xs:documentation>
                   </xs:annotation>
                </xs:element>
-               <!-- De multisurface is nog niet geimplementeerd in het gml-profile. Totdat het profiel is gewijzigd wordt voor iedere geometrie een punt-geometrie gebruikt -->
-               <!--<xs:element name="area"
+               <xs:element name="area"
                            type="gml:MultiSurfaceType"
-                           minOccurs="1"
-                           maxOccurs="1">-->
-                <xs:element name="area"
-                           type="gml:PointType"
                            minOccurs="1"
                            maxOccurs="1">
                   <xs:annotation>
@@ -906,7 +926,7 @@ Explanation: Het gebied van een transportzone is publiek beschikbaar wanneer het
       <xs:sequence minOccurs="0">
          <xs:element ref="epccom:TransportationZone"/>
       </xs:sequence>
-      <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+      <!--<xs:attributeGroup ref="gml:AssociationAttributeGroup"/>-->
    </xs:complexType>
    <xs:complexType name="BoreholeSegmentLocationType">
       <xs:sequence>
@@ -936,13 +956,8 @@ Explanation: Binnen het vakgebied mijnbouw is dit gegeven ook bekend onder de na
                </xs:simpleContent>
             </xs:complexType>
          </xs:element>
-         <!-- De curve is nog niet geimplementeerd in het gml-profile. Totdat het profiel is gewijzigd wordt voor iedere geometrie een punt-geometrie gebruikt -->
-		<!--<xs:element name="geometry"
-                     type="gml:CurveType"
-                     minOccurs="1"
-                     maxOccurs="1">-->	 
          <xs:element name="geometry"
-                     type="gml:PointType"
+                     type="gml:CurveType"
                      minOccurs="1"
                      maxOccurs="1">
             <xs:annotation>
@@ -1114,13 +1129,8 @@ Explanation: Bij een boorgat betreft dit de datum waarop het boren van het prima
    </xs:complexType>
    <xs:complexType name="StandardizedLocationType">
       <xs:sequence>
-      <!-- De multisurface is nog niet geimplementeerd in het gml-profile. Totdat het profiel is gewijzigd wordt voor iedere geometrie een punt-geometrie gebruikt -->
-		<!--<xs:element name="location"
-                     type="gml:MultiSurfaceType"
-                     minOccurs="1"
-                     maxOccurs="1">-->	 
          <xs:element name="location"
-                     type="gml:PointType"
+                     type="gml:MultiSurfaceType"
                      minOccurs="1"
                      maxOccurs="1">
             <xs:annotation>
