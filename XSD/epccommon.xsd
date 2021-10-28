@@ -16,8 +16,12 @@
          <gmlsf:ComplianceLevel>0</gmlsf:ComplianceLevel>
       </xs:appinfo>
    </xs:annotation>
+   <xs:import namespace="http://www.broservices.nl/xsd/brocommon/3.0" schemaLocation="brocommon.xsd"/>
+   <xs:import namespace="http://www.opengis.net/gml/3.2" schemaLocation="gml-profile.xsd"/>
+   <!--
    <xs:import namespace="http://www.broservices.nl/xsd/brocommon/3.0" schemaLocation="https://schema.broservices.nl/xsd/brocommon/3.0/brocommon.xsd"/>
    <xs:import namespace="http://www.opengis.net/gml/3.2" schemaLocation="https://schema.broservices.nl/profile/gml/1.0/gml-profile.xsd"/>
+   -->
    <!--<xs:import namespace="http://www.opengis.net/gml/3.2" schemaLocation="file:\\\C:\Apache24\htdocs\EPC\20201006 EPC logisch\gml-profile.xsd"/>-->
    <xs:element name="AbstractMiningConstruction"
                type="epccom:AbstractMiningConstructionType"
@@ -140,7 +144,7 @@ Explanation: Een boorgat valt onder de Mijnbouwwet wanneer bij een boring naar d
                      <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De gegevens over het bepalen van de locatie van de oorsprong van het boorgat.</xs:documentation>
                   </xs:annotation>
                </xs:element>
-               <xs:element minOccurs="1"
+               <xs:element minOccurs="0"
                            maxOccurs="1"
                            name="standardizedLocation"
                            nillable="false"
@@ -432,7 +436,7 @@ Explanation: Van een ontginningszone die is afgegraven, is het gebied gelijk aan
                </xs:element>
                <xs:element name="area"
                            type="gml:MultiSurfaceType"
-                           minOccurs="1"
+                           minOccurs="0"
                            maxOccurs="1">
                   <xs:annotation>
                      <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De contour van de ontginningszone, geprojecteerd op het aardoppervlak.
@@ -678,7 +682,7 @@ Explanation: Van een mijnstelsel dat is afgegraven, is het gemijnd gebied gelijk
                      <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De gegevens over het bepalen van het gemijnd gebied.</xs:documentation>
                   </xs:annotation>
                </xs:element>
-               <xs:element minOccurs="1"
+               <xs:element minOccurs="0"
                            maxOccurs="1"
                            name="standardizedLocation"
                            nillable="false"
@@ -820,14 +824,14 @@ Explanation: De holruimtecontrour is publiek beschikbaar wanneer het attribuut o
                </xs:element>
                <xs:element minOccurs="0"
                            maxOccurs="1"
-                           name="horizontalPositioningArea"
+                           name="horizontalPositioningCavernContour"
                            nillable="false"
                            type="epccom:HorizontalPositioningType">
                   <xs:annotation>
                      <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De gegevens over het bepalen van de holruimtecontour van de zoutcaverne.</xs:documentation>
                   </xs:annotation>
                </xs:element>
-               <xs:element minOccurs="1"
+               <xs:element minOccurs="0"
                            maxOccurs="1"
                            name="standardizedLocation"
                            nillable="false"
@@ -902,7 +906,7 @@ Explanation: Van een transportzone die is afgegraven, is het gebied gelijk aan d
                </xs:element>
                <xs:element name="area"
                            type="gml:MultiSurfaceType"
-                           minOccurs="1"
+                           minOccurs="0"
                            maxOccurs="1">
                   <xs:annotation>
                      <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De contour van de transportzone, geprojecteerd op het aardoppervlak.
