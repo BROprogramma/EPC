@@ -12,17 +12,30 @@
     terzake tussen de partijen gesloten overeenkomst.
 
 -->
-<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gml="http://www.opengis.net/gml/3.2" version="0.0.3-3.2.1" elementFormDefault="qualified" targetNamespace="http://www.opengis.net/gml/3.2">
+<schema 
+	xmlns="http://www.w3.org/2001/XMLSchema" 
+	xmlns:xlink="http://www.w3.org/1999/xlink" 
+	xmlns:gml="http://www.opengis.net/gml/3.2" 
+	targetNamespace="http://www.opengis.net/gml/3.2" 
+	elementFormDefault="qualified" 
+	version="0.0.3-3.2.1">
+	<!--
+	This schema is provided by BRO as a local copy, as a convenience to the user. This schema may itself reference a local copy of the schema originally referenced by URI. The local reference takes the form of a relative path, and is introduced by BRO.
+	-->
+
 	<annotation>
 		<documentation>GML 3.2.0 profile for BRO.
-        0.0.1-3.2.1: Based on gml:AbstractFeature, gml:ReferenceType, gml:PointPropertyType, gml:EnvelopeType, gml:MeasureType, gml:TimeInstantPropertyType, (gml:CodeWithAuthorityType)</documentation>
+        0.0.1-3.2.1: Based on gml:AbstractFeature, gml:ReferenceType, gml:PointPropertyType, gml:EnvelopeType, gml:MeasureType, gml:TimeInstantPropertyType, (gml:CodeWithAuthorityType)
+        </documentation>
 		<documentation>GML 3.2.1 profile for BRO.
         0.0.2-3.2.1:anyURI toegevoegd aan TimePositionUnion</documentation>
 		<documentation>GML 3.3.0 profile for BRO.
         0.0.3-3.2.1: June 2021: Added Curve, MultiPoint, MultiSurface; Adjusted SurfaceType</documentation>
 	</annotation>
-	<import namespace="http://www.w3.org/1999/xlink" schemaLocation="xlink-profile.xsd"/>
+
 	<!--import namespace="http://www.w3.org/1999/xlink" schemaLocation="https://schema.broservices.nl/profile/xlink/1.0/xlink-profile.xsd"/-->
+	<import namespace="http://www.w3.org/1999/xlink" schemaLocation="xlink-profile.xsd"/>
+
 	<!-- ================================================= -->
 	<element name="AbstractFeature" type="gml:AbstractFeatureType" abstract="true" substitutionGroup="gml:AbstractGML"/>
 	<!-- ================================================= -->
