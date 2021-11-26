@@ -12,8 +12,14 @@
     terzake tussen de partijen gesloten overeenkomst.
 
 -->
-<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:brocom="http://www.broservices.nl/xsd/brocommon/3.0" targetNamespace="http://www.broservices.nl/xsd/brocommon/3.0" elementFormDefault="qualified" version="3.0.5">
-	<import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://localhost/gml/gml-profile.xsd"/>
+<schema 	xmlns="http://www.w3.org/2001/XMLSchema" 
+		xmlns:gml="http://www.opengis.net/gml/3.2" 
+		xmlns:brocom="http://www.broservices.nl/xsd/brocommon/3.0" 
+		targetNamespace="http://www.broservices.nl/xsd/brocommon/3.0" 
+		elementFormDefault="qualified" 
+		version="3.0.5">
+
+	<import namespace="http://www.opengis.net/gml/3.2" schemaLocation="gml-profile.xsd"/>
 	<annotation>
 		<documentation>
             This XSD describes the complex types, simple types common to the entire BRO.

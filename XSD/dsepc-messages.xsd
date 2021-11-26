@@ -1,4 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    Copyright TNO Geologische Dienst Nederland
+
+    Alle rechten voorbehouden.
+    Niets uit deze software mag worden vermenigvuldigd en/of openbaar gemaakt door middel van druk, fotokopie,
+    microfilm of op welke andere wijze dan ook, zonder voorafgaande toestemming van TNO.
+
+    Indien deze software in opdracht werd uitgebracht, wordt voor de rechten en verplichtingen van opdrachtgever
+    en opdrachtnemer verwezen naar de Algemene Voorwaarden voor opdrachten aan TNO, dan wel de betreffende
+    terzake tussen de partijen gesloten overeenkomst.
+
+-->
 <xs:schema xmlns:brocom="http://www.broservices.nl/xsd/brocommon/3.0"
            xmlns:dsepc="http://www.broservices.nl/xsd/dsepc/1.0"
            xmlns:epccom="http://www.broservices.nl/xsd/epccommon/1.0"
@@ -8,1003 +21,1040 @@
            targetNamespace="http://www.broservices.nl/xsd/dsepc/1.0"
            elementFormDefault="qualified"
            attributeFormDefault="unqualified"
-           version="1.0.0">
-   <xs:annotation>
-      <xs:appinfo source="http://schemas.opengis.net/gmlsfProfile/2.0/gmlsfLevels.xsd">
-         <gmlsf:ComplianceLevel>0</gmlsf:ComplianceLevel>
-      </xs:appinfo>
-   </xs:annotation>
-   <!--<xs:import namespace="http://www.broservices.nl/xsd/epccommon/1.0" schemaLocation="https://schema.broservices.nl/xsd/isepc/1.0/epccommon.xsd"/>-->
-   <xs:import namespace="http://www.broservices.nl/xsd/epccommon/1.0" schemaLocation="file:\\\C:\Apache24\htdocs\EPC\20201006 EPC logisch\epccommon.xsd"/>
-   <xs:import namespace="http://www.broservices.nl/xsd/brocommon/3.0" schemaLocation="https://schema.broservices.nl/xsd/brocommon/3.0/brocommon.xsd"/>
-   <xs:import namespace="http://www.opengis.net/gml/3.2" schemaLocation="https://schema.broservices.nl/profile/gml/1.0/gml-profile.xsd"/>
-   <xs:element name="AbstractMiningConstruction"
-               type="dsepc:AbstractMiningConstructionType"
-               substitutionGroup="gml:AbstractFeature"/>
-   <xs:complexType name="AbstractMiningConstructionType">
-      <xs:complexContent>
-         <xs:extension base="gml:AbstractFeatureType">
-            <xs:sequence>
-               <xs:element name="objectIdAccountableParty"
-                           minOccurs="1"
-                           maxOccurs="1"
-                           type="xs:string"/>
-               <xs:element name="deliveryContext"
-                           minOccurs="1"
-                           maxOccurs="1"
-                           type="epccom:DeliveryContextType">
-                  <xs:annotation>
-                     <xs:appinfo>
-                        <CodeListName>DeliveryContext</CodeListName>
-                        <CodeListURI/>
-                     </xs:appinfo>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De rechtsgrond op basis waarvan, of bij afwezigheid daarvan, de activiteit naar aanleiding waarvan, het betreffende gegeven is aangeleverd aan de basisregistratie ondergrond.
-Explanation: De wetgever stipuleert dat het gegeven moet zijn vastgelegd om inzicht te geven in de relatie met de taken van een bestuursorgaan. Het gegeven geeft inzicht in de maatschappelijke betekenis van de informatie. Het kader waarbinnen mijnbouwwetvergunningen worden verleend is de Mijnbouwwet uit 2003. Er wordt geen onderscheid gemaakt naar versies.</xs:documentation>
-                  </xs:annotation>
-               </xs:element>
-               <xs:element name="legalStatus"
-                           minOccurs="0"
-                           maxOccurs="1"
-                           type="epccom:LegalStatusType">
-                  <xs:annotation>
-                     <xs:appinfo>
-                        <CodeListName>LegalStatus</CodeListName>
-                        <CodeListURI/>
-                     </xs:appinfo>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De status van een mijnbouwconstructie op basis van de mijnbouwwetgeving.
-Explanation: De wettelijke status is optioneel wanneer de mijnbouwconstructie een zoutcaverne is. Een mijnstelsel kan in gebruik zijn voor zowel mijnbouwactiviteiten als voor andere doeleinden (bijv. toerisme). In de registratie ondergrond wordt niet vastgelegd dat een mijnstelsel in gebruik is voor andere doeleinden. Als een mijnstelsel in het geheel niet meer wordt gebruikt of uitsluitend voor andere doeleinden dan geldt de wettelijke status 'BuitenGebruikMijnbouw'.</xs:documentation>
-                  </xs:annotation>
-               </xs:element>
-               <xs:element name="owner"
-                           minOccurs="1"
-                           maxOccurs="1"
-                           type="brocom:OrganizationType">
-                  <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het KvK-nummer van de onderneming of de maatschappelijke activiteit van de rechtspersoon die eigenaar is van het object dat aan de basisregistratie ondergrond is aangeleverd door de dataleverancier, of het equivalent daarvan in een handelsregister van een andere lidstaat van de Europese Unie dan Nederland.
-Explanation: De eigenaar van een boorgat is gelijk aan de vergunninghouder van de vergunning waar het boorgat onder valt. In het geval de vergunninghouder een consortium is, dan is de penvoerder van het consortium de eigenaar van het boorgat. In het geval het boorgat een alleenstaand geabandonneerd boorgat is, dan is de organisatie die eigenaar was ten tijde van de abandonnering de (laatste) eigenaar van het boorgat. In het geval het boorgat behoort tot een productie-installatie dan kan de eigenaar wijzigen tot het moment dat de gehele productie-installatie is geabandonneerd. De organisatie die eigenaar was ten tijde van de abandonnering van de gehele productie-installatie is de (laatste) eigenaar van het boorgat. De eigenaar van de zoutcaverne is gelijk aan de eigenaar van het boorgat of de boorgaten waarvan één of meerdere boortrajecten de zoutcaverne ontsluiten. In de praktijk komt het niet voor dat er verschillende eigenaren zijn van de boorgaten via welke een zoutcaverne wordt ontsloten.</xs:documentation>
-                  </xs:annotation>
-               </xs:element>
-               <xs:element minOccurs="0"
-                           maxOccurs="1"
-                           name="registrationHistory"
-                           nillable="false"
-                           type="brocom:RegistrationHistoryType">
-                  <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De geschiedenis van de mijnbouwconstructie in de registratie ondergrond.</xs:documentation>
-                  </xs:annotation>
-               </xs:element>
-               <xs:element minOccurs="0"
-                           maxOccurs="1"
-                           name="lifespan"
-                           nillable="false"
-                           type="epccom:MiningConstructionHistoryType">
-                  <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De periode gedurende welke de mijnbouwconstructie in de werkelijkheid bestaat of heeft bestaan.</xs:documentation>
-                  </xs:annotation>
-               </xs:element>
-               <xs:element minOccurs="0"
-                           maxOccurs="1"
-                           name="constructionHistory"
-                           nillable="false"
-                           type="epccom:ConstructionHistoryType">
-                  <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De geschiedenis van de mijnbouwconstructie in de werkelijkheid.</xs:documentation>
-                  </xs:annotation>
-               </xs:element>
-               <xs:element name="sourceReference"
-                           minOccurs="1"
-                           maxOccurs="1"
-                           type="brocom:OrganizationType">
-                  <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De organisatie die meer gegevens over ofwel extra toelichting op de mijnbouwconstructie kan leveren.</xs:documentation>
-                  </xs:annotation>
-               </xs:element>
-            </xs:sequence>
-         </xs:extension>
-      </xs:complexContent>
-   </xs:complexType>
-   <xs:complexType name="AbstractMiningConstructionPropertyType">
-      <xs:sequence minOccurs="0">
-         <xs:element ref="dsepc:AbstractMiningConstruction"/>
-      </xs:sequence>
-      <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
-   </xs:complexType>
-   <xs:element name="Borehole"
-               type="dsepc:BoreholeType"
-               substitutionGroup="dsepc:EPC_PO_DP"/>
-   <xs:complexType name="BoreholeType">
-      <xs:complexContent>
-         <xs:extension base="dsepc:EPC_PO_DPType">
-            <xs:sequence>
-               <xs:element name="location"
-                           type="gml:PointPropertyType"
-                           minOccurs="1"
-                           maxOccurs="1">
-                  <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De locatie van de oorsprong van het boorgat.</xs:documentation>
-                  </xs:annotation>
-               </xs:element>
-               <xs:element minOccurs="1"
-                           maxOccurs="1"
-                           name="horizontalPositioning"
-                           nillable="false"
-                           type="epccom:HorizontalPositioningType">
-                  <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De gegevens over het bepalen van de locatie van de oorsprong van het boorgat.</xs:documentation>
-                  </xs:annotation>
-               </xs:element>
-               <xs:element minOccurs="1"
-                           maxOccurs="1"
-                           name="standardizedLocation"
-                           nillable="false"
-                           type="epccom:StandardizedLocationBoreholeType">
-                  <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De gegevens over de locatie van een boorgat zoals die door de basisregistratie ondergrond zijn getransformeerd.
-Explanation: De locatie van een boorgat hoeft zich niet op het aardoppervlak te bevinden, het kan te land zowel op, boven als onder het aardoppervlak gelegen zijn en te zee boven de waterspiegel.</xs:documentation>
-                  </xs:annotation>
-               </xs:element>
-               <xs:element minOccurs="1"
-                           maxOccurs="1"
-                           name="deliveredVerticalPosition"
-                           nillable="false"
-                           type="epccom:DeliveredVerticalPositionType">
-                  <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De gegevens over de plaats van de oorsprong van het boorgat in het verticale vlak.</xs:documentation>
-                  </xs:annotation>
-               </xs:element>
-               <xs:element minOccurs="1"
-                           maxOccurs="1"
-                           name="relatedExplorationProductionLicence"
-                           nillable="false"
-                           type="epccom:ExplorationProductionLicencePropertyType"/>
-               <xs:element minOccurs="1"
-                           maxOccurs="unbounded"
-                           name="relatedBoreholeSegment"
-                           nillable="false"
-                           type="epccom:BoreholeSegmentPropertyType"/>
-            </xs:sequence>
-         </xs:extension>
-      </xs:complexContent>
-   </xs:complexType>
-   <xs:complexType name="BoreholePropertyType">
-      <xs:sequence minOccurs="0">
-         <xs:element ref="dsepc:Borehole"/>
-      </xs:sequence>
-      <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
-   </xs:complexType>
-   <xs:element name="DispatchDataResponse"
-               type="dsepc:DispatchDataResponseType"
-               substitutionGroup="brocom:DispatchResponse">
-      <xs:annotation>
-         <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het bericht DispatchDataResponse is een specialisatie van de abstract klasse DispatchDataResponse uit de package brocommon, waaraan het een dispatchDocument toevoegt. Met dit bericht worden, als response op een DispatchDataRequest, de gegevens over een specifiek grondwatermonitoringnet registratieobject verzonden naar de aanvrager.</xs:documentation>
-      </xs:annotation>
-   </xs:element>
-   <xs:complexType name="DispatchDataResponseType">
-      <xs:complexContent>
-         <xs:extension base="brocom:DispatchResponseType">
-            <xs:sequence>
-               <xs:element minOccurs="1"
-                           maxOccurs="1"
-                           name="dispatchDocument"
-                           nillable="false"
-                           type="brocom:AbstractRegistrationObjectPropertyType">
-                  <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Aanduiding welke gegevens over het registratieobject worden opgevraagd: alleen de actuele gegevens (present object data) of de actuele gegevens en de volledige materiële geschiedenis (past and present object data).</xs:documentation>
-                  </xs:annotation>
-               </xs:element>
-            </xs:sequence>
-         </xs:extension>
-      </xs:complexContent>
-   </xs:complexType>
-   <xs:complexType name="DispatchDataResponsePropertyType">
-      <xs:sequence minOccurs="0">
-         <xs:element ref="dsepc:DispatchDataResponse"/>
-      </xs:sequence>
-      <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
-   </xs:complexType>
-   <xs:element name="BoreholeSegment"
-               type="dsepc:BoreholeSegmentType"
-               substitutionGroup="gml:AbstractFeature"/>
-   <xs:complexType name="BoreholeSegmentType">
-      <xs:complexContent>
-         <xs:extension base="gml:AbstractFeatureType">
-            <xs:sequence>
-               <xs:element name="boreholeSegmentCode" minOccurs="1" maxOccurs="1">
-                  <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De unieke identificatie van een boortraject in de registratie ondergrond.
-Explanation: De boortrajectcode komt overeen met de code waaronder de bronhouder gegevens over het boortraject publiek beschikbaar stelt.</xs:documentation>
-                  </xs:annotation>
-                  <xs:simpleType>
-                     <xs:restriction base="xs:integer">
-                        <xs:totalDigits value="5"/>
-                     </xs:restriction>
-                  </xs:simpleType>
-               </xs:element>
-               <xs:element name="boreholeSegmentName" minOccurs="1" maxOccurs="1">
-                  <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De aanduiding van een boortraject binnen een boorgat middels een verkorte naam.
-Explanation: In het werkveld is dit een herkenbare naam.</xs:documentation>
-                  </xs:annotation>
-                  <xs:simpleType>
-                     <xs:restriction base="xs:string">
-                        <xs:length value="100"/>
-                     </xs:restriction>
-                  </xs:simpleType>
-               </xs:element>
-               <xs:element name="boreholeSegmentCategory"
-                           minOccurs="1"
-                           maxOccurs="1"
-                           type="epccom:BoreholeSegmentCategoryType">
-                  <xs:annotation>
-                     <xs:appinfo>
-                        <CodeListName>BoreholeSegmentCategory</CodeListName>
-                        <CodeListURI/>
-                     </xs:appinfo>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De aanduiding of een boortraject het eerst geboorde c.q. primaire traject binnen een boorgat is, of een zijtak.</xs:documentation>
-                  </xs:annotation>
-               </xs:element>
-               <xs:element name="purpose"
-                           minOccurs="1"
-                           maxOccurs="1"
-                           type="epccom:MiningActivityType">
-                  <xs:annotation>
-                     <xs:appinfo>
-                        <CodeListName>MiningActivity</CodeListName>
-                        <CodeListURI/>
-                     </xs:appinfo>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het oorspronkelijke doel waarvoor het boortraject is aangelegd.</xs:documentation>
-                  </xs:annotation>
-               </xs:element>
-               <xs:element name="drillingStartDate"
-                           type="xs:date"
-                           minOccurs="1"
-                           maxOccurs="1">
-                  <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De datum waarop het boren van het boortraject is begonnen.</xs:documentation>
-                  </xs:annotation>
-               </xs:element>
-               <xs:element name="drillingEndDate"
-                           type="xs:date"
-                           minOccurs="0"
-                           maxOccurs="1">
-                  <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De datum waarop de aanleg van het boortraject is beëindigd.
-Explanation: De aanleg van een boortraject eindigt op het moment dat na de boring een bovengrondse afwerking wordt geïnstalleerd, of het moment dat aansluitende activiteiten zoals bijvoorbeeld een productietest beëindigd zijn.</xs:documentation>
-                  </xs:annotation>
-               </xs:element>
-               <xs:element name="dateOfDisclosure"
-                           type="xs:date"
-                           minOccurs="0"
-                           maxOccurs="1">
-                  <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De datum met ingang waarvan de gegevens over de afmetingen en ondergrondse positie van een boortraject openbaar zijn.
-Explanation: De gegevens over de ligging van een boortraject hebben conform de mijnbouwwetgeving voor een periode van vijf jaar een vertrouwelijk karakter. Na deze periode zijn de gegevens openbaar raadpleegbaar via de basisregistratie ondergrond.</xs:documentation>
-                  </xs:annotation>
-               </xs:element>
-               <xs:element minOccurs="0"
-                           maxOccurs="1"
-                           name="boreholeSegmentLocation"
-                           nillable="false"
-                           type="epccom:BoreholeSegmentLocationType">
-                  <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De afmetingen en ondergrondse positie van het boortraject.</xs:documentation>
-                  </xs:annotation>
-               </xs:element>
-            </xs:sequence>
-         </xs:extension>
-      </xs:complexContent>
-   </xs:complexType>
-   <xs:complexType name="BoreholeSegmentPropertyType">
-      <xs:sequence minOccurs="0">
-         <xs:element ref="dsepc:BoreholeSegment"/>
-      </xs:sequence>
-      <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
-   </xs:complexType>
-   <xs:element name="MiningSystem"
-               type="dsepc:MiningSystemType"
-               substitutionGroup="dsepc:EPC_PO_DP"/>
-   <xs:complexType name="MiningSystemType">
-      <xs:complexContent>
-         <xs:extension base="dsepc:EPC_PO_DPType">
-            <xs:sequence>
-               <xs:element name="name" minOccurs="1" maxOccurs="1">
-                  <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De unieke identificatie van een mijnstelsel middels de voorkeursbenaming.</xs:documentation>
-                  </xs:annotation>
-                  <xs:simpleType>
-                     <xs:restriction base="xs:string">
-                        <xs:length value="100"/>
-                     </xs:restriction>
-                  </xs:simpleType>
-               </xs:element>
-               <xs:element name="code" minOccurs="0" maxOccurs="1">
-                  <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De aanduiding van een mijnstelsel in de vorm van een code.
-Explanation: Een code is bij steenkoolmijnen verplicht omdat deze code opgenomen is in de mijnkaartcode van de mijnkaarten die bij dat mijnstelsel behoren.</xs:documentation>
-                  </xs:annotation>
-                  <xs:simpleType>
-                     <xs:restriction base="xs:string">
-                        <xs:length value="5"/>
-                     </xs:restriction>
-                  </xs:simpleType>
-               </xs:element>
-               <xs:element name="alternativeName" minOccurs="0" maxOccurs="unbounded">
-                  <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De aanduiding van een mijnstelsel middels een alternatieve benaming.
-Explanation: Er kunnen lokaal meer alternatieve benamingen in gebruik zijn om het mijnstelsel aan te duiden.</xs:documentation>
-                  </xs:annotation>
-                  <xs:simpleType>
-                     <xs:restriction base="xs:string">
-                        <xs:length value="100"/>
-                     </xs:restriction>
-                  </xs:simpleType>
-               </xs:element>
-               <xs:element name="miningSystemKind"
-                           minOccurs="1"
-                           maxOccurs="1"
-                           type="epccom:MiningSystemKindType">
-                  <xs:annotation>
-                     <xs:appinfo>
-                        <CodeListName>MiningSystemKind</CodeListName>
-                        <CodeListURI/>
-                     </xs:appinfo>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De aanduiding van het primaire gebruik waarvoor een mijnstelsel is aangelegd.</xs:documentation>
-                  </xs:annotation>
-               </xs:element>
-               <xs:element name="excavated"
-                           type="brocom:IndicationYesNoType"
-                           minOccurs="1"
-                           maxOccurs="1">
-                  <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Indicatie of een mijnstelsel is verdwenen vanwege afgraving.
-Explanation: Van een mijnstelsel dat is afgegraven, is het gemijnd gebied gelijk aan de contour zoals die was juist voordat het mijnstelsel volledig werd afgegraven.</xs:documentation>
-                  </xs:annotation>
-               </xs:element>
-               <xs:element name="miningArea"
-                           type="gml:MultiSurfaceType"
-                           minOccurs="1"
-                           maxOccurs="1">
-                  <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De contour van het mijnstelsel, geprojecteerd op het aardoppervlak.</xs:documentation>
-                  </xs:annotation>
-               </xs:element>
-               <xs:element minOccurs="1"
-                           maxOccurs="1"
-                           name="horizontalPositioningMiningArea"
-                           nillable="false"
-                           type="epccom:HorizontalPositioningType">
-                  <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De gegevens over het bepalen van het gemijnd gebied.</xs:documentation>
-                  </xs:annotation>
-               </xs:element>
-               <xs:element minOccurs="1"
-                           maxOccurs="1"
-                           name="standardizedLocation"
-                           nillable="false"
-                           type="epccom:StandardizedLocationType">
-                  <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De gegevens over de locatie van een boorgat zoals die door de basisregistratie ondergrond zijn getransformeerd.
-Explanation: De locatie van een mijnstelsel bevindt zich niet op het aardoppervlak, het is een projectie op het aardoppervlak van de maximale ondergrondse contour ervan.</xs:documentation>
-                  </xs:annotation>
-               </xs:element>
-               <xs:element minOccurs="0"
-                           maxOccurs="unbounded"
-                           name="relatedEntrance"
-                           nillable="false"
-                           type="epccom:EntrancePropertyType"/>
-               <xs:element minOccurs="0"
-                           maxOccurs="unbounded"
-                           name="relatedMiningMap"
-                           nillable="false"
-                           type="epccom:MiningMapPropertyType"/>
-               <xs:element minOccurs="0"
-                           maxOccurs="unbounded"
-                           name="relatedTransportationZone"
-                           nillable="false"
-                           type="epccom:TransportationZonePropertyType"/>
-               <xs:element minOccurs="1"
-                           maxOccurs="unbounded"
-                           name="relatedExplorationProductionLicence"
-                           nillable="false"
-                           type="epccom:ExplorationProductionLicencePropertyType"/>
-               <xs:element minOccurs="0"
-                           maxOccurs="unbounded"
-                           name="relatedExploitationZone"
-                           nillable="false"
-                           type="epccom:ExploitationZonePropertyType"/>
-            </xs:sequence>
-         </xs:extension>
-      </xs:complexContent>
-   </xs:complexType>
-   <xs:complexType name="MiningSystemPropertyType">
-      <xs:sequence minOccurs="0">
-         <xs:element ref="dsepc:MiningSystem"/>
-      </xs:sequence>
-      <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
-   </xs:complexType>
-   <xs:element name="SaltCavern"
-               type="dsepc:SaltCavernType"
-               substitutionGroup="dsepc:EPC_PO_DP"/>
-   <xs:complexType name="SaltCavernType">
-      <xs:complexContent>
-         <xs:extension base="dsepc:EPC_PO_DPType">
-            <xs:sequence>
-               <xs:element name="cavernMeasurementCode"
-                           type="xs:string"
-                           minOccurs="0"
-                           maxOccurs="1">
-                  <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De identificatie van een cavernemeting in de registratie ondergrond.
-Explanation: De cavernemetingcode komt overeen met de code waaronder de cavernemeting gegevens beschikbaar worden gesteld. De cavernemetingcode wordt alleen in de BRO opgenomen als de cavernemetingrapporten waarin de gegevens staan, openbaar raadpleegbaar zijn.</xs:documentation>
-                  </xs:annotation>
-               </xs:element>
-               <xs:element name="publiclyAvailable"
-                           type="brocom:IndicationYesNoType"
-                           minOccurs="1"
-                           maxOccurs="1">
-                  <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Indicatie of de holruimtecontour publiek toegankelijk is.</xs:documentation>
-                  </xs:annotation>
-               </xs:element>
-               <xs:element name="cavernContour"
-                           type="gml:SurfacePropertyType"
-                           minOccurs="0"
-                           maxOccurs="1">
-                  <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De maximale cumulatieve contour van de in de ondergrond aanwezige caverne, geprojecteerd op het aardoppervlak.
-Explanation: De holruimtecontrour is publiek beschikbaar wanneer het attribuut openbaar raadpleegbaar gelijk is aan 'Ja'.</xs:documentation>
-                  </xs:annotation>
-               </xs:element>
-               <xs:element minOccurs="0"
-                           maxOccurs="1"
-                           name="horizontalPositioningArea"
-                           nillable="false"
-                           type="epccom:HorizontalPositioningType">
-                  <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De gegevens over het bepalen van de holruimtecontour van de zoutcaverne.</xs:documentation>
-                  </xs:annotation>
-               </xs:element>
-               <xs:element minOccurs="1"
-                           maxOccurs="1"
-                           name="standardizedLocation"
-                           nillable="false"
-                           type="epccom:StandardizedLocationSaltcavernType">
-                  <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De gegevens over de locatie van een boorgat zoals die door de basisregistratie ondergrond zijn getransformeerd.
-Explanation: De locatie van de zoutcaverne ligt niet op het aardoppervlak, het is een projectie op het aardoppervlak van de maximale cumulatieve ondergrondse contour ervan.</xs:documentation>
-                  </xs:annotation>
-               </xs:element>
-               <xs:element minOccurs="1"
-                           maxOccurs="unbounded"
-                           name="relatedBoreholeSegment"
-                           nillable="false"
-                           type="epccom:BoreholeSegmentPropertyType"/>
-               <xs:element minOccurs="1"
-                           maxOccurs="unbounded"
-                           name="boreholeSegment"
-                           nillable="false"
-                           type="dsepc:BoreholeSegmentPropertyType"/>
-            </xs:sequence>
-         </xs:extension>
-      </xs:complexContent>
-   </xs:complexType>
-   <xs:complexType name="SaltCavernPropertyType">
-      <xs:sequence minOccurs="0">
-         <xs:element ref="dsepc:SaltCavern"/>
-      </xs:sequence>
-      <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
-   </xs:complexType>
-   <xs:element name="DispatchCharacteristicsRequest"
-               type="dsepc:DispatchCharacteristicsRequestType"/>
-   <xs:complexType name="DispatchCharacteristicsRequestType">
-      <xs:complexContent>
-         <xs:extension base="brocom:AbstractDispatchCharacteristicsRequestType">
-            <xs:sequence>
-               <xs:element minOccurs="1"
+           version="0.2.0">
+
+    <xs:annotation>
+        <xs:appinfo source="http://schemas.opengis.net/gmlsfProfile/2.0/gmlsfLevels.xsd">
+            <gmlsf:ComplianceLevel>0</gmlsf:ComplianceLevel>
+        </xs:appinfo>
+    </xs:annotation>
+
+    <!--
+	<xs:import namespace="http://www.broservices.nl/xsd/brocommon/3.0" schemaLocation="https://schema.broservices.nl/xsd/brocommon/3.0/brocommon.xsd"/>
+    <xs:import namespace="http://www.opengis.net/gml/3.2" schemaLocation="https://schema.broservices.nl/profile/gml/1.0/gml-profile.xsd"/>
+    <xs:import namespace="http://www.broservices.nl/xsd/epccommon/1.0" schemaLocation="https://schema.broservices.nl/xsd/isepc/1.0/epccommon.xsd"/>
+	-->
+	<xs:import namespace="http://www.broservices.nl/xsd/brocommon/3.0" schemaLocation="brocommon.xsd"/>
+    <xs:import namespace="http://www.opengis.net/gml/3.2" schemaLocation="gml-profile.xsd"/>
+    <xs:import namespace="http://www.broservices.nl/xsd/epccommon/1.0" schemaLocation="epccommon.xsd"/>
+
+    <xs:element name="parseFault" type="brocom:ParseFaultType" />
+    
+    <xs:element name="dispatchCharacteristicsRequest" type="dsepc:DispatchCharacteristicsRequestType">
+        <xs:annotation>
+            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het bericht dispatchCharacteristicsRequest is een specialisatie van AbstractDispatchCharacteristicsRequest in de package brocommon, waaraan het een registratieobject afhankelijk element criteria toevoegt.</xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:complexType name="DispatchCharacteristicsRequestType">
+        <xs:complexContent>
+            <xs:extension base="brocom:AbstractDispatchCharacteristicsRequestType">
+                <xs:sequence>
+                    <xs:element minOccurs="1"
                            maxOccurs="1"
                            name="criteria"
                            nillable="false"
                            type="dsepc:EPC_CriteriaSetType"/>
-            </xs:sequence>
-         </xs:extension>
-      </xs:complexContent>
-   </xs:complexType>
-   <xs:element name="DispatchCharacteristicsResponse"
-               type="dsepc:DispatchCharacteristicsResponseType"
-               substitutionGroup="brocom:DispatchResponse">
-      <xs:annotation>
-         <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het bericht DispatchCharacteristicsResponse is een specialisatie van DispatchResponse in de package brocommon, waaraan het een attribuut numberOfDocuments en een associatie relatie naar AbstractRegistrationObject in de package brocommon toevoegt.</xs:documentation>
-      </xs:annotation>
-   </xs:element>
-   <xs:complexType name="DispatchCharacteristicsResponseType">
-      <xs:complexContent>
-         <xs:extension base="brocom:DispatchResponseType">
-            <xs:sequence>
-               <xs:element name="numberOfDocuments"
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <xs:element name="dispatchCharacteristicsResponse" type="dsepc:DispatchCharacteristicsResponseType">
+        <xs:annotation>
+            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het bericht DispatchCharacteristicsResponse is een specialisatie van DispatchResponse in de package brocommon, waaraan het een attribuut numberOfDocuments en een associatie relatie naar AbstractRegistrationObject in de package brocommon toevoegt.</xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:complexType name="DispatchCharacteristicsResponseType">
+        <xs:complexContent>
+            <xs:extension base="brocom:DispatchResponseType">
+                <xs:sequence>
+                    <xs:element name="numberOfDocuments"
                            type="xs:integer"
                            minOccurs="0"
                            maxOccurs="1">
-                  <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Aanduiding welke gegevens over het registratieobject worden opgevraagd: alleen de actuele gegevens (present object data) of de actuele gegevens en de volledige materiële geschiedenis (past and present object data).</xs:documentation>
-                  </xs:annotation>
-               </xs:element>
-            </xs:sequence>
-         </xs:extension>
-      </xs:complexContent>
-   </xs:complexType>
-   <xs:complexType name="DispatchCharacteristicsResponsePropertyType">
-      <xs:sequence minOccurs="0">
-         <xs:element ref="dsepc:DispatchCharacteristicsResponse"/>
-      </xs:sequence>
-      <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
-   </xs:complexType>
-   <xs:element name="EPC_C"
-               type="dsepc:EPC_CType"
-               substitutionGroup="brocom:AbstractCharacteristics">
-      <xs:annotation>
-         <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het uitgiftedocument dat wordt uitgeleverd als de afnemer tevens de bronhouder of dataleverancier is van het registratieobject.</xs:documentation>
-      </xs:annotation>
-   </xs:element>
-   <xs:complexType name="EPC_CType">
-      <xs:complexContent>
-         <xs:extension base="brocom:AbstractCharacteristicsType">
-            <xs:sequence>
-               <xs:element name="explorationLicenceAmount" minOccurs="0" maxOccurs="1">
-                  <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De unieke identificatie van een boortraject in de registratie ondergrond.
-Explanation: De boortrajectcode komt overeen met de code waaronder de bronhouder gegevens over het boortraject publiek beschikbaar stelt.</xs:documentation>
-                  </xs:annotation>
-                  <xs:simpleType>
-                     <xs:restriction base="xs:integer">
-                        <xs:totalDigits value="5"/>
-                     </xs:restriction>
-                  </xs:simpleType>
-               </xs:element>
-               <xs:element name="miningMapsAmount" minOccurs="0" maxOccurs="1">
-                  <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De unieke identificatie van een boortraject in de registratie ondergrond.
-Explanation: De boortrajectcode komt overeen met de code waaronder de bronhouder gegevens over het boortraject publiek beschikbaar stelt.</xs:documentation>
-                  </xs:annotation>
-                  <xs:simpleType>
-                     <xs:restriction base="xs:integer">
-                        <xs:totalDigits value="5"/>
-                     </xs:restriction>
-                  </xs:simpleType>
-               </xs:element>
-               <xs:element name="boreholeSegmentName" minOccurs="1" maxOccurs="1">
-                  <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De aanduiding van een boortraject binnen een boorgat middels een verkorte naam.
-Explanation: In het werkveld is dit een herkenbare naam.</xs:documentation>
-                  </xs:annotation>
-                  <xs:simpleType>
-                     <xs:restriction base="xs:string">
-                        <xs:length value="100"/>
-                     </xs:restriction>
-                  </xs:simpleType>
-               </xs:element>
-               <xs:element name="boreholeSegmentCode" minOccurs="0" maxOccurs="1">
-                  <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De unieke identificatie van een boortraject in de registratie ondergrond.
-Explanation: De boortrajectcode komt overeen met de code waaronder de bronhouder gegevens over het boortraject publiek beschikbaar stelt.</xs:documentation>
-                  </xs:annotation>
-                  <xs:simpleType>
-                     <xs:restriction base="xs:integer">
-                        <xs:totalDigits value="5"/>
-                     </xs:restriction>
-                  </xs:simpleType>
-               </xs:element>
-               <xs:element name="miningSystemCode" minOccurs="0" maxOccurs="1">
-                  <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De aanduiding van een mijnstelsel in de vorm van een code.
-Explanation: Een code is bij steenkoolmijnen verplicht omdat deze code opgenomen is in de mijnkaartcode van de mijnkaarten die bij dat mijnstelsel behoren.</xs:documentation>
-                  </xs:annotation>
-                  <xs:simpleType>
-                     <xs:restriction base="xs:string">
-                        <xs:length value="5"/>
-                     </xs:restriction>
-                  </xs:simpleType>
-               </xs:element>
-               <xs:element name="cavernMeasurementCode"
-                           type="xs:string"
-                           minOccurs="0"
-                           maxOccurs="1">
-                  <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De identificatie van een cavernemeting in de registratie ondergrond.
-Explanation: De cavernemetingcode komt overeen met de code waaronder de cavernemeting gegevens beschikbaar worden gesteld. De cavernemetingcode wordt alleen in de BRO opgenomen als de cavernemetingrapporten waarin de gegevens staan, openbaar raadpleegbaar zijn.</xs:documentation>
-                  </xs:annotation>
-               </xs:element>
-               <xs:element name="minedArea"
-                           type="gml:MultiSurfaceType"
+                        <xs:annotation>
+                            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Aanduiding welke gegevens over het registratieobject worden opgevraagd: alleen de actuele gegevens (present object data) of de actuele gegevens en de volledige materiële geschiedenis (past and present object data).</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element minOccurs="0"
+                           maxOccurs="unbounded"
+                           name="dispatchDocument"
+                           nillable="false"
+                           type="brocom:AbstractRegistrationObjectPropertyType"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <xs:element name="dispatchDataRequest" type="dsepc:DispatchDataRequestType">
+        <xs:annotation>
+            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het DispatchDataRequest is een specialisatie van de abstract klasse DispatchDataRequest in de package brocommon, waaraan het een element dataToBeDelivered toevoegt.</xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:complexType name="DispatchDataRequestType">
+        <xs:complexContent>
+            <xs:extension base="brocom:DispatchDataRequestType">
+                <xs:sequence>
+                    <xs:element name="dataToBeDelivered"
+                           type="dsepc:DataToBeDeliveredType"
                            minOccurs="1"
                            maxOccurs="1">
-                  <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De unieke identificatie van een mijnstelsel middels de voorkeursbenaming.</xs:documentation>
-                  </xs:annotation>
-               </xs:element>
-               <xs:element name="miningSystemName" minOccurs="1" maxOccurs="1">
-                  <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De unieke identificatie van een mijnstelsel middels de voorkeursbenaming.</xs:documentation>
-                  </xs:annotation>
-                  <xs:simpleType>
-                     <xs:restriction base="xs:string">
-                        <xs:length value="100"/>
-                     </xs:restriction>
-                  </xs:simpleType>
-               </xs:element>
-               <xs:element name="miningConstructionKind"
+                        <xs:annotation>
+                            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Aanduiding welke gegevens over het registratieobject worden opgevraagd: alleen de actuele gegevens (present object data) of de actuele gegevens en de volledige materiële geschiedenis (past and present object data).</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <xs:element name="dispatchDataResponse" type="dsepc:DispatchDataResponseType">
+        <xs:annotation>
+            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het bericht DispatchDataResponse is een specialisatie van de abstract klasse DispatchDataResponse uit de package brocommon, waaraan het een dispatchDocument toevoegt. Met dit bericht worden, als response op een DispatchDataRequest, de gegevens over een specifiek grondwatermonitoringnet registratieobject verzonden naar de aanvrager.</xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:complexType name="DispatchDataResponseType">
+        <xs:complexContent>
+            <xs:extension base="brocom:DispatchResponseType">
+                <xs:sequence>
+                    <xs:element minOccurs="0"
+                           maxOccurs="1"
+                           name="dispatchDocument"
+                           nillable="false"
+                           type="brocom:AbstractRegistrationObjectPropertyType">
+                        <xs:annotation>
+                            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Aanduiding welke gegevens over het registratieobject worden opgevraagd: alleen de actuele gegevens (present object data) of de actuele gegevens en de volledige materiële geschiedenis (past and present object data).</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <xs:element name="EPC_C"
+               type="dsepc:EPC_CType"
+               substitutionGroup="brocom:AbstractCharacteristics">
+        <xs:annotation>
+            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het uitgiftedocument dat wordt uitgeleverd als de afnemer tevens de bronhouder of dataleverancier is van het registratieobject.</xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:complexType name="EPC_CType">
+        <xs:complexContent>
+            <xs:extension base="brocom:AbstractCharacteristicsType">
+                <xs:sequence>
+                    <xs:element name="explorationLicenceAmount" minOccurs="0" maxOccurs="1">
+                        <xs:annotation>
+                            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De unieke identificatie van een boortraject in de registratie ondergrond.
+Explanation: De boortrajectcode komt overeen met de code waaronder de bronhouder gegevens over het boortraject publiek beschikbaar stelt.</xs:documentation>
+                        </xs:annotation>
+                        <xs:simpleType>
+                            <xs:restriction base="xs:integer">
+                                <xs:totalDigits value="5"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="miningMapsAmount" minOccurs="0" maxOccurs="1">
+                        <xs:annotation>
+                            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De unieke identificatie van een boortraject in de registratie ondergrond.
+Explanation: De boortrajectcode komt overeen met de code waaronder de bronhouder gegevens over het boortraject publiek beschikbaar stelt.</xs:documentation>
+                        </xs:annotation>
+                        <xs:simpleType>
+                            <xs:restriction base="xs:integer">
+                                <xs:totalDigits value="5"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="boreholeSegmentName" minOccurs="1" maxOccurs="1">
+                        <xs:annotation>
+                            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De aanduiding van een boortraject binnen een boorgat middels een verkorte naam.
+Explanation: In het werkveld is dit een herkenbare naam.</xs:documentation>
+                        </xs:annotation>
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="100"/>
+                                <xs:pattern value="\S.*"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="boreholeSegmentCode" minOccurs="0" maxOccurs="1">
+                        <xs:annotation>
+                            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De unieke identificatie van een boortraject in de registratie ondergrond.
+Explanation: De boortrajectcode komt overeen met de code waaronder de bronhouder gegevens over het boortraject publiek beschikbaar stelt.</xs:documentation>
+                        </xs:annotation>
+                        <xs:simpleType>
+                            <xs:restriction base="xs:integer">
+                                <xs:totalDigits value="5"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="miningSystemCode" minOccurs="0" maxOccurs="1">
+                        <xs:annotation>
+                            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De aanduiding van een mijnstelsel in de vorm van een code.
+Explanation: Een code is bij steenkoolmijnen verplicht omdat deze code opgenomen is in de mijnkaartcode van de mijnkaarten die bij dat mijnstelsel behoren.</xs:documentation>
+                        </xs:annotation>
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="5"/>
+                                <xs:pattern value="\S.*"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="cavernMeasurementCode"
+                           minOccurs="0"
+                           maxOccurs="1"
+                           type="xs:string">
+                        <xs:annotation>
+                            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De identificatie van een cavernemeting in de registratie ondergrond.
+Explanation: De cavernemetingcode komt overeen met de code waaronder de cavernemeting gegevens beschikbaar worden gesteld. De cavernemetingcode wordt alleen in de BRO opgenomen als de cavernemetingrapporten waarin de gegevens staan, openbaar raadpleegbaar zijn.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="minedArea"
+                           type="gml:MultiSurfacePropertyType"
+                           minOccurs="1"
+                           maxOccurs="1">
+                        <xs:annotation>
+                            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De unieke identificatie van een mijnstelsel middels de voorkeursbenaming.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="miningSystemName" minOccurs="1" maxOccurs="1">
+                        <xs:annotation>
+                            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De unieke identificatie van een mijnstelsel middels de voorkeursbenaming.</xs:documentation>
+                        </xs:annotation>
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="100"/>
+                                <xs:pattern value="\S.*"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="miningConstructionKind"
                            type="dsepc:MiningConstructionKindType"
                            minOccurs="1"
                            maxOccurs="1">
-                  <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De aanduiding van het primaire gebruik waarvoor een mijnstelsel is aangelegd.</xs:documentation>
-                  </xs:annotation>
-               </xs:element>
-               <xs:element name="miningSystemKind"
+                        <xs:annotation>
+                            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De aanduiding van het primaire gebruik waarvoor een mijnstelsel is aangelegd.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="miningSystemKind"
                            minOccurs="1"
                            maxOccurs="1"
                            type="epccom:MiningSystemKindType">
-                  <xs:annotation>
-                     <xs:appinfo>
-                        <CodeListName>MiningSystemKind</CodeListName>
-                        <CodeListURI/>
-                     </xs:appinfo>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De aanduiding van het primaire gebruik waarvoor een mijnstelsel is aangelegd.</xs:documentation>
-                  </xs:annotation>
-               </xs:element>
-               <xs:element name="publiclyAvailable"
+                        <xs:annotation>
+                            <xs:appinfo>
+                                <CodeListName>MiningSystemKind</CodeListName>
+                                <CodeListURI/>
+                            </xs:appinfo>
+                            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De aanduiding van het primaire gebruik waarvoor een mijnstelsel is aangelegd.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="publiclyAvailable"
                            type="brocom:IndicationYesNoType"
                            minOccurs="1"
                            maxOccurs="1">
-                  <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Indicatie of de holruimtecontour publiek toegankelijk is.</xs:documentation>
-                  </xs:annotation>
-               </xs:element>
-            </xs:sequence>
-         </xs:extension>
-      </xs:complexContent>
-   </xs:complexType>
-   <xs:complexType name="EPC_CPropertyType">
-      <xs:sequence minOccurs="0">
-         <xs:element ref="dsepc:EPC_C"/>
-      </xs:sequence>
-      <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
-   </xs:complexType>
-   <xs:element name="EPC_PPO_DP"
-               type="dsepc:EPC_PPO_DPType"
-               substitutionGroup="dsepc:EPC_PO_DP">
-      <xs:annotation>
-         <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het uitgiftedocument met de chronologisch geordend de historische en actuele gegevens van een mijnbouwconstructie, dat wordt uitgeleverd als de afnemer tevens de bronhouder of dataleverancier is van het registratieobject, ongeacht of registratieobject uit registratie is genomen of niet.</xs:documentation>
-      </xs:annotation>
-   </xs:element>
-   <xs:complexType name="EPC_PPO_DPType">
-      <xs:complexContent>
-         <xs:extension base="dsepc:EPC_PO_DPType"/>
-      </xs:complexContent>
-   </xs:complexType>
-   <xs:complexType name="EPC_PPO_DPPropertyType">
-      <xs:sequence minOccurs="0">
-         <xs:element ref="dsepc:EPC_PPO_DP"/>
-      </xs:sequence>
-      <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
-   </xs:complexType>
-   <xs:element name="EPC_PPO"
-               type="dsepc:EPC_PPOType"
-               substitutionGroup="dsepc:EPC_PPO_DP">
-      <xs:annotation>
-         <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het uitgiftedocument met de chronologisch geordend de historische en actuele gegevens van een mijnbouwconstructie, dat wordt uitgeleverd als de afnemer niet de bronhouder of dataleverancier is van het registratieobject en het registratieobject niet uit registratie is genomen.</xs:documentation>
-      </xs:annotation>
-   </xs:element>
-   <xs:complexType name="EPC_PPOType">
-      <xs:complexContent>
-         <xs:extension base="dsepc:EPC_PPO_DPType"/>
-      </xs:complexContent>
-   </xs:complexType>
-   <xs:complexType name="EPC_PPOPropertyType">
-      <xs:sequence minOccurs="0">
-         <xs:element ref="dsepc:EPC_PPO"/>
-      </xs:sequence>
-      <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
-   </xs:complexType>
-   <xs:element name="EPC_PO_DP"
-               type="dsepc:EPC_PO_DPType"
+                        <xs:annotation>
+                            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Indicatie of de holruimtecontour publiek toegankelijk is.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="EPC_CPropertyType">
+        <xs:sequence minOccurs="1">
+            <xs:element ref="dsepc:EPC_C"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:element name="EPC_PO_Borehole"
+               type="dsepc:EPC_PO_BoreholeType"
+               substitutionGroup="dsepc:AbstractMiningConstruction">
+        <xs:annotation>
+            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het uitgiftedocument met de actuele gegevens in de basisregistratie ondergrond van een boorgat, dat wordt uitgeleverd als de afnemer niet de bronhouder of dataleverancier is van het registratieobject en het registratieobject niet uit registratie is genomen.
+Explanation: Een boorgat valt onder de Mijnbouwwet wanneer bij een boring naar delfstoffen deze op een diepte van meer dan 100 meter onder de oppervlakte van de aardbodem aanwezig zijn, wanneer bij een boring naar aardwarmte deze op een diepte van meer dan 500 meter onder de oppervlakte van de aardbodem aanwezig is of wanneer bij het opslaan van stoffen in de ondergrond dit plaatsvindt op een diepte van meer dan 100 meter onder de oppervlakte van de aardbodem.</xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:complexType name="EPC_PO_BoreholeType">
+        <xs:complexContent>
+            <xs:extension base="dsepc:AbstractMiningConstructionType">
+                <xs:sequence>
+                    <xs:element name="location"
+                           type="gml:PointPropertyType"
+                           minOccurs="1"
+                           maxOccurs="1">
+                        <xs:annotation>
+                            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De locatie van de oorsprong van het boorgat.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element minOccurs="1"
+                           maxOccurs="1"
+                           name="horizontalPositioning"
+                           nillable="false"
+                           type="epccom:HorizontalPositioningType">
+                        <xs:annotation>
+                            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De gegevens over het bepalen van de locatie van de oorsprong van het boorgat.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element minOccurs="1"
+                           maxOccurs="1"
+                           name="standardizedLocation"
+                           nillable="false"
+                           type="dsepc:StandardizedLocationBoreholeType">
+                        <xs:annotation>
+                            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De gegevens over de locatie van een boorgat zoals die door de basisregistratie ondergrond zijn getransformeerd.
+Explanation: De locatie van een boorgat hoeft zich niet op het aardoppervlak te bevinden, het kan te land zowel op, boven als onder het aardoppervlak gelegen zijn en te zee boven de waterspiegel.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element minOccurs="1"
+                           maxOccurs="1"
+                           name="deliveredVerticalPosition"
+                           nillable="false"
+                           type="epccom:DeliveredVerticalPositionType">
+                        <xs:annotation>
+                            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De gegevens over de plaats van de oorsprong van het boorgat in het verticale vlak.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element minOccurs="1"
+                           maxOccurs="unbounded"
+                           name="boreholeSegment"
+                           nillable="false"
+                           type="epccom:BoreholeSegmentPropertyType"/>
+                    <xs:element minOccurs="1"
+                           maxOccurs="1"
+                           name="relatedExplorationProductionLicence"
+                           nillable="false"
+                           type="epccom:ExplorationProductionLicencePropertyType"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="EPC_PO_BoreholePropertyType">
+        <xs:sequence minOccurs="1">
+            <xs:element ref="dsepc:EPC_PO_Borehole"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:element name="EPC_PO_MiningSystem"
+               type="dsepc:EPC_PO_MiningSystemType"
+               substitutionGroup="dsepc:AbstractMiningConstruction">
+        <xs:annotation>
+            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het uitgiftedocument met de actuele gegevens in de basisregistratie ondergrond van een mijnstelsel, dat wordt uitgeleverd als de afnemer niet de bronhouder of dataleverancier is van het registratieobject en het registratieobject niet uit registratie is genomen.</xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:complexType name="EPC_PO_MiningSystemType">
+        <xs:complexContent>
+            <xs:extension base="dsepc:AbstractMiningConstructionType">
+                <xs:sequence>
+                    <xs:element name="name" minOccurs="1" maxOccurs="1">
+                        <xs:annotation>
+                            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De unieke identificatie van een mijnstelsel middels de voorkeursbenaming.</xs:documentation>
+                        </xs:annotation>
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="100"/>
+                                <xs:pattern value="\S.*"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="code" minOccurs="0" maxOccurs="1">
+                        <xs:annotation>
+                            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De aanduiding van een mijnstelsel in de vorm van een code.
+Explanation: Een code is bij steenkoolmijnen verplicht omdat deze code opgenomen is in de mijnkaartcode van de mijnkaarten die bij dat mijnstelsel behoren.</xs:documentation>
+                        </xs:annotation>
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="5"/>
+                                <xs:pattern value="\S.*"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="alternativeName" minOccurs="0" maxOccurs="unbounded">
+                        <xs:annotation>
+                            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De aanduiding van een mijnstelsel middels een alternatieve benaming.
+Explanation: Er kunnen lokaal meer alternatieve benamingen in gebruik zijn om het mijnstelsel aan te duiden.</xs:documentation>
+                        </xs:annotation>
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="100"/>
+                                <xs:pattern value="\S.*"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="miningSystemKind"
+                           minOccurs="1"
+                           maxOccurs="1"
+                           type="epccom:MiningSystemKindType">
+                        <xs:annotation>
+                            <xs:appinfo>
+                                <CodeListName>MiningSystemKind</CodeListName>
+                                <CodeListURI/>
+                            </xs:appinfo>
+                            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De aanduiding van het primaire gebruik waarvoor een mijnstelsel is aangelegd.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="excavated"
+                           type="brocom:IndicationYesNoType"
+                           minOccurs="1"
+                           maxOccurs="1">
+                        <xs:annotation>
+                            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Indicatie of een mijnstelsel is verdwenen vanwege afgraving.
+Explanation: Van een mijnstelsel dat is afgegraven, is het gemijnd gebied gelijk aan de contour zoals die was juist voordat het mijnstelsel volledig werd afgegraven.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="miningArea"
+                           type="gml:MultiSurfacePropertyType"
+                           minOccurs="1"
+                           maxOccurs="1">
+                        <xs:annotation>
+                            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De contour van het mijnstelsel, geprojecteerd op het aardoppervlak.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element minOccurs="1"
+                           maxOccurs="1"
+                           name="horizontalPositioningMiningArea"
+                           nillable="false"
+                           type="epccom:HorizontalPositioningType">
+                        <xs:annotation>
+                            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De gegevens over het bepalen van het gemijnd gebied.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element minOccurs="1"
+                           maxOccurs="1"
+                           name="standardizedLocation"
+                           nillable="false"
+                           type="dsepc:StandardizedLocationType">
+                        <xs:annotation>
+                            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De gegevens over de locatie van een boorgat zoals die door de basisregistratie ondergrond zijn getransformeerd.
+Explanation: De locatie van een mijnstelsel bevindt zich niet op het aardoppervlak, het is een projectie op het aardoppervlak van de maximale ondergrondse contour ervan.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element minOccurs="1"
+                           maxOccurs="unbounded"
+                           name="relatedExplorationProductionLicence"
+                           nillable="false"
+                           type="epccom:ExplorationProductionLicencePropertyType"/>
+                    <xs:element minOccurs="0"
+                           maxOccurs="unbounded"
+                           name="entrance"
+                           nillable="false"
+                           type="epccom:EntrancePropertyType"/>
+                    <xs:element minOccurs="0"
+                           maxOccurs="unbounded"
+                           name="transportationzone"
+                           nillable="false"
+                           type="epccom:TransportationZonePropertyType"/>
+                    <xs:element minOccurs="0"
+                           maxOccurs="unbounded"
+                           name="exploitationZone"
+                           nillable="false"
+                           type="epccom:ExploitationZonePropertyType"/>
+                    <xs:element minOccurs="0"
+                           maxOccurs="unbounded"
+                           name="miningMap"
+                           nillable="false"
+                           type="epccom:MiningMapPropertyType"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="EPC_PO_MiningSystemPropertyType">
+        <xs:sequence minOccurs="1">
+            <xs:element ref="dsepc:EPC_PO_MiningSystem"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:element name="EPC_PO_SaltCavern"
+               type="dsepc:EPC_PO_SaltCavernType"
+               substitutionGroup="dsepc:AbstractMiningConstruction">
+        <xs:annotation>
+            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het uitgiftedocument met de actuele gegevens in de basisregistratie ondergrond van een zoutcaverne, dat wordt uitgeleverd als de afnemer niet de bronhouder of dataleverancier is van het registratieobject en het registratieobject niet uit registratie is genomen.
+Explanation: Het weghalen van het vaste zout uit de ondergrond gebeurd door het zout op te lossen in water. In de ontstane holruimte zit water met daarin opgelost zout. Dit (pekel)water in de holruimte kan worden vervangen door een gas.</xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:complexType name="EPC_PO_SaltCavernType">
+        <xs:complexContent>
+            <xs:extension base="dsepc:AbstractMiningConstructionType">
+                <xs:sequence>
+                    <xs:element name="cavernMeasurementCode"
+                           minOccurs="0"
+                           maxOccurs="1"
+                           type="xs:string">
+                        <xs:annotation>
+                            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De identificatie van een cavernemeting in de registratie ondergrond.
+Explanation: De cavernemetingcode komt overeen met de code waaronder de cavernemeting gegevens beschikbaar worden gesteld. De cavernemetingcode wordt alleen in de BRO opgenomen als de cavernemetingrapporten waarin de gegevens staan, openbaar raadpleegbaar zijn.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="publiclyAvailable"
+                           type="brocom:IndicationYesNoType"
+                           minOccurs="1"
+                           maxOccurs="1">
+                        <xs:annotation>
+                            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Indicatie of de holruimtecontour publiek toegankelijk is.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="cavernContour"
+                           type="gml:SurfacePropertyType"
+                           minOccurs="0"
+                           maxOccurs="1">
+                        <xs:annotation>
+                            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De maximale cumulatieve contour van de in de ondergrond aanwezige caverne, geprojecteerd op het aardoppervlak.
+Explanation: De holruimtecontrour is publiek beschikbaar wanneer het attribuut openbaar raadpleegbaar gelijk is aan 'Ja'.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element minOccurs="0"
+                           maxOccurs="1"
+                           name="horizontalPositioningCavernContour"
+                           nillable="false"
+                           type="epccom:HorizontalPositioningType">
+                        <xs:annotation>
+                            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De gegevens over het bepalen van de holruimtecontour van de zoutcaverne.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element minOccurs="1"
+                           maxOccurs="1"
+                           name="standardizedLocation"
+                           nillable="false"
+                           type="dsepc:StandardizedLocationSaltcavernType">
+                        <xs:annotation>
+                            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De gegevens over de locatie van een boorgat zoals die door de basisregistratie ondergrond zijn getransformeerd.
+Explanation: De locatie van de zoutcaverne ligt niet op het aardoppervlak, het is een projectie op het aardoppervlak van de maximale cumulatieve ondergrondse contour ervan.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element minOccurs="1"
+                           maxOccurs="unbounded"
+                           name="relatedBoreholeSegment"
+                           nillable="false"
+                           type="epccom:BoreholeSegmentIdentificationPropertyType"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="EPC_PO_SaltCavernPropertyType">
+        <xs:sequence minOccurs="1">
+            <xs:element ref="dsepc:EPC_PO_SaltCavern"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:element name="EPC_PO_DP_Borehole"
+               type="dsepc:EPC_PO_DP_BoreholeType"
+               substitutionGroup="dsepc:EPC_PO_Borehole">
+        <xs:annotation>
+            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het uitgiftedocument met de actuele gegevens in de basisregistratie ondergrond van een boorgat, dat wordt uitgeleverd als de afnemer tevens de bronhouder en/of dataleverancier is van het registratieobject, ongeacht of registratieobject uit registratie is genomen of niet.</xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:complexType name="EPC_PO_DP_BoreholeType">
+        <xs:complexContent>
+            <xs:extension base="dsepc:EPC_PO_BoreholeType"/>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="EPC_PO_DP_BoreholePropertyType">
+        <xs:sequence minOccurs="1">
+            <xs:element ref="dsepc:EPC_PO_DP_Borehole"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:element name="EPC_PO_DP_SaltCavern"
+               type="dsepc:EPC_PO_DP_SaltCavernType"
+               substitutionGroup="dsepc:EPC_PO_SaltCavern">
+        <xs:annotation>
+            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het uitgiftedocument met de actuele gegevens in de basisregistratie ondergrond van een zoutcaverne, dat wordt uitgeleverd als de afnemer tevens de bronhouder en/of dataleverancier is van het registratieobject, ongeacht of registratieobject uit registratie is genomen of niet.</xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:complexType name="EPC_PO_DP_SaltCavernType">
+        <xs:complexContent>
+            <xs:extension base="dsepc:EPC_PO_SaltCavernType"/>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="EPC_PO_DP_SaltCavernPropertyType">
+        <xs:sequence minOccurs="1">
+            <xs:element ref="dsepc:EPC_PO_DP_SaltCavern"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:element name="EPC_PO_DP_MiningSystem"
+               type="dsepc:EPC_PO_DP_MiningSystemType"
+               substitutionGroup="dsepc:EPC_PO_MiningSystem">
+        <xs:annotation>
+            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het uitgiftedocument met de actuele gegevens in de basisregistratie ondergrond van een mijnstelsel, dat wordt uitgeleverd als de afnemer tevens de bronhouder en/of dataleverancier is van het registratieobject, ongeacht of registratieobject uit registratie is genomen of niet.</xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:complexType name="EPC_PO_DP_MiningSystemType">
+        <xs:complexContent>
+            <xs:extension base="dsepc:EPC_PO_MiningSystemType"/>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="EPC_PO_DP_MiningSystemPropertyType">
+        <xs:sequence minOccurs="1">
+            <xs:element ref="dsepc:EPC_PO_DP_MiningSystem"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:element name="EPC_PPO_Borehole"
+               type="dsepc:EPC_PPO_BoreholeType"
+               substitutionGroup="dsepc:EPC_PO_Borehole">
+        <xs:annotation>
+            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het uitgiftedocument met de chronologisch geordende historische gegevens in de basisregistratie ondergrond van een boorgat, dat wordt uitgeleverd als de afnemer niet de bronhouder of dataleverancier is van het registratieobject en het registratieobject niet uit registratie is genomen.</xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:complexType name="EPC_PPO_BoreholeType">
+        <xs:complexContent>
+            <xs:extension base="dsepc:EPC_PO_BoreholeType"/>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="EPC_PPO_BoreholePropertyType">
+        <xs:sequence minOccurs="1">
+            <xs:element ref="dsepc:EPC_PPO_Borehole"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:element name="EPC_PPO_SaltCavern"
+               type="dsepc:EPC_PPO_SaltCavernType"
+               substitutionGroup="dsepc:EPC_PO_SaltCavern">
+        <xs:annotation>
+            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het uitgiftedocument met de chronologisch geordende historische gegevens in de basisregistratie ondergrond van een zoutcaverne, dat wordt uitgeleverd als de afnemer niet de bronhouder of dataleverancier is van het registratieobject en het registratieobject niet uit registratie is genomen.</xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:complexType name="EPC_PPO_SaltCavernType">
+        <xs:complexContent>
+            <xs:extension base="dsepc:EPC_PO_SaltCavernType"/>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="EPC_PPO_SaltCavernPropertyType">
+        <xs:sequence minOccurs="1">
+            <xs:element ref="dsepc:EPC_PPO_SaltCavern"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:element name="EPC_PPO_MiningSystem"
+               type="dsepc:EPC_PPO_MiningSystemType"
+               substitutionGroup="dsepc:EPC_PO_MiningSystem">
+        <xs:annotation>
+            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het uitgiftedocument met de chronologisch geordende historische gegevens in de basisregistratie ondergrond van een mijnstelsel, dat wordt uitgeleverd als de afnemer niet de bronhouder of dataleverancier is van het registratieobject en het registratieobject niet uit registratie is genomen.</xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:complexType name="EPC_PPO_MiningSystemType">
+        <xs:complexContent>
+            <xs:extension base="dsepc:EPC_PO_MiningSystemType"/>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="EPC_PPO_MiningSystemPropertyType">
+        <xs:sequence minOccurs="1">
+            <xs:element ref="dsepc:EPC_PPO_MiningSystem"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:element name="EPC_PPO_DP_SaltCavern"
+               type="dsepc:EPC_PPO_DP_SaltCavernType"
+               substitutionGroup="dsepc:EPC_PPO_SaltCavern">
+        <xs:annotation>
+            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het uitgiftedocument met de chronologisch geordende historische gegevens in de basisregistratie ondergrond van een zoutcaverne, dat wordt uitgeleverd als de afnemer tevens de bronhouder en/of dataleverancier is van het registratieobject, ongeacht of registratieobject uit registratie is genomen of niet.</xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:complexType name="EPC_PPO_DP_SaltCavernType">
+        <xs:complexContent>
+            <xs:extension base="dsepc:EPC_PPO_SaltCavernType"/>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="EPC_PPO_DP_SaltCavernPropertyType">
+        <xs:sequence minOccurs="1">
+            <xs:element ref="dsepc:EPC_PPO_DP_SaltCavern"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:element name="EPC_PPO_DP_Borehole"
+               type="dsepc:EPC_PPO_DP_BoreholeType"
+               substitutionGroup="dsepc:EPC_PPO_Borehole">
+        <xs:annotation>
+            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het uitgiftedocument met de chronologisch geordende historische gegevens in de basisregistratie ondergrond van een boorgat, dat wordt uitgeleverd als de afnemer tevens de bronhouder en/of dataleverancier is van het registratieobject, ongeacht of registratieobject uit registratie is genomen of niet.</xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:complexType name="EPC_PPO_DP_BoreholeType">
+        <xs:complexContent>
+            <xs:extension base="dsepc:EPC_PPO_BoreholeType"/>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="EPC_PPO_DP_BoreholePropertyType">
+        <xs:sequence minOccurs="1">
+            <xs:element ref="dsepc:EPC_PPO_DP_Borehole"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:element name="EPC_PPO_DP_MiningSystem"
+               type="dsepc:EPC_PPO_DP_MiningSystemType"
+               substitutionGroup="dsepc:EPC_PPO_MiningSystem">
+        <xs:annotation>
+            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het uitgiftedocument met de chronologisch geordende historische gegevens in de basisregistratie ondergrond van een mijnstelsel, dat wordt uitgeleverd als de afnemer tevens de bronhouder en/of dataleverancier is van het registratieobject, ongeacht of registratieobject uit registratie is genomen of niet.</xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:complexType name="EPC_PPO_DP_MiningSystemType">
+        <xs:complexContent>
+            <xs:extension base="dsepc:EPC_PPO_MiningSystemType"/>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="EPC_PPO_DP_MiningSystemPropertyType">
+        <xs:sequence minOccurs="1">
+            <xs:element ref="dsepc:EPC_PPO_DP_MiningSystem"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:element name="AbstractMiningConstruction"
+               type="dsepc:AbstractMiningConstructionType"
+               abstract="true"
                substitutionGroup="brocom:RegistrationObject">
-      <xs:annotation>
-         <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De gegevens over een mijnbouwconstructie in de basisregistratie ondergrond, welke verstrekt worden aan een aanvrager die tevens bronhouder en/of dataleverancier van het registratieobject is.</xs:documentation>
-      </xs:annotation>
-   </xs:element>
-   <xs:complexType name="EPC_PO_DPType">
-      <xs:complexContent>
-         <xs:extension base="brocom:RegistrationObjectType">
-            <xs:sequence>
-               <xs:element name="deliveryContext"
+        <xs:annotation>
+            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De gegevens die de mijnbouwconstructie identificeren en inzicht geven over de levensduur, registratiegeschiedenis en constructiegeschiedenis van het object.</xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:complexType name="AbstractMiningConstructionType" abstract="true">
+        <xs:complexContent>
+            <xs:extension base="brocom:RegistrationObjectType">
+                <xs:sequence>
+                    <xs:element name="deliveryContext"
                            minOccurs="1"
                            maxOccurs="1"
                            type="epccom:DeliveryContextType">
-                  <xs:annotation>
-                     <xs:appinfo>
-                        <CodeListName>DeliveryContext</CodeListName>
-                        <CodeListURI/>
-                     </xs:appinfo>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De rechtsgrond op basis waarvan, of bij afwezigheid daarvan, de activiteit naar aanleiding waarvan, het betreffende gegeven is aangeleverd aan de basisregistratie ondergrond.
+                        <xs:annotation>
+                            <xs:appinfo>
+                                <CodeListName>DeliveryContext</CodeListName>
+                                <CodeListURI/>
+                            </xs:appinfo>
+                            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De rechtsgrond op basis waarvan, of bij afwezigheid daarvan, de activiteit naar aanleiding waarvan, het betreffende gegeven is aangeleverd aan de basisregistratie ondergrond.
 Explanation: De wetgever stipuleert dat het gegeven moet zijn vastgelegd om inzicht te geven in de relatie met de taken van een bestuursorgaan. Het gegeven geeft inzicht in de maatschappelijke betekenis van de informatie. Het kader waarbinnen mijnbouwwetvergunningen worden verleend is de Mijnbouwwet uit 2003. Er wordt geen onderscheid gemaakt naar versies.</xs:documentation>
-                  </xs:annotation>
-               </xs:element>
-               <xs:element name="sourceReference"
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="legalStatus"
+                           minOccurs="0"
+                           maxOccurs="1"
+                           type="epccom:LegalStatusType">
+                        <xs:annotation>
+                            <xs:appinfo>
+                                <CodeListName>LegalStatus</CodeListName>
+                                <CodeListURI/>
+                            </xs:appinfo>
+                            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De status van een mijnbouwconstructie op basis van de mijnbouwwetgeving.
+Explanation: De wettelijke status is optioneel wanneer de mijnbouwconstructie een zoutcaverne is. Een mijnstelsel kan in gebruik zijn voor zowel mijnbouwactiviteiten als voor andere doeleinden (bijv. toerisme). In de registratie ondergrond wordt niet vastgelegd dat een mijnstelsel in gebruik is voor andere doeleinden. Als een mijnstelsel in het geheel niet meer wordt gebruikt of uitsluitend voor andere doeleinden dan geldt de wettelijke status 'BuitenGebruikMijnbouw'.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="owner"
+                           minOccurs="1"
+                           maxOccurs="1"
+                           nillable="true"
+                           type="brocom:OrganizationType">
+                        <xs:annotation>
+                            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het KvK-nummer van de onderneming of de maatschappelijke activiteit van de rechtspersoon die eigenaar is van het object dat aan de basisregistratie ondergrond is aangeleverd door de dataleverancier, of het equivalent daarvan in een handelsregister van een andere lidstaat van de Europese Unie dan Nederland.
+Explanation: De eigenaar van een boorgat is gelijk aan de vergunninghouder van de vergunning waar het boorgat onder valt. In het geval de vergunninghouder een consortium is, dan is de penvoerder van het consortium de eigenaar van het boorgat. In het geval het boorgat een alleenstaand geabandonneerd boorgat is, dan is de organisatie die eigenaar was ten tijde van de abandonnering de (laatste) eigenaar van het boorgat. In het geval het boorgat behoort tot een productie-installatie dan kan de eigenaar wijzigen tot het moment dat de gehele productie-installatie is geabandonneerd. De organisatie die eigenaar was ten tijde van de abandonnering van de gehele productie-installatie is de (laatste) eigenaar van het boorgat. De eigenaar van de zoutcaverne is gelijk aan de eigenaar van het boorgat of de boorgaten waarvan één of meerdere boortrajecten de zoutcaverne ontsluiten. In de praktijk komt het niet voor dat er verschillende eigenaren zijn van de boorgaten via welke een zoutcaverne wordt ontsloten.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="sourceReference"
                            minOccurs="1"
                            maxOccurs="1"
                            type="brocom:OrganizationType">
-                  <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De organisatie die meer gegevens over ofwel extra toelichting op de mijnbouwconstructie kan leveren.</xs:documentation>
-                  </xs:annotation>
-               </xs:element>
-               <xs:element minOccurs="0"
+                        <xs:annotation>
+                            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De organisatie die meer gegevens over ofwel extra toelichting op de mijnbouwconstructie kan leveren.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element minOccurs="1"
                            maxOccurs="1"
                            name="registrationHistory"
                            nillable="false"
                            type="brocom:RegistrationHistoryType">
-                  <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De geschiedenis van de mijnbouwconstructie in de registratie ondergrond.</xs:documentation>
-                  </xs:annotation>
-               </xs:element>
-               <xs:element minOccurs="0"
+                        <xs:annotation>
+                            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De geschiedenis van de mijnbouwconstructie in de registratie ondergrond.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element minOccurs="1"
                            maxOccurs="1"
                            name="lifespan"
                            nillable="false"
-                           type="epccom:MiningConstructionHistoryType">
-                  <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De periode gedurende welke de mijnbouwconstructie in de werkelijkheid bestaat of heeft bestaan.</xs:documentation>
-                  </xs:annotation>
-               </xs:element>
-               <xs:element minOccurs="0"
+                           type="dsepc:LifespanType">
+                        <xs:annotation>
+                            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De periode gedurende welke de mijnbouwconstructie in de werkelijkheid bestaat of heeft bestaan.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element minOccurs="1"
                            maxOccurs="1"
                            name="constructionHistory"
                            nillable="false"
-                           type="epccom:ConstructionHistoryType">
-                  <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De geschiedenis van de mijnbouwconstructie in de werkelijkheid.</xs:documentation>
-                  </xs:annotation>
-               </xs:element>
-               <xs:element name="legalStatus"
-                           minOccurs="0"
-                           maxOccurs="1"
-                           type="epccom:LegalStatusType">
-                  <xs:annotation>
-                     <xs:appinfo>
-                        <CodeListName>LegalStatus</CodeListName>
-                        <CodeListURI/>
-                     </xs:appinfo>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De status van een mijnbouwconstructie op basis van de mijnbouwwetgeving.
-Explanation: De wettelijke status is optioneel wanneer de mijnbouwconstructie een zoutcaverne is. Een mijnstelsel kan in gebruik zijn voor zowel mijnbouwactiviteiten als voor andere doeleinden (bijv. toerisme). In de registratie ondergrond wordt niet vastgelegd dat een mijnstelsel in gebruik is voor andere doeleinden. Als een mijnstelsel in het geheel niet meer wordt gebruikt of uitsluitend voor andere doeleinden dan geldt de wettelijke status 'BuitenGebruikMijnbouw'.</xs:documentation>
-                  </xs:annotation>
-               </xs:element>
-               <xs:element name="owner"
-                           minOccurs="1"
-                           maxOccurs="1"
-                           type="brocom:OrganizationType">
-                  <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het KvK-nummer van de onderneming of de maatschappelijke activiteit van de rechtspersoon die eigenaar is van het object dat aan de basisregistratie ondergrond is aangeleverd door de dataleverancier, of het equivalent daarvan in een handelsregister van een andere lidstaat van de Europese Unie dan Nederland.
-Explanation: De eigenaar van een boorgat is gelijk aan de vergunninghouder van de vergunning waar het boorgat onder valt. In het geval de vergunninghouder een consortium is, dan is de penvoerder van het consortium de eigenaar van het boorgat. In het geval het boorgat een alleenstaand geabandonneerd boorgat is, dan is de organisatie die eigenaar was ten tijde van de abandonnering de (laatste) eigenaar van het boorgat. In het geval het boorgat behoort tot een productie-installatie dan kan de eigenaar wijzigen tot het moment dat de gehele productie-installatie is geabandonneerd. De organisatie die eigenaar was ten tijde van de abandonnering van de gehele productie-installatie is de (laatste) eigenaar van het boorgat. De eigenaar van de zoutcaverne is gelijk aan de eigenaar van het boorgat of de boorgaten waarvan één of meerdere boortrajecten de zoutcaverne ontsluiten. In de praktijk komt het niet voor dat er verschillende eigenaren zijn van de boorgaten via welke een zoutcaverne wordt ontsloten.</xs:documentation>
-                  </xs:annotation>
-               </xs:element>
-            </xs:sequence>
-         </xs:extension>
-      </xs:complexContent>
-   </xs:complexType>
-   <xs:complexType name="EPC_PO_DPPropertyType">
-      <xs:sequence minOccurs="0">
-         <xs:element ref="dsepc:EPC_PO_DP"/>
-      </xs:sequence>
-      <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
-   </xs:complexType>
-   <xs:element name="EPC_DO"
-               type="dsepc:EPC_DOType"
-               substitutionGroup="gml:AbstractFeature">
-      <xs:annotation>
-         <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het uitgiftedocument dat wordt uitgeleverd als de afnemer tevens de bronhouder of dataleverancier is van het registratieobject.</xs:documentation>
-      </xs:annotation>
-   </xs:element>
-   <xs:complexType name="EPC_DOType">
-      <xs:complexContent>
-         <xs:extension base="gml:AbstractFeatureType">
-            <xs:sequence>
-               <xs:element name="objectIdAccountableParty"
-                           minOccurs="1"
-                           maxOccurs="1"
-                           type="xs:string"/>
-               <xs:element name="deliveryContext"
-                           minOccurs="1"
-                           maxOccurs="1"
-                           type="epccom:DeliveryContextType">
-                  <xs:annotation>
-                     <xs:appinfo>
-                        <CodeListName>DeliveryContext</CodeListName>
-                        <CodeListURI/>
-                     </xs:appinfo>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De rechtsgrond op basis waarvan, of bij afwezigheid daarvan, de activiteit naar aanleiding waarvan, het betreffende gegeven is aangeleverd aan de basisregistratie ondergrond.
-Explanation: De wetgever stipuleert dat het gegeven moet zijn vastgelegd om inzicht te geven in de relatie met de taken van een bestuursorgaan. Het gegeven geeft inzicht in de maatschappelijke betekenis van de informatie. Het kader waarbinnen mijnbouwwetvergunningen worden verleend is de Mijnbouwwet uit 2003. Er wordt geen onderscheid gemaakt naar versies.</xs:documentation>
-                  </xs:annotation>
-               </xs:element>
-               <xs:element name="legalStatus"
-                           minOccurs="0"
-                           maxOccurs="1"
-                           type="epccom:LegalStatusType">
-                  <xs:annotation>
-                     <xs:appinfo>
-                        <CodeListName>LegalStatus</CodeListName>
-                        <CodeListURI/>
-                     </xs:appinfo>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De status van een mijnbouwconstructie op basis van de mijnbouwwetgeving.
-Explanation: De wettelijke status is optioneel wanneer de mijnbouwconstructie een zoutcaverne is. Een mijnstelsel kan in gebruik zijn voor zowel mijnbouwactiviteiten als voor andere doeleinden (bijv. toerisme). In de registratie ondergrond wordt niet vastgelegd dat een mijnstelsel in gebruik is voor andere doeleinden. Als een mijnstelsel in het geheel niet meer wordt gebruikt of uitsluitend voor andere doeleinden dan geldt de wettelijke status 'BuitenGebruikMijnbouw'.</xs:documentation>
-                  </xs:annotation>
-               </xs:element>
-               <xs:element name="owner"
-                           minOccurs="1"
-                           maxOccurs="1"
-                           type="brocom:OrganizationType">
-                  <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het KvK-nummer van de onderneming of de maatschappelijke activiteit van de rechtspersoon die eigenaar is van het object dat aan de basisregistratie ondergrond is aangeleverd door de dataleverancier, of het equivalent daarvan in een handelsregister van een andere lidstaat van de Europese Unie dan Nederland.
-Explanation: De eigenaar van een boorgat is gelijk aan de vergunninghouder van de vergunning waar het boorgat onder valt. In het geval de vergunninghouder een consortium is, dan is de penvoerder van het consortium de eigenaar van het boorgat. In het geval het boorgat een alleenstaand geabandonneerd boorgat is, dan is de organisatie die eigenaar was ten tijde van de abandonnering de (laatste) eigenaar van het boorgat. In het geval het boorgat behoort tot een productie-installatie dan kan de eigenaar wijzigen tot het moment dat de gehele productie-installatie is geabandonneerd. De organisatie die eigenaar was ten tijde van de abandonnering van de gehele productie-installatie is de (laatste) eigenaar van het boorgat. De eigenaar van de zoutcaverne is gelijk aan de eigenaar van het boorgat of de boorgaten waarvan één of meerdere boortrajecten de zoutcaverne ontsluiten. In de praktijk komt het niet voor dat er verschillende eigenaren zijn van de boorgaten via welke een zoutcaverne wordt ontsloten.</xs:documentation>
-                  </xs:annotation>
-               </xs:element>
-               <xs:element minOccurs="0"
-                           maxOccurs="1"
-                           name="registrationHistory"
-                           nillable="false"
-                           type="brocom:RegistrationHistoryType">
-                  <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De geschiedenis van de mijnbouwconstructie in de registratie ondergrond.</xs:documentation>
-                  </xs:annotation>
-               </xs:element>
-               <xs:element minOccurs="0"
-                           maxOccurs="1"
-                           name="lifespan"
-                           nillable="false"
-                           type="epccom:MiningConstructionHistoryType">
-                  <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De periode gedurende welke de mijnbouwconstructie in de werkelijkheid bestaat of heeft bestaan.</xs:documentation>
-                  </xs:annotation>
-               </xs:element>
-               <xs:element minOccurs="0"
-                           maxOccurs="1"
-                           name="constructionHistory"
-                           nillable="false"
-                           type="epccom:ConstructionHistoryType">
-                  <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De geschiedenis van de mijnbouwconstructie in de werkelijkheid.</xs:documentation>
-                  </xs:annotation>
-               </xs:element>
-               <xs:element name="sourceReference"
-                           minOccurs="1"
-                           maxOccurs="1"
-                           type="brocom:OrganizationType">
-                  <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De organisatie die meer gegevens over ofwel extra toelichting op de mijnbouwconstructie kan leveren.</xs:documentation>
-                  </xs:annotation>
-               </xs:element>
-            </xs:sequence>
-         </xs:extension>
-      </xs:complexContent>
-   </xs:complexType>
-   <xs:complexType name="EPC_DOPropertyType">
-      <xs:sequence minOccurs="0">
-         <xs:element ref="dsepc:EPC_DO"/>
-      </xs:sequence>
-      <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
-   </xs:complexType>
-   <xs:element name="EPC_PO"
-               type="dsepc:EPC_POType"
-               substitutionGroup="dsepc:EPC_PO_DP">
-      <xs:annotation>
-         <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het uitgiftedocument met de actuele gegevens van een mijnbouwconstructie, dat wordt uitgeleverd als de afnemer niet de bronhouder of dataleverancier is van het registratieobject en het registratieobject niet uit registratie is genomen.</xs:documentation>
-      </xs:annotation>
-   </xs:element>
-   <xs:complexType name="EPC_POType">
-      <xs:complexContent>
-         <xs:extension base="dsepc:EPC_PO_DPType"/>
-      </xs:complexContent>
-   </xs:complexType>
-   <xs:complexType name="EPC_POPropertyType">
-      <xs:sequence minOccurs="0">
-         <xs:element ref="dsepc:EPC_PO"/>
-      </xs:sequence>
-      <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
-   </xs:complexType>
-   <xs:complexType name="EPC_CriteriaSetType">
-      <xs:complexContent>
-         <xs:extension base="brocom:CriteriaSetType">
-            <xs:sequence>
-               <xs:element name="miningConstructionKind"
+                           type="dsepc:ConstructionHistoryType">
+                        <xs:annotation>
+                            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De geschiedenis van de mijnbouwconstructie in de werkelijkheid.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="AbstractMiningConstructionPropertyType">
+        <xs:sequence minOccurs="1">
+            <xs:element ref="dsepc:AbstractMiningConstruction"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="ConstructionHistoryType">
+        <xs:sequence>
+            <xs:element minOccurs="1"
+                     maxOccurs="unbounded"
+                     name="event"
+                     nillable="false"
+                     type="dsepc:EventType">
+                <xs:annotation>
+                    <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Een gebeurtenis in de werkelijkheid die tijdens de levensduur van de mijnbouwconstructie heeft plaatsgevonden.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="EPC_CriteriaSetType">
+        <xs:complexContent>
+            <xs:extension base="brocom:CriteriaSetType">
+                <xs:sequence>
+                    <xs:element name="miningConstructionKind"
                            type="dsepc:MiningConstructionKindType"
                            minOccurs="0"
                            maxOccurs="1">
-                  <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De aanduiding van het primaire gebruik waarvoor een mijnstelsel is aangelegd.</xs:documentation>
-                  </xs:annotation>
-               </xs:element>
-               <xs:element name="operationalAreaFilter"
+                        <xs:annotation>
+                            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De aanduiding van het primaire gebruik waarvoor een mijnstelsel is aangelegd.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="operationalAreaFilter"
                            type="dsepc:OperationalAreaFilterType"
                            minOccurs="0"
                            maxOccurs="1">
-                  <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De contour van het mijnstelsel, geprojecteerd op het aardoppervlak.</xs:documentation>
-                  </xs:annotation>
-               </xs:element>
-               <xs:element name="legalStatus"
+                        <xs:annotation>
+                            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De contour van het mijnstelsel, geprojecteerd op het aardoppervlak.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="legalStatus"
                            minOccurs="0"
                            maxOccurs="1"
                            type="epccom:LegalStatusType">
-                  <xs:annotation>
-                     <xs:appinfo>
-                        <CodeListName>LegalStatus</CodeListName>
-                        <CodeListURI/>
-                     </xs:appinfo>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De status van een mijnbouwconstructie op basis van de mijnbouwwetgeving.
+                        <xs:annotation>
+                            <xs:appinfo>
+                                <CodeListName>LegalStatus</CodeListName>
+                                <CodeListURI/>
+                            </xs:appinfo>
+                            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De status van een mijnbouwconstructie op basis van de mijnbouwwetgeving.
 Explanation: De wettelijke status is optioneel wanneer de mijnbouwconstructie een zoutcaverne is. Een mijnstelsel kan in gebruik zijn voor zowel mijnbouwactiviteiten als voor andere doeleinden (bijv. toerisme). In de registratie ondergrond wordt niet vastgelegd dat een mijnstelsel in gebruik is voor andere doeleinden. Als een mijnstelsel in het geheel niet meer wordt gebruikt of uitsluitend voor andere doeleinden dan geldt de wettelijke status 'BuitenGebruikMijnbouw'.</xs:documentation>
-                  </xs:annotation>
-               </xs:element>
-               <xs:element name="purpose"
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="purpose"
                            minOccurs="0"
                            maxOccurs="1"
                            type="epccom:MiningActivityType">
-                  <xs:annotation>
-                     <xs:appinfo>
-                        <CodeListName>MiningActivity</CodeListName>
-                        <CodeListURI/>
-                     </xs:appinfo>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het oorspronkelijke doel waarvoor het boortraject is aangelegd.</xs:documentation>
-                  </xs:annotation>
-               </xs:element>
-               <xs:element name="drillingStartDate"
+                        <xs:annotation>
+                            <xs:appinfo>
+                                <CodeListName>MiningActivity</CodeListName>
+                                <CodeListURI/>
+                            </xs:appinfo>
+                            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het oorspronkelijke doel waarvoor het boortraject is aangelegd.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="drillingStartDate"
                            type="xs:date"
                            minOccurs="0"
                            maxOccurs="1">
-                  <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De datum waarop het boren van het boortraject is begonnen.</xs:documentation>
-                  </xs:annotation>
-               </xs:element>
-               <xs:element name="drillingEndDate"
+                        <xs:annotation>
+                            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De datum waarop het boren van het boortraject is begonnen.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="drillingEndDate"
                            type="xs:date"
                            minOccurs="0"
                            maxOccurs="1">
-                  <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De datum waarop de aanleg van het boortraject is beëindigd.
+                        <xs:annotation>
+                            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De datum waarop de aanleg van het boortraject is beëindigd.
 Explanation: De aanleg van een boortraject eindigt op het moment dat na de boring een bovengrondse afwerking wordt geïnstalleerd, of het moment dat aansluitende activiteiten zoals bijvoorbeeld een productietest beëindigd zijn.</xs:documentation>
-                  </xs:annotation>
-               </xs:element>
-               <xs:element name="explorationProductionLicence"
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="explorationProductionLicence"
+                           type="brocom:RegistrationObjectCodeType"
                            minOccurs="0"
-                           maxOccurs="1"
-                           type="brocom:RegistrationObjectCodeType">
-                  <xs:annotation>
-                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De identificatie van een mijnbouwwetvergunning in de registratie ondergrond.</xs:documentation>
-                  </xs:annotation>
-               </xs:element>
-            </xs:sequence>
-         </xs:extension>
-      </xs:complexContent>
-   </xs:complexType>
-   <xs:simpleType name="MiningConstructionKindType">
-      <xs:restriction base="xs:string">
-         <xs:enumeration value="boorgat"/>
-         <xs:enumeration value="mijnstelsel"/>
-         <xs:enumeration value="zoutcaverne"/>
-      </xs:restriction>
-   </xs:simpleType>
-   <xs:simpleType name="OperationalAreaFilterType">
-      <xs:restriction base="xs:string">
-         <xs:enumeration value="mijnbouwconstructie locatie"/>
-         <xs:enumeration value="boorgat boortraject locatie"/>
-         <xs:enumeration value="mijnstelsel toegang locatie"/>
-         <xs:enumeration value="mijnstelsel transportzone gebied"/>
-         <xs:enumeration value="mijnstelsel ontginningszone gebied"/>
-         <xs:enumeration value="mijnstelsel mijnkaart kaartbereik"/>
-      </xs:restriction>
-   </xs:simpleType>
-   <xs:complexType name="EventNameType">
-      <xs:simpleContent>
-         <xs:restriction base="gml:CodeWithAuthorityType">
-            <xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed=""/>
-         </xs:restriction>
-      </xs:simpleContent>
-   </xs:complexType>
+                           maxOccurs="1">
+                        <xs:annotation>
+                            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De identificatie van een mijnbouwwetvergunning in de registratie ondergrond.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="EventType">
+        <xs:sequence>
+            <xs:element name="date" type="xs:date" minOccurs="1" maxOccurs="1">
+                <xs:annotation>
+                    <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De datum waarop de gebeurtenis heeft plaatsgevonden.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="name"
+                     minOccurs="1"
+                     maxOccurs="1"
+                     type="dsepc:EventNameType">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <CodeListName>EventName</CodeListName>
+                        <CodeListURI/>
+                    </xs:appinfo>
+                    <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De benaming van de gebeurtenis.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="identifier" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                    <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De unieke identificatie in de registratie ondergrond van een boortraject als onderdeel van een boorgat, of de unieke identificatie van een toegang, transportzone of ontginningszone als onderdeel van een mijnstelsel.
+Explanation: De boortrajectcode komt overeen met de code waaronder de bronhouder gegevens over het boortraject publiek beschikbaar stelt.</xs:documentation>
+                </xs:annotation>
+                <xs:simpleType>
+                    <xs:restriction base="xs:integer">
+                        <xs:totalDigits value="5"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="sourceDocument"
+                     type="epccom:SourceDocumentType"
+                     minOccurs="0"
+                     maxOccurs="1">
+                <xs:annotation>
+                    <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het brondocument dat ten gevolge van een gebeurtenis in de werkelijkheid is aangeleverd en heeft geleid tot de registratie van deze gebeurtenis. Dit gegeven wordt alleen uitgeleverd als de waarde van het attribuut dataToBeDelivered in het dispatchDataRequest gelijk is aan 'actueelHistorisch'.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="LifespanType">
+        <xs:sequence>
+            <xs:element name="startDate" type="xs:date" minOccurs="1" maxOccurs="1">
+                <xs:annotation>
+                    <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De datum waarop de aanleg van de mijnbouwconstructie is gestart.
+Explanation: Bij een boorgat betreft dit de datum waarop het boren van het primaire boortraject is gestart. Bij een zoutcaverne betreft dit de datum waarop de eerste pekelproductie is gestart.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="endDate" type="xs:date" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                    <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De datum waarop de gehele mijnbouwconstructie eindigt te bestaan.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="StandardizedLocationType">
+        <xs:sequence>
+            <xs:element name="location"
+                     type="gml:MultiSurfacePropertyType"
+                     minOccurs="1"
+                     maxOccurs="1">
+                <xs:annotation>
+                    <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De locatie van een mijnbouwconstructie zoals getransformeerd door de basisregistratie ondergrond, bestaand uit coördinaten in het standaard referentiestelsel.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="coordinateTransformation"
+                     minOccurs="1"
+                     maxOccurs="1"
+                     type="dsepc:CoordinateTransformationType">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <CodeListName>CoordinateTransformation</CodeListName>
+                        <CodeListURI/>
+                    </xs:appinfo>
+                    <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De methode die de basisregistratie ondergrond heeft gebruikt voor het omzetten van de aangeleverde locatie.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="StandardizedLocationBoreholeType">
+        <xs:sequence>
+            <xs:element name="location"
+                     type="gml:PointPropertyType"
+                     minOccurs="1"
+                     maxOccurs="1">
+                <xs:annotation>
+                    <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De locatie van een mijnbouwconstructie zoals getransformeerd door de basisregistratie ondergrond, bestaand uit coördinaten in het standaard referentiestelsel.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="coordinateTransformation"
+                     minOccurs="1"
+                     maxOccurs="1"
+                     type="dsepc:CoordinateTransformationType">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <CodeListName>CoordinateTransformation</CodeListName>
+                        <CodeListURI/>
+                    </xs:appinfo>
+                    <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De methode die de basisregistratie ondergrond heeft gebruikt voor het omzetten van de aangeleverde locatie.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="StandardizedLocationSaltcavernType">
+        <xs:sequence>
+            <xs:element name="location"
+                     type="gml:SurfacePropertyType"
+                     minOccurs="1"
+                     maxOccurs="1">
+                <xs:annotation>
+                    <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De locatie van een mijnbouwconstructie zoals getransformeerd door de basisregistratie ondergrond, bestaand uit coördinaten in het standaard referentiestelsel.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="coordinateTransformation"
+                     minOccurs="1"
+                     maxOccurs="1"
+                     type="dsepc:CoordinateTransformationType">
+                <xs:annotation>
+                    <xs:appinfo>
+                        <CodeListName>CoordinateTransformation</CodeListName>
+                        <CodeListURI/>
+                    </xs:appinfo>
+                    <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De methode die de basisregistratie ondergrond heeft gebruikt voor het omzetten van de aangeleverde locatie.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="DataToBeDeliveredType">
+        <xs:annotation>
+            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Een domein in de vorm van een keuzelijst met een limitatieve opsomming van toegestane waarden voor het duiden welke gegevens over het registratieobject worden opgevraagd. Uitbreiding van de keuzelijst is niet mogelijk.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="actueel"/>
+            <xs:enumeration value="actueelHistorisch"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="MiningConstructionKindType">
+        <xs:annotation>
+            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Een domein in de vorm van een keuzelijst met een limitatieve opsomming van waarden. Uitbreiding van de keuzelijst is niet mogelijk. De lijst met soorten van mijnstelsels die worden onderscheiden in de basisregistratie ondergrond, aangevend het primaire gebruik van een mijnstelsel.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="boorgat"/>
+            <xs:enumeration value="mijnstelsel"/>
+            <xs:enumeration value="zoutcaverne"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="OperationalAreaFilterType">
+        <xs:annotation>
+            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Een domein in de vorm van een keuzelijst met een limitatieve opsomming van waarden. Uitbreiding van de keuzelijst is niet mogelijk. De lijst met soorten van mijnstelsels die worden onderscheiden in de basisregistratie ondergrond, aangevend het primaire gebruik van een mijnstelsel.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="mijnbouwconstructie locatie"/>
+            <xs:enumeration value="boorgat boortraject locatie"/>
+            <xs:enumeration value="mijnstelsel toegang locatie"/>
+            <xs:enumeration value="mijnstelsel transportzone gebied"/>
+            <xs:enumeration value="mijnstelsel ontginningszone gebied"/>
+            <xs:enumeration value="mijnstelsel mijnkaart kaartbereik"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="CoordinateTransformationType">
+        <xs:simpleContent>
+            <xs:restriction base="gml:CodeWithAuthorityType">
+                <xs:attribute name="codeSpace"
+                          type="xs:anyURI"
+                          use="required"
+                          fixed="urn:bro:epc:CoordinateTransformation"/>
+            </xs:restriction>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="EventNameType">
+        <xs:simpleContent>
+            <xs:restriction base="gml:CodeWithAuthorityType">
+                <xs:attribute name="codeSpace"
+                          type="xs:anyURI"
+                          use="required"
+                          fixed="urn:bro:epc:EventName"/>
+            </xs:restriction>
+        </xs:simpleContent>
+    </xs:complexType>
 </xs:schema>
