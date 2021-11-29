@@ -600,7 +600,7 @@ Explanation: De wettelijke status is optioneel wanneer de mijnbouwconstructie ee
                type="epccom:EPC_MiningSystemChangedType"
                substitutionGroup="gml:AbstractFeature">
         <xs:annotation>
-            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Dit brondocument wordt aangeboden wanneer van een mijnstelsel na de eerste registratie een transport- of ontginningszone wordt uitgebreid, een toegang, transport- of ontginningszone gedeeltelijk of geheel is afgegraven, de ontginningsstatus van een ontginningszone wijzigt, het gemijnde gebied van het mijnstelsel wijzigt.</xs:documentation>
+            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Dit brondocument wordt aangeboden wanneer van een mijnstelsel na de eerste registratie een transport- of ontginningszone wordt uitgebreid, een toegang, transport- of ontginningszone gedeeltelijk of geheel is afgegraven, de ontginningsstatus van een ontginningszone wijzigt, of het gemijnde gebied van het mijnstelsel wijzigt.</xs:documentation>
         </xs:annotation>
     </xs:element>
     <xs:complexType name="EPC_MiningSystemChangedType">
@@ -658,7 +658,7 @@ Explanation: De wettelijke status is optioneel wanneer de mijnbouwconstructie ee
                type="epccom:EPC_MiningSystemExtendedType"
                substitutionGroup="gml:AbstractFeature">
         <xs:annotation>
-            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Dit brondocument wordt aangeboden wanneer een mijnstelsel na de eerste registratie wordt uitgebreid met een of meerdere toegangen, transportzones of ontginningszones. Als gevolg daarvan kan ook het gemijnde gebied van het mijnstelsel worden gewijzigd.</xs:documentation>
+            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Dit brondocument wordt aangeboden wanneer een mijnstelsel na de eerste registratie wordt uitgebreid met een toegang, transportzone of ontginningszone. Als gevolg daarvan kan ook het gemijnde gebied van het mijnstelsel worden gewijzigd.</xs:documentation>
         </xs:annotation>
     </xs:element>
     <xs:complexType name="EPC_MiningSystemExtendedType">
@@ -1218,11 +1218,6 @@ Explanation: Van een mijnstelsel dat is afgegraven, is het gemijnd gebied gelijk
                             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De gegevens over het bepalen van het gemijnd gebied.</xs:documentation>
                         </xs:annotation>
                     </xs:element>
-                    <xs:element minOccurs="1"
-                           maxOccurs="unbounded"
-                           name="explorationProductionLicence"
-                           nillable="false"
-                           type="epccom:ExplorationProductionLicencePropertyType"/>
                     <xs:element minOccurs="0"
                            maxOccurs="unbounded"
                            name="entrance"
@@ -1238,6 +1233,11 @@ Explanation: Van een mijnstelsel dat is afgegraven, is het gemijnd gebied gelijk
                            name="exploitationZone"
                            nillable="false"
                            type="epccom:ExploitationZonePropertyType"/>
+                    <xs:element minOccurs="1"
+                           maxOccurs="unbounded"
+                           name="explorationProductionLicence"
+                           nillable="false"
+                           type="epccom:ExplorationProductionLicencePropertyType"/>
                     <xs:element minOccurs="0"
                            maxOccurs="unbounded"
                            name="miningMap"
