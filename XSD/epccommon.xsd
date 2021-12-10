@@ -31,6 +31,7 @@
     <!--
 	<xs:import namespace="http://www.broservices.nl/xsd/brocommon/3.0" schemaLocation="https://schema.broservices.nl/xsd/brocommon/3.0/brocommon.xsd"/>
     <xs:import namespace="http://www.opengis.net/gml/3.2" schemaLocation="https://schema.broservices.nl/profile/gml/1.0/gml-profile.xsd"/>
+    <xs:import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
     <xs:import namespace="http://www.broservices.nl/xsd/brocommon/3.0" schemaLocation="https://schema.broservices.nl/xsd/brocommon/3.0/brocommon.xsd"/>
 	-->
 	<xs:import namespace="http://www.broservices.nl/xsd/brocommon/3.0" schemaLocation="brocommon.xsd"/>
@@ -636,7 +637,7 @@ Explanation: De wettelijke status is optioneel wanneer de mijnbouwconstructie ee
                            type="epccom:EntranceChangedPropertyType"/>
                     <xs:element minOccurs="0"
                            maxOccurs="1"
-                           name="transportationzone"
+                           name="transportationZone"
                            nillable="false"
                            type="epccom:TransportationZoneChangedPropertyType"/>
                     <xs:element minOccurs="0"
@@ -694,7 +695,7 @@ Explanation: De wettelijke status is optioneel wanneer de mijnbouwconstructie ee
                            type="epccom:EntrancePropertyType"/>
                     <xs:element minOccurs="0"
                            maxOccurs="1"
-                           name="transportationzone"
+                           name="transportationZone"
                            nillable="false"
                            type="epccom:TransportationZonePropertyType"/>
                     <xs:element minOccurs="0"
@@ -1117,7 +1118,7 @@ Explanation: Van een kaart uit dezelfde serie en met hetzelfde kaartblad kunnen 
                         </xs:simpleType>
                     </xs:element>
                     <xs:element name="mapExtent"
-                           type="gml:EnvelopeType"
+                           type="gml:BoundingShapeType"
                            minOccurs="1"
                            maxOccurs="1">
                         <xs:annotation>

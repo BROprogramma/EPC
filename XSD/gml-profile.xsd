@@ -30,10 +30,12 @@
 		<documentation>GML 3.2.1 profile for BRO.
         0.0.2-3.2.1:anyURI toegevoegd aan TimePositionUnion</documentation>
 		<documentation>GML 3.3.0 profile for BRO.
-        0.0.3-3.2.1: June 2021: Added Curve, MultiPoint, MultiSurface; Adjusted SurfaceType</documentation>
+        0.0.3-3.2.1: June 2021: Added gml:BoundingShapeType, Curve, MultiPoint, MultiSurface; Adjusted SurfaceType</documentation>
 	</annotation>
 
-	<!--import namespace="http://www.w3.org/1999/xlink" schemaLocation="https://schema.broservices.nl/profile/xlink/1.0/xlink-profile.xsd"/-->
+	<!--
+    <import namespace="http://www.w3.org/1999/xlink" schemaLocation="https://schema.broservices.nl/profile/xlink/1.0/xlink-profile.xsd"/>
+    -->
 	<import namespace="http://www.w3.org/1999/xlink" schemaLocation="xlink-profile.xsd"/>
 
 	<!-- ================================================= -->
@@ -627,8 +629,18 @@ This property element either references a surface via the XLink-attributes or co
     <element name="AbstractScalarValue" type="anyType" abstract="true" substitutionGroup="gml:AbstractValue"/>
 -->
 	<annotation>
-		<documentation>June 2021 added: gml:CurvePropertyType, gml:MultiPointPropertyType en gml:MultiSurfacePropertyType</documentation>
+		<documentation>June 2021 added: gml:BoundingShapeType, gml:CurvePropertyType, gml:MultiPointPropertyType en gml:MultiSurfacePropertyType</documentation>
 	</annotation>
+	<!-- ================================================= -->
+	<complexType name="BoundingShapeType">
+		<sequence>
+			<choice>
+				<element ref="gml:Envelope"/>
+				<!--element ref="gml:Null"/-->
+			</choice>
+		</sequence>
+		<!--attribute name="nilReason" type="gml:NilReasonType"/-->
+	</complexType>
 	<!-- ================================================= -->
 	<complexType name="CurvePropertyType">
 		<annotation>

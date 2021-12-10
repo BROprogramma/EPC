@@ -32,6 +32,7 @@
     <!--
 	<xs:import namespace="http://www.broservices.nl/xsd/brocommon/3.0" schemaLocation="https://schema.broservices.nl/xsd/brocommon/3.0/brocommon.xsd"/>
     <xs:import namespace="http://www.opengis.net/gml/3.2" schemaLocation="https://schema.broservices.nl/profile/gml/1.0/gml-profile.xsd"/>
+    <xs:import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
     <xs:import namespace="http://www.broservices.nl/xsd/epccommon/1.0" schemaLocation="https://schema.broservices.nl/xsd/isepc/1.0/epccommon.xsd"/>
 	-->
 	<xs:import namespace="http://www.broservices.nl/xsd/brocommon/3.0" schemaLocation="brocommon.xsd"/>
@@ -142,6 +143,14 @@
         <xs:complexContent>
             <xs:extension base="brocom:AbstractCharacteristicsType">
                 <xs:sequence>
+                    <xs:element name="miningConstructionKind"
+                           type="dsepc:MiningConstructionKindType"
+                           minOccurs="1"
+                           maxOccurs="1">
+                        <xs:annotation>
+                            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De aanduiding van het primaire gebruik waarvoor een mijnstelsel is aangelegd.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
                     <xs:element name="explorationLicenceAmount" minOccurs="0" maxOccurs="1">
                         <xs:annotation>
                             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De unieke identificatie van een boortraject in de registratie ondergrond.
@@ -153,7 +162,24 @@ Explanation: De boortrajectcode komt overeen met de code waaronder de bronhouder
                             </xs:restriction>
                         </xs:simpleType>
                     </xs:element>
-                    <xs:element name="miningMapsAmount" minOccurs="0" maxOccurs="1">
+                    <xs:element name="cavernMeasurementCode"
+                           minOccurs="0"
+                           maxOccurs="1"
+                           type="xs:string">
+                        <xs:annotation>
+                            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De identificatie van een cavernemeting in de registratie ondergrond.
+Explanation: De cavernemetingcode komt overeen met de code waaronder de cavernemeting gegevens beschikbaar worden gesteld. De cavernemetingcode wordt alleen in de BRO opgenomen als de cavernemetingrapporten waarin de gegevens staan, openbaar raadpleegbaar zijn.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="saltCavernPubliclyAvailable"
+                           type="brocom:IndicationYesNoType"
+                           minOccurs="0"
+                           maxOccurs="1">
+                        <xs:annotation>
+                            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Indicatie of de holruimtecontour publiek toegankelijk is.</xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:element name="boreholeSegmentCode" minOccurs="0" maxOccurs="1">
                         <xs:annotation>
                             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De unieke identificatie van een boortraject in de registratie ondergrond.
 Explanation: De boortrajectcode komt overeen met de code waaronder de bronhouder gegevens over het boortraject publiek beschikbaar stelt.</xs:documentation>
@@ -164,7 +190,7 @@ Explanation: De boortrajectcode komt overeen met de code waaronder de bronhouder
                             </xs:restriction>
                         </xs:simpleType>
                     </xs:element>
-                    <xs:element name="boreholeSegmentName" minOccurs="1" maxOccurs="1">
+                    <xs:element name="boreholeSegmentName" minOccurs="0" maxOccurs="1">
                         <xs:annotation>
                             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De aanduiding van een boortraject binnen een boorgat middels een verkorte naam.
 Explanation: In het werkveld is dit een herkenbare naam.</xs:documentation>
@@ -176,14 +202,14 @@ Explanation: In het werkveld is dit een herkenbare naam.</xs:documentation>
                             </xs:restriction>
                         </xs:simpleType>
                     </xs:element>
-                    <xs:element name="boreholeSegmentCode" minOccurs="0" maxOccurs="1">
+                    <xs:element name="miningSystemName" minOccurs="0" maxOccurs="1">
                         <xs:annotation>
-                            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De unieke identificatie van een boortraject in de registratie ondergrond.
-Explanation: De boortrajectcode komt overeen met de code waaronder de bronhouder gegevens over het boortraject publiek beschikbaar stelt.</xs:documentation>
+                            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De unieke identificatie van een mijnstelsel middels de voorkeursbenaming.</xs:documentation>
                         </xs:annotation>
                         <xs:simpleType>
-                            <xs:restriction base="xs:integer">
-                                <xs:totalDigits value="5"/>
+                            <xs:restriction base="xs:string">
+                                <xs:maxLength value="100"/>
+                                <xs:pattern value="\S.*"/>
                             </xs:restriction>
                         </xs:simpleType>
                     </xs:element>
@@ -199,44 +225,8 @@ Explanation: Een code is bij steenkoolmijnen verplicht omdat deze code opgenomen
                             </xs:restriction>
                         </xs:simpleType>
                     </xs:element>
-                    <xs:element name="cavernMeasurementCode"
-                           minOccurs="0"
-                           maxOccurs="1"
-                           type="xs:string">
-                        <xs:annotation>
-                            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De identificatie van een cavernemeting in de registratie ondergrond.
-Explanation: De cavernemetingcode komt overeen met de code waaronder de cavernemeting gegevens beschikbaar worden gesteld. De cavernemetingcode wordt alleen in de BRO opgenomen als de cavernemetingrapporten waarin de gegevens staan, openbaar raadpleegbaar zijn.</xs:documentation>
-                        </xs:annotation>
-                    </xs:element>
-                    <xs:element name="minedArea"
-                           type="gml:MultiSurfacePropertyType"
-                           minOccurs="1"
-                           maxOccurs="1">
-                        <xs:annotation>
-                            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De unieke identificatie van een mijnstelsel middels de voorkeursbenaming.</xs:documentation>
-                        </xs:annotation>
-                    </xs:element>
-                    <xs:element name="miningSystemName" minOccurs="1" maxOccurs="1">
-                        <xs:annotation>
-                            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De unieke identificatie van een mijnstelsel middels de voorkeursbenaming.</xs:documentation>
-                        </xs:annotation>
-                        <xs:simpleType>
-                            <xs:restriction base="xs:string">
-                                <xs:maxLength value="100"/>
-                                <xs:pattern value="\S.*"/>
-                            </xs:restriction>
-                        </xs:simpleType>
-                    </xs:element>
-                    <xs:element name="miningConstructionKind"
-                           type="dsepc:MiningConstructionKindType"
-                           minOccurs="1"
-                           maxOccurs="1">
-                        <xs:annotation>
-                            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De aanduiding van het primaire gebruik waarvoor een mijnstelsel is aangelegd.</xs:documentation>
-                        </xs:annotation>
-                    </xs:element>
                     <xs:element name="miningSystemKind"
-                           minOccurs="1"
+                           minOccurs="0"
                            maxOccurs="1"
                            type="epccom:MiningSystemKindType">
                         <xs:annotation>
@@ -247,13 +237,24 @@ Explanation: De cavernemetingcode komt overeen met de code waaronder de cavernem
                             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De aanduiding van het primaire gebruik waarvoor een mijnstelsel is aangelegd.</xs:documentation>
                         </xs:annotation>
                     </xs:element>
-                    <xs:element name="publiclyAvailable"
-                           type="brocom:IndicationYesNoType"
-                           minOccurs="1"
+                    <xs:element name="minedArea"
+                           type="gml:MultiSurfacePropertyType"
+                           minOccurs="0"
                            maxOccurs="1">
                         <xs:annotation>
-                            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Indicatie of de holruimtecontour publiek toegankelijk is.</xs:documentation>
+                            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De unieke identificatie van een mijnstelsel middels de voorkeursbenaming.</xs:documentation>
                         </xs:annotation>
+                    </xs:element>
+                    <xs:element name="miningMapsAmount" minOccurs="0" maxOccurs="1">
+                        <xs:annotation>
+                            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De unieke identificatie van een boortraject in de registratie ondergrond.
+Explanation: De boortrajectcode komt overeen met de code waaronder de bronhouder gegevens over het boortraject publiek beschikbaar stelt.</xs:documentation>
+                        </xs:annotation>
+                        <xs:simpleType>
+                            <xs:restriction base="xs:integer">
+                                <xs:totalDigits value="5"/>
+                            </xs:restriction>
+                        </xs:simpleType>
                     </xs:element>
                 </xs:sequence>
             </xs:extension>
@@ -434,7 +435,7 @@ Explanation: De locatie van een mijnstelsel bevindt zich niet op het aardoppervl
                            type="epccom:EntrancePropertyType"/>
                     <xs:element minOccurs="0"
                            maxOccurs="unbounded"
-                           name="transportationzone"
+                           name="transportationZone"
                            nillable="false"
                            type="epccom:TransportationZonePropertyType"/>
                     <xs:element minOccurs="0"
@@ -509,7 +510,7 @@ Explanation: De holruimtecontrour is publiek beschikbaar wanneer het attribuut o
                             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De gegevens over het bepalen van de holruimtecontour van de zoutcaverne.</xs:documentation>
                         </xs:annotation>
                     </xs:element>
-                    <xs:element minOccurs="1"
+                    <xs:element minOccurs="0"
                            maxOccurs="1"
                            name="standardizedLocation"
                            nillable="false"
@@ -905,14 +906,6 @@ Explanation: De boortrajectcode komt overeen met de code waaronder de bronhouder
                         <xs:totalDigits value="5"/>
                     </xs:restriction>
                 </xs:simpleType>
-            </xs:element>
-            <xs:element name="sourceDocument"
-                     type="epccom:SourceDocumentType"
-                     minOccurs="0"
-                     maxOccurs="1">
-                <xs:annotation>
-                    <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het brondocument dat ten gevolge van een gebeurtenis in de werkelijkheid is aangeleverd en heeft geleid tot de registratie van deze gebeurtenis. Dit gegeven wordt alleen uitgeleverd als de waarde van het attribuut dataToBeDelivered in het dispatchDataRequest gelijk is aan 'actueelHistorisch'.</xs:documentation>
-                </xs:annotation>
             </xs:element>
         </xs:sequence>
     </xs:complexType>

@@ -12,7 +12,7 @@
     terzake tussen de partijen gesloten overeenkomst.
 
 -->
-<schema 	xmlns="http://www.w3.org/2001/XMLSchema" 
+<schema xmlns="http://www.w3.org/2001/XMLSchema" 
 		xmlns:gml="http://www.opengis.net/gml/3.2" 
 		xmlns:brocom="http://www.broservices.nl/xsd/brocommon/3.0" 
 		targetNamespace="http://www.broservices.nl/xsd/brocommon/3.0" 
@@ -22,11 +22,14 @@
 	This schema is provided by BRO as a local copy, as a convenience to the user. This schema may itself reference a local copy of the schema originally referenced by URI. The local reference takes the form of a relative path, and is introduced by BRO.
 	-->
 
+	<!--
+	<import namespace="http://www.opengis.net/gml/3.2" schemaLocation="https://schema.broservices.nl/profile/gml/1.0/gml-profile.xsd"/>
+	<import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+	-->
 	<import namespace="http://www.opengis.net/gml/3.2" schemaLocation="gml-profile.xsd"/>
-    <!--import namespace="http://www.opengis.net/gml/3.2" schemaLocation="https://schema.broservices.nl/profile/gml/1.0/gml-profile.xsd" /-->
 
-   <annotation>
-      <documentation>
+	<annotation>
+		<documentation>
             This XSD describes the complex types, simple types common to the entire BRO.
             Version:2.5.6
             Changes compared to Version:2.5.5:
@@ -51,6 +54,7 @@
             - Added MeasureNillableType, which is similar to gml:MeasureType but with an optional rather than a required attribute uom.
         </documentation>
 	</annotation>
+
 	<!-- simpleTypes -->
 	<simpleType name="ChamberOfCommerceNumberType">
 		<restriction base="string"/>
@@ -116,6 +120,7 @@
 	<simpleType name="VoidReasonType">
 		<restriction base="brocom:VoidReasonEnumeration"/>
 	</simpleType>
+
 	<!-- complexTypes -->
 	<element name="AbstractRegistrationObject" type="brocom:AbstractRegistrationObjectType" substitutionGroup="gml:AbstractFeature"/>
 	<complexType name="AbstractRegistrationObjectType">
