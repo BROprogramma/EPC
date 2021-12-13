@@ -155,7 +155,7 @@ Explanation: Een boorgat valt onder de Mijnbouwwet wanneer bij een boring naar d
                            name="boreholeSegment"
                            nillable="false"
                            type="epccom:BoreholeSegmentPropertyType"/>
-                    <xs:element minOccurs="1"
+                    <xs:element minOccurs="0"
                            maxOccurs="1"
                            name="explorationProductionLicence"
                            nillable="false"
@@ -535,7 +535,10 @@ Explanation: De holruimtecontrour is publiek beschikbaar wanneer het attribuut o
         <xs:complexContent>
             <xs:extension base="gml:AbstractFeatureType">
                 <xs:sequence>
-                    <xs:element name="eventDate" type="xs:date" minOccurs="1" maxOccurs="1">
+                    <xs:element name="eventDate"
+                        type="brocom:PartialDateType"
+                        minOccurs="1"
+                        maxOccurs="1">
                         <xs:annotation>
                             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De datum waarop de gebeurtenis heeft plaatsgevonden.</xs:documentation>
                         </xs:annotation>
@@ -569,7 +572,10 @@ Explanation: De holruimtecontrour is publiek beschikbaar wanneer het attribuut o
         <xs:complexContent>
             <xs:extension base="gml:AbstractFeatureType">
                 <xs:sequence>
-                    <xs:element name="eventDate" type="xs:date" minOccurs="1" maxOccurs="1">
+                    <xs:element name="eventDate"
+                        type="brocom:PartialDateType"
+                        minOccurs="1"
+                        maxOccurs="1">
                         <xs:annotation>
                             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De datum waarop de gebeurtenis heeft plaatsgevonden.</xs:documentation>
                         </xs:annotation>
@@ -608,7 +614,10 @@ Explanation: De wettelijke status is optioneel wanneer de mijnbouwconstructie ee
         <xs:complexContent>
             <xs:extension base="gml:AbstractFeatureType">
                 <xs:sequence>
-                    <xs:element name="eventDate" type="xs:date" minOccurs="1" maxOccurs="1">
+                    <xs:element name="eventDate"
+                        type="brocom:PartialDateType"
+                        minOccurs="1"
+                        maxOccurs="1">
                         <xs:annotation>
                             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De datum waarop de gebeurtenis heeft plaatsgevonden.</xs:documentation>
                         </xs:annotation>
@@ -666,7 +675,10 @@ Explanation: De wettelijke status is optioneel wanneer de mijnbouwconstructie ee
         <xs:complexContent>
             <xs:extension base="gml:AbstractFeatureType">
                 <xs:sequence>
-                    <xs:element name="eventDate" type="xs:date" minOccurs="1" maxOccurs="1">
+                    <xs:element name="eventDate"
+                        type="brocom:PartialDateType"
+                        minOccurs="1"
+                        maxOccurs="1">
                         <xs:annotation>
                             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De datum waarop de gebeurtenis heeft plaatsgevonden.</xs:documentation>
                         </xs:annotation>
@@ -724,7 +736,10 @@ Explanation: De wettelijke status is optioneel wanneer de mijnbouwconstructie ee
         <xs:complexContent>
             <xs:extension base="gml:AbstractFeatureType">
                 <xs:sequence>
-                    <xs:element name="eventDate" type="xs:date" minOccurs="1" maxOccurs="1">
+                    <xs:element name="eventDate"
+                        type="brocom:PartialDateType"
+                        minOccurs="1"
+                        maxOccurs="1">
                         <xs:annotation>
                             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De datum waarop de gebeurtenis heeft plaatsgevonden.</xs:documentation>
                         </xs:annotation>
@@ -732,6 +747,7 @@ Explanation: De wettelijke status is optioneel wanneer de mijnbouwconstructie ee
                     <xs:element name="owner"
                            minOccurs="1"
                            maxOccurs="1"
+                           nillable="true"
                            type="brocom:OrganizationType">
                         <xs:annotation>
                             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het KvK-nummer van de onderneming of de maatschappelijke activiteit van de rechtspersoon die eigenaar is van het object dat aan de basisregistratie ondergrond is aangeleverd door de dataleverancier, of het equivalent daarvan in een handelsregister van een andere lidstaat van de Europese Unie dan Nederland.
@@ -785,7 +801,10 @@ Explanation: De eigenaar van een boorgat is gelijk aan de vergunninghouder van d
         <xs:complexContent>
             <xs:extension base="gml:AbstractFeatureType">
                 <xs:sequence>
-                    <xs:element name="eventDate" type="xs:date" minOccurs="1" maxOccurs="1">
+                    <xs:element name="eventDate"
+                        type="brocom:PartialDateType"
+                        minOccurs="1"
+                        maxOccurs="1">
                         <xs:annotation>
                             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De datum waarop de gebeurtenis heeft plaatsgevonden.</xs:documentation>
                         </xs:annotation>
@@ -1234,7 +1253,7 @@ Explanation: Van een mijnstelsel dat is afgegraven, is het gemijnd gebied gelijk
                            name="exploitationZone"
                            nillable="false"
                            type="epccom:ExploitationZonePropertyType"/>
-                    <xs:element minOccurs="1"
+                    <xs:element minOccurs="0"
                            maxOccurs="unbounded"
                            name="explorationProductionLicence"
                            nillable="false"

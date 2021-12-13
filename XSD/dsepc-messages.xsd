@@ -319,7 +319,7 @@ Explanation: De locatie van een boorgat hoeft zich niet op het aardoppervlak te 
                            name="boreholeSegment"
                            nillable="false"
                            type="epccom:BoreholeSegmentPropertyType"/>
-                    <xs:element minOccurs="1"
+                    <xs:element minOccurs="0"
                            maxOccurs="1"
                            name="explorationProductionLicence"
                            nillable="false"
@@ -443,7 +443,7 @@ Explanation: De locatie van een mijnstelsel bevindt zich niet op het aardoppervl
                            name="exploitationZone"
                            nillable="false"
                            type="epccom:ExploitationZonePropertyType"/>
-                    <xs:element minOccurs="1"
+                    <xs:element minOccurs="0"
                            maxOccurs="unbounded"
                            name="explorationProductionLicence"
                            nillable="false"
@@ -879,7 +879,10 @@ Explanation: De aanleg van een boortraject eindigt op het moment dat na de borin
     </xs:complexType>
     <xs:complexType name="EventType">
         <xs:sequence>
-            <xs:element name="date" type="xs:date" minOccurs="1" maxOccurs="1">
+            <xs:element name="date"
+                        type="brocom:PartialDateType"
+                        minOccurs="1"
+                        maxOccurs="1">
                 <xs:annotation>
                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De datum waarop de gebeurtenis heeft plaatsgevonden.</xs:documentation>
                 </xs:annotation>
@@ -911,13 +914,19 @@ Explanation: De boortrajectcode komt overeen met de code waaronder de bronhouder
     </xs:complexType>
     <xs:complexType name="LifespanType">
         <xs:sequence>
-            <xs:element name="startDate" type="xs:date" minOccurs="1" maxOccurs="1">
+            <xs:element name="startDate"
+                        type="brocom:PartialDateType"
+                        minOccurs="1"
+                        maxOccurs="1">
                 <xs:annotation>
                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De datum waarop de aanleg van de mijnbouwconstructie is gestart.
 Explanation: Bij een boorgat betreft dit de datum waarop het boren van het primaire boortraject is gestart. Bij een zoutcaverne betreft dit de datum waarop de eerste pekelproductie is gestart.</xs:documentation>
                 </xs:annotation>
             </xs:element>
-            <xs:element name="endDate" type="xs:date" minOccurs="0" maxOccurs="1">
+            <xs:element name="endDate"
+                        type="brocom:PartialDateType"
+                        minOccurs="0"
+                        maxOccurs="1">
                 <xs:annotation>
                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De datum waarop de gehele mijnbouwconstructie eindigt te bestaan.</xs:documentation>
                 </xs:annotation>
