@@ -3,7 +3,7 @@ var respecConfig = {
   specType: "IM",
   //subtitle: "",
   //canonicalURI: "VV",
-  //publishDate: "2021-09-07",
+  publishDate: "2021-11-09",
   maxTocLevel: 4,	
 logos: [
   {
