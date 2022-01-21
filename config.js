@@ -28,7 +28,7 @@ logos: [
   shortName: "EPC",
   pubDomain: "bro",
   github: "https://github.com/BROprogramma/EPC",
-  //previousPublishDate: "2021-09-07",
-  //previousStatus: "GN-CV",
+  previousPublishDate: "2021-10-07",
+  previousStatus: "GN-VV",
   //localBiblio: {},
 };
