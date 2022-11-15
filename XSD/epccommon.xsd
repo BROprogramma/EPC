@@ -20,7 +20,7 @@
            targetNamespace="http://www.broservices.nl/xsd/epccommon/1.0"
            elementFormDefault="qualified"
            attributeFormDefault="unqualified"
-           version="0.2.0">
+           version="0.2.1">
 
     <xs:annotation>
         <xs:appinfo source="http://schemas.opengis.net/gmlsfProfile/2.0/gmlsfLevels.xsd">
@@ -545,7 +545,7 @@ Explanation: De holruimtecontrour is publiek beschikbaar wanneer het attribuut o
                     </xs:element>
                     <xs:element name="excavated"
                            type="brocom:IndicationYesNoType"
-                           minOccurs="1"
+                           minOccurs="0"
                            maxOccurs="1">
                         <xs:annotation>
                             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Indicatie of een mijnstelsel is verdwenen vanwege afgraving.</xs:documentation>
