@@ -1285,14 +1285,18 @@ Explanation: Het weghalen van het vaste zout uit de ondergrond gebeurd door het 
         <xs:complexContent>
             <xs:extension base="epccom:AbstractMiningConstructionType">
                 <xs:sequence>
-                    <xs:element name="cavernMeasurementCode"
-                           minOccurs="0"
-                           maxOccurs="1"
-                           type="xs:string">
+                    <xs:element name="cavernMeasurementCode" minOccurs="0" maxOccurs="1">
                         <xs:annotation>
                             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De identificatie van een cavernemeting in de registratie ondergrond.
 Explanation: De cavernemetingcode komt overeen met de code waaronder de cavernemeting gegevens beschikbaar worden gesteld. De cavernemetingcode wordt alleen in de BRO opgenomen als de cavernemetingrapporten waarin de gegevens staan, openbaar raadpleegbaar zijn.</xs:documentation>
                         </xs:annotation>
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:minLength value="1"/>
+                                <xs:maxLength value="100"/>
+                                <xs:pattern value="\S.*"/>
+                            </xs:restriction>
+                        </xs:simpleType>
                     </xs:element>
                     <xs:element name="publiclyAvailable"
                            type="brocom:IndicationYesNoType"
