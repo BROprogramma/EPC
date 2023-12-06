@@ -59,9 +59,6 @@
                     <miningSystemKind>?</miningSystemKind>
                     -->
                     <!-- optional: not applicable for salt caverns
-                    <minedArea>...</minedArea>
-                    -->
-                    <!-- optional: not applicable for salt caverns
                     <miningMapsAmount>?</miningMapsAmount>
                     -->
                 </EPC_C>
