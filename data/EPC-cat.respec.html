@@ -40,7 +40,7 @@
       </section>
    <section>
       <h2>Het domeinmodel   </h2>
-      <div class="imageinfo overview"><img src="data/Images/EAID_017CB205_53B6_4659_8664_F773CFA9FA2C.png" usemap="#imagemap-EAID_017CB205_53B6_4659_8664_F773CFA9FA2C" alt="Diagram &#xA;                        Verwijst naar&#xA;                     "><map name="imagemap-EAID_017CB205_53B6_4659_8664_F773CFA9FA2C"><area shape="rect" alt="Mijnbouwwetvergunning" coords="996,471,1239,580" href="#global_class_Model_Mijnbouwwetvergunning"><area shape="rect" alt="Zoutcaverne" coords="14,471,434,667" href="#global_class_Model_Zoutcaverne"><area shape="rect" alt="Mijnkaart" coords="1951,471,2171,705" href="#global_class_Model_Mijnkaart"><area shape="rect" alt="Ontginningszone" coords="1760,798,2058,1049" href="#global_class_Model_Ontginningszone"><area shape="rect" alt="Transportzone" coords="1419,798,1719,1032" href="#global_class_Model_Transportzone"><area shape="rect" alt="Toegang" coords="1133,798,1374,1032" href="#global_class_Model_Toegang"><area shape="rect" alt="Mijnstelsel" coords="1392,471,1829,722" href="#global_class_Model_Mijnstelsel"><area shape="rect" alt="Boorgat" coords="450,471,846,651" href="#global_class_Model_Boorgat"><area shape="rect" alt="Boortraject" coords="478,730,768,981" href="#global_class_Model_Boortraject"><area shape="rect" alt="Mijnbouwconstructie" coords="450,20,846,342" href="#global_class_Model_Mijnbouwconstructie"></map><p><b>Mijnbouwconstructies (EPC) -  overzicht</b>
+      <div class="imageinfo overview"><img src="data/Images/EAID_017CB205_53B6_4659_8664_F773CFA9FA2C.png" usemap="#imagemap-EAID_017CB205_53B6_4659_8664_F773CFA9FA2C" alt="Diagram &#xA;                        Verwijst naar&#xA;                     "><map name="imagemap-EAID_017CB205_53B6_4659_8664_F773CFA9FA2C"><area shape="rect" alt="Mijnbouwwetvergunning" coords="999,472,1242,581" href="#global_class_Model_Mijnbouwwetvergunning"><area shape="rect" alt="Zoutcaverne" coords="14,472,435,669" href="#global_class_Model_Zoutcaverne"><area shape="rect" alt="Mijnkaart" coords="1956,472,2177,707" href="#global_class_Model_Mijnkaart"><area shape="rect" alt="Ontginningszone" coords="1765,800,2063,1052" href="#global_class_Model_Ontginningszone"><area shape="rect" alt="Transportzone" coords="1423,800,1724,1034" href="#global_class_Model_Transportzone"><area shape="rect" alt="Toegang" coords="1135,800,1378,1034" href="#global_class_Model_Toegang"><area shape="rect" alt="Mijnstelsel" coords="1395,472,1833,724" href="#global_class_Model_Mijnstelsel"><area shape="rect" alt="Boorgat" coords="451,472,848,653" href="#global_class_Model_Boorgat"><area shape="rect" alt="Boortraject" coords="479,732,770,984" href="#global_class_Model_Boortraject"><area shape="rect" alt="Mijnbouwconstructie" coords="451,21,848,343" href="#global_class_Model_Mijnbouwconstructie"></map><p><b>Mijnbouwconstructies (EPC) -  overzicht</b>
             
             <p>Verwijst naar</p>
             </p>
@@ -452,8 +452,15 @@
                      <td>
                         
                         <p>Het attribuut moet aanwezig zijn wanneer de Mijnbouwconstructie een Boorgat of een
-                           Mijnstelsel is.
-                           Een wettelijke status "onbekend" mag alleen voorkomen bij boorgaten in IMBRO/A.</p>
+                           Mijnstelsel is.</p>
+                        </td>
+                  </tr>
+                  <tr>
+                     <th>Regels IMBRO/A</th>
+                     <td>
+                        
+                        <p>Voor IMBRO/A-gegevens mag de waarde van het attribuut niet gelijk zijn aan onbekend
+                           wanneer de Mijnbouwconstructie geen Boorgat is.</p>
                         </td>
                   </tr>
                   <tr>
@@ -627,7 +634,7 @@
                </tbody>
             </table>
             </section>
-         <section id="detail_d71060e2311">
+         <section id="detail_d71065e2336">
             <h4>  registratiegeschiedenis</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -665,7 +672,7 @@
                </tbody>
             </table>
          </section>
-         <section id="detail_d71060e2496">
+         <section id="detail_d71065e2521">
             <h4>  levensduur</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -704,7 +711,7 @@
                </tbody>
             </table>
          </section>
-         <section id="detail_d71060e2681">
+         <section id="detail_d71065e2706">
             <h4>  constructiegeschiedenis</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -1592,7 +1599,7 @@
                </tr>
             </tbody>
          </table>
-         <section id="detail_d71060e5708">
+         <section id="detail_d71065e5733">
             <h4>  gebeurtenis</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -1655,7 +1662,7 @@
                   <th>Regels</th>
                   <td>
                      
-                     <p>Er mag geen gebeurtenis met de <em>naam MijnbouwconstructieBeeindigd</em> bestaan indien de <em>wettelijke status inGebruikMijnbouw</em> is. </p>
+                     <p>Er mag geen gebeurtenis met de <em>naam MijnbouwconstructieBeeindigd</em> bestaan indien de <em>wettelijke status inGebruikMijnbouw of onbekend</em> is. </p>
                      </td>
                </tr>
             </tbody>
@@ -2037,7 +2044,7 @@
                </tbody>
             </table>
             </section>
-         <section id="detail_d71060e7861">
+         <section id="detail_d71065e7886">
             <h4>  locatiebepaling</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -2051,7 +2058,9 @@
                      <th>Definitie</th>
                      <td>
                         
-                        <p>De gegevens over het bepalen van de locatie van de oorsprong van het boorgat. </p>
+                        <p>De gegevens over het bepalen van de locatie van de oorsprong van het boorgat. 
+                           Het gegeven is optioneel omdat de mijnbouwwetgeving niet verplicht om deze gegevens
+                           aan te leveren.</p>
                         </td>
                   </tr>
                   <tr>
@@ -2075,7 +2084,7 @@
                </tbody>
             </table>
          </section>
-         <section id="detail_d71060e8046">
+         <section id="detail_d71065e8073">
             <h4>  gestandaardiseerde locatie</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -2123,7 +2132,7 @@
                </tbody>
             </table>
          </section>
-         <section id="detail_d71060e8272">
+         <section id="detail_d71065e8299">
             <h4>  aangeleverde verticale positie</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -2288,6 +2297,13 @@
                         ondergrond.</p>
                      </td>
                </tr>
+               <tr>
+                  <th>Regels</th>
+                  <td>
+                     
+                     <p>“Tenminste één van de attributen moet aanwezig zijn.”</p>
+                     </td>
+               </tr>
             </tbody>
          </table>
          <section id="detail_attribute_Model_Locatiebepaling_datumlocatiebepaling">
@@ -2329,14 +2345,6 @@
                   <tr>
                      <th>Materiële geschiedenis</th>
                      <td>Nee</td>
-                  </tr>
-                  <tr>
-                     <th>Toelichting</th>
-                     <td>
-                        
-                        <p>Het attribuut is optioneel omdat de mijnbouwwetgeving niet verplicht om deze gegevens
-                           aan te leveren.</p>
-                        </td>
                   </tr>
                </tbody>
             </table>
@@ -2388,9 +2396,7 @@
                      <th>Toelichting</th>
                      <td>
                         
-                        <p>Het attribuut is optioneel omdat de mijnbouwwetgeving niet verplicht om deze gegevens
-                           aan te leveren.<br clear="none">
-                           Het gegeven geeft inzicht in de nauwkeurigheid waarmee de locatie van de mijnbouwconstructie
+                        <p>Het gegeven geeft inzicht in de nauwkeurigheid waarmee de locatie van de mijnbouwconstructie
                            of een deel ervan is bepaald.<br clear="none">
                            De meest gebruikte technieken om de locatie te bepalen van onshore boorgaten zijn
                            klassiek landmeten en satellietnavigatie. Beide hebben een indicatieve nauwkeurigheid
@@ -2451,14 +2457,6 @@
                   <tr>
                      <th>Materiële geschiedenis</th>
                      <td>Nee</td>
-                  </tr>
-                  <tr>
-                     <th>Toelichting</th>
-                     <td>
-                        
-                        <p>Het attribuut is optioneel omdat de mijnbouwwetgeving niet verplicht om deze gegevens
-                           aan te leveren.</p>
-                        </td>
                   </tr>
                </tbody>
             </table>
@@ -3237,9 +3235,7 @@
                      <th>Regels</th>
                      <td>
                         
-                        <p>De <em>startdatum aanleg</em> van een <em>Boortraject</em> waarbij de waarde van het attribuut <em>categorie</em> gelijk is aan <em>zijtak</em> mag niet liggen voor de <em>einddatum aanleg</em> van het <em>Boortraject</em> bij hetzelfde <em>Boorgat</em> waarbij de waarde van het attribuut <em>categorie</em> gelijk is aan <em>primair</em>.
-                           In IMBRO/A kan met Onvolledigedatum de einddatum aanleg wel gelijk zijn aan startdatum
-                           aanleg (wanneer het hetzelfde jaar is).</p>
+                        <p>De <em>startdatum aanleg</em> van een <em>Boortraject</em> waarbij de waarde van het attribuut <em>categorie</em> gelijk is aan <em>zijtak</em> mag niet liggen voor de <em>einddatum aanleg</em> van het <em>Boortraject</em> bij hetzelfde <em>Boorgat</em> waarbij de waarde van het attribuut <em>categorie</em> gelijk is aan <em>primair</em>.</p>
                         </td>
                   </tr>
                   <tr>
@@ -3297,9 +3293,7 @@
                      <th>Regels</th>
                      <td>
                         
-                        <p>De <em>einddatum aanleg</em> mag niet liggen voor de <em>startdatum aanleg</em>.
-                           In IMBRO/A kan met Onvolledigedatum de einddatum aanleg wel gelijk zijn aan startdatum
-                           aanleg (wanneer het hetzelfde jaar is).</p>
+                        <p>De <em>einddatum aanleg</em> mag niet liggen voor de <em>startdatum aanleg</em>.</p>
                         </td>
                   </tr>
                   <tr>
@@ -3383,7 +3377,7 @@
                </tbody>
             </table>
             </section>
-         <section id="detail_d71060e12194">
+         <section id="detail_d71065e12186">
             <h4>  boortraject locatie</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -4000,7 +3994,7 @@
                </tbody>
             </table>
             </section>
-         <section id="detail_d71060e15874">
+         <section id="detail_d71065e15866">
             <h4>  bepaling gemijnd gebied</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -4038,7 +4032,7 @@
                </tbody>
             </table>
          </section>
-         <section id="detail_d71060e16059">
+         <section id="detail_d71065e16051">
             <h4>  gestandaardiseerde locatie</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -4873,7 +4867,7 @@
                </tbody>
             </table>
             </section>
-         <section id="detail_d71060e17929">
+         <section id="detail_d71065e17921">
             <h4>  bepaling locatie</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -5198,7 +5192,7 @@
                </tbody>
             </table>
             </section>
-         <section id="detail_d71060e19139">
+         <section id="detail_d71065e19131">
             <h4>  bepaling gebied</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -5587,7 +5581,7 @@
                </tbody>
             </table>
             </section>
-         <section id="detail_d71060e20539">
+         <section id="detail_d71065e20531">
             <h4>  bepaling gebied</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -6327,7 +6321,7 @@
                </tbody>
             </table>
             </section>
-         <section id="detail_d71060e23394">
+         <section id="detail_d71065e23386">
             <h4>  bepaling holruimtecontour</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -6372,7 +6366,7 @@
                </tbody>
             </table>
          </section>
-         <section id="detail_d71060e23634">
+         <section id="detail_d71065e23626">
             <h4>  gestandaardiseerde locatie</h4>
             <table style="width: 100%;">
                <colgroup style="width: 30%;"></colgroup>
@@ -8044,8 +8038,8 @@
                <td>✔</td>
                <td>
                   
-                  <p>Voor IMBRO/A kan de wettelijke status onbekend zijn. Deze waarde is nodig om boorgaten
-                     te kunnen migreren: deze status mag daarom ook alleen voor boorgaten worden gebruikt.</p>
+                  <p>De aanduiding dat bij de bronhouder niet bekend is of een mijnbouwconstructie wettelijk
+                     gezien in gebruik is of buiten gebruik gesteld is.</p>
                   </td>
             </tr>
          </tbody>
