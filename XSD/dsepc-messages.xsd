@@ -21,7 +21,7 @@
            targetNamespace="http://www.broservices.nl/xsd/dsepc/1.0"
            elementFormDefault="qualified"
            attributeFormDefault="unqualified"
-           version="1.0.0">
+           version="1.0.1>
     <xs:annotation>
         <xs:appinfo source="http://schemas.opengis.net/gmlsfProfile/2.0/gmlsfLevels.xsd">
             <gmlsf:ComplianceLevel>0</gmlsf:ComplianceLevel>
@@ -277,13 +277,13 @@ Explanation: Een boorgat valt onder de Mijnbouwwet wanneer bij een boring naar d
                             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De locatie van de oorsprong van het boorgat.</xs:documentation>
                         </xs:annotation>
                     </xs:element>
-                    <xs:element minOccurs="1"
+                    <xs:element minOccurs="0"
                            maxOccurs="1"
                            name="horizontalPositioning"
                            nillable="false"
                            type="epccom:HorizontalPositioningType">
                         <xs:annotation>
-                            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De gegevens over het bepalen van de locatie van de oorsprong van het boorgat.</xs:documentation>
+                            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De gegevens over het bepalen van de locatie van de oorsprong van het boorgat. Het gegeven is optioneel omdat de mijnbouwwetgeving niet verplicht om deze gegevens aan te leveren.</xs:documentation>
                         </xs:annotation>
                     </xs:element>
                     <xs:element minOccurs="1"
