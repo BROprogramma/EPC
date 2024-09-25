@@ -1,17 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-
-    Copyright TNO Geologische Dienst Nederland
-
-    Alle rechten voorbehouden.
-    Niets uit deze software mag worden vermenigvuldigd en/of openbaar gemaakt door middel van druk, fotokopie,
-    microfilm of op welke andere wijze dan ook, zonder voorafgaande toestemming van TNO.
-
-    Indien deze software in opdracht werd uitgebracht, wordt voor de rechten en verplichtingen van opdrachtgever
-    en opdrachtnemer verwezen naar de Algemene Voorwaarden voor opdrachten aan TNO, dan wel de betreffende
-    terzake tussen de partijen gesloten overeenkomst.
-
--->
 <xs:schema xmlns:brocom="http://www.broservices.nl/xsd/brocommon/3.0"
            xmlns:dsepc="http://www.broservices.nl/xsd/dsepc/1.0"
            xmlns:epccom="http://www.broservices.nl/xsd/epccommon/1.0"
@@ -21,7 +8,7 @@
            targetNamespace="http://www.broservices.nl/xsd/dsepc/1.0"
            elementFormDefault="qualified"
            attributeFormDefault="unqualified"
-           version="1.0.1">
+           version="1.0.2">
     <xs:annotation>
         <xs:appinfo source="http://schemas.opengis.net/gmlsfProfile/2.0/gmlsfLevels.xsd">
             <gmlsf:ComplianceLevel>0</gmlsf:ComplianceLevel>
@@ -807,14 +794,6 @@ Explanation: De eigenaar van een boorgat is gelijk aan de vergunninghouder van d
                             <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De aanduiding van het primaire gebruik waarvoor een mijnstelsel is aangelegd.</xs:documentation>
                         </xs:annotation>
                     </xs:element>
-                    <xs:element name="operationalAreaFilter"
-                           type="dsepc:OperationalAreaFilterType"
-                           minOccurs="0"
-                           maxOccurs="1">
-                        <xs:annotation>
-                            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De contour van het mijnstelsel, geprojecteerd op het aardoppervlak.</xs:documentation>
-                        </xs:annotation>
-                    </xs:element>
                     <xs:element name="legalStatus"
                            minOccurs="0"
                            maxOccurs="1"
@@ -1055,19 +1034,6 @@ Explanation: Bij een boorgat betreft dit de datum waarop het boren van het prima
             <xs:enumeration value="boorgat"/>
             <xs:enumeration value="mijnstelsel"/>
             <xs:enumeration value="zoutcaverne"/>
-        </xs:restriction>
-    </xs:simpleType>
-    <xs:simpleType name="OperationalAreaFilterType">
-        <xs:annotation>
-            <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Een domein in de vorm van een keuzelijst met een limitatieve opsomming van waarden. Uitbreiding van de keuzelijst is niet mogelijk. De lijst met soorten van mijnstelsels die worden onderscheiden in de basisregistratie ondergrond, aangevend het primaire gebruik van een mijnstelsel.</xs:documentation>
-        </xs:annotation>
-        <xs:restriction base="xs:string">
-            <xs:enumeration value="mijnbouwconstructie locatie"/>
-            <xs:enumeration value="boorgat boortraject locatie"/>
-            <xs:enumeration value="mijnstelsel toegang locatie"/>
-            <xs:enumeration value="mijnstelsel transportzone gebied"/>
-            <xs:enumeration value="mijnstelsel ontginningszone gebied"/>
-            <xs:enumeration value="mijnstelsel mijnkaart kaartbereik"/>
         </xs:restriction>
     </xs:simpleType>
 
