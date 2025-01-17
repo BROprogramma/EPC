@@ -4,13 +4,13 @@
 		<Waarde>boorvloer</Waarde>
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
-		<Omschrijving>De boorvloer is het hart van elke boorinstallatie, het primaire werkgebied waar boorpijpverbindingen worden geassembleerd. --Toelichting-- De boorvloer bevindt zich direct onder de boortoren.</Omschrijving>
+		<Omschrijving>De boorvloer is het hart van elke boorinstallatie, het primaire werkgebied waar boorpijpverbindingen worden geassembleerd.</Omschrijving>
 	</OorspronkelijkVerticaalReferentiepunt>
 	<OorspronkelijkVerticaalReferentiepunt>
 		<Waarde>draaitafel</Waarde>
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
-		<Omschrijving>Het draaiende gedeelte van de boorvloer dat de kracht levert om de boorstreng met de klok mee te laten draaien (van bovenaf gezien). --Toelichting-- Bijna alle boorplatforms hebben tegenwoordig een draaitafel, hetzij als primair systeem of als back-upsysteem voor het draaien van de boorstreng.</Omschrijving>
+		<Omschrijving>Het draaiende gedeelte van de boorvloer dat de kracht levert om de boorstreng met de klok mee te laten draaien (van bovenaf gezien).</Omschrijving>
 	</OorspronkelijkVerticaalReferentiepunt>
 	<OorspronkelijkVerticaalReferentiepunt>
 		<Waarde>keldervloer</Waarde>
@@ -22,7 +22,7 @@
 		<Waarde>KellyBushing</Waarde>
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
-		<Omschrijving>De adapter die de draaitafel met de kelly verbindt. --Toelichting-- De Kelly Bushing is verbonden met de draaitafel door vier grote stalen pinnen die in passende gaten in de draaitafel passen. De draaibeweging van de draaitafel wordt via de pennen op de bus overgebracht en vervolgens op de kelly zelf via de vierkante of zeshoekige vlakke oppervlakken tussen de kelly en de kelly-bus. De kelly draait dan de hele boorstring omdat deze in de bovenkant van de boorstring zelf wordt geschroefd.</Omschrijving>
+		<Omschrijving>De adapter die de draaitafel met de kelly verbindt.</Omschrijving>
 	</OorspronkelijkVerticaalReferentiepunt>
 	<OorspronkelijkVerticaalReferentiepunt>
 		<Waarde>maaiveld</Waarde>
