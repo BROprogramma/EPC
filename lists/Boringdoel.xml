@@ -10,7 +10,7 @@
 		<Waarde>opslaanCO2</Waarde>
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
-		<Omschrijving>Het permanent opslaan van CO&lt;sub&gt;2&lt;/sub&gt;.</Omschrijving>
+		<Omschrijving>Het permanent opslaan van CO<sub>2</sub>.</Omschrijving>
 	</Boringdoel>
 	<Boringdoel>
 		<Waarde>opslaanStof</Waarde>
@@ -34,7 +34,7 @@
 		<Waarde>opsporenOpslagcomplex</Waarde>
 		<IMBRO>v</IMBRO>
 		<IMBROA>v</IMBROA>
-		<Omschrijving>Het opsporen van CO&lt;sub&gt;2&lt;/sub&gt; opslagcomplexen.</Omschrijving>
+		<Omschrijving>Het opsporen van CO<sub>2</sub> opslagcomplexen.</Omschrijving>
 	</Boringdoel>
 	<Boringdoel>
 		<Waarde>winnenAardwarmte</Waarde>
