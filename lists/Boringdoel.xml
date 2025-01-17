@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<domeintabel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Boringdoel>
+		<Waarde>onderzoekMijnbouw</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Het verzamelen van gegevens voor (wetenschappelijk) onderzoek of beleid op een diepte van meer dan 500 meter onder het aardoppervlak anders dan ten behoeve van het opsporen of winnen van delfstoffen of aardwarmte dan wel het opslaan alsmede het terughalen van (delf)stoffen.</Omschrijving>
+	</Boringdoel>
+	<Boringdoel>
+		<Waarde>opslaanCO2</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Het permanent opslaan van CO&lt;sub&gt;2&lt;/sub&gt;.</Omschrijving>
+	</Boringdoel>
+	<Boringdoel>
+		<Waarde>opslaanStof</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Het brengen of houden van stoffen op een diepte van meer dan 100 meter onder het aardoppervlak, alsmede het terughalen van deze stoffen.</Omschrijving>
+	</Boringdoel>
+	<Boringdoel>
+		<Waarde>opsporenAardwarmte</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Het opsporen van aardwarmte op een diepte van meer dan 500 meter onder het aardoppervlak. Vanaf 2021 valt hier ook een korte periode van winnen onder.</Omschrijving>
+	</Boringdoel>
+	<Boringdoel>
+		<Waarde>opsporenDelfstof</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Het opsporen van delfstoffen op een diepte van meer dan 100 meter onder het aardoppervlak.</Omschrijving>
+	</Boringdoel>
+	<Boringdoel>
+		<Waarde>opsporenOpslagcomplex</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Het opsporen van CO&lt;sub&gt;2&lt;/sub&gt; opslagcomplexen.</Omschrijving>
+	</Boringdoel>
+	<Boringdoel>
+		<Waarde>winnenAardwarmte</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Het winnen van aardwarmte op een diepte van meer dan 500 meter onder het aardoppervlak.</Omschrijving>
+	</Boringdoel>
+	<Boringdoel>
+		<Waarde>winnenDelfstof</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Het winnen van delfstoffen op een diepte van meer dan 100 meter onder het aardoppervlak.</Omschrijving>
+	</Boringdoel>
+</domeintabel>

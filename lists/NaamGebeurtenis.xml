@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<domeintabel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<NaamGebeurtenis>
+		<Waarde>aanlegBoorgatGestart</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Een nieuw boorgat wordt aangelegd.</Omschrijving>
+	</NaamGebeurtenis>
+	<NaamGebeurtenis>
+		<Waarde>aanlegMijnstelselGestart</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Een nieuw mijnstelsel wordt aangelegd.</Omschrijving>
+	</NaamGebeurtenis>
+	<NaamGebeurtenis>
+		<Waarde>eigenaarGewijzigd</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>De eigenaar van een mijnbouwconstructie is gewijzigd.</Omschrijving>
+	</NaamGebeurtenis>
+	<NaamGebeurtenis>
+		<Waarde>mijnbouwconstructieBeeindigd</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>De mijnbouwconstructie eindigt te bestaan.</Omschrijving>
+	</NaamGebeurtenis>
+	<NaamGebeurtenis>
+		<Waarde>holruimtecontourGewijzigd</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>De holruimtecontour van de caverne is gewijzigd.</Omschrijving>
+	</NaamGebeurtenis>
+	<NaamGebeurtenis>
+		<Waarde>mijnstelselGewijzigd</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Het mijnstelsel is gewijzigd door uitbouw van bestaande toegangen, transportzones of ontginningszones, door gedeeltelijke of volledige afgraving ervan of door start of stopzetting van ontginningsactiviteiten. Volledige afgraving van een mijnstelsel is geen wijziging, maar be&amp;#235;indiging van een mijnstelsel.</Omschrijving>
+	</NaamGebeurtenis>
+	<NaamGebeurtenis>
+		<Waarde>mijnstelselUitgebreid</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Het mijnstelsel is uitgebreid met nieuwe toegangen, transportzones of ontginningszones.</Omschrijving>
+	</NaamGebeurtenis>
+	<NaamGebeurtenis>
+		<Waarde>wettelijkeStatusGewijzigd</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>De wettelijke status van een mijnbouwconstructie is gewijzigd. In IMBRO/A komt de wettelijke status 'onbekend' voor. Hierdoor kan een wijziging van wettelijke status dus een wijziging van/naar de status 'onbekend' zijn, waarbij de werkelijke wettelijke status niet wijzigt.</Omschrijving>
+	</NaamGebeurtenis>
+	<NaamGebeurtenis>
+		<Waarde>boortrajectToegevoegd</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Een nieuw boortraject wordt aan een boorgat toegevoegd.</Omschrijving>
+	</NaamGebeurtenis>
+	<NaamGebeurtenis>
+		<Waarde>zoutcaverneOntstaan</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Een nieuwe zoutcaverne is ontstaan.</Omschrijving>
+	</NaamGebeurtenis>
+</domeintabel>

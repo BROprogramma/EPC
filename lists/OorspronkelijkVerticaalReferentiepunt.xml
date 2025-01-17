@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<domeintabel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<OorspronkelijkVerticaalReferentiepunt>
+		<Waarde>boorvloer</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>De boorvloer is het hart van elke boorinstallatie, het primaire werkgebied waar boorpijpverbindingen worden geassembleerd. --Toelichting-- De boorvloer bevindt zich direct onder de boortoren.</Omschrijving>
+	</OorspronkelijkVerticaalReferentiepunt>
+	<OorspronkelijkVerticaalReferentiepunt>
+		<Waarde>draaitafel</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Het draaiende gedeelte van de boorvloer dat de kracht levert om de boorstreng met de klok mee te laten draaien (van bovenaf gezien). --Toelichting-- Bijna alle boorplatforms hebben tegenwoordig een draaitafel, hetzij als primair systeem of als back-upsysteem voor het draaien van de boorstreng.</Omschrijving>
+	</OorspronkelijkVerticaalReferentiepunt>
+	<OorspronkelijkVerticaalReferentiepunt>
+		<Waarde>keldervloer</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>De vloer van de put onder de boorvloer welke extra hoogte biedt tussen de boorvloer en de boorgatmond.</Omschrijving>
+	</OorspronkelijkVerticaalReferentiepunt>
+	<OorspronkelijkVerticaalReferentiepunt>
+		<Waarde>KellyBushing</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>De adapter die de draaitafel met de kelly verbindt. --Toelichting-- De Kelly Bushing is verbonden met de draaitafel door vier grote stalen pinnen die in passende gaten in de draaitafel passen. De draaibeweging van de draaitafel wordt via de pennen op de bus overgebracht en vervolgens op de kelly zelf via de vierkante of zeshoekige vlakke oppervlakken tussen de kelly en de kelly-bus. De kelly draait dan de hele boorstring omdat deze in de bovenkant van de boorstring zelf wordt geschroefd.</Omschrijving>
+	</OorspronkelijkVerticaalReferentiepunt>
+	<OorspronkelijkVerticaalReferentiepunt>
+		<Waarde>maaiveld</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Het oppervlak van de vaste aarde, daar waar de aarde niet bedekt is met water. Het maaiveld vormt de grens tussen de ondergrond en de bovengrond.</Omschrijving>
+	</OorspronkelijkVerticaalReferentiepunt>
+</domeintabel>

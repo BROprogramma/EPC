@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<domeintabel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<SoortMijnstelsel>
+		<Waarde>grafkelder</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Een ondergrondse, in kalksteen aangelegd(e) gang of gangenstelsel, bedoeld voor het begraven van personen.</Omschrijving>
+	</SoortMijnstelsel>
+	<SoortMijnstelsel>
+		<Waarde>horizontaleWaterput</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Een horizontale gang, licht oplopend, aangelegd vanaf de zijkant van een heuvel naar een ondergrondse waterbron voor het winnen van grondwater.</Omschrijving>
+	</SoortMijnstelsel>
+	<SoortMijnstelsel>
+		<Waarde>kalksteengroeve</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Een ondergronds(e) gang of gangenstelsel, aangelegd voor het winnen van kalksteen, hetzij in de vorm van blokken, hetzij in de vorm van losse kalksteen.</Omschrijving>
+	</SoortMijnstelsel>
+	<SoortMijnstelsel>
+		<Waarde>militaireTunnel</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Een ondergrondse, in kalksteen aangelegd(e) gang of gangenstelsel, bedoeld voor militaire doeleinden.</Omschrijving>
+	</SoortMijnstelsel>
+	<SoortMijnstelsel>
+		<Waarde>opslagruimte</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Een ondergrondse, in kalksteen aangelegd(e) gang of gangenstelsel, bedoeld voor de opslag van goederen.</Omschrijving>
+	</SoortMijnstelsel>
+	<SoortMijnstelsel>
+		<Waarde>schuilkelder</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Een ondergrondse, in kalksteen aangelegd(e) gang of gangenstelsel, bedoeld ter ontwijking door de bevolking van bovengronds gevaar.</Omschrijving>
+	</SoortMijnstelsel>
+	<SoortMijnstelsel>
+		<Waarde>steenkoolmijn</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Een mijnstelsel voor de winning van steenkool.</Omschrijving>
+	</SoortMijnstelsel>
+	<SoortMijnstelsel>
+		<Waarde>transporttunnel</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Een ondergronds, in kalksteen aangelegd(e) gang of gangenstelsel, bedoeld voor transportdoeleinden.</Omschrijving>
+	</SoortMijnstelsel>
+	<SoortMijnstelsel>
+		<Waarde>vuursteenmijn</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Een ondergronds, in kalksteen aangelegd(e) gang of gangenstelsel, bedoeld voor de winning van vuursteen.</Omschrijving>
+	</SoortMijnstelsel>
+	<SoortMijnstelsel>
+		<Waarde>woning</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Een ondergrondse, in kalksteen aangelegd(e) gang of gangenstelsel, bedoeld voor bewoning.</Omschrijving>
+	</SoortMijnstelsel>
+</domeintabel>

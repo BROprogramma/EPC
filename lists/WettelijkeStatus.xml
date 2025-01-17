@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<domeintabel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<WettelijkeStatus>
+		<Waarde>buitenGebruikMijnbouw</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>De aanduiding dat een mijnbouwconstructie volgens de wettelijke vereisten buiten gebruik is gesteld wat betreft het opsporen, winnen of benutten van in de ondergrond aanwezige natuurlijke hulpbronnen en/of voor het opslaan en terughalen van delfstoffen in de ondergrond.</Omschrijving>
+	</WettelijkeStatus>
+	<WettelijkeStatus>
+		<Waarde>inGebruikMijnbouw</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>De aanduiding dat een mijnbouwconstructie wettelijk gezien niet buiten gebruik is gesteld wat betreft het opsporen, winnen of benutten van in de ondergrond aanwezige natuurlijke hulpbronnen en/of voor het opslaan en terughalen van delfstoffen in de ondergrond. Het omvat de fasen met ingang van de aanleg van een mijnbouwconstructie tot aan de buitengebruikstelling ervan.</Omschrijving>
+	</WettelijkeStatus>
+	<WettelijkeStatus>
+		<Waarde>onbekend</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>De aanduiding dat bij de bronhouder niet bekend is of een mijnbouwconstructie wettelijk gezien in gebruik is of buiten gebruik gesteld is.</Omschrijving>
+	</WettelijkeStatus>
+</domeintabel>

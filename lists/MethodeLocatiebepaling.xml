@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<domeintabel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<MethodeLocatiebepaling>
+		<Waarde>DGPS50tot200cm</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Meting d.m.v. satellietnavigatie met differentiaalcorrectie, in het dagelijks gebruik aangeduid als DGPS. Afwijking tussen 50 en 200 cm. DGPS maakt gebruik van een wereldwijd satellietnavigatiesysteem, Global Navigation Satellite System (GNSS). GNSS wordt in het dagelijks gebruik vaak aangeduid met GPS als verzamelnaam voor de 4 systemen GPS, Glonass, Galileo en Beidou.</Omschrijving>
+	</MethodeLocatiebepaling>
+	<MethodeLocatiebepaling>
+		<Waarde>GPS200tot1000cm</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Meting d.m.v. satellietnavigatie zonder correctie, SPP (Single Point Positioning), in het dagelijks gebruik aangeduid als GPS. Afwijking tussen 200 en 1000 cm. SPP maakt gebruik van een wereldwijd satellietnavigatiesysteem, Global Navigation Satellite System (GNSS). GNSS wordt in het dagelijks gebruik vaak aangeduid met GPS als verzamelnaam voor de 4 systemen GPS, Glonass, Galileo en Beidou.</Omschrijving>
+	</MethodeLocatiebepaling>
+	<MethodeLocatiebepaling>
+		<Waarde>lidar0tot10cm</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Meting d.m.v. terrestrische laserscanning, vanaf een referentiepunt dat geen NAP-peilmerk is, afwijking kleiner dan 10 cm.</Omschrijving>
+	</MethodeLocatiebepaling>
+	<MethodeLocatiebepaling>
+		<Waarde>lidar10tot50cm</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Meting d.m.v. terrestrische laserscanning, vanaf een referentiepunt dat geen NAP-peilmerk is, afwijking tussen 10 en 50 cm.</Omschrijving>
+	</MethodeLocatiebepaling>
+	<MethodeLocatiebepaling>
+		<Waarde>PPPGPS0tot2cm</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Meting d.m.v. PPP (Precise Point Positioning) satellietnavigatie, afwijking kleiner dan 2 cm. De nauwkeurigheid wordt bereikt wanneer de meting is uitgevoerd met Ambiguity Resolution (PPP-AR) of bij een lange meettijd. PPP maakt gebruik van een wereldwijd satellietnavigatiesysteem, Global Navigation Satellite System (GNSS). GNSS wordt in het dagelijks gebruik vaak aangeduid met GPS als verzamelnaam voor de 4 systemen GPS, Glonass, Galileo en Beidou.</Omschrijving>
+	</MethodeLocatiebepaling>
+	<MethodeLocatiebepaling>
+		<Waarde>PPPGPS2tot5cm</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Meting d.m.v. PPP (Precise Point Positioning) satellietnavigatie, afwijking tussen 2 en 5 cm. De nauwkeurigheid wordt bereikt wanneer de meting is uitgevoerd met Ambiguity Resolution (PPP-AR) of bij een lange meettijd. PPP maakt gebruik van een wereldwijd satellietnavigatiesysteem, Global Navigation Satellite System (GNSS). GNSS wordt in het dagelijks gebruik vaak aangeduid met GPS als verzamelnaam voor de 4 systemen GPS, Glonass, Galileo en Beidou.</Omschrijving>
+	</MethodeLocatiebepaling>
+	<MethodeLocatiebepaling>
+		<Waarde>PPPGPS5tot10cm</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Meting d.m.v. PPP (Precise Point Positioning) satellietnavigatie, afwijking tussen 5 en 10 cm. De nauwkeurigheid wordt bereikt wanneer de meting is uitgevoerd met Ambiguity Resolution (PPP-AR) of bij een lange meettijd. PPP maakt gebruik van een wereldwijd satellietnavigatiesysteem, Global Navigation Satellite System (GNSS). GNSS wordt in het dagelijks gebruik vaak aangeduid met GPS als verzamelnaam voor de 4 systemen GPS, Glonass, Galileo en Beidou.</Omschrijving>
+	</MethodeLocatiebepaling>
+	<MethodeLocatiebepaling>
+		<Waarde>PPPGPS10tot50cm</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Meting d.m.v. PPP (Precise Point Positioning) satellietnavigatie, afwijking tussen 10 en 50 cm. De nauwkeurigheid wordt bereikt wanneer de meting is uitgevoerd in korte tijd zonder Ambiguity Resolution. PPP maakt gebruik van een wereldwijd satellietnavigatiesysteem, Global Navigation Satellite System (GNSS). GNSS wordt in het dagelijks gebruik vaak aangeduid met GPS als verzamelnaam voor de 4 systemen GPS, Glonass, Galileo en Beidou.</Omschrijving>
+	</MethodeLocatiebepaling>
+	<MethodeLocatiebepaling>
+		<Waarde>RTKGPS0tot2cm</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Meting d.m.v. RTK (Real Time Kinematic) satellietnavigatie, in het dagelijks gebruik ook wel aangeduid als DGPS, afwijking kleiner dan 2 cm. De nauwkeurigheid wordt bereikt wanneer de meting is uitgevoerd met Ambiguity Resolution (ook wel fix). RTK maakt gebruik van een wereldwijd satellietnavigatiesysteem, Global Navigation Satellite System (GNSS). GNSS wordt in het dagelijks gebruik vaak aangeduid met GPS als verzamelnaam voor de 4 systemen GPS, Glonass, Galileo en Beidou.</Omschrijving>
+	</MethodeLocatiebepaling>
+	<MethodeLocatiebepaling>
+		<Waarde>RTKGPS2tot5cm</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Meting d.m.v. RTK (Real Time Kinematic) satellietnavigatie, in het dagelijks gebruik ook wel aangeduid als DGPS, afwijking tussen 2 en 5 cm. De nauwkeurigheid wordt bereikt wanneer de meting is uitgevoerd met Ambiguity Resolution (ook wel fix). RTK maakt gebruik van een wereldwijd satellietnavigatiesysteem, Global Navigation Satellite System (GNSS). GNSS wordt in het dagelijks gebruik vaak aangeduid met GPS als verzamelnaam voor de 4 systemen GPS, Glonass, Galileo en Beidou.</Omschrijving>
+	</MethodeLocatiebepaling>
+	<MethodeLocatiebepaling>
+		<Waarde>RTKGPS5tot10cm</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Meting d.m.v. RTK (Real Time Kinematic) satellietnavigatie, in het dagelijks gebruik ook wel aangeduid als DGPS, afwijking tussen 5 en 10 cm. De nauwkeurigheid wordt bereikt wanneer de meting is uitgevoerd met Ambiguity Resolution (ook wel fix). RTK maakt gebruik van een wereldwijd satellietnavigatiesysteem, Global Navigation Satellite System (GNSS). GNSS wordt in het dagelijks gebruik vaak aangeduid met GPS als verzamelnaam voor de 4 systemen GPS, Glonass, Galileo en Beidou.</Omschrijving>
+	</MethodeLocatiebepaling>
+	<MethodeLocatiebepaling>
+		<Waarde>RTKGPS10tot50cm</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Meting d.m.v. RTK (Real Time Kinematic) satellietnavigatie, in het dagelijks gebruik ook wel aangeduid als DGPS, afwijking tussen 10 en 50 cm. De nauwkeurigheid wordt bereikt wanneer de meting is uitgevoerd zonder Ambiguity Resolution (ook wel fix). RTK maakt gebruik van een wereldwijd satellietnavigatiesysteem, Global Navigation Satellite System (GNSS). GNSS wordt in het dagelijks gebruik vaak aangeduid met GPS als verzamelnaam voor de 4 systemen GPS, Glonass, Galileo en Beidou.</Omschrijving>
+	</MethodeLocatiebepaling>
+	<MethodeLocatiebepaling>
+		<Waarde>schetsenMetMeetpunt0tot200cm</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Locatie bepaald d.m.v. schetsen aan de hand van meetpunten, afwijking kleiner dan 200 cm.</Omschrijving>
+	</MethodeLocatiebepaling>
+	<MethodeLocatiebepaling>
+		<Waarde>tachymetrie0tot10cm</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Meting d.m.v. tachymetrie, ook wel als landmeting of Total Station aangeduid, vanaf een referentiepunt dat geen NAP-peilmerk is, afwijking kleiner dan 10 cm.</Omschrijving>
+	</MethodeLocatiebepaling>
+	<MethodeLocatiebepaling>
+		<Waarde>tachymetrie10tot50cm</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Meting d.m.v. tachymetrie, ook wel als landmeting of Total Station aangeduid, vanaf een referentiepunt dat geen NAP-peilmerk is, afwijking tussen 10 en 50 cm.</Omschrijving>
+	</MethodeLocatiebepaling>
+	<MethodeLocatiebepaling>
+		<Waarde>vectoriserenKaart0tot500cm</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Locatie bepaald d.m.v. georefereren en vectoriseren van een analoge kaart, afwijking kleiner dan 500 cm.</Omschrijving>
+	</MethodeLocatiebepaling>
+	<MethodeLocatiebepaling>
+		<Waarde>vectoriserenKaart500tot2000cm</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Locatie bepaald d.m.v. georefereren en vectoriseren van een analoge kaart, afwijking tussen 500 en 2000 cm.</Omschrijving>
+	</MethodeLocatiebepaling>
+	<MethodeLocatiebepaling>
+		<Waarde>vectoriserenKaart2000tot5000cm</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Locatie bepaald d.m.v. georefereren en vectoriseren van een analoge kaart, afwijking tussen 2000 en 5000 cm.</Omschrijving>
+	</MethodeLocatiebepaling>
+	<MethodeLocatiebepaling>
+		<Waarde>vectoriserenKaartNauwkeurigheidOnbekend</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Locatie bepaald d.m.v. georefereren en vectoriseren van een analoge kaart, afwijking onbekend.</Omschrijving>
+	</MethodeLocatiebepaling>
+</domeintabel>

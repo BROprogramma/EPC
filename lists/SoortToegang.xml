@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<domeintabel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<SoortToegang>
+		<Waarde>gang</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Een voornamelijk horizontaal lopende toegang tot een mijnstelsel.</Omschrijving>
+	</SoortToegang>
+	<SoortToegang>
+		<Waarde>schacht</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Een voornamelijk verticaal lopende toegang tot een mijnstelsel.</Omschrijving>
+	</SoortToegang>
+	<SoortToegang>
+		<Waarde>trap</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Een schuin naar beneden lopende gang waarin treden aanwezig zijn.</Omschrijving>
+	</SoortToegang>
+</domeintabel>

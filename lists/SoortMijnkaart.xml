@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<domeintabel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<SoortMijnkaart>
+		<Waarde>drempelkaartGecombineerd</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Kaart, samengesteld uit een selectie uit individuele drempelkaarten, waarop verzakkingen, verschuivingen en andere resultaten van aardbewegingen afgebeeld zijn die bovengronds waarneembaar zijn binnen de concessiegrenzen van een mijnstelsel en mogelijk veroorzaakt zijn door mijnbouwactiviteiten. In uitzonderingssituaties zijn op de kaart resultaten van aardbewegingen afgebeeld die waarneembaar zijn buiten enige concessiegrens maar wel in de nabijheid van een concessie.</Omschrijving>
+	</SoortMijnkaart>
+	<SoortMijnkaart>
+		<Waarde>drempelkaartIndividueel</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Kaart waarop verzakkingen, verschuivingen en andere resultaten van aardbewegingen afgebeeld zijn die bovengronds waarneembaar en mogelijk veroorzaakt zijn door mijnbouwactiviteiten.</Omschrijving>
+	</SoortMijnkaart>
+	<SoortMijnkaart>
+		<Waarde>hoofdgrondplanGecombineerd</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Kaart, samengesteld uit een selectie uit individuele hoofdgrondplannen, waarop een plattegrond is afgebeeld van de gangen op een bepaalde verdieping van een mijnstelsel. Op de kaart zijn mogelijk ook andere verdiepingen afgebeeld, herkenbaar aan afwijkende kleuren.</Omschrijving>
+	</SoortMijnkaart>
+	<SoortMijnkaart>
+		<Waarde>hoofdgrondplanIndividueel</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Kaart waarop een plattegrond is afgebeeld van de gangen op een bepaalde verdieping van een mijnstelsel. Op de kaart zijn mogelijk ook andere verdiepingen afgebeeld, herkenbaar aan afwijkende kleuren.</Omschrijving>
+	</SoortMijnkaart>
+	<SoortMijnkaart>
+		<Waarde>laagplanGecombineerd</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Kaart, samengesteld uit een selectie uit individuele laagplannen van een mijnstelsel, waarop de ontginning van een bepaalde steenkoollaag is afgebeeld in een horizontale projectie.</Omschrijving>
+	</SoortMijnkaart>
+	<SoortMijnkaart>
+		<Waarde>laagplanIndividueel</Waarde>
+		<IMBRO> </IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Kaart waarop van een mijnstelsel de ontginning van een bepaalde steenkoollaag is afgebeeld in een horizontale projectie.</Omschrijving>
+	</SoortMijnkaart>
+</domeintabel>
