@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<domeintabel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<SoortConstructieElement>
+		<Waarde>boortraject</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Een aaneengesloten holte in de ondergrond die resulteert na het uitvoeren van een boring.</Omschrijving>
+	</SoortConstructieElement>
+	<SoortConstructieElement>
+		<Waarde>toegang</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Een gedeelte van een mijnstelsel bedoeld om fysieke toegang tot het mijnstelsel te verkrijgen.</Omschrijving>
+	</SoortConstructieElement>
+	<SoortConstructieElement>
+		<Waarde>transportzone</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Een gedeelte van een mijnstelsel alleen bedoeld voor transportactiviteiten.</Omschrijving>
+	</SoortConstructieElement>
+	<SoortConstructieElement>
+		<Waarde>ontginningszone</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Een gedeelte van een mijnstelsel waar delfstoffen zijn gewonnen.</Omschrijving>
+	</SoortConstructieElement>
+</domeintabel>

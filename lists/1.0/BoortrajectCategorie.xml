@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<domeintabel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<BoortrajectCategorie>
+		<Waarde>primair</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Het eerste boortraject dat is geboord in een boorgat. Vanuit het primaire boortraject kunnen zijtakken (boortrajecten van de categorie 'zijtak') geboord worden. Een primair boortraject begint bij het oorspronkelijk verticaal referentiepunt op de aangeleverde locatie.</Omschrijving>
+	</BoortrajectCategorie>
+	<BoortrajectCategorie>
+		<Waarde>zijtak</Waarde>
+		<IMBRO>v</IMBRO>
+		<IMBROA>v</IMBROA>
+		<Omschrijving>Een boortraject waarvan het beginpunt van boren is gelegen in een primair boortraject (een boortraject van de categorie 'primair') of in een andere zijtak. Een boortraject van de categorie zijtak loopt vanaf het punt van afsplitsing tot het eindpunt ervan. Een zijtak begint niet bij het oorspronkelijk verticaal referentiepunt. Iedere zijtak heeft één eindpunt. Iedere eventuele afsplitsing ervan is een zijtak op zichzelf.</Omschrijving>
+	</BoortrajectCategorie>
+</domeintabel>
