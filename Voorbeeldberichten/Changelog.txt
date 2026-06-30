@@ -1,0 +1,27 @@
+Changelog
+----------------------------
+Versie 1.0.0 - 30.06.2026
+----------------------------
+Structuur voor drillingStartDate en drillingEndDate is aangepast (zie lijst van berichten).
+    Van:
+<epccom:drillingStartDate>2021-11-29</epccom:drillingStartDate>
+    
+    Naar:
+<epccom:drillingStartDate>
+  <brocom:date>2021-11-29</brocom:date>
+</epccom:drillingStartDate>
+
+Lijst van berichten:
+    EPC Inname voorbeeldberichten:
+        10_EPC_StartRegistrationBorehole.xml
+        11_EPC_AddBoreholeSegment.xml
+
+    EPC Uitgifte voorbeeldberichten:
+        06_DC_ResponseLevering.xml 
+        10_EPC_PPO_DP_Borehole.xml
+        11_EPC_PPO_Borehole.xml
+        12_EPC_PO_DP_Borehole.xml
+        13_EPC_PO_Borehole.xml
+        32_EPC_PO_DP_SaltCavern.xml
+
+
