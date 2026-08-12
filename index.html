@@ -2,52 +2,41 @@
 <html lang="nl">
 
 <head>
-  	<meta content="text/html; charset=utf-8" http-equiv="content-type">
-  	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  	<link rel='shortcut icon' type='image/x-icon' href='https://tools.geostandaarden.nl/respec/style/logos/Geonovum.ico' />
-  	<link rel="stylesheet" type="text/css" href="https://tools.geostandaarden.nl/respec/style/bro-localstyle.css"/>
-  	<title>Basisregistratie Ondergrond Catalogus Mijnbouwconstructie</title>
-	<script class='remove' src='https://tools.geostandaarden.nl/respec/builds/respec-geonovum.js' async></script>
-  	<script class="remove" src="config.js"></script>
+	<meta content="text/html; charset=utf-8" http-equiv="content-type">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<script src="https://cdn.jsdelivr.net/gh/digitalbazaar/respec-mermaid@1.0.1/dist/main.js" class="remove"></script>
+	<script src="https://tools.geostandaarden.nl/respec/config/bro-config.js" class="remove"></script>
+	<script src="js/config.js" class="remove"></script>
+	<script class="remove"> respecConfig = {...organisationConfig, ...respecConfig}</script>
+	<!-- <script>document.title = respecConfig.title</script> -->
+	<title>Catalogus registratie ondergrond Mijnbouwconstructie</title>
+	<link rel="shortcut icon" type="image/x-icon" href="https://tools.geostandaarden.nl/respec/style/logos/Geonovum.ico"/>
+	<link rel="stylesheet" type="text/css" href="https://tools.geostandaarden.nl/respec/style/bro-localstyle.css"/>
+	<script src="https://gitdocumentatie.logius.nl/publicatie/respec/builds/respec-nlgov.js" class="remove" async></script>
 </head>
 
 <body>
 
-	<!--samenvatting-->
-	<section id='abstract'>
-	<p>Dit document beschrijft de definitie van de mijnbouwconstructie, met een algemene toelichting. </p>
+	<!-- Status van dit document document -->
+	<section id="sotd"></section><!-- Wordt automatisch gevuld -->
+
+	<!-- Samenvatting -->
+	<section id="abstract" data-include-format="markdown" data-include="samenvatting.md"></section>
+
+	<!-- Hoofdstuk 1. Inleiding -->
+	<section id="inleiding">
+		<h2>Inleiding</h2>
+		<section id="leeswijzer" data-include="leeswijzer.md" data-include-format="markdown"></section>
+		<section id="doel-en-doelgroep" data-include-format="markdown" data-include="https://docs.geostandaarden.nl/bro/gen/doel-en-doelgroep.md"></section>
+		<section id="totstandkoming" data-include-format="markdown" data-include="https://docs.geostandaarden.nl/bro/gen/totstandkoming.md"></section>
+		<section id="beheer" data-include-format="markdown" data-include="https://docs.geostandaarden.nl/bro/gen/beheer.md"></section>
 	</section>
 
-	<!-- status document -->	
-	<section id='sotd'></section>
+	<!-- Hoofdstuk 2. Algemene kenmerken en bergippen -->
+	<section id="h2-algemene-kenmerken-en-begrippen" data-include-format="markdown" data-include="https://docs.geostandaarden.nl/bro/gen/h2-algemene-kenmerken-en-begrippen.md"></section>
 
-	<!-- inleiding -->
-	<section id='inleiding' class='generic informative'>
-		<h2>Inleiding</h2>
-			<section id='doel-en-doelgroep' data-include='https://docs.geostandaarden.nl/bro/gen/doel-en-doelgroep.html'>
-			</section>
-			<section id='totstandkoming' data-include='https://docs.geostandaarden.nl/bro/gen/totstandkoming.html'>
-			</section>
-			<section id='beheer' data-include='https://docs.geostandaarden.nl/bro/gen/beheer.html'>
-			</section>
-			<section id="leeswijzer">
-			<h3>Leeswijzer</h3>
-				<p><a href ="#inleiding">Hoofdstuk 1</a> geeft het doel en de doelgroep van een catalogus.</p>
-				<p><a href ="#algemene-kenmerken-en-begrippen">Hoofdstuk 2</a> behandelt enkele algemene aspecten van het BRO-systeem en begrippen van algemene aard.</p>
-				<p><a href ="#Mijnbouwconstructie algemene inleiding">Hoofdstuk 3</a> plaatst het object in de gegevenssystematiek van de basisregistratie ondergrond en vertelt wat de benadering is geweest bij het opstellen van de gegevensdefinitie.</p>
-				<p><a href ="#Mijnbouwconstructie">Hoofdstuk 4</a> is de toelichting op de gegevensdefinitie van het registratieobject die in de ministeriële regeling is opgenomen.</p>		
-				<p><a href ="#intro-gegevensdefinitie">Hoofdstuk 5</a> vertelt hoe de gegevensdefinitie is opgebouwd en welke aspecten van de gegevens daarin worden beschreven.</p>
-				<p><a href ="#gegevensdefinitie">Hoofdstuk 6</a> geeft de inhoud weer van het eerste artikel van de ministeriële regeling en dat is het deel waarin de definitie is opgenomen van het registratieobject, van de delen waaruit het is opgebouwd, de entiteiten, en van de eigenschappen van die delen, de attributen.</p>
-				<p><a href ="#uitbreidbare-waardelijsten">Hoofdstuk 7</a> geeft de inhoud weer van het tweede artikel van de ministeriële regeling en dat is het deel waarin uitbreidbare waardelijsten staan waarnaar in hoofdstuk 6 verwezen wordt. </p>
-			</section>
-	</section>		
-
-	<!-- Algemene kenmerken en bergippen -->
-	<!-- hoofdstuk 2 -->
-	<section id='algemene-kenmerken-en-begrippen' data-include='https://docs.geostandaarden.nl/bro/gen/algemene-kenmerken-en-begrippen.html' class='generic informative'></section>
-
-	<!-- hoofdstuk 3 -->	
-	<section id="Mijnbouwconstructie algemene inleiding" class='generic informative'>
+	<!-- Hoofdstuk 3. Mijnbouwconstructie algemene inleiding -->
+	<section id="mijnbouwconstructie-algemene-inleiding" class="generic informative">
 	<h2>Mijnbouwconstructie - algemene inleiding</h2>
 	<p>Binnen het domein mijnbouw is mijnbouwconstructie, naast mijnbouwwetvergunning, een van de twee registratieobjecten. De twee registratieobjecten hebben als relatie dat een mijnbouwconstructie is aangelegd of voor mijnbouwactiviteiten wordt gebruikt onder een mijnbouwwetvergunning. In de catalogus wordt dit toegelicht.</p>
 	<p>In de registratie ondergrond worden drie soorten mijnbouwconstructies onderscheiden, namelijk boorgat, mijnstelsel (steenkoolmijnen en kalksteengroeves) en zoutcaverne. Onderstaande paragrafen zijn deels generiek voor de drie soorten, deels specifiek.</p>	
@@ -95,7 +84,7 @@
 			<section id="BoortrajectenInleiding">
 			<h4>Boortrajecten</h4>
 			<p>Een boortraject is een holte in de ondergrond die onderdeel is van een boorgat en ontstaan is na het uitvoeren van een boring. Het inmeten van de ligging van een boortraject gebeurt tijdens of na het boren. Bij een primair boortraject worden per meting de afstand ten opzichte van het oorspronkelijk verticaal referentiepunt en de deviatie van dit nulpunt vastgelegd. De deviatie bestaat uit de azimut en de hellingshoek (zie <a href="#image002">figuur 2</a>). De afstand tussen meetpunten varieert en is korter (bijvoorbeeld slechts 10 meter) naarmate de afstand vanaf het oorspronkelijk verticaal referentiepunt groter is.</p>
-				<figure id='image002'>
+				<figure id="image002">
 				<img src="./data/Images/figuur2_Schematische weergave van het inmeten van de ligging van een boorgat.png" width="150"/>
 				<figcaption>: Schematische weergave van het inmeten van de ligging van een boortraject. Op meerdere afstanden van de oorsprong van een boorgat wordt de deviatie ten opzichte van de oorsprong van het boorgat gemeten. In deze figuur is getekend dat dit vanuit de boorkop wordt gedaan.</figcaption>
 				</figure>  
@@ -110,7 +99,7 @@
 				<li>Op basis van deze metingen wordt de geometrie van het primaire traject en alle eventuele zijtakken tot aan het tie-in-point van de nieuwe zijtak opnieuw bepaald.</li>
 			  </ol>
 			</ol>
-				<figure id='image003'>
+				<figure id="image003">
 				<img src="./data/Images/figuur3_Schematische weergave van het opnieuw bepalen van geometrieen van boortrajecten.png" width="300"/>
 				<figcaption>: Schematische weergave van het opnieuw bepalen van geometrieën van boortrajecten na het boren van een zijtak.</figcaption>
 				</figure> 
@@ -133,7 +122,7 @@
 			<p>Behalve de bovengrondse dagbouw van kalksteen, zijn in Zuid-Limburg ook ongeveer 300 ondergrondse kalksteengroeves die in de basisregistratie ondergrond opgenomen worden als mijnbouwconstructies.</p>
 			<p>Kalksteengroeves zijn kleinschalig vanaf de ijzertijd ontstaan. Vanaf de middeleeuwen zijn de ontginningen ondergronds grootschalig uitgevoerd. Het hoogtepunt van de ontginningen lag tussen 1700 en 1940. In 2020 vindt nog in slechts één groeve ontginning plaats door twee aannemers en komt er jaarlijks tussen de 100 en 200 meter gang bij. De ontginning gebeurde tot de jaren 80 van de 20e eeuw uitsluitend met handgereedschappen: zagen, beitels en houwelen. Sindsdien wordt met elektrische kettingzagen gewerkt. De winning ondergronds leverde ongeveer 30% restmateriaal op dat ondergronds achterbleef, opgestapeld in ongebruikte gangen. Deze losse kalksteen is in veel groeves later weer gewonnen voor andere doeleinden zoals kalkbranderijen, grondverbetering en industriële toepassing. <br>De toegangen tot de ondergrondse kalksteengroeves zijn meestal een gang die vanaf de dalwand de groeve min of meer horizontaal ingaat. Soms helt de gang licht om de juiste kalksteenlaag te kunnen bereiken. De toegangsgangen zijn meestal kort. De kalksteen is al na enkele meters dusdanig homogeen en bruikbaar dat direct na de ingang al gebruiksklare kalksteen beschikbaar is. In een enkel geval moet de toegangsgang wat langer zijn omdat dalwandverstoringen de mergel aangetast hebben. Ondergronds wordt bij de grotere groeves weleens een verbindingstunnel gemaakt door een slecht stuk kalksteen om een beter stuk kalksteen te ontginnen. Deze proeftunnels zijn zelden langer dan enkele meters. Een enkele maal is een groeve alleen bereikbaar via een schacht.</p>
 			<p>De meeste gangen zijn initieel als steengroeve gebruikt (zie <a href="#image004">figuur 4</a>). Hierna werd de overgebleven ruimte hergebruikt voor zeer diverse doeleinden zoals champignonkweek, opslag, toerisme, enzovoorts. </p>
-				<figure id='image004'>
+				<figure id="image004">
 				<img src="./data/Images/figuur4_Blokbreken het ontginnen van kalksteen in de ondergrondse kalksteengroeves.png" width="300"/>
 				<figcaption>: Blokbreken, het ontginnen van kalksteen in ondergrondse kalksteengroeves (foto J. Orbons).</figcaption>
 				</figure>
@@ -159,9 +148,9 @@
 			</section>
 		</section>
 	</section>
-		
-	<!--Hoofdstuk4-->
-	<section id="Mijnbouwconstructie">
+
+	<!-- Hoofdstuk 4. Mijnbouwconstructie -->
+	<section id="mijnbouwconstructie">
 	<h2>Mijnbouwconstructie</h2>
 		<section id="Inleiding">
 		<h3>Inleiding</h3>
@@ -188,7 +177,7 @@
 			<section id="Steenkoolmijnen">
 			<h4>Steenkoolmijnen</h4>
 			<p>Steenkool is een brandbaar gesteente dat binnen Nederland in de geologische periode carboon ontstaan is uit veenmateriaal. Deze veenlagen zijn cyclisch afgezet, afgewisseld met lagen kalksteen en zandsteen waardoor meer dan honderd verschillende steenkoollagen voorkomen. Door geologische processen zijn de lagen vervormd, liggen ze onder een hoek en zijn door breuken in het gesteente grote sprongen ontstaan in de ligging ervan. Al sinds de Romeinse tijd wordt steenkool kleinschalig gewonnen en gebruikt als brandstof. In de middeleeuwen werd bij Kerkrade een steenkoollaag aangetroffen in de dalwand van het riviertje de Worm. In het achterliggende gebied zijn vanaf de middeleeuwen vele kleine mijnen ontstaan vanuit schachtontginningen. Vanaf ongeveer 1800 werden grootschalige mijnen aangelegd en werd Nederland bediend met steenkool voor verwarming en energieopwekking. De oudste mijnen zijn in Kerkrade te vinden waar de steenkool relatief dicht aan het oppervlak komt. In noordwestelijke richting bevindt de steenkool zich op grotere diepte. De winning van steenkool vindt plaats in een brede band over het noorden van Zuid-Limburg. In Midden-Limburg bij Roermond is in de jaren 50 van de 20e eeuw nog een aanzet gedaan tot een mijn door een schacht te graven maar deze is niet tot productie gekomen (zie <a href="#image005">figuur 5</a> voor de ligging van de steenkoolmijnen). Steenkool wordt tot grote diepte ontgonnen, tot ruim 1000 meter onder maaiveld. Alle steenkoolmijnen zijn tussen eind jaren 60 en begin jaren 70 buiten gebruik gesteld en hermetisch afgesloten.</p>		
-				<figure id='image005'>
+				<figure id="image005">
 				<img src="./data/Images/figuur_De ligging van de steenkoolmijnen.png" width="150"/>
 				<figcaption>: De ligging van de steenkoolmijnen in het noorden van Zuid-limburg en nabij Roermond (geschematiseerd).</figcaption>
 				</figure> 
@@ -198,7 +187,7 @@
 			<section id="Kalksteengroeves">
 			<h4>Kalksteengroeves</h4>
 			<p>Kalksteen dagzoomt alleen in het zuiden van Zuid-Limburg waar deze steen aan het oppervlak komt in de dalwanden. Lokaal wordt deze kalksteen ‘mergel’ genoemd. Het Zuid-Limburgse landschap kent vele dagbouwgroeves waar kalksteen in een open groeve ontgonnen is. Deze dagbouwgroeves vallen buiten de basisregistratie ondergrond. <br>Een kleine 300 kalksteengroeves hebben ondergrondse ontginningen waarbij in gangen de kalksteen gedolven is om bouwsteenblokken of losse kalk te winnen. Deze ontgonnen kalksteenlagen liggen tot enkele tientallen meters onder het maaiveld. De ondergrondse mijnstelsels in de kalksteen worden wel in de basisregistratie ondergrond opgenomen (zie <a href="#image006">figuur 6</a> voor de ligging van de kalksteengroeves).</p>
-				<figure id='image006'>
+				<figure id="image006">
 				<img src="./data/Images/figuur_De ligging van de kalksteengroeves.png" width="150"/>
 				<figcaption>: De ligging van de kalksteengroeves in het zuiden van Zuid-Limburg.</figcaption>
 				</figure>
@@ -207,7 +196,7 @@
 			<section id="Kaartmateriaal steenkoolmijnen">
 			<h4>Kaartmateriaal steenkoolmijnen</h4>
 			<p>In de basisregistratie ondergrond wordt verwezen naar het ingescand en geogerefereerd kaartmateriaal van steenkoolmijnen. De steenkoolontginningen van voor 1815 zijn niet ingemeten. Hooguit wordt op de sporadisch beschikbare kaarten melding gemaakt van de ligging van een mijnschacht, waarbij de locatie vaak algemeen en zeer onnauwkeurig is weergegeven. <br>Vanaf 1810 zijn vanwege nieuwe wetgeving kaarten gemaakt van steenkoolmijnen. Het mijnbedrijf dat een mijnstelsel exploiteerde had de plicht voor de eigen mijn kaarten te maken en deze in een eigen kaartarchief op te slaan. Vanaf 1815 zijn de steenkoolmijnen ingemeten door mijnmeters. Het driedimensionale karakter van de steenkoolmijn is in een of meerdere kaarten van verschillende soorten aangegeven. Drie van deze soorten worden opgenomen in de basisregistratie ondergrond. Deze drie kaartsoorten laten de belangrijkste componenten van de steenkoolmijn zien. Het betreft de drempelkaarten, de hoofdgrondplannen en de laagplannen. Deze kaarten zijn in <a href="#image007">figuur 7</a> schematisch weergegeven.</p>
-				<figure id='image007'>
+				<figure id="image007">
 				<img src="./data/Images/figuur_Schematische weergave van een steenkoolmijn.png" width="300"/>
 				<figcaption>: Schematische weergave van een steenkoolmijn met daarin drie soorten mijnkaarten aangegeven. </figcaption>
 				</figure>
@@ -309,11 +298,11 @@
 				<p>Van een boorgat wordt de aangeleverde locatie vastgelegd in de het attribuut locatie     en de op basis daarvan gestandaardiseerde locatie in Gestandaardiseerde locatie boorgat. De aangeleverde en de gestandaardiseerde verticale positie worden beide vastgelegd in de entiteit Aangeleverde verticale positie.</p>
 				<p>De holtes waaruit een boorgat bestaat – de boortrajecten – worden vastgelegd in de entiteit Boortraject. Ieder boorgat heeft minimaal één gerelateerd boortraject: het primaire boortraject. Daarnaast kan een boorgat één of meerdere zijtakken bevatten (zie <a href="#image008">figuur 8</a>).</p>
 				<p>In <a href="#image009">figuur 9</a> is de vertaling gegeven van het 3D-model naar de gegevens zoals ze opgenomen worden in de basisregistratie ondergrond. De bovengrondse elementen zoals de boortoren worden niet opgenomen. De locatie van het boorgat (gemarkeerd met een stip) wordt als een puntlocatie opgenomen in het attribuut locatie. Het primaire boortraject (weergegeven in grijs) wordt opgenomen onder de entiteit Boortraject met als categorie ‘primair’. Zijtakken (weergegeven in kleur) worden opgenomen onder de entiteit Boortraject met als categorie ‘zijtak’. Locatiegegevens van boortrajecten worden per boortraject opgenomen onder de entiteit Boortraject locatie.</p>
-					<figure id='image008'>
+					<figure id="image008">
 					<img src="./data/Images/Boorgat_Boortraject3D.png" width="300"/>
 					<figcaption>: 3D-model van een boorgat met bovengronds een boortoren, ondergronds een primair boortraject en enkele zijtakken.</figcaption>
 					</figure>		
-					<figure id='image009'>
+					<figure id="image009">
 					<img src="./data/Images/Boorgat_Boortraject_Catalogus3D.png" width="300"/>
 					<figcaption>: Model van een boorgat als vertaling van het 3D-model ervan.</figcaption>
 					</figure>				
@@ -355,7 +344,7 @@
 						<ul>
 						<li>Onshore boorgaten: ETRS89 of RD.</li>
 						<li>Offshore boorgaten: ETRS89 of WGS84.</li>
-						<ul>
+						</ul>
 						</td>
 						<td>
 						<ul>
@@ -380,6 +369,7 @@
 						<ul>
 						<li>Vastgelegd als <i>oorspronkelijk verticaal referentiepunt</i>.</li>
 						<li>Kan <i>maaiveld</i> zijn of verwijzen naar een bepaald onderdeel van de boorinstallatie (bijv. de draaitafel) waarvandaan is geboord.</li>
+						</ul>	
 						</td>
 						<td>
 						<ul>
@@ -408,7 +398,7 @@
 					</tr>	
 				</table>	
 				<p>Bovenstaande houdt in dat de gestandaardiseerde verticale positie van een boorgat wordt gesteld op 0 MSL, 0 LAT of 0 NAP. Kenmerken van boortrajecten met betrekking tot diepte, zoals de werkelijke verticale einddiepte en de z-waarden in de geometrie van een boortraject, hanteren deze verticale positie als nulpunt. Doel hiervan is om registratieobjecten in de registratie ondergrond verticaal gezien zonder omrekening ten opzichte van elkaar te kunnen positioneren.</p>
-					<figure id='image010'>
+					<figure id="image010">
 					<img src="./data/Images/figuur_Schematische weergave van oorspronkelijk verticaal referentiepunten en oorspronkelijke verschuivingen.png" width="150"/>
 					<figcaption>: Schematische weergave van oorspronkelijk verticaal referentiepunten en oorspronkelijke verschuivingen. Het verticaal referentievlak LAT is weggelaten.</figcaption>
 					</figure>  
@@ -417,7 +407,7 @@
 				<section id="boortrajectEntiteit">
 				<h5>Boortraject</h5>
 				<p>Een boortraject is een holte in de ondergrond dat onderdeel is van een boorgat en ontstaan is na het uitvoeren van een boring. <a href="#image011">Figuur 11</a> geeft de constructie van een boorgat weer, als samenstel van boortrajecten. De <a href="#image011">figuur</a> laat de situatie op het land zien. De situatie op zee is wat betreft het ondergrondse stelsel vergelijkbaar. Echter is dan niet het maaiveld maar de zeebodem het punt waar onder  sprake is van een ondergronds stelsel.</p>				
-					<figure id='image011'>
+					<figure id="image011">
 					<img src="./data/Images/figuur_Schematische weergave van de verschillende fasen in de constructie van een boorgat.png" width="100"/>
 					<figcaption>: Schematische weergave van de verschillende fasen in de constructie van een boorgat.</figcaption>
 					</figure>
@@ -425,7 +415,7 @@
 				<p>Een boorgat bestaat dus uit een of meerdere segmenten, in de basisregistratie ondergrond boortrajecten genoemd. Boortrajecten overlappen en doorsnijden elkaar niet. Het eerste boortraject dat wordt gemaakt bij het maken van een boorgat is het zogenaamde primaire traject (ook wel het moederboorgat genoemd). Na boring van het primaire traject kunnen één of meer zijtakken geboord worden, op zogenaamde tie-in-points ontspringend uit het primaire traject of een andere zijtak. Het boren van zijtakken, in vakjargon ‘sidetracking’ genoemd, wordt uitgevoerd na grondige afweging. Er is dus geen sprake van het ‘even’ boren van een aantal zijtakken. Iedere aftakking wordt dan ook als een separaat boortraject van het type zijtak geregistreerd in de basisregistratie ondergrond.</p>
 				<p>Het verdiepen van een boorgat, of anders gezegd het verlengen van het primaire traject of een zijtak, wordt voor de registratie ondergrond beschouwd als het boren van een zijtak. Het gedeelte waarmee een boortraject is verlengd, is dus een nieuw traject van het soort zijtak – ongeacht of die zijtak in het verlengde van het al bestaande traject ligt of er van devieert.</p>
 				<p><a href="#image012">Figuur 12</a> geeft een voorbeeld van het afsluiten ofwel het buiten gebruik stellen van boortrajecten. Afsluiting 1 betreft het afsluiten van het primaire traject van het eerst gemaakte boorgat. Omdat dit boorgat alleen een primair traject heeft, is het gehele boorgat hiermee buiten gebruik gesteld (ook genoemd: geabandonneerd of verlaten). Afsluiting 2 betreft het afsluiten van een zijtak – waarmee ook de zijtak die eruit ontspringt is afgesloten. Het boorgat blijft in gebruik. Afsluiting 3, op een later moment dan afsluiting 2, betreft het afsluiten van het primaire traject van het tweede boorgat, en daarmee het verlaten van dat boorgat. In de basisregistratie ondergrond wordt alleen het verlaten c.q. de buitengebruikstelling van boorgaten vastgelegd, niet de afsluiting van individuele boortrajecten.</p>
-					<figure id='image012'>
+					<figure id="image012">
 					<img src="./data/Images/figuur_Schematische weergave van het buiten gebruik stellen van boortrajecten.png" width="100"/>
 					<figcaption>: Schematische weergave van het buiten gebruik stellen van boortrajecten en het verlaten van een boorgat.</figcaption>
 					</figure>		
@@ -434,7 +424,7 @@
 				<section id="boortrajectlocatie">
 				<h5>Boortraject locatie</h5>
 				<p>Boortraject locatie betreft een groep van gegevens die de ligging van een boortraject beschrijft. Belangrijkste hiervan is de geometrie, dat is een driedimensionale curve. De ligging van een boortraject heeft vanuit de mijnbouwwetgeving een tijdelijk vertrouwelijk karakter. In de datum openbaarmaking van een boortraject is vastgelegd tot wanneer dit vertrouwelijk karakter geldt. <br>De werkelijke verticale einddiepte (in vakjargon True Vertical Depth, afgekort TVD) van een boortraject geeft aan op welke diepte het eindpunt van een boortraject ligt, loodrecht gemeten vanuit het lokaal verticaal referentiepunt dat voor het betreffende boorgat geldt (zie <a href="#image013">figuur 13</a>). <br>Bij ieder boortraject is in de basisregistratie ondergrond vastgelegd wat de afstand is vanaf het oorspronkelijk verticaal referentiepunt van het betreffende boorgat tot aan het eindpunt van het boortraject. In vakjargon wordt dit de gemeten diepte (Measured Depth, afgekort MD) van een boortraject genoemd. In de basisregistratie ondergrond wordt, in aansluiting op andere registratieobjecten, de term totale lengte gebruikt (zie <a href="#image013">figuur 13</a>). Het bijvoeglijk naamwoord ‘totale’ is ingevoegd om expliciet te maken dat dit niet per se de lengte van één boortraject betreft. Voor het primaire boortraject is dit wel zo, maar voor zijtakken is de totale lengte een optelsom van de lengte van die zijtak plus de afstand van de delen van de boortrajecten vanaf het oorspronkelijk verticaal referentiepunt tot aan het tie-in-point voor die zijtak.</p>
-					<figure id='image013'>
+					<figure id="image013">
 					<img src="./data/Images/figuur_Schematische weergave ter toelichting.png" width="75"/>
 					<figcaption>: Schematische weergave ter toelichting van de attributen ‘werkelijke verticale einddiepte’ en ‘totale lengte’.</figcaption>
 					</figure>			
@@ -449,11 +439,11 @@
 				<p>In <a href="#image014">figuur 14</a> is een 3D-model weergegeven van een steenkoolmijn met bovengrondse gebouwen, een schacht, een ondergrondse transportgang en een ondergrondse ontginning van een schuin liggende steenkoollaag. Dit geheel vormt een mijnstelsel (gemarkeerd met een rode lijn).</p>
 				<p>In <a href="#image015">figuur 15</a> is de vertaling gegeven van het 3D-model naar de gegevens zoals ze middels 2D-objecten opgenomen worden in de basisregistratie ondergrond. De bovengrondse elementen, de schachten, de transportgangen en de ondergrondse ontginningen worden niet opgenomen. Alleen het mijnstelsel als geheel wordt opgenomen onder de entiteit Mijnstelsel als multivlak-object.</p>
 				<p>Een 3D opname van een steenkoolmijn in de basisregistratie ondergrond is niet wenselijk. De hoogtegegevens van de ontginningen zijn weliswaar zeer nauwkeurig, maar door na-ijleffecten kan niet met zekerheid vastgesteld worden wat de huidige situatie is van dieptegegevens.</p>
-					<figure id='image014'>
+					<figure id="image014">
 					<img src="./data/Images/3DSteenkoolmijn_Toegang_Transportzone_OntginningszoneV2.png" width="100"/>
 					<figcaption>: 3D-model van een steenkoolmijn met één toegang, één transportzone en één ontginningszone.</figcaption>
 					</figure>
-					<figure id='image015'>
+					<figure id="image015">
 					<img src="./data/Images/2DSteenkoolmijnV2.png" width="100"/>
 					<figcaption>: 2D-model van een steenkoolmijn als vertaling van het 3D-model ervan.</figcaption>
 					</figure>
@@ -461,11 +451,11 @@
 				<p>In <a href="#image016">figuur 16</a> is een 3D-model weergegeven van een kalksteengroeve met bovengronds landschap, diverse soorten toegangen en een horizontale ontginningszone met pilaren en gangen. Een transportzone is meestal niet aanwezig bij kalksteengroeves. De toegangen zijn met blauwe punten gemarkeerd. De ontginningszone is gemarkeerd als een oranje gearceerd deel binnen een oranje contour. De pilaren zijn niet ontgonnen en behoren daarom niet bij de ontginningszone. Dit geheel wordt met een rode lijn omsloten: de contour van het mijnstelsel.</p>
 				<p>In <a href="#image017">figuur 17</a> is de vertaling gegeven van het 3D-model van <a href="#image016">figuur 16</a> naar de gegevens zoals ze middels 2D-objecten opgenomen worden in de basisregistratie ondergrond. De bovengrondse elementen worden niet opgenomen. Toegangen worden als punt-objecten opgenomen onder de entiteit Toegang. Transportzones en ontginningszones worden als multivlak-objecten opgenomen onder de entiteit Transportzone resp. Ontginningszone. Het mijnstelsel als geheel wordt opgenomen onder de entiteit Mijnstelsel als multivlak-object.</p>
 				<p>Een 3D opname van een kalksteengroeve is in de basisregistratie ondergrond niet mogelijk. De hoogtegegevens van de toegangen en ontginningszones zijn namelijk niet beschikbaar en niet met grote zekerheid af te leiden. Vanuit een toegang van het soort ‘schacht’ kan niet bepaald worden op welke diepte een kalksteenontginning ligt maar ook vanuit een toegang van het soort ‘gang’ is vaak eerst nog een kleine daling of stijging nodig om bij de te ontginnen kalksteenlaag te komen. De ontginningszones zijn weliswaar grotendeels horizontaal maar er zijn in groeves meerdere verspringingen in hoogte waar de geologische breuken gevolgd worden. Ook helt het mergelpakket licht, gemiddeld 1 graad in noordwestelijke richting. </p>
-					<figure id='image016'>
+					<figure id="image016">
 					<img src="./data/Images/3DKalksteengroeve_Toegang_Ontginningszone.png" width="100"/>
 					<figcaption>: 3D-model van een kalksteengroeve met twee toegangen en één ontginningszone. Een transportzone ontbreekt.</figcaption>
 					</figure>
-					<figure id='image017'>
+					<figure id="image017">
 					<img src="./data/Images/2DKalksteengroeve.png" width="100"/>
 					<figcaption>: 2D-model van een kalksteengroeve als vertaling van het 3D-model ervan.</figcaption>
 					</figure>	
@@ -519,7 +509,7 @@
 				<h5>Zoutcaverne</h5>
 				<p>Zoutcaverne is gedefinieerd als subtype van de entiteit Mijnbouwconstructie. De gegevens die bij de entiteit Mijnbouwconstructie zijn gedefinieerd, gelden daarom ook voor zoutcaverne. Van de zoutcaverne wordt verder vastgelegd: de holruimtecontour (de maximale cumulatieve contour van de in de ondergrond aanwezige caverne) en de cavernemetingcode waarmee cavernemetingen opgevraagd kunnen worden mochten deze voor de caverne aanwezig zijn.</p>
 				<p>In <a href="#image018">figuur 18</a> is een 3D-model weergegeven van een zoutcaverne met bovengronds een ‘zouthuisje’ en ondergronds een boortraject en de zoutcaverne. Het bovengrondse element, het zouthuisje, wordt niet in de registratie ondergrond opgenomen. De holruimtecontour (weergegeven als gearceerd vlak) wordt opgenomen in het attribuut holruimtecontour. Het boortraject (weergegeven in grijs) wordt opgenomen onder de entiteit Boortraject.</p>
-					<figure id='image018'>
+					<figure id="image018">
 					<img src="./data/Images/Zoutcaverne_Catalogus3D.png" width="75"/>
 					<figcaption>: 3D-model van een zoutcaverne.</figcaption>
 					</figure>	
@@ -556,45 +546,19 @@
 		<p>Het doel van de Europese kaderrichtlijn INSPIRE is het harmoniseren en openbaar maken van ruimtelijke gegevens van overheidsorganisaties ten behoeve van het milieubeleid. Het registratieobject mijnbouwconstructie valt wat het boorgat en het mijnstelsel betreft onder het INSPIRE-thema Geology en wat de zoutcaverne betreft onder Mineral Resources. Om die reden moeten de gegevens in het registratieobject geschikt gemaakt worden voor uitwisseling volgens de INSPIRE-standaard. Dit wordt geïmplementeerd middels een mapping van de gegevensmodellen van het boorgat, het mijnstelsel en de zoutcaverne op de gegevensmodellen van de respectievelijke INSPIRE-thema’s. De inhoud van deze mappings is geen onderdeel van deze catalogus.</p>
 		</section>
 	</section>
+	
+	<!-- Hoofdstuk 5. Opbouw van de gegevensdefinitie -->
+	<section id="h5-gegevensdefinitie" data-include-format="markdown" data-include="https://docs.geostandaarden.nl/bro/gen/h5-gegevensdefinitie.md"></section>
 
-			
-			
-	<!-- introductie gegevensdefinitie generiek -->
-	<!-- hoofdstuk 5 -->
-	<section id="intro-gegevensdefinitie" class='generic informative'>
-	<h2>Opbouw van de gegevensdefinitie</h2>
-	<section id="intro-cat-inleiding" data-include="https://docs.geostandaarden.nl/bro/gen/intro-cat-inleiding.html"></section>
-		<section id="domeinen">
-			<h3>Domeinen</h3>
-			<div id="domeinen" data-include="https://docs.geostandaarden.nl/bro/gen/domeinen-intro.html"></div>
-			<section id="gemeten waarden">
-				<h4>Gemeten waarden</h4>
-				<div id="gemeten-waarden-intro" data-include="https://docs.geostandaarden.nl/bro/gen/gemeten-waarden-intro.html"></div>
-				<section id="meetwaarde" data-include="https://docs.geostandaarden.nl/bro/gen/meetwaarde.html"></section>
-				<section id="inname-gemeten-waarden" data-include="https://docs.geostandaarden.nl/bro/gen/inname-gemeten-waarden.html"></section> 
-			</section>	
-			<section id="nummer" data-include="https://docs.geostandaarden.nl/bro/gen/nummer.html"></section>
-			<section id="tekst" data-include="https://docs.geostandaarden.nl/bro/gen/tekst.html"></section>
-			<section id="code" data-include="https://docs.geostandaarden.nl/bro/gen/code.html"></section>
-			<section id="tijdstip" data-include="https://docs.geostandaarden.nl/bro/gen/datumtijd.html"></section>
-			<section id="geometrie" data-include="https://docs.geostandaarden.nl/bro/gen/geometrie.html"></section>
-			<section id="waardelijsten">
-				<h4>Waardelijsten</h4>
-				<div id="waardelijst-intro" data-include="https://docs.geostandaarden.nl/bro/gen/waardelijst.html"></div> 
-				<section id="waardelijst-niet-uitbreidbaar" data-include="https://docs.geostandaarden.nl/bro/gen/enumeratie.html"></section>
-				<section id="waardelijst-uitbreidbaar" data-include="https://docs.geostandaarden.nl/bro/gen/codelijst.html"></section>
-			</section>
-			<section id="organisatie" data-include="https://docs.geostandaarden.nl/bro/gen/organisatie.html"></section>    
-		</section>
-		<section id="domeinmodel" data-include="https://docs.geostandaarden.nl/bro/gen/domeinmodel-gen.html"></section>
-		<section id="verplichte-gegevens-waarden" data-include="https://docs.geostandaarden.nl/bro/gen/verplichte-gegevens-waarden.html"></section>
-	</section>
-
-	<!-- Model -->
-	<!-- hoofdstuk 6 en Hoofdstuk 7 -->
+	<!-- Hoofdstukken 6 en 7. Gegevensdefinitie en Uitbreidbare waardenlijsten -->
 	<div data-include="data/EPC-cat.respec.html" data-include-replace="true"></div>
 
-<script src="https://docs.geostandaarden.nl/bro/gen/js/resizeImageMap.js"></script>
-</body>
+	<!-- Leaflet required for panZoomImage-->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 
+	<!-- panZoomImage -->
+	<script src="https://docs.geostandaarden.nl/bro/gen/js/panZoomImage.js"></script>
+
+</body>
 </html>

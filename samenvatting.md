@@ -1,0 +1,1 @@
+Dit document beschrijft de definitie van de mijnbouwconstructie, met een algemene toelichting.
