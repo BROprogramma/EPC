@@ -28,7 +28,7 @@ let respecConfig = {
   //licence: "cc0",                 // Public Domain Dedication
   licence: "cc-by", // Attribution, met bronvermelding
   //-- shortName is verplicht! (komt in de URL: kies logische afkorting)--------------
-  shortName: "bhr-gt",
+  shortName: "epc",
   //-- publishDate is verplicht -------------------------------------------------------
   //-- NB: in de werkversie uitzetten, want dan pakt Respec de pushdate ---------------
   publishDate: "2026-08-12",
