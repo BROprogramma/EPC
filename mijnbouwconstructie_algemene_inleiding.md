@@ -75,6 +75,7 @@ b. Op basis van deze metingen wordt de geometrie van het primaire traject en all
 De keuze om de nieuwste metingen te laten prevaleren boven de bestaande metingen, en daarmee om bestaande geometrieën te vervangen, is ingegeven vanuit de verwachting dat nieuwe metingen van hogere kwaliteit zijn dan oude metingen vanwege nieuwere, verbeterde meettechnieken.
  
 Bij het verlaten van een boorgat dient het bovenste deel van de ondergrondse verbuizing verwijderd te worden en het boorgat op meerdere dieptes gedicht te worden met cementpluggen. De geometrieën van de boortrajecten van een verlaten boorgat worden hier niet op aangepast.
+
  
 ## Mijnstelsels
  
@@ -102,6 +103,7 @@ De meeste gangen zijn initieel als steengroeve gebruikt (zie <a href="#image004"
 </figure>
  
 Kaarten van de kalksteengroeves zijn niet in openbare archieven opgenomen. De kaarten zijn deels aanwezig bij onderzoeksinstituten, deels bij particulieren en zijn deels vindbaar op internet. In de jaren 70 heeft de toenmalige Provinciale Waterstaat van de provincie Limburg kaarten laten vervaardigen van de contouren en de toegangen van de groeves. Deze kaarten zijn inmiddels verouderd en bevatten foutieve informatie. De ligging van de transport- en ontginningszones staat echter niet op deze provinciale kaarten. De Provincie Limburg stelt de kaarten van de gangen ondergrond niet openbaar beschikbaar in verband met de openbare veiligheid. In de basisregistratie ondergrond worden dan ook alleen gegevens over de contouren en de toegangen als publiek beschikbare gegevens opgenomen. Details over transport- en ontginningszones zijn na toestemming door de bronhouder beschikbaar.
+
  
 ## Zoutcavernes
  
