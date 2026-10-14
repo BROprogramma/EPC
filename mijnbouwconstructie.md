@@ -53,11 +53,9 @@ Vanaf 1810 zijn vanwege nieuwe wetgeving kaarten gemaakt van steenkoolmijnen. He
 
 - Drempelkaart. De drempelkaart is een kaart van het aardoppervlak waarop ingetekend staat welke verzakkingen en scheuren – de drempels – aan het maaiveld en aan gebouwen gerapporteerd zijn. Iedere mijn hield deze zogenaamde drempels bij op de drempelkaarten. Omdat de ondergrondse mijnbouw zich tot grote afstand van de mijnschacht uitstrekt, beslaan de drempelkaarten een groot oppervlak.
 - Hoofdgrondplan. De ondergronds infrastructuur is vastgelegd in de hoofdgrondplannen. Toegang tot de ondergrondse mijngangen wordt verkregen middels een schacht die vanaf maaiveld recht naar beneden gaat. In de schacht zijn verdiepingen aangebracht van waaruit het uitgebreide stelsel van horizontale transportgangen begint. In bovenstaande <a href="#image008">figuur 8</a> is één zo’n hoofdgrondplan als blauwe lijn weergegeven. Ook de twee hoger gelegen horizontale transportgangen hebben een eigen hoofdgrondplan in dit voorbeeld. Vanuit deze grote transportgangen in de verdiepingen werden de steenkoollagen bereikt. Omdat in deze gangen treinen rijden, zijn deze gangen horizontaal. Dit zijn de zogenaamde hoofdsteengangen die voor het grote transport van mensen en materiaal naar de werkfronten zorgden en voor de afvoer van de gewonnen steenkool. Vanuit de hoofdsteengangen gaan kleinere steengangen naar de te ontginnen steenkoollagen. Deze kleinere steengangen kunnen hellend of horizontaal zijn. Binnen de verdiepingen zijn vele op- en neerbraken. Deze zogeheten tussenschachten maken verbindingen tussen verdiepingen of naar steenkoollagen die dieper of ondieper liggen. Op enkele plaatsen zijn er gangen met een helling die verdiepingen en steenkoollagen met elkaar verbinden.
-- Laagplan. De ontginningen staan opgenomen op de laagplannen. In het Limburgse mijngebied zijn ruim 100 steenkoollagen. Deze lagen hebben allemaal een nummer (de zogenaamde GB-code) gekregen, toegekend door het Geologisch Bureau. Van de ruim 100 steenkoollagen zijn er 64 ontgonnen omdat het daar winbare steenkool betrof. De steenkoollagen liggen niet in horizontale vlakken: ze golven en maken verspringingen bij breuken. Daarnaast dalen de steenkoollagen in het algemeen in noordwestelijke richting, dagzomend in Kerkrade en op een diepte van 800 meter onder maaiveld aan het westelijke gedeelte. In bovenstaande <a href="#image008">figuur 8</a> zijn twee van deze steenkoollagen weergegevens als donkergrijze banden. In de onderste is met een rode stippellijn de ligging van het laagplan van die desbetreffende steenkoollaag weergegeven. Ook de andere steenkoollagen hebben ieder een eigen serie laagplankaarten. De laagplannen zijn een horizontale verbeelding van de golvende steenkoollagen en laten zien waar steenkool ontgonnen is en hoe de gangen lopen die in de steenkoollagen gegraven zijn. Deze gangen lopen zoveel mogelijk horizontaal maar een groot deel is hellend om de schuine oriëntatie van de steenkoollagen te kunnen volgen.
-
-De steenkoollagen werden ontgonnen vanuit de transportgangen via kleinere transportgalerijen, schachten en hellende gangen. De ontginning vond plaats op diverse manieren waarbij zoveel mogelijk steenkool weggehaald werd. De ontgonnen delen heten ‘panelen’ of ‘pijlers’ (verder genoemd: ‘panelen’). Na de ontginning werden de ontgonnen panelen gecontroleerd ingestort, opgevuld of open gelaten. Deze panelen worden als ontginningszones in de basisregistratie ondergrond opgenomen.
-
-In de oude ontginningen waren de panelen kleine gebiedjes langs exploratiegangen, met de moderne industriële ontginningssystemen werden de panelen in de loop van de tijd steeds groter. In de laagplannen staan details over de ontgonnen panelen. Meestal wordt de maand en het jaar van ontginning van het betreffende paneel, de samenstelling van de steenkool, incidenteel een Normaal Amsterdams Peil (NAP) hoogtepunt en informatie over de methode van opvulling vermeld.
+- Laagplan. De ontginningen staan opgenomen op de laagplannen. In het Limburgse mijngebied zijn ruim 100 steenkoollagen. Deze lagen hebben allemaal een nummer (de zogenaamde GB-code) gekregen, toegekend door het Geologisch Bureau. Van de ruim 100 steenkoollagen zijn er 64 ontgonnen omdat het daar winbare steenkool betrof. De steenkoollagen liggen niet in horizontale vlakken: ze golven en maken verspringingen bij breuken. Daarnaast dalen de steenkoollagen in het algemeen in noordwestelijke richting, dagzomend in Kerkrade en op een diepte van 800 meter onder maaiveld aan het westelijke gedeelte. In bovenstaande <a href="#image008">figuur 8</a> zijn twee van deze steenkoollagen weergegevens als donkergrijze banden. In de onderste is met een rode stippellijn de ligging van het laagplan van die desbetreffende steenkoollaag weergegeven. Ook de andere steenkoollagen hebben ieder een eigen serie laagplankaarten. De laagplannen zijn een horizontale verbeelding van de golvende steenkoollagen en laten zien waar steenkool ontgonnen is en hoe de gangen lopen die in de steenkoollagen gegraven zijn. Deze gangen lopen zoveel mogelijk horizontaal maar een groot deel is hellend om de schuine oriëntatie van de steenkoollagen te kunnen volgen.  
+    De steenkoollagen werden ontgonnen vanuit de transportgangen via kleinere transportgalerijen, schachten en hellende gangen. De ontginning vond plaats op diverse manieren waarbij zoveel mogelijk steenkool weggehaald werd. De ontgonnen delen heten ‘panelen’ of ‘pijlers’ (verder genoemd: ‘panelen’). Na de ontginning werden de ontgonnen panelen gecontroleerd ingestort, opgevuld of open gelaten. Deze panelen worden als ontginningszones in de basisregistratie ondergrond opgenomen.  
+    In de oude ontginningen waren de panelen kleine gebiedjes langs exploratiegangen, met de moderne industriële ontginningssystemen werden de panelen in de loop van de tijd steeds groter. In de laagplannen staan details over de ontgonnen panelen. Meestal wordt de maand en het jaar van ontginning van het betreffende paneel, de samenstelling van de steenkool, incidenteel een Normaal Amsterdams Peil (NAP) hoogtepunt en informatie over de methode van opvulling vermeld.
 
 ### Kaartmateriaal kalksteengroeves en andere ondergrondse gangen
 
@@ -122,7 +120,6 @@ De registratiegeschiedenis van een mijnbouwconstructie geeft de essentie van de 
 #### Levensduur
 
 Een mijnbouwconstructie is op enig moment ontstaan en het bestaan ervan kan op enig moment worden beëindigd. Deze beëindiging is niet hetzelfde als een buitengebruikstelling. Bijvoorbeeld een boorgat kan op enig moment niet meer worden gebruikt voor winning en afgesloten zijn, maar daarmee is het bestaan ervan niet ten einde. In de praktijk blijven boorgaten, mijnstelsels en zoutcavernes bestaan, uitzonderingssituaties daargelaten.
-zoutcavernes bestaan, uitzonderingssituaties daargelaten.
 De levensduur van een mijnbouwconstructie wordt vastgelegd met een begindatum en een einddatum. Afhankelijk van het soort mijnbouwconstructie zijn er regels wat er in de registratie ondergrond moet worden opgenomen.
 
 #### Constructiegeschiedenis en Gebeurtenis
@@ -148,7 +145,7 @@ Locatiebepaling omvat metagegevens over een locatie zoals die middels een attrib
 Boorgat is gedefinieerd als subtype van de entiteit Mijnbouwconstructie. De gegevens die bij de entiteit Mijnbouwconstructie zijn gedefinieerd, gelden daarom ook voor boorgaten. Van een boorgat wordt de aangeleverde locatie vastgelegd in de entiteit Aangeleverde locatie en de op basis daarvan gestandaardiseerde locatie in Gestandaardiseerde locatie. De aangeleverde en de gestandaardiseerde verticale positie worden beide vastgelegd in de entiteit Aangeleverde verticale positie.
 De holtes waaruit een boorgat bestaat – de boortrajecten – worden vastgelegd in de entiteit Boortraject. Ieder boorgat heeft minimaal één gerelateerd boortraject: het primaire boortraject.
 
-Van een boorgat wordt de aangeleverde locatie vastgelegd in de het attribuut locatie en de op basis daarvan gestandaardiseerde locatie in Gestandaardiseerde locatie boorgat. De aangeleverde en de gestandaardiseerde verticale positie worden beide vastgelegd in de entiteit Aangeleverde verticale positie.
+Van een boorgat wordt de aangeleverde locatie vastgelegd in het attribuut locatie en de op basis daarvan gestandaardiseerde locatie in Gestandaardiseerde locatie boorgat. De aangeleverde en de gestandaardiseerde verticale positie worden beide vastgelegd in de entiteit Aangeleverde verticale positie.
 
 De holtes waaruit een boorgat bestaat – de boortrajecten – worden vastgelegd in de entiteit Boortraject. Ieder boorgat heeft minimaal één gerelateerd boortraject: het primaire boortraject. Daarnaast kan een boorgat één of meerdere zijtakken bevatten (zie <a href="#image009">figuur 9</a>).
 
@@ -186,7 +183,7 @@ Met betrekking tot de gebruikte referentiestelsels, referentiepunten en vertical
 
 Een boorgat dat op zee aan landzijde van de mijnbouwgrens of op het land ligt, wordt gekenmerkt als een ‘onshore’ boorgat. Een boorgat dat aan zeezijde van de mijnbouwgrens ligt, wordt gekenmerkt als een ‘offshore’ boorgat. Het onderscheid bepaalt de referentiestelsels en referentievlakken die gebruikt mogen worden voor de basisregistratie ondergrond.
 
-Het volgende geldt (zie hierbij <a href="#image011">figuur 11</a>):</p>
+<p>Het volgende geldt (zie hierbij <a href="#image011">figuur 11</a>):</p>
 <table>
     <tr>
         <th>Gegeven</th>
@@ -203,7 +200,7 @@ Het volgende geldt (zie hierbij <a href="#image011">figuur 11</a>):</p>
         </td>
         <td>
         <ul>
-        <li>ETRS89(conform de uitgangspunten voor de basisregistraie ondergrond)</li>
+        <li>ETRS89(conform de uitgangspunten voor de basisregistratie ondergrond)</li>
         <li>Afgeleid door de BRO.</li>
         </ul>
         </td>
@@ -252,9 +249,8 @@ Het volgende geldt (zie hierbij <a href="#image011">figuur 11</a>):</p>
         </td>
     </tr>	
 </table>	
-<p>
 
-Bovenstaande houdt in dat de gestandaardiseerde verticale positie van een boorgat wordt gesteld op 0 MSL, 0 LAT of 0 NAP. Kenmerken van boortrajecten met betrekking tot diepte, zoals de werkelijke verticale einddiepte en de z-waarden in de geometrie van een boortraject, hanteren deze verticale positie als nulpunt. Doel hiervan is om registratieobjecten in de registratie ondergrond verticaal gezien zonder omrekening ten opzichte van elkaar te kunnen positioneren.
+<p>Bovenstaande houdt in dat de gestandaardiseerde verticale positie van een boorgat wordt gesteld op 0 MSL, 0 LAT of 0 NAP. Kenmerken van boortrajecten met betrekking tot diepte, zoals de werkelijke verticale einddiepte en de z-waarden in de geometrie van een boortraject, hanteren deze verticale positie als nulpunt. Doel hiervan is om registratieobjecten in de registratie ondergrond verticaal gezien zonder omrekening ten opzichte van elkaar te kunnen positioneren.</p>
 
 <figure id="image011">
 <img src="./data/Images/figuur_Schematische weergave van oorspronkelijk verticaal referentiepunten en oorspronkelijke verschuivingen.png" width="150"/>
@@ -263,14 +259,14 @@ Bovenstaande houdt in dat de gestandaardiseerde verticale positie van een boorga
 
 #### Boortraject
 
-Een boortraject is een holte in de ondergrond dat onderdeel is van een boorgat en ontstaan is na het uitvoeren van een boring. <a href="#image012">Figuur 12</a> geeft de constructie van een boorgat weer, als samenstel van boortrajecten. De <a href="#image012">Figuur 12</a> laat de situatie op het land zien. De situatie op zee is wat betreft het ondergrondse stelsel vergelijkbaar. Echter is dan niet het maaiveld maar de zeebodem het punt waar onder sprake is van een ondergronds stelsel.
+Een boortraject is een holte in de ondergrond dat onderdeel is van een boorgat en ontstaan is na het uitvoeren van een boring. <a href="#image012">Figuur 12</a> geeft de constructie van een boorgat weer, als samenstel van boortrajecten. De <a href="#image012">figuur</a> laat de situatie op het land zien. De situatie op zee is wat betreft het ondergrondse stelsel vergelijkbaar. Echter is dan niet het maaiveld maar de zeebodem het punt waar onder sprake is van een ondergronds stelsel.
 
 <figure id="image012">
 <img src="./data/Images/figuur_Schematische weergave van de verschillende fasen in de constructie van een boorgat.png" width="100"/>
 <figcaption>: Schematische weergave van de verschillende fasen in de constructie van een boorgat.</figcaption>
 </figure>
 
-De <a href="#image012">Figuur 12</a> toont een mijnbouwlocatie met twee boorgaten. Boorgat 1 is als eerste gemaakt (Fase 1). Vervolgens is dat boorgat afgesloten en boorgat 2 gemaakt (Fase 2). Op een later moment is in dit tweede boorgat een zijtak geboord (Fase 3). Tenslotte is vanuit die zijtak een nieuwe zijtak geboord (Fase 4). In de basisregistratie ondergrond wordt ieder boorgat afzonderlijk geregistreerd, met ieder geboord segment afzonderlijk erbij vastgelegd. Segmenten zijn: a) de holte die is ontstaan na eerste boring van het boorgat en b) de zijtakken. De bovengrondse installatie wordt niet geregistreerd. Ook wordt niet geregistreerd of er een relatie is tussen de twee boorgaten. In het voorbeeld zijn de twee boorgaten vanuit dezelfde (bovengrondse)mijnbouwlocatie gemaakt. Dit wordt echter niet geregistreerd in de basisregistratie ondergrond. In de basisregistratie ondergrond staat ieder boorgat op zich en heeft een eigen locatie.
+De <a href="#image012">figuur</a> toont een mijnbouwlocatie met twee boorgaten. Boorgat 1 is als eerste gemaakt (Fase 1). Vervolgens is dat boorgat afgesloten en boorgat 2 gemaakt (Fase 2). Op een later moment is in dit tweede boorgat een zijtak geboord (Fase 3). Tenslotte is vanuit die zijtak een nieuwe zijtak geboord (Fase 4). In de basisregistratie ondergrond wordt ieder boorgat afzonderlijk geregistreerd, met ieder geboord segment afzonderlijk erbij vastgelegd. Segmenten zijn: a) de holte die is ontstaan na eerste boring van het boorgat en b) de zijtakken. De bovengrondse installatie wordt niet geregistreerd. Ook wordt niet geregistreerd of er een relatie is tussen de twee boorgaten. In het voorbeeld zijn de twee boorgaten vanuit dezelfde (bovengrondse)mijnbouwlocatie gemaakt. Dit wordt echter niet geregistreerd in de basisregistratie ondergrond. In de basisregistratie ondergrond staat ieder boorgat op zich en heeft een eigen locatie.
 
 Een boorgat bestaat dus uit een of meerdere segmenten, in de basisregistratie ondergrond boortrajecten genoemd. Boortrajecten overlappen en doorsnijden elkaar niet. Het eerste boortraject dat wordt gemaakt bij het maken van een boorgat is het zogenaamde primaire traject (ook wel het moederboorgat genoemd). Na boring van het primaire traject kunnen één of meer zijtakken geboord worden, op zogenaamde tie-in-points ontspringend uit het primaire traject of een andere zijtak. Het boren van zijtakken, in vakjargon ‘sidetracking’ genoemd, wordt uitgevoerd na grondige afweging. Er is dus geen sprake van het ‘even’ boren van een aantal zijtakken. Iedere aftakking wordt dan ook als een separaat boortraject van het type zijtak geregistreerd in de basisregistratie ondergrond.
 
@@ -334,7 +330,7 @@ Een 3D opname van een kalksteengroeve is in de basisregistratie ondergrond niet 
 <figcaption>: 2D-model van een kalksteengroeve als vertaling van het 3D-model ervan.</figcaption>
 </figure>
 
-Behalve de kalksteengroeves zijn in de kalksteen ook gangen gegraven die primair niet ten behoeve van kalksteenwinning gemaakt zijn. Het betreft onder andere transporttunnels, militaire tunnels, schuilkelders, horizontale waterputten en vuursteenmijnen. Deze groeves worden opgenomen in de basisregistratie ondergrond omdat ze enerzijds lastig te onderscheiden zijn van de kalksteengroeves die primair wel voor winning gediend hebben en anderzijds omdat in de mijnbouwwetgeving deze groeves op dezelfde manier behandeld worden als de primaire kalksteengroeves. De 3D-opbouw en 2D-weergave van deze ondergrondse stelsels zijn vergelijkbaar met die van kalksteengroeves (zie figuren 15 en 14).
+Behalve de kalksteengroeves zijn in de kalksteen ook gangen gegraven die primair niet ten behoeve van kalksteenwinning gemaakt zijn. Het betreft onder andere transporttunnels, militaire tunnels, schuilkelders, horizontale waterputten en vuursteenmijnen. Deze groeves worden opgenomen in de basisregistratie ondergrond omdat ze enerzijds lastig te onderscheiden zijn van de kalksteengroeves die primair wel voor winning gediend hebben en anderzijds omdat in de mijnbouwwetgeving deze groeves op dezelfde manier behandeld worden als de primaire kalksteengroeves. De 3D-opbouw en 2D-weergave van deze ondergrondse stelsels zijn vergelijkbaar met die van kalksteengroeves (zie figuren 17 en 18).
 
 #### Gebeurtenis
 
@@ -377,7 +373,7 @@ Voor de mijnspecifieke coördinaatsystemen zijn omrekenformules naar RD beschikb
 
 Zoutcaverne is gedefinieerd als subtype van de entiteit Mijnbouwconstructie. De gegevens die bij de entiteit Mijnbouwconstructie zijn gedefinieerd, gelden daarom ook voor zoutcaverne. Van de zoutcaverne wordt verder vastgelegd: de holruimtecontour (de maximale cumulatieve contour van de in de ondergrond aanwezige caverne) en de cavernemetingcode waarmee cavernemetingen opgevraagd kunnen worden mochten deze voor de caverne aanwezig zijn.
 
-In <a href="#image019">figuur 18</a> is een 3D-model weergegeven van een zoutcaverne met bovengronds een ‘zouthuisje’ en ondergronds een boortraject en de zoutcaverne. Het bovengrondse element, het zouthuisje, wordt niet in de registratie ondergrond opgenomen. De holruimtecontour (weergegeven als gearceerd vlak) wordt opgenomen in het attribuut holruimtecontour. Het boortraject (weergegeven in grijs) wordt opgenomen onder de entiteit Boortraject.
+In <a href="#image019">figuur 19</a> is een 3D-model weergegeven van een zoutcaverne met bovengronds een ‘zouthuisje’ en ondergronds een boortraject en de zoutcaverne. Het bovengrondse element, het zouthuisje, wordt niet in de registratie ondergrond opgenomen. De holruimtecontour (weergegeven als gearceerd vlak) wordt opgenomen in het attribuut holruimtecontour. Het boortraject (weergegeven in grijs) wordt opgenomen onder de entiteit Boortraject.
 
 <figure id="image019">
 <img src="./data/Images/Zoutcaverne_Catalogus3D.png" width="75"/>
@@ -390,10 +386,10 @@ Zoutcavernes worden altijd ontsloten door één of meerdere boortrajecten (een h
 
 #### Gebeurtenis
 
-De volgende gebeurtenissen worden onderscheiden die speciefiek zijn voor zoutcavernes.
+De volgende gebeurtenissen worden onderscheiden die specifiek zijn voor zoutcavernes.
 
 1. De zoutcaverne is ontstaan.
-2. De wijziging van de holruimtecontour. Tijdens het logen, de vorming van de caverne, verandert deze van vorm. hij wordt groter. Na de vorming van de caverne veranderd de vorm door de plasticiteit van het zout.
+2. De wijziging van de holruimtecontour. Tijdens het logen, de vorming van de caverne, verandert deze van vorm. hij wordt groter. Na de vorming van de caverne verandert de vorm door de plasticiteit van het zout.
 
 #### Gestandaardiseerde locatie zoutcaverne
 
